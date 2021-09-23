@@ -1,0 +1,1446 @@
+focus_tree = {
+	id = russia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+        continuous_focus_position = { x = 2500 y = 1300 }
+	#Focus for フィンランド独立の承認 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_cTSKnGVm
+		icon = GFX_focus_invite_finland
+		x = 15
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+                cancelable = no
+		completion_reward = {
+			white_peace = FIN
+                        add_political_power = -100
+                        remove_ideas = SOV_fin_independent
+		}
+	}
+
+	#Focus for 農業への補助金 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_swhItSlY
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_vWFfJTdj }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                
+                       add_stability = 0.15
+		    }
+	        }
+
+	#Focus for 共和国臨時政府の組織 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_spZgYhXG
+		icon = GFX_goal_support_democracy
+		x = 10
+		y = 2
+		cost = 4
+                 available = {
+			has_country_flag = SOV_MINSHU
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zSQWZvaD }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+		add_ideas = Democratic_Republic
+                        swap_ideas = {
+				remove_idea = SOV_army_disband
+				add_idea = SOV_army_disband_1
+			}
+                        swap_ideas = {
+				remove_idea = SOV_revolution
+				add_idea = SOV_revolution_1
+			}
+                        set_country_flag = SOV_FEBREVO_II
+                        add_ideas = SOV_REPUBLIC
+		    }
+	        }
+
+
+	#Focus for 国家労働奉仕団を設立 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_upXYGqMt
+		icon = GFX_focus_generic_industry_3
+		x = 16
+		y = 6
+		cost = 8
+                available = {
+                               has_country_flag = SOV_DOKUSAI
+                
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_FtrmLfuP }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        swap_ideas = {
+				remove_idea = SOV_depression
+				add_idea = SOV_depression_1
+			}
+                        add_ideas = SOV_KOKKAROUDOU
+		    }
+	        }
+
+	#Focus for 公共事業への投資 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_eBXTygVG
+		icon = GFX_goal_generic_production
+		x = 20
+		y = 6
+		cost = 8
+                 available = {
+			OR = { has_country_flag = SOV_MINSHU
+                               has_country_flag = SOV_RIKKEN
+                  }
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_FtrmLfuP }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        swap_ideas = {
+				remove_idea = SOV_depression
+				add_idea = SOV_depression_1
+			}
+                        add_ideas = SOV_KOUKYOU
+		    }
+	        }
+
+	#Focus for 交通網の整備 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_UjvlHtxh
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 18
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_upXYGqMt 
+			focus = SOV_eBXTygVG 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+                  random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	#Focus for 重工業化政策 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_JpxSgPhG
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_upXYGqMt }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                
+                        add_ideas = SOV_JYUKOUGYO
+                        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		    }
+	        }
+
+	#Focus for 農地改革 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_fQcTEvxG
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 22
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_eBXTygVG }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                          add_stability = -0.1
+                        add_ideas = SOV_NOUTIKAIKAKU
+		    }
+	        }
+
+	#Focus for 軍需産業への偏重 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_NrREmTfX
+		icon = GFX_focus_generic_combined_arms
+		x = 14
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_JpxSgPhG }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        swap_ideas = {
+				remove_idea = SOV_depression_1
+				add_idea = SOV_depression_2
+			}
+                        add_ideas = SOV_GUNJYUSANGYO
+		    }
+	        }
+
+
+	#Focus for ピョートルとは皇帝にふさわしい名ではないか - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_PskIdWAt
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_EysrDhkO }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+		add_ideas = Absolute_monarchy
+                remove_ideas = SOV_ALEXEI_II
+                add_ideas = SOV_WRANGEL
+		effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = national_populist }
+		create_country_leader = {
+			name = "ピョートル4世"
+			desc = "POLITICS_WRANGEL_DESC"
+			picture = "RUS_wrangel.tga"
+			expire = "1965.1.1"
+			ideology = national_populist_subtype
+		}
+
+	 }
+	}
+
+
+	#Focus for 再建の完了 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_qeIhUKyQ
+		icon = GFX_goal_generic_production2
+		x = 18
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+                        focus = SOV_HcoXgUkM 
+                        focus = SOV_NrREmTfX 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+                       remove_ideas = SOV_depression_2
+		    }
+	        }
+
+	#Focus for オフラーナに更なる権限を与える - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_ygOqcaNA
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_PskIdWAt }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_ideas = SOV_HIMITSUKEISATU
+		}
+	}
+
+	#Focus for 医療改革 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_XyZzuDxV
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 7
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_vWFfJTdj }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_stability = 0.05	
+                        add_ideas = SOV_Health_care
+		}
+	}
+
+	#Focus for 労働組合の承認 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_DLVIYNKb
+		icon = GFX_focus_por_workers_of_iberia
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_vWFfJTdj }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_stability = 0.05	
+                        add_ideas = SOV_UNIOM_Accept
+		}
+	}
+
+	#Focus for ロシア人民の皇帝 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_XmqcSguz
+		icon = GFX_focus_focus_fra_third_empire
+		x = 2
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_wcprXIZS 
+		}
+		prerequisite = { 
+			focus = SOV_XuEOinFI 
+		}
+		prerequisite = { 
+			focus = SOV_ygOqcaNA 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_ideas = SOV_Imperator
+		}
+	}
+
+	#Focus for ゼムストヴォの権限強化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_vWFfJTdj
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zZCNisrY }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_stability = 0.05
+                        add_ideas = SOV_Zemstvo
+		}
+	}
+
+	#Focus for 内戦の終結 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_InCyzleb
+		icon = GFX_focus_generic_monarchy_2
+		x = 15
+		y = 4
+                 available = {
+                 NOT = {
+				country_exists = RUS
+			}
+                }
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_aZCANXWc }
+		ai_will_do = {
+			factor = 1
+		}
+	 completion_reward = {
+                set_rule = { can_create_factions = no }
+		    dismantle_faction = yes
+			set_country_flag = SOV_OCREVOLUTION_END
+                        remove_ideas = SOV_CIVIL_WAR
+                        add_timed_idea = {
+					idea = GER_CIVILWAR_MARKS
+					days = 365
+				} 
+		}
+	}
+
+
+	#Focus for 思想的自由 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_cwJVIpMg
+		icon = GFX_focus_research2
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zZCNisrY }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_ideas = SOV_Free_thinker
+		}
+	}
+
+	#Focus for 自由なロシア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_zZCNisrY
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 8
+		y = 4
+		cost = 10
+                available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_ZUlrbEsj }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_ideas = SOV_Free_russia
+		}
+	}
+
+
+	#Focus for ペトログラード・ソヴィエトの蜂起 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_zIlvEcxF
+		icon = GFX_goal_generic_war_with_comintern
+		x = 15
+		y = 1
+		cost = 10
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = SOV_OCREVOLUTION
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 反共義勇軍 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_qnyktfMY
+		icon = GFX_goal_anti_comintern_pact
+		x = 15
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zIlvEcxF }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_manpower = 50000
+                       send_equipment = {
+			target = SOV
+			type = infantry_equipment
+			amount = 5000
+		}
+		}
+	}
+
+	#Focus for フランスに支援を要求 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_aZCANXWc
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 15
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_SCODjQFJ 
+		}
+		prerequisite = { 
+			focus = SOV_FoguBVrA 
+		}
+		prerequisite = { 
+			focus = SOV_qnyktfMY 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        FRA = { country_event = TR_france.2 }
+		}
+	}
+
+	#Focus for 名ばかりのドゥーマ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_TWrMOIAz
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 2
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_EpgSsBIF }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_popularity = {
+			ideology = national_populist
+			popularity = 1.0
+		        }
+                        add_stability = 0.2
+                        add_political_power = -50
+		    }
+	        }
+
+	#Focus for 強力なロシア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_EysrDhkO
+		icon = GFX_goal_support_fascism
+		x = 2
+		y = 4
+		cost = 10
+                available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_TWrMOIAz }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_ideas = SOV_strong_russia
+		}
+	}
+
+	#Focus for 第一回ドゥーマ選挙 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_ZUlrbEsj
+		icon = GFX_goal_support_democracy
+		x = 8
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_spZgYhXG 
+			focus = SOV_GbeQigRE 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_stability = 0.2	
+
+			country_event = TR_russia.4	
+		}
+	}
+
+	#Focus for 皇帝の亡命 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_zSQWZvaD
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 1
+		cost = 10
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = SOV_MINSHU
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_2 }
+		mutually_exclusive = { 
+			focus = SOV_ajJyrTzl 
+		}
+		mutually_exclusive = { 
+			focus = SOV_GDBmwjeo 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ヴラーンゲリ将軍が実権を掌握 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_EpgSsBIF
+		icon = GFX_focus_mex_support_general_cedillo
+		x = 2
+		y = 2
+		cost = 4
+                available = {
+			has_country_flag = SOV_DOKUSAI
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_GDBmwjeo }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+		    add_ideas = totalist_dictatorship
+            swap_ideas = {
+				remove_idea = SOV_army_disband
+				add_idea = SOV_army_disband_1
+			}
+                         swap_ideas = {
+				remove_idea = SOV_revolution
+				add_idea = SOV_revolution_1
+			}
+                        set_country_flag = SOV_FEBREVO_II
+                        add_ideas = SOV_ALEXEI_II
+                        add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		        }
+			set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		         }
+		    }
+	        }
+
+
+	#Focus for 立憲君主制への移行 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_GbeQigRE
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 2
+                available = {
+			has_country_flag = SOV_RIKKEN
+		}
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_ajJyrTzl }
+		ai_will_do = {
+			factor = 1
+		}
+	        completion_reward = {
+				add_ideas = Constitutional_monarchy
+                        swap_ideas = {
+				remove_idea = SOV_army_disband
+				add_idea = SOV_army_disband_1
+			}
+                        swap_ideas = {
+				remove_idea = SOV_revolution
+				add_idea = SOV_revolution_1
+			}
+                        set_country_flag = SOV_FEBREVO_II
+                        add_ideas = SOV_ALEXEI_II
+			set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		         }
+		    }
+	        }
+
+	#Focus for 二月詔書 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_ajJyrTzl
+		icon = GFX_focus_generic_monarchy_1
+		x = 6
+		y = 1
+		cost = 10
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = SOV_RIKKEN
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_2 }
+		mutually_exclusive = { 
+			focus = SOV_GDBmwjeo 
+		}
+		mutually_exclusive = { 
+			focus = SOV_zSQWZvaD 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 2月革命
+	focus = {
+		id = SOV_2
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 6
+		y = 0
+		cost = 10
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = SOV_FEBREVOLUTION
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 白衛軍を組織 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_SCODjQFJ
+		icon = GFX_goal_generic_political_pressure
+		x = 17
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zIlvEcxF }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			division_template = {
+				name = "White Infantry"
+				division_names_group = SOV_GAR_01
+				is_locked = yes
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 252 }
+				create_unit = {
+					division = "division_template = \"White Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 217 }
+				create_unit = {
+					division = "division_template = \"White Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 2
+				}
+			}
+		}
+	}
+
+	#Focus for 軍事産業の動員 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_FoguBVrA
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_zIlvEcxF }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_offsite_building = { type = arms_factory level = 2 }
+		    }
+	        }
+
+	#Focus for 戒厳令 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_GDBmwjeo
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 2
+		y = 1
+		cost = 10
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = SOV_DOKUSAI
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_2 }
+		mutually_exclusive = { 
+			focus = SOV_ajJyrTzl 
+		}
+		mutually_exclusive = { 
+			focus = SOV_zSQWZvaD 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+}
+
+	#Focus for 陸軍の改革 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_bYrzTMXw
+		icon = GFX_goal_generic_small_arms
+		x = 23
+		y = 0
+		cost = 10
+                available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	 completion_reward = {
+                        remove_ideas = SOV_army_disband_1
+		}
+	}
+	#軍事研究の強化
+	focus = {
+		id = SOV_XysYepoB1
+		icon = GFX_focus_research2
+		x = 23
+		y = 1
+		available = {
+			num_of_factories > 100
+		}
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_bYrzTMXw }
+		ai_will_do = {
+			factor = 1
+		}
+	 completion_reward = {
+                        add_research_slot = 1
+		}
+	}
+	#Focus for 反対者を粛清 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_wcprXIZS
+		icon = GFX_focus_TUR_purge_the_kemalists
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_PskIdWAt }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        add_stability = 0.2	
+                        add_timed_idea = {
+					idea = SOV_shukusei
+					days = 365
+				}              
+                      
+		}
+	}
+
+	#Focus for 国家工場の建設 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_XuEOinFI
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_PskIdWAt }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					arms_factory > 0
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+
+	#Focus for 鉱山の開発 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_QXmpeRua
+		icon = GFX_goal_generic_construct_civilian
+		x = 18
+		y = 8
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_UjvlHtxh }
+		ai_will_do = {
+			factor = 1
+		}
+	 completion_reward = {
+                      random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					steel > 0
+				}
+				add_resource = {
+					type = steel
+					amount = 32
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					aluminium > 0
+				}
+				add_resource = {
+					type = aluminium
+					amount = 16
+				}
+			}
+                        random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					tungsten > 0
+				}
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+			}
+		}
+	}
+
+	#Focus for 経済の再建 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_FtrmLfuP
+		icon = GFX_goal_generic_production2
+		x = 18
+		y = 5
+		cost = 6
+                available = {
+			has_country_flag = SOV_FEBREVO_II
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 民需産業の整備 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_HcoXgUkM
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 22
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_fQcTEvxG }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        swap_ideas = {
+				remove_idea = SOV_depression_1
+				add_idea = SOV_depression_2
+			}
+                        add_ideas = SOV_MINJYU
+		    }
+	        }
+
+	#Focus for 研究枠の追加 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_XysYepoB
+		icon = GFX_focus_research2
+		x = 18
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_qeIhUKyQ }
+		ai_will_do = {
+			factor = 1
+		}
+	 completion_reward = {
+                        add_research_slot = 1
+		}
+	}
+        #Focus for 失地回復 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_lcjhrWRC
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		x = 30
+		y = 0
+		cost = 10
+                available = {
+					has_country_flag = SOV_OCREVOLUTION_END
+			if = {
+	
+				date > 1938.1.1
+			} 
+                        has_war = no
+			is_subject = no
+                        is_in_faction = no
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {                
+		set_rule = { can_create_factions = yes }
+                create_faction = "Moscow_Treaty"
+		}
+	}
+        #Focus for フィンランドを取り戻す - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_tjRCvLbm
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_ohkzpYHM }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+                        722 = {
+					add_core_of = SOV
+				}
+                        147 = {
+					add_core_of = SOV
+				}
+                        146 = {
+					add_core_of = SOV
+				}
+			create_wargoal = {
+				target = FIN
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for 外へ目を向ける - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_vquKzWgs
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		x = 30
+		y = 4
+		cost = 10
+                available = {
+			if = {
+	
+				date > 1941.6.1
+			} 
+			is_subject = no
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_tjRCvLbm 
+		}
+		prerequisite = { 
+			focus = SOV_pFSqlRWf 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+                            }
+             }              
+
+	#Focus for 中央アジア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_gwYuEZfG
+		icon = GFX_goal_generic_small_arms
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_TKDtGqmU }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+                        407 = {
+					add_core_of = SOV
+				}
+                        406 = {
+					add_core_of = SOV
+				}
+                        add_state_claim = 402
+                        add_state_claim = 587
+                        add_state_claim = 583
+                        add_state_claim = 590
+                        add_state_claim = 404
+                        add_state_claim = 588
+                        add_state_claim = 589
+                        add_state_claim = 586
+                        add_state_claim = 585
+                        add_state_claim = 732
+                        add_state_claim = 742
+                        add_state_claim = 405
+                        add_state_claim = 584
+			create_wargoal = {
+				target = KAZ
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = UZB
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for 第二次シベリア植民 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_pFSqlRWf
+		icon = GFX_goal_generic_attack_allies
+		x = 31
+		y = 3
+		cost = 10
+                available = {
+                        has_war = no
+			is_subject = no
+                        JAP = { has_war_with = USA }
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_gwYuEZfG }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+                        40 = {
+					add_core_of = SOV
+				}
+                        654 = {
+					add_core_of = SOV
+				}
+                        329 = {
+					add_core_of = SOV
+				}
+                        569 = {
+					add_core_of = SOV
+				}
+                        568 = {
+					add_core_of = SOV
+				}
+                        567 = {
+					add_core_of = SOV
+				}
+                        566 = {
+					add_core_of = SOV
+				}
+                        564 = {
+					add_core_of = SOV
+				}
+                        565 = {
+					add_core_of = SOV
+				}
+                        563 = {
+					add_core_of = SOV
+				}
+                        574 = {
+					add_core_of = SOV
+				}
+                        561 = {
+					add_core_of = SOV
+				}
+			create_wargoal = {
+				target = SIB
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for ドイツを打倒 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_KkOaLIYm
+		icon = GFX_focus_attack_soviet
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_vquKzWgs }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = GER
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = POL
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for 南下政策 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_PxTfbqoS
+		icon = GFX_focus_jap_strike_south
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_vquKzWgs }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = PER
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+	}
+        #Focus for アジア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_TKDtGqmU
+		icon = GFX_focus_usa_focus_on_asia
+		x = 31
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_lcjhrWRC }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+        #Focus for ヨーロッパ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_qjzUQZJA
+		icon = GFX_focus_usa_focus_on_europe
+		x = 29
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_lcjhrWRC }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for バルトの反乱者を討伐 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = SOV_ohkzpYHM
+		icon = GFX_goal_generic_secret_weapon
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_qjzUQZJA }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+                        add_state_claim = 13
+                        add_state_claim = 191
+                        add_state_claim = 12
+                        add_state_claim = 190
+                        add_state_claim = 11
+                        add_state_claim = 189
+                        add_state_claim = 784
+                        add_state_claim = 96
+			create_wargoal = {
+				target = BAL
+				type = annex_everything
+			}
+		}
+	}
+
+#end of focuses 
+ }

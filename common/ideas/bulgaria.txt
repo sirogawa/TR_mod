@@ -1,0 +1,730 @@
+
+ ideas = {
+       
+     country = {
+                 BUL_Independent = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_third_bulgarian_state
+                        targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 1.0
+                                defense_bonus_against = 1.0
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        
+			}
+		}
+
+
+                BUL_ARMY = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_third_bulgarian_state
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        conscription = 0.05
+			war_support_factor = 0.1
+			army_morale_factor = 0.20
+			army_org_factor = 0.1
+                        army_attack_factor = 0.1
+			army_core_defence_factor = 0.2
+                        surrender_limit	= 0.1
+			}
+		}
+                BUL_economic = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_nationalized_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.2
+			production_speed_buildings_factor = 0.15
+                        consumer_goods_factor = -0.05
+			}
+		}
+                BUL_Foutrh_Roma = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_third_bulgarian_state
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        consumer_goods_factor = 0.05
+                        stability_factor = 0.2
+                        political_power_factor = 0.2
+			conscription = 0.025
+                        surrender_limit	= 0.1
+			}
+		}
+                BUL_YABOU = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_prussia_of_the_balkans
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  justify_war_goal_time = -0.2
+                                  war_support_factor = 0.20
+			          army_morale_factor = 0.20
+			          army_attack_factor = 0.15
+			}
+		}
+                BUL_BANZOKU = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_nationalized_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        consumer_goods_factor = -0.25
+                        conscription_factor = 0.5
+                        stability_factor = -0.20
+                        production_speed_buildings_factor = -0.2
+			}
+		}
+                 BUL_METAL_HORSE = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_third_bulgarian_state
+
+			
+			removal_cost = -1
+	                equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+
+			modifier = {
+			offence = 0.15
+                        army_speed_factor = 0.2
+                        planning_speed = 0.1
+			cavalry_attack_factor = 0.2
+                        surrender_limit	= 0.1
+			}
+		}
+              BUL_KHANATE_IDEA = {
+			allowed = {
+				always = no
+			}
+                        picture = bul_prussia_of_the_balkans
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  justify_war_goal_time = -0.5
+			}
+		}
+              BUL_Neutral_IDEA = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_neutrality_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  conscription = 0.02
+                                  defensive_war_stability_factor = 0.5
+                                  justify_war_goal_time = 2.0
+                                  generate_wargoal_tension = 1.0
+                                  join_faction_tension = 1.0
+                                  enemy_justify_war_goal_time = 2.0
+                                  production_speed_bunker_factor = 0.5
+                                  army_core_defence_factor = 0.1
+			}
+		}
+             }
+             
+
+	political_advisor = { 
+
+
+
+
+
+		BUL_konstantin_muraviev_bftb = { #DLC
+
+			picture = bul_konstantin_muraviev
+			
+			allowed = {
+				original_tag = BUL
+			}
+
+
+			
+			traits = { compassionate_gentleman }
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+
+		BUL_stefan_stefanov = { #DLC
+
+			picture = bul_stefan_stefanov
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+
+
+			
+			traits = { industry_reformer }
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+
+
+		BUL_valko_chervenkov = { #DLC
+
+			picture = bul_valko_chervenkov
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+
+
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				base = 1
+			}
+		}
+
+
+
+
+
+
+
+		BUL_dobri_bozhilov_bftb = { #DLC
+
+			picture = bul_dobri_bozhilov
+			
+			allowed = {
+				original_tag = BUL
+			}
+
+
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+
+
+
+
+		BUL_georgi_ivanov_kyoseivanov = { #VANILLA
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+			
+				original_tag = BUL
+			}
+			
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	theorist = {
+
+
+		BUL_georgi_petsov_bftb = { #DLC
+
+			ledger = navy
+			
+			picture = bul_georgi_petsov
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		BUL_sava_ivanov = { #DLC
+			ledger = navy
+			
+			picture = bul_sava_ivanov
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+			
+			traits = { naval_aviation_pioneer }
+		}
+
+		BUL_georgi_drenikov = { #DLC
+			ledger = air
+			
+			picture = bul_georgi_drenikov
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		BUL_kiril_stanchev = { #VANILLA
+			ledger = army
+			
+			picture = bul_kiril_stanchev
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		BUL_ivan_gaidimitriv = { #VANILLA
+			ledger = air
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		BUL_georgi_petsov = { #VANILLA
+			ledger = navy
+
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+	army_chief = {
+
+
+
+
+
+
+
+		BUL_kiril_stanchev_bftb = { #DLC
+
+			picture = bul_kiril_stanchev
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+
+			}
+		}
+
+		BUL_nikola_hadzipetkov = { #VANILLA
+			picture = generic_army_europe_3
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUL_hristo_lukov = { #VANILLA
+			picture = generic_army_europe_2
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+
+
+		BUL_gancho_manchev = { #DLC
+			picture = bul_gancho_manchev
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+
+			available = {
+				
+			}
+						
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+
+			}
+		}
+
+
+		BUL_vasil_boydev = { #VANILLA
+			picture = generic_air_europe_3
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUL_asen_dobrev_nikolov = { #VANILLA
+			picture = generic_air_europe_2
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+
+
+
+		BUL_nikola_totev_markov = { #VANILLA
+			picture = generic_navy_europe_1
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+						
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUL_bonyu_stoev_pironkov = { #VANILLA
+			picture = generic_navy_europe_2
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+						
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	high_command = {
+
+		BUL_stoyan_stoyanov_bftb = { #DLC
+
+			ledger = air
+			
+			picture = bul_stoyan_stoyanov
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+
+			}
+		}
+
+		BUL_stefan_tsanev = { #DLC
+
+			ledger = navy
+			
+			picture = bul_stefan_tsanev
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+			
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0.1
+					BUL_save_money_for_decisions = yes
+				}
+			}
+		}
+
+
+
+
+
+
+		BUL_stoyan_trendafilov = { #DLC
+
+			ledger = army
+			
+			picture = bul_stoyan_trendafilov
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0.1
+					BUL_save_money_for_decisions = yes
+				}
+			}
+		}
+
+		BUL_vladimir_stoychev = { #DLC
+
+			ledger = army
+			
+			picture = bul_vladimir_stoychev
+
+			allowed = {
+				
+				original_tag = BUL
+			}
+
+
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0.1
+					BUL_save_money_for_decisions = yes
+				}
+			}
+		}
+
+
+
+		BUL_blagoi_ivanov = { #VANILLA
+			ledger = army
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+					
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUL_kiril_dimitrov_yanchule = { #VANILLA
+			ledger = army
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+					
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		BUL_atanas_pavlov_zhilkov = { #VANILLA
+			ledger = army
+
+			picture = generic_army_europe_5
+			
+			allowed = {
+				
+				original_tag = BUL
+			}
+					
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+########  ########  ######  ####  ######   ##    ## ######## ########   ######  
+##     ## ##       ##    ##  ##  ##    ##  ###   ## ##       ##     ## ##    ## 
+##     ## ##       ##        ##  ##        ####  ## ##       ##     ## ##       
+##     ## ######    ######   ##  ##   #### ## ## ## ######   ########   ######  
+##     ## ##             ##  ##  ##    ##  ##  #### ##       ##   ##         ## 
+##     ## ##       ##    ##  ##  ##    ##  ##   ### ##       ##    ##  ##    ## 
+########  ########  ######  ####  ######   ##    ## ######## ##     ##  ######  
+
+
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		
+	}
+
+	naval_manufacturer = { 
+			
+		designer = yes
+		
+	
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+
+             }
+	industrial_concern = {
+		
+
+
+
+
+
+	}
+
+
+}
+

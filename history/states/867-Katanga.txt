@@ -1,0 +1,30 @@
+
+state={
+	id=867
+	name="STATE_867" #カタンガ
+	manpower = 856789
+	
+	state_category = rural
+	
+	resources={
+		tungsten=24
+	}
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			191 1 
+		}
+		add_core_of = COG
+                add_core_of = KAT
+		add_core_of = RCG
+	}
+
+	provinces={
+	   1516 12795 1968 4515 191 1817 12907
+	}
+}

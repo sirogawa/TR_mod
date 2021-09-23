@@ -1,0 +1,22 @@
+state={
+	id=824
+	name="STATE_824"
+	provinces={
+		1063 3848 4067 9865 12056 
+	}
+	state_category=town
+	manpower=3360000
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 5
+                        industrial_complex = 1
+                        dockyard = 1
+                        air_base = 1
+		}
+		 victory_points = { 9865 5 }
+
+	}
+	buildings_max_level_factor=1.000
+}

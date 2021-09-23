@@ -1,0 +1,26 @@
+
+state={
+	id=527
+	name="STATE_527"
+        resources={
+		steel=15.000
+	}
+	
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = KOR
+                victory_points = { 7155 3 }
+	}
+
+	provinces={
+		1003 4107 7070 7155 9981 11915 12040 
+	}
+	manpower=4012423
+	buildings_max_level_factor=1.000
+	state_category = town
+}

@@ -1,0 +1,101 @@
+﻿capital = 605
+oob = "YUN_1936"
+
+set_research_slots = 3
+country_event = { id = TR_China.3 days = 120 }
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+
+	add_ideas = {
+                Democratic_Republic
+		YUN_jap_economic
+		CHI_late_army
+	}
+
+add_timed_idea = {
+		idea = JAPCO_black_thursday
+		days = 500
+                 }  
+set_autonomy = {
+	target = YNN
+	autonomous_state = autonomy_puppet
+}
+
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democrat = 32
+	social_conservative = 17
+	authoritarian_democrat = 23
+	paternal_autocrat = 10
+	national_populist = 18
+}
+
+create_country_leader = {
+	name = "汪兆銘"
+	desc = "POLITICS_WANG_DESC"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Wang.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "汪兆銘"
+	desc = "POLITICS_WANG_DESC"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Wang.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "汪兆銘"
+	desc = "POLITICS_WANG_DESC"
+	picture = "gfx/leaders/CHI/Portrait_CHI_Wang.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "竜雲"
+	desc = "POLITICS_LONG_YUN_DESC"
+	picture = "GFX_portrait_yun_long_yun"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Lu Han"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}

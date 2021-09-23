@@ -1,0 +1,33 @@
+
+add_namespace = TR_Peru
+
+
+country_event = {
+	id = TR_Peru.1
+	title = TR_Peru.1.t
+	desc = TR_Peru.1.d
+	picture = GFX_report_event_france_parade
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = { 
+		name = TR_Peru.1.a
+                declare_war_on = {
+			target = BOL
+			type = annex_everything
+		}
+                302 = {
+					add_core_of = PRU
+				}
+                487 = {
+					add_core_of = PRU
+				}
+                688 = {
+					add_core_of = PRU
+				}
+	}
+}

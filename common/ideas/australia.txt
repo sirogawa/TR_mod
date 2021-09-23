@@ -1,0 +1,398 @@
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		AST_Immigrants = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_democratic_drift_bonus
+
+
+			
+			removal_cost = -1
+			modifier = {
+			     MONTHLY_POPULATION = 0.3
+			}
+		}
+
+		AST_White_Australia = {
+			allowed = {
+				always = no
+			}
+                        picture = saf_history_of_segregation
+
+
+			
+			removal_cost = -1
+			modifier = {
+                             stability_factor = 0.1
+			     MONTHLY_POPULATION = -0.25
+                             conscription_factor = -0.15
+			}
+		}
+                AST_depression = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.5
+				stability_factor = -0.3
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				industrial_capacity_factory = -0.25
+				consumer_goods_factor = 0.25
+			}
+		}
+                AST_depression_1 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.4
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.2
+			}
+		}
+                AST_depression_2 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.3
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.25
+                                production_speed_buildings_factor = 0.1
+			}
+		}
+                AST_depression_3 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.2
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.15
+                                production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
+                AST_depression_4 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.1
+                                conscription_factor = 0.02
+                                MONTHLY_POPULATION = 0.1
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.1
+                                production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
+                AST_depression_5 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+                                conscription_factor = 0.02
+                                MONTHLY_POPULATION = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.05
+                                production_speed_buildings_factor = 0.1
+				min_export = -0.1
+			}
+		}
+                AST_Exile_Hanpatsu = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_war_of_resistance3
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			 war_support_factor = -0.2
+                         stability_factor = -0.2
+                         political_power_cost = 0.3
+			}
+		}
+                AST_Exile_Hanpatsu_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_war_of_resistance3
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         consumer_goods_factor = 0.05
+			 war_support_factor = -0.1
+                         stability_factor = -0.1
+                         political_power_cost = 0.1
+			}
+		}
+                AST_Exile_Hanpatsu_2 = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_war_of_resistance3
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         political_power_cost = -0.2
+			 war_support_factor = 0.2
+                         stability_factor = 0.2
+			}
+		}
+                AST_Thelema = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         political_power_cost = 0.1
+                         stability_factor = -0.2
+                         MONTHLY_POPULATION = 0.5
+			}
+		}
+                AST_Thelema_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         conscription = 0.03
+                         political_power_cost = 0.2
+                         stability_factor = -0.25
+                         MONTHLY_POPULATION = 0.5
+                         consumer_goods_factor = -0.05
+			}
+		}
+                AST_Thelema_2 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         conscription = 0.03
+                         Gnosticism_drift = 0.10
+                         political_power_cost = 0.3
+                         stability_factor = -0.3
+                         MONTHLY_POPULATION = 1.0
+                         consumer_goods_factor = -0.1
+                         justify_war_goal_time = -0.25
+                         defence = 0.05
+                         offence = 0.05
+			}
+		}
+           AST_WWII_ANZAC = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			     army_org_factor = 0.1
+                             max_planning = 0.1
+                             war_support_factor = 0.15
+			}
+		}
+          
+           AST_Atlantic_War = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_navy_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                            invasion_preparation = -0.2
+                            naval_speed_factor = 0.1
+                            amphibious_invasion = 0.2
+                            navy_max_range_factor = 0.1
+			}
+		}
+           AST_Western_Expansion = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_navy_bonus
+			removal_cost = -1
+		modifier = {
+                            justify_war_goal_time = -0.5
+                            war_support_factor = 0.15
+		}
+             }
+           JAP_AST_Friendship = {
+			allowed = {
+				always = no
+			}
+                        picture = can_wartime_prices_and_trade_board
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				consumer_goods_factor = -0.02
+                                industrial_capacity_factory = 0.05
+                                industrial_capacity_dockyard = 0.05
+                                research_speed_factor = 0.01
+			}
+		}
+           JAP_AST_Friendship_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = can_wartime_prices_and_trade_board
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				consumer_goods_factor = -0.02
+                                industrial_capacity_factory = 0.1
+                                industrial_capacity_dockyard = 0.1
+                                global_building_slots_factor = 0.02
+                                research_speed_factor = 0.02
+			}
+		}
+           AST_USA_Friendship = {
+			allowed = {
+				always = no
+			}
+                        picture = can_wartime_prices_and_trade_board
+
+			
+			removal_cost = -1
+                        research_bonus = {
+				land_doctrine = 0.1
+			}
+                     
+			modifier = {
+				army_org_factor = 0.1
+			}
+		}
+           }
+           political_advisor = {	
+		
+                AST_Prince_Henry = {
+			
+			picture = GFX_idea_AST_Prince_Henry
+			
+			allowed = {
+				original_tag = AST
+                                  }
+                        available = {
+                                has_completed_focus = AST_gurosutagongwoshezhengnirenming
+			}
+			
+			traits = { TR_silent_workhorse }
+		    }
+                AST_Aleister_Crowley = {
+			
+			picture = GFX_idea_AST_Aleister_Crowley
+			
+			allowed = {
+				original_tag = AST
+                                  }
+                        available = {
+                                has_completed_focus = AST_kurouriwoshezhengnirenming
+			}
+			
+			traits = { AST_Aleister_Crowley_traits }
+		    }
+              }
+
+}

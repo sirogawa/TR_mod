@@ -1,0 +1,521 @@
+﻿
+add_namespace = TR_japan
+
+#取り付け騒ぎ
+country_event = {
+	id = TR_japan.1
+	title = TR_japan.1.t
+	desc = TR_japan.1.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japan.1.a
+                add_political_power = -50
+		add_stability = -0.1
+		
+	}
+}
+#1936年衆議院選挙
+country_event = {
+	id = TR_japan.2
+	title = TR_japan.2.t
+	desc = TR_japan.2.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#立憲民政党
+		name = TR_japan.2.a
+		ai_chance = {
+			base = 35
+		}
+                add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+                set_country_flag = JAP_1936SENKYO
+                set_country_flag = JAP_MINSEITO
+                hidden_effect = {
+			country_event = {
+					id = TR_japan.3
+					days = 7
+					
+				}
+		}
+	}
+
+	option = {#立憲政友会
+		name = TR_japan.2.b
+		ai_chance = {
+			base = 35
+		}
+                add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+                set_country_flag = JAP_1936SENKYO
+                set_country_flag = JAP_SEIYUKAI
+                hidden_effect = {
+			country_event = {
+					id = TR_japan.3
+					days = 7
+					
+				}
+		}
+	}
+
+	option = {#東洋革新党
+		name = TR_japan.2.c
+		ai_chance = {
+			base = 15
+		}
+                add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+                set_country_flag = JAP_1936SENKYO
+                set_country_flag = JAP_KAKUSHINTO
+	}
+
+	option = {#社会大衆党
+		name = TR_japan.2.e
+		ai_chance = {
+			base = 15
+		}
+                add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+                set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+                set_country_flag = JAP_1936SENKYO
+                set_country_flag = JAP_TAISHUTO
+
+	}
+}
+#連立か否か
+country_event = {
+	id = TR_japan.3
+	title = TR_japan.3.t
+	desc = TR_japan.3.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#挙国一致連立政権
+		name = TR_japan.3.a
+		ai_chance = {
+			base = 50
+		}
+                add_political_power = -75
+                add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.5
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+                set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = JAP_KYOKOKUITTI_long
+			name = JAP_KYOKOKUITTI_a
+		}
+                set_country_flag = JAP_KYOKOKUITTITAISEI
+            
+                hidden_effect = {
+			country_event = {
+					id = TR_japan.4
+					days = 7
+					
+				}
+		}
+	}
+
+	option = {#連立の否定
+		name = TR_japan.3.b
+		ai_chance = {
+			base = 50
+		}
+                add_political_power = 25
+
+            }
+}
+#挙国一致内閣の首相
+country_event = {
+	id = TR_japan.4
+	title = TR_japan.4.t
+	desc = TR_japan.4.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	option = {
+		name = TR_japan.4.a
+                ai_chance = {
+			base = 25
+		}
+                effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
+		create_country_leader = {
+			name = "鈴木喜三郎"
+			desc = "POLITICS_SUZUKIKISA_DESC"
+			picture = "portrait_JAP_suzukikisa.tga"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+		}
+	}
+        option = {
+		name = TR_japan.4.b
+                ai_chance = {
+			base = 25
+		}
+                effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
+		create_country_leader = {
+			name = "町田忠治"
+			desc = "POLITICS_MACHIDA_DESC"
+			picture = "Portrait_Japan_machida.tga"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+                        traits = { Nonkinatousan }
+		}
+	}
+	option = {
+		name = TR_japan.4.c
+                ai_chance = {
+			base = 25
+		}
+                effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
+		create_country_leader = {
+			name = "岡田啓介"
+			desc = "POLITICS_OKADA_DESC"
+			picture = "Portrait_Japan_okadakei.tga"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+		}
+	}
+        option = {
+		name = TR_japan.4.e
+                ai_chance = {
+			base = 25
+		}
+                effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
+		create_country_leader = {
+			name = "宇垣一成"
+			desc = "POLITICS_UGAKI_DESC"
+			picture = "Portrait_Japan_ugakikazu.tga"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+		}
+	}
+                
+		
+}
+
+#革命
+country_event = {
+	id = TR_japan.5
+	title = TR_japan.5.t
+	desc = TR_japan.5.d
+	picture = GFX_report_event_gathering_protest
+        fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = { 	
+		name = TR_japan.5.a
+                set_country_flag = JAP_KAKUMEI_1
+                add_stability = -0.1
+                add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+                add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+                add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+                 hidden_effect = {
+			country_event = {
+					id = TR_japan.6
+					days = 3
+					
+				}
+                         country_event = {
+					id = TR_news.1
+					days = 5
+					
+				}
+		}
+	}
+
+	
+}
+#革命鎮圧
+country_event = {
+	id = TR_japan.6
+	title = TR_japan.6.t
+	desc = TR_japan.6.d
+	picture = GFX_report_event_japanese_soldiers_02
+
+	is_triggered_only = yes
+
+	
+	
+
+	option = {
+		name = TR_japan.6.a
+                ai_chance = {
+			base = 100
+		}
+                 set_country_flag = JAP_KAIGEN
+                 add_ideas = JAP_KAIGENREI
+                add_popularity = {
+			ideology = totalist
+			popularity = -0.03
+		}
+                add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.03
+		}
+                add_popularity = {
+			ideology = syndicalist
+			popularity = -0.03
+		}
+                 hidden_effect = {
+			country_event = {
+					id = TR_japan.7
+					days = 35
+					
+				}
+		}
+	}
+        #option = {
+	#	name = TR_japan.6.b
+        #        ai_chance = {
+	#		base = 0
+	#	}
+        #        set_country_flag = JAP_KAKUMEI_SEIKO
+        #        add_popularity = {
+	#		ideology = totalist
+	#		popularity = 0.2
+	#	}
+        #        add_popularity = {
+	#		ideology = radical_socialist
+	#		popularity = 0.2
+	#	}
+        #        add_popularity = {
+	#		ideology = syndicalist
+	#		popularity = 0.2
+	#	}
+	#	set_politics = {
+	#		ruling_party = radical_socialist
+	#		elections_allowed = no
+	#	}
+        #
+	#}
+
+	
+}
+
+#戒厳令
+country_event = {
+	id = TR_japan.7
+	title = TR_japan.7.t
+	desc = TR_japan.7.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+
+	
+	
+
+	option = {
+		name = TR_japan.7.a
+                ai_chance = {
+			base = 80
+		}
+                 set_country_flag = JAP_KAIGEN_TEPPAI
+                 remove_ideas = JAP_KAIGENREI
+                add_popularity = {
+			ideology = social_conservative
+			popularity = 0.03
+		}
+                add_popularity = {
+			ideology = market_liberal
+			popularity = 0.03
+		}
+                add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+                add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+                   hidden_effect = {
+                         country_event = {
+					id = TR_news.3
+					days = 5
+					
+				}
+		}
+                 
+	}
+        option = {
+		name = TR_japan.7.b
+                ai_chance = {
+			base = 20
+		}
+               set_country_flag = JAP_KAIGEN_KEIZOKU
+                
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+                  
+	}
+
+	
+}
+#日米開戦
+country_event = {
+	id = TR_japan.8
+	title = TR_japan.8.t
+	desc = TR_japan.8.d
+	picture = GFX_report_event_japanese_transport_soldiers
+        fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_war_with = USA
+		
+	}
+
+	
+	
+
+	option = {
+		name = TR_japan.8.a
+                   remove_ideas = JAP_ugaki_gunshuku
+                   hidden_effect = {
+                         country_event = {
+					id = TR_news.10
+					days = 3
+					
+				}
+		}
+                 
+	}
+
+	
+}
+#東北飢饉
+country_event = {
+	id = TR_japan.9
+	title = TR_japan.9.t
+	desc = TR_japan.9.d
+	picture = GFX_report_event_japanese_transport_soldiers
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japan.9.a
+		add_ideas = JAP_Tohoku_Famine
+                add_political_power = -50
+		533 = {
+					add_manpower = -200
+				}
+                824 = {
+					add_manpower = -600
+				}
+                823 = {
+					add_manpower = -400
+				}
+	}
+}
+
+#飢饉からの回復
+country_event = {
+	id = TR_japan.10
+	title = TR_japan.10.t
+	desc = TR_japan.10.d
+	picture = GFX_report_event_japanese_transport_soldiers
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japan.10.a
+                remove_ideas = JAP_Tohoku_Famine
+	}
+}
+
+country_event = {#オスマンが同盟を提案
+	id = TR_japan.11
+	title = TR_japan.11.t
+	desc = TR_japan.11.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japan.11.a
+                ai_chance = {
+			base = 99
+		}
+                trigger = {
+                        is_faction_leader = yes
+		}
+                JAP = {
+                   add_to_faction = TUR
+                    }
+                
+
+	}
+        option = { 
+		name = TR_japan.11.b
+                ai_chance = {
+			base = 1
+		}
+
+
+
+	}
+}

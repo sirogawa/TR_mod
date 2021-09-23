@@ -1,0 +1,140 @@
+﻿### Congo OOB ###
+
+division_template = {
+	name = "Hohei Ryodan"		
+	division_names_group = JAP_INF_01				# Uses French-language generic division names
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+		infantry = { x = 2 y = 0 }
+	}
+}
+division_template = {
+	name = "Hohei Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
+	division_names_group = JAP_INF_01
+									# 1 engineering regiment, 1 recon regiment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Sangakuhei"	
+	division_names_group = JAP_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+
+units = {
+		##### Imperial Army #####
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12986
+		division_template = "Hohei Ryodan"			
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5199
+		division_template = "Hohei Ryodan"				
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10929
+		division_template = "Hohei Ryodan"				
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order =4
+		}
+		location = 10966
+		division_template = "Hohei Shidan"			
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8214
+		division_template = "Hohei Shidan"			
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4879
+		division_template = "Hohei Shidan"			
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4879
+		division_template = "Sangakuhei"			
+		start_experience_factor = 0.3
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "COG"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

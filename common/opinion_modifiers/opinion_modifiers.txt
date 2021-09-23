@@ -1,0 +1,35 @@
+
+opinion_modifiers = {
+
+               RUS_GER_SUPPORT = {
+		        value = 50
+	        }
+               RUS_GER_SUPPORT_deny = {
+		        value = -30
+	        }
+               JAP_blockeconomy_1 = {
+		        value = -100
+	        }
+               JAP_AST_collaborate = {
+		        value = 50
+	        }
+               USA_AST_collaborate = {
+		        value = 50
+	        }
+               TUR_Treatment_Revoke = {
+		        value = -50
+	        }
+               TUR_Bagdadrailway_a = {
+		        value = -50
+	        }
+               USA_FRA_SUPPORT = {
+		        value = 50
+	        }
+               SOV_FRA_SUPPORT = {
+		        value = 50
+	        }
+               SOV_FRA_SUPPORT_DENY = {
+		        value = -25
+	        }
+
+}

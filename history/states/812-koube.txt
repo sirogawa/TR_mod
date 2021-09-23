@@ -1,0 +1,32 @@
+state={
+	id=812
+	name="STATE_812"
+	provinces={
+		12031 
+	}
+	state_category=metropolis
+	manpower=4062000
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+		        arms_factory = 2
+			industrial_complex = 3
+			infrastructure = 10
+			dockyard = 5
+                        12031 = {
+				naval_base = 5
+
+			}
+                        air_base = 3
+		}
+		
+		victory_points = {
+			12031 15
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}
+
+

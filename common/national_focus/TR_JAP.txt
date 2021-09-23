@@ -1,0 +1,1673 @@
+﻿focus_tree = {
+
+	id = japan_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 2500 y = 1300 }
+
+	########################
+	###     経済ツリー   ###
+	########################
+
+	focus = {
+		id = JAP_black_thursday1
+		icon = GFX_focus_CZE_german_puppet
+		
+		ai_will_do = {
+			factor = 300
+		}
+		x = 8
+		y = 0
+		cost = 1
+		cancelable = no
+		completion_reward = {
+			country_event = TR_japan.1	
+		}
+	}
+        focus = {
+		id = JAP_KYOKOHENOTAISAKU
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = {
+			
+                        focus = JAP_black_thursday1
+		}
+		ai_will_do = {
+			factor = 300
+		}
+		x = 8
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			add_stability = 0.05	
+
+		}
+	}
+        focus = {
+		id = JAP_blockeconomy
+		icon = GFX_focus_jap_cast_the_die
+		prerequisite = {
+			
+                        focus = JAP_KYOKOHENOTAISAKU
+		}
+		ai_will_do = {
+			factor = 300
+		}
+		x = 8
+		y = 2
+		cost = 6
+		cancelable = no
+		completion_reward = {
+                        add_ideas = JAP_blockeconomy_nf
+                        reverse_add_opinion_modifier = {
+				target = GER
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = FRA
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = USA
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = SOV
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = ITA
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = SWE
+				modifier = JAP_blockeconomy_1
+			}
+                        reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = JAP_blockeconomy_1
+			}
+
+		}
+	}
+        focus = {
+		id = JAP_TAKAHASHI
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_blockeconomy
+		}
+                available = {
+                             has_country_flag = JAP_1936SENKYO
+                             
+                            OR = {
+                             has_government = social_conservative
+                             has_government = social_democrat
+                             has_government = authoritarian_democrat
+                             has_government = social_liberal
+                             }
+                            }
+		mutually_exclusive = {
+			    focus = JAP_KAYA
+                            focus = JAP_INOUE
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 8
+		y = 3
+		cost = 15
+		cancelable = yes
+		completion_reward = {
+                        set_country_flag = JAP_Takahashi_flag
+                        add_ideas = JAP_Takahashi_Korekiyo
+			swap_ideas = {
+				remove_idea = JAP_black_thursday
+				add_idea = JAP_black_thursdayk_TAKAHASHI
+			}	
+		}
+	}
+        focus = {
+		id = JAP_TAKAHASHI1
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_TAKAHASHI
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 8
+		y = 4
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        add_ideas = JAP_Managed_system
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_TAKAHASHI
+				add_idea = JAP_black_thursdayk_TAKAHASHI1
+			}	
+		}
+	}
+        focus = {
+		id = JAP_TAKAHASHI2
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_TAKAHASHI1
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 8
+		y = 5
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        add_ideas = JAP_Public_Works
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_TAKAHASHI1
+				add_idea = JAP_black_thursdayk_TAKAHASHI2
+			}	
+		}
+	}
+        focus = {
+		id = JAP_INOUE
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_blockeconomy
+		}
+                available = {
+                             has_country_flag = JAP_1936SENKYO
+                             OR = {
+                             has_government = market_liberal
+                             has_government = authoritarian_democrat
+                             has_government = social_liberal
+                             }
+                            }
+		mutually_exclusive = {
+			    focus = JAP_TAKAHASHI
+                            focus = JAP_KAYA
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 10
+		y = 3
+		cost = 15
+		cancelable = yes
+		completion_reward = {
+                        set_country_flag = JAP_INOUE_flag
+                        add_ideas = JAP_Inoue_junnosuke
+			swap_ideas = {
+				remove_idea = JAP_black_thursday
+				add_idea = JAP_black_thursdayk_INOUE
+			}	
+		}
+	}
+       
+        focus = {
+		id = JAP_INOUE1
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_INOUE
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 10
+		y = 4
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        add_ideas = JAP_Kinshuku_zaisei
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_INOUE
+				add_idea = JAP_black_thursdayk_INOUE1
+			}	
+		}
+	}
+         focus = {
+		id = JAP_INOUE2
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_INOUE1
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 10
+		y = 5
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        add_ideas = JAP_Jyuyosangyo
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_INOUE1
+				add_idea = JAP_black_thursdayk_INOUE2
+			}	
+		}
+	}
+        focus = {
+		id = JAP_KAYA
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_blockeconomy
+		}
+                available = {
+                            has_country_flag = JAP_1936SENKYO
+                        OR = {
+                             has_government = authoritarian_democrat
+                             has_government = paternal_autocrat
+                             has_government = national_populist
+                             has_government = social_democrat
+                             }
+                            }
+		mutually_exclusive = {
+                                    focus = JAP_TAKAHASHI
+                                    focus = JAP_INOUE
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 6
+		y = 3
+		cost = 15
+		cancelable = yes
+		completion_reward = {
+                        set_country_flag = JAP_Kaya_flag
+                        add_ideas = JAP_Kaya_Okinori
+			swap_ideas = {
+				remove_idea = JAP_black_thursday
+				add_idea = JAP_black_thursdayk_KAYA
+			}	
+		}
+            }
+            focus = {
+		id = JAP_KAYA1
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_KAYA
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 6
+		y = 4
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        add_timed_idea = {
+					idea = JAP_yonkanen
+					days = 1440
+				}              
+                        
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_KAYA
+				add_idea = JAP_black_thursdayk_KAYA1
+			}	
+		}
+	}
+         focus = {
+		id = JAP_KAYA2
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+			
+                        focus = JAP_KAYA1
+		}
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 6
+		y = 5
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        swap_ideas = {
+				remove_idea = JAP_blockeconomy_nf
+				add_idea = JAP_Autarkie
+			}	
+			swap_ideas = {
+				remove_idea = JAP_black_thursdayk_KAYA1
+				add_idea = JAP_black_thursdayk_KAYA2
+			}	
+		}
+	}
+        focus = {
+		id = JAP_keizaifukkatsu
+		icon = GFX_focus_generic_industry_3
+                prerequisite = {
+                             focus = JAP_TAKAHASHI2
+
+                             focus = JAP_INOUE2
+
+                             focus = JAP_KAYA2
+                             }
+                available = {
+                            
+                            }
+		mutually_exclusive = {
+			    
+		}   
+		ai_will_do = {
+			factor = 300
+		}
+                
+		x = 8
+		y = 6
+		cost = 12
+		cancelable = yes
+		completion_reward = {
+                        set_country_flag = JAP_KEIZAIFUKKO
+                        remove_ideas = JAP_black_thursdayk_TAKAHASHI2
+                        remove_ideas = JAP_black_thursdayk_INOUE2
+                        remove_ideas = JAP_black_thursdayk_KAYA2
+		}
+	}
+       
+
+        ########################
+	###民主主義政治ツリー###
+	########################
+        focus = {
+		id =JAP_SHUGIIN
+		icon = GFX_goal_support_democracy
+                prerequisite = {
+			 
+		}
+                available = {
+                            always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                bypass = {
+			has_country_flag = JAP_1936SENKYO
+		}
+		x = 17
+		y = 0
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+         focus = {
+		id =JAP_TAISHUTO_WIN
+		icon = GFX_focus_prc_agrarian_socialism
+                prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+                available = {
+                            always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+			has_country_flag = JAP_TAISHUTO
+		}
+		x = 14
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+        focus = {
+		id =JAP_KAKUSHINTO_WIN
+		icon = GFX_focus_usa_focus_on_asia
+                prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+                available = {
+                            always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+			has_country_flag = JAP_KAKUSHINTO
+		}
+		x = 16
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+        focus = {
+		id =JAP_MINSEITO_WIN
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+                prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+                available = {
+                            always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+			has_country_flag = JAP_MINSEITO
+		}
+		x = 18
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+       }
+}
+        focus = {
+		id =JAP_SEIYUKAI_WIN
+		icon = GFX_goal_generic_defence
+                prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+                available = {
+                            always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+			has_country_flag = JAP_SEIYUKAI
+		}
+		x = 20
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			hidden_effect = {
+			country_event = {
+					id = TR_japan.3
+					days = 7
+					
+				}
+		}
+       
+	}
+}
+        focus = {
+		id =JAP_KYOKOKUITTI
+		icon = GFX_focus_jap_spiritual_mobilization
+                prerequisite = {
+			
+		}
+                available = {
+                           always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+			 has_country_flag = JAP_KYOKOKUITTITAISEI
+		}
+		x = 22
+		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+        ########################
+	### 革命→軍部ツリー ###
+	########################
+        focus = {
+		id =JAP_KAKUMEI_NF
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+                prerequisite = {
+			
+		}
+                available = {
+                           always = no
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                bypass = {
+			 has_country_flag = JAP_KAKUMEI_1
+		}
+		x = 25
+		y = 0
+		cost = 1
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+         focus = {
+		id =JAP_KAKUMEI_SUC
+		icon = GFX_focus_generic_soviet_politics
+                prerequisite = {
+			focus = JAP_KAKUMEI_NF
+		}
+                available = {
+                           has_country_flag = JAP_KAKUMEI_SEIKO
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+                bypass = {
+			 
+		}
+		x = 24
+		y = 1
+		cost = 3
+		cancelable = no
+		completion_reward = {
+			hidden_effect = {
+                         country_event = {
+					id = TR_news.2
+					days = 5
+					
+				}
+		}
+		}
+       
+	}
+        focus = {
+		id =JAP_KAIGEN_NF
+		icon = GFX_focus_jap_manchurian_project
+                prerequisite = {
+			focus = JAP_KAKUMEI_NF
+		}
+                available = {
+                        has_country_flag = JAP_KAIGEN
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                bypass = {
+			 has_country_flag = JAP_KAIGEN
+		}
+		x = 26
+		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+                          
+		}
+       
+	}
+        focus = {
+		id =JAP_KAIGEN_TEPPAI_NF
+		icon = GFX_focus_jap_pacific_guardian
+                prerequisite = {
+			focus = JAP_KAIGEN_NF
+		}
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                bypass = {
+			 
+		}
+		x = 25
+		y = 2
+		cost = 3
+		cancelable = no
+		completion_reward = {
+			add_ideas = JAP_MINSHU
+		}
+       
+	}
+         focus = {
+		id =JAP_KAIGEN_KEIZOKU_NF
+		icon = GFX_focus_generic_japanese_imperial_glory
+                prerequisite = {
+			focus = JAP_KAIGEN_NF
+		}
+                available = {
+                           has_country_flag = JAP_KAIGEN_KEIZOKU
+                       }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+                bypass = {
+			 
+		}
+		x = 27
+		y = 2
+		cost = 2
+		cancelable = no
+		completion_reward = {
+		add_ideas = militaly_dictatorship
+		effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = paternal_autocrat }
+                hidden_effect = { kill_ideology_leader = national_populist }
+		create_country_leader = {
+			name = "永田鉄山"
+			desc = "POLITICS_NAGATA_DESC"
+			picture = "Portrait_JAP_nagata.tga"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+		}
+                create_country_leader = {
+	                name = "荒木貞夫"
+	                desc = "POLITICS_ARAKI_DESC"
+	                picture = "Portrait_JAP_araki.tga"
+	                expire = "1965.1.1"
+	                ideology = national_populist_subtype
+                 }
+                add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+                add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.3
+		}
+                set_party_name = {
+			ideology = paternal_autocrat
+			long_name = JAP_KOKUBOU_long
+			name = JAP_KOKUBOU_a
+		}
+                set_party_name = {
+			ideology = national_populist
+			long_name = JAP_KOUDOU_long
+			name = JAP_KOUDOU_a
+		}
+                hidden_effect = {
+                         country_event = {
+					id = TR_news.4
+					days = 5
+					
+				}
+		}
+	 }
+       
+	}
+#Focus for 国家公党 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_NQdrekax
+		icon = GFX_focus_jap_pacific_guardian
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_WmuAywKB 
+		}
+		prerequisite = { 
+			focus = JAP_cDrYUnKC 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_stability = 0.10
+                 add_ideas = JAP_KOKKAKOTO
+
+		}
+	}
+
+	#Focus for 日はまた昇る - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_WOFBuHbq
+		icon = GFX_focus_jap_showa_restoration
+		x = 17
+		y = 5
+		cost = 20
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_cejxWJlk 
+			focus = JAP_NQdrekax 
+			focus = JAP_XSGzyqvB 
+			focus = JAP_tOZMBWqw 
+		}
+                available = {
+                           has_country_flag = JAP_KEIZAIFUKKO
+                       }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        add_research_slot = 1
+                        swap_ideas = {
+				remove_idea = JAP_Shading_sun
+				add_idea = JAP_rising_sun
+			}	
+                        load_focus_tree = japan_focus_01
+		}
+	}
+
+	#Focus for 教育の振興 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_PYQuxTzV
+		icon = GFX_focus_research2
+		x = 19
+		y = 2
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+		cost = 10
+                prerequisite = {
+                             focus = JAP_MINSEITO_WIN
+                             focus = JAP_SEIYUKAI_WIN
+                             }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 日本型社会主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_cejxWJlk
+		icon = GFX_focus_generic_join_comintern
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_IypmrVhM 
+		}
+		prerequisite = { 
+			focus = JAP_FzHbvhst 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_stability = 0.10
+                 add_ideas = JAP_SOCIALISM
+
+		}
+	}
+
+	#Focus for アジアの夜明け - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_tOZMBWqw
+		icon = GFX_focus_usa_focus_on_asia
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_UHmdcxaz 
+		}
+		prerequisite = { 
+			focus = JAP_FzHbvhst 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_stability = 0.10
+                 add_ideas = JAP_ASIANMORNING
+
+		}
+	}
+
+	#Focus for 議会の擁護者 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_XSGzyqvB
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_WmuAywKB 
+		}
+		prerequisite = { 
+			focus = JAP_UHmdcxaz 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_stability = 0.10
+                 add_ideas = JAP_Parliament
+
+		}
+	}
+
+	#Focus for 交通網の充実 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_WmuAywKB
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_PYQuxTzV }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 政治的革新 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_nwrPBdjE
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 15
+		y = 2
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+		cost = 10
+                prerequisite = {
+                             focus = JAP_TAISHUTO_WIN
+                             focus = JAP_KAKUSHINTO_WIN
+                             }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 平和主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_FzHbvhst
+		icon = GFX_goal_generic_defence
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_nwrPBdjE }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 全ては大御心のままに - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_WJdsrqIO
+		icon = GFX_focus_jap_manchurian_project
+		x = 33
+		y = 9
+		cost = 20
+                available = {
+                           has_country_flag = JAP_KEIZAIFUKKO
+                       }
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_YkAXnJxo }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        set_cosmetic_tag = JAP_KO
+                        add_research_slot = 1
+                        swap_ideas = {
+				remove_idea = JAP_Shading_sun
+				add_idea = JAP_Omikokoro
+			}	
+                        load_focus_tree = japan_focus_01
+		}
+	}
+
+	#Focus for 財閥との連携 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_iPurUSHL
+		icon = GFX_focus_jap_zaibatsu
+		x = 21
+		y = 2
+		cost = 10
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+                prerequisite = {
+                             focus = JAP_SEIYUKAI_WIN
+                             }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 自由貿易 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_DGuUraYs
+		icon = GFX_goal_generic_trade
+		x = 17
+		y = 2
+		cost = 10
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+                prerequisite = {
+                             focus = JAP_KAKUSHINTO_WIN
+                             focus = JAP_MINSEITO_WIN
+                             }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 限定的軍備拡張 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_cDrYUnKC
+		icon = GFX_focus_generic_combined_arms
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_iPurUSHL }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 皇国精神の称揚 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_YkAXnJxo
+		icon = GFX_focus_jap_spiritual_mobilization
+		x = 33
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_jXvqbdkn 
+		}
+		prerequisite = { 
+			focus = JAP_UgcFtlHV 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_KOUKOKUSEISIN
+               }
+}
+
+	#Focus for 財閥を解体 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_jXvqbdkn
+		icon = GFX_focus_jap_zaibatsu
+		x = 34
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_LdIHqsUN }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        add_offsite_building = { type = industrial_complex level = -5 }
+                        add_ideas = JAP_KAIZOUKEIKAKU
+		    }
+	        }
+
+	#Focus for 国体明徴声明 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_UgcFtlHV
+		icon = GFX_focus_jap_pacific_guardian
+		x = 32
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_LdIHqsUN }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_ideas = JAP_KOKUTAIMEITYOU
+
+		}
+	}
+
+	#Focus for 帝国は常に先を行く - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_oPdyzOjb
+		icon = GFX_goal_support_fascism
+		x = 29
+		y = 8
+		cost = 20
+		available_if_capitulated = yes
+                available = {
+                           has_country_flag = JAP_KEIZAIFUKKO
+                       }
+		prerequisite = { 
+			focus = JAP_dbmzWcVS 
+		}
+		prerequisite = { 
+			focus = JAP_DLHCTnXi 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                         add_research_slot = 1
+                        swap_ideas = {
+				remove_idea = JAP_Shading_sun
+				add_idea = JAP_SAISENTAN
+			}	
+                        load_focus_tree = japan_focus_01
+		}
+	}
+
+	#Focus for 従わぬならば挿げ替えよ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_LdIHqsUN
+		icon = GFX_focus_jap_showa_restoration
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_CZWkgPiS }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = Absolute_monarchy
+        add_stability = -0.2
+        remove_ideas = JAP_hirohito
+        add_ideas = JAP_SHINSEI
+        effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = national_populist }
+		create_country_leader = {
+			name = "雍仁"
+			desc = "POLITICS_TITIBU_DESC"
+			picture = "Portrait_Japan_titibu.tga"
+			expire = "1965.1.1"
+			ideology = national_populist_subtype
+                        traits = { Yasuhito_traits }
+		}
+		}
+	}
+
+	#Focus for 独裁者 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_DLHCTnXi
+		icon = GFX_focus_mex_support_general_cedillo
+		x = 28
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_jBtdHwAf }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+            add_stability = 0.05
+			add_country_leader_trait = dictator
+
+		}
+	}
+
+	#Focus for 産業の国有化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_dbmzWcVS
+		icon = GFX_goal_support_communism
+		x = 30
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_XAznejdg }
+		ai_will_do = {
+			factor = 100
+		}
+           completion_reward = {
+                    add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+                    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for 総力戦体制の構築 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_TXpZvfHj
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 25
+		y = 8
+		cost = 20
+                available = {
+                           has_country_flag = JAP_KEIZAIFUKKO
+                       }
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_cQGzruNX 
+		}
+		prerequisite = { 
+			focus = JAP_HXdZfTDO 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        add_research_slot = 1
+                        swap_ideas = {
+				remove_idea = JAP_Shading_sun
+				add_idea = JAP_soryokusen
+			}	
+                        load_focus_tree = japan_focus_01
+		}
+	}
+
+	#Focus for 政党の解散 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_jBtdHwAf
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 28
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_TCvmjxwJ }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+	        add_popularity = {
+			ideology = national_populist
+			popularity = 1.0
+		}
+		}
+	}
+
+
+	#Focus for 戦争プロパガンダ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_cQGzruNX
+		icon = GFX_focus_AST_war_japan
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_eLXflUDW }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                       add_war_support = 0.4
+				
+	}
+	}
+
+
+	#Focus for 軍事産業の整備 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_HXdZfTDO
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_noWCdfXk }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	#Focus for 憲兵隊の強化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_eLXflUDW
+		icon = GFX_goal_generic_political_pressure
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_CBYikcEb }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_KENPEITAI
+               }
+}
+
+	#Focus for 計画経済 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_noWCdfXk
+		icon = GFX_focus_generic_industry_3
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_CBYikcEb }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_KEIKAKUKEIZAI
+	         
+               }
+}
+
+	#Focus for 軍国主義の復活 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_jXBnErKe
+		icon = GFX_focus_generic_military_academy
+		x = 27
+		y = 3
+                prerequisite = {
+			focus = JAP_KAIGEN_KEIZOKU_NF
+		}
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        
+			swap_ideas = {
+				remove_idea = JAP_ugaki_gunshuku
+				add_idea = JAP_MILITARISM_TR
+			}	
+		}
+	}
+
+	#Focus for 永田の後に永田なし - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_WobBtkmp
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_jXBnErKe }
+		mutually_exclusive = { focus = JAP_XtuZRJSr }
+		ai_will_do = {
+			factor = 100
+		}
+         completion_reward = {
+	         add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.3
+		 }
+               }
+}
+
+	#Focus for 相沢事件 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_XtuZRJSr
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_jXBnErKe }
+		mutually_exclusive = { focus = JAP_WobBtkmp }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                add_political_power = -100
+		add_stability = -0.1
+                remove_unit_leader = 2606
+		effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = paternal_autocrat }
+		create_country_leader = {
+			name = "東條英機"
+			desc = "POLITICS_TOJO_DESC"
+			picture = "Portrait_JAP_tojo.tga"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+		}
+                set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	 }
+       
+	}
+
+	#Focus for 昭和維新 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_CZWkgPiS
+		icon = GFX_focus_jap_showa_restoration
+		x = 33
+		y = 5
+		cost = 10
+                mutually_exclusive = {
+			    focus = JAP_TCvmjxwJ
+		}   
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_XtuZRJSr }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+	 }
+       
+	}
+
+	#Focus for 高度国防国家 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_CBYikcEb
+		icon = GFX_goal_generic_fortify_city
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_WobBtkmp }
+		ai_will_do = {
+			factor = 100
+		}
+	 completion_reward = {
+                 add_stability = 0.25
+	         
+               }
+}
+
+	#Focus for 計画経済 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_IypmrVhM
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_ReDzwurS }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 行政改革 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_UHmdcxaz
+		icon = GFX_goal_support_democracy
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_DGuUraYs }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for 新体制運動 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_TCvmjxwJ
+		icon = GFX_goal_support_fascism
+		x = 29
+		y = 5
+		cost = 10
+                mutually_exclusive = {
+			    focus = JAP_CZWkgPiS
+		}   
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_XtuZRJSr }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = totalist_dictatorship
+		effect_tooltip = { retire_country_leader = yes }
+		hidden_effect = { kill_ideology_leader = national_populist }
+		create_country_leader = {
+			name = "近衞文麿"
+			desc = "POLITICS_KONOE_DESC"
+			picture = "Portrait_Japan_konoe.tga"
+			expire = "1965.1.1"
+			ideology = national_populist_subtype
+                        traits = { TR_Popular_Politician }
+		}
+                set_party_name = {
+			ideology = national_populist
+			long_name = JAP_TAISEI_long
+			name = JAP_TAISEI_a
+		}
+                add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+	 }
+       
+	}
+
+	#Focus for 産業報国会の設置 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_XAznejdg
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 30
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_TCvmjxwJ }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_SANGYOUHOKKOKAI
+               }
+}
+
+	#Focus for 高福祉国家 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = JAP_ReDzwurS
+		icon = GFX_goal_support_communism
+		x = 13
+		y = 2
+                available = {
+                           has_country_flag = JAP_KAIGEN_TEPPAI
+                       }
+                prerequisite = {
+                             focus = JAP_TAISHUTO_WIN
+
+                             }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+
+
+
+
+
+#End of focuses 
+ }

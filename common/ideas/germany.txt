@@ -1,0 +1,1268 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		GER_Junker_resistance = {
+			allowed = {
+				always = no
+			}
+                        picture = eng_tackle_capitalism
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			       consumer_goods_factor = 0.1
+                               political_power_factor = -0.1
+                               stability_factor = -0.25
+			}
+		}
+                GER_WAR_HORROR = {
+			allowed = {
+				always = no
+			}
+                        picture = ENG_the_war_to_end_all_wars
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			       war_support_factor = -0.3
+			       conscription_factor = -0.2
+			}
+		}
+                GER_REVOLUTION_ARMY = {
+			allowed = {
+				always = no
+			}
+                        picture = saf_soviet_advisers
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.15
+			}
+		}
+
+
+               GER_Paramilitary = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.5
+                                stability_weekly = -0.002
+			}
+		}
+
+                GER_CIVIL_WAR = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_war_of_resistance3
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                         conscription = 0.02
+			 war_support_factor = 1.0
+                         stability_factor = -0.1
+                         army_core_defence_factor = 0.1
+                         surrender_limit= 0.1
+			}
+		}
+                GER_WAR_COMMUNISM = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                political_power_factor = -0.2
+                                industrial_capacity_factory = 0.15
+				local_resources_factor = 0.2
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				resistance_damage_to_garrison = 0.1
+			}
+		}
+                GER_CIVILWAR_MARKS = {
+			allowed = {
+				always = no
+			}
+                        picture = great_depression
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                conscription_factor = -0.3
+                                political_power_factor = -0.2
+                                industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+				war_support_factor = -0.5
+			}
+		}
+                GER_AntiBourgeoisie = {
+			allowed = {
+				always = no
+			}
+                        picture = eng_tackle_capitalism
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                political_power_factor = -0.1
+                                industrial_capacity_factory = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+                GER_deutschland = {
+			allowed = {
+				always = no
+			}
+
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+                                war_support_factor = 0.2
+                                political_power_factor = 0.15
+                                surrender_limit= 0.1
+			}
+		}
+                GER_spartacus = {
+			allowed = {
+				always = no
+			}
+
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+                                war_support_factor = 0.15
+                                army_core_defence_factor = 0.1
+                                surrender_limit= 0.1
+			}
+		}
+                GER_Greater_Germany = {
+			allowed = {
+				always = no
+			}
+
+			picture = ger_revive_the_kaiserreich
+			removal_cost = -1
+			modifier = {
+                                political_power_factor = 0.5
+				stability_factor = 0.15
+			}
+		}
+            GER_Jihatusei = {
+			allowed = {
+				always = no
+			}
+                        picture = jap_supremacy_of_technology
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_max_efficiency_factor = 0.1
+				 production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+         GER_zisyukanrikumiai = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                industrial_capacity_factory = 0.1
+			}
+		}
+          GER_workerpolitic = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                stability_factor = 0.2
+                                political_power_factor = -0.05
+			}
+		}
+           GER_jisyukanri = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_max_efficiency_factor = 0.05
+				 stability_factor = 0.1
+			}
+		}
+       GER_sihontousou = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  justify_war_goal_time = -0.2
+                                  war_support_factor = 0.20
+			          army_attack_factor = 0.1
+                                  surrender_limit= 0.1
+			}
+		}
+       GER_soshikiroudou = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_max_efficiency_factor = 0.15
+				 production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+         GER_great_purge = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_purge
+			removal_cost = -1
+                        research_bonus = {
+				land_doctrine = -0.5
+			}
+			modifier = {
+                                army_org_factor = -0.3
+				 production_factory_max_efficiency_factor = -0.2
+			}
+		}
+         GER_eizokukakumei = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  war_support_factor = 0.1
+			          stability_factor = 0.1
+                                political_power_factor = 0.1
+			}
+		}
+         GER_Stasi = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.3
+				resistance_target = -0.2
+			}
+		}
+          GER_Sturmabteilung = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.1
+				resistance_target = -0.15
+                                conscription_factor = 0.05
+			}
+		}
+          GER_socialization = {
+			allowed = {
+				always = no
+			}
+                        picture = jap_supremacy_of_technology
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				 consumer_goods_factor = 0.06
+                                 production_speed_buildings_factor = 0.1
+                                 production_factory_max_efficiency_factor = 0.15
+				 production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+         GER_secondrevolution = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                  war_support_factor = 0.2
+			          stability_factor = 0.1
+			}
+		}
+          GER_Caste = {
+			allowed = {
+				always = no
+			}
+
+			picture = eng_imperial_conscription
+			removal_cost = -1
+			modifier = {
+                                stability_factor = 0.2
+                                consumer_goods_factor = -0.01
+			}
+                }
+          GER_german_socialism = {
+			allowed = {
+				always = no
+			}
+
+			picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+                                stability_factor = 0.2
+                                 political_power_factor = 0.1
+			}
+                }
+         GER_International_communism = {
+			allowed = {
+				always = no
+			}
+
+			picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+                               war_support_factor = 0.25
+                               research_speed_factor = 0.05
+			}
+                }
+       GER_Council_communism = {
+			allowed = {
+				always = no
+			}
+
+			picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+                               stability_factor = 0.3
+                                 political_power_factor = -0.05
+			}
+                }
+        GER_WORLD_REVOLUTION = {
+			allowed = {
+				always = no
+			}
+
+			picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+                              local_non_core_manpower = 0.05
+			}
+                }
+        GER_Nationalism_Diplomacy = {
+			allowed = {
+				always = no
+			}
+
+			picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+                              local_non_core_manpower = -0.05
+                              justify_war_goal_time = -0.25
+			}
+                }
+       GER_TAIRYODOUIN = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+		             industrial_capacity_factory = -0.1
+                             conscription = 0.03
+			}
+		}
+       GER_Hoheiju = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+                        equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+	
+
+			modifier = {
+			}
+		}
+       GER_Senshaseisan = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+                        equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+	
+
+			modifier = {
+                          consumer_goods_factor = 0.03
+			}
+		}
+      GER_Kidosen = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                    offence = 0.05
+                    army_speed_factor = 0.1
+			}
+		}
+
+         GER_REVOLUTION_DEFENSE = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+                        targeted_modifier = {
+				tag = FRA
+                                defense_bonus_against = 0.1
+			}
+                        targeted_modifier = {
+				tag = AUS
+                                defense_bonus_against = 0.1
+			} 
+			
+			removal_cost = -1
+	
+
+			modifier = {
+
+			}
+           }
+           }
+political_advisor = {
+		
+
+		GER_Ernst_Meyer = {
+
+			picture = GER_Ernst_Meyer
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { TR_planned_economy_proponent }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		GER_Ruth_Fischer = {
+
+			picture = GER_Ruth_Fischer
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { social_revolutionary }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		GER_Wilhelm_Pieck = {
+
+			picture = GER_Wilhelm_Pieck
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { TR_silent_workhorse }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		GER_Wilhelm_reich = {
+
+			picture = GER_Wilhelm_reich
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { TR_Orgone }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ernst_thalmann = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { Labor_activist }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		GER_julius_leber = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_government = radical_socialist
+			}
+			
+			traits = { connected_citizen }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		GER_Ernst_Junger = {
+
+			picture = GER_Ernst_Junger
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = syndicalist
+			}
+			
+			traits = { Ernst_Junger_traits }
+
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		GER_Ernst_von_Salomon = {
+
+			picture = GER_Ernst_von_Salomon
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = syndicalist
+			}
+			
+			traits = { Ernst_von_Salomon_traits }
+
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		GER_Ernst_Niekisch = {
+
+			picture = GER_Ernst_Niekisch
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = syndicalist
+			}
+			
+			traits = { Labor_activist }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		GER_Gregor_Strasser = {
+
+			picture = GER_Gregor_Strasser
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = totalist
+			}
+			
+			traits = { TR_silent_workhorse }
+
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		GER_Rohm = {
+
+			picture = GER_Rohm
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = totalist
+			}
+			
+			traits = { GER_Rohm_traits }
+
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		GER_Edmund_Heines = {
+
+			picture = GER_Edmund_Heines
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = totalist
+			}
+			
+			traits = { TR_prince_of_terror }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		GER_Roland_Freisler = {
+
+			picture = GER_Roland_Freisler
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+					has_government = totalist
+			}
+			
+			traits = { sharp_tongued_lawyer }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		todt = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = totalist
+			}
+			
+			traits = { fortification_engineer }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		speer = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = totalist
+			}
+			
+			traits = { TR_planned_economy_proponent }
+		}
+
+		
+		
+
+	
+			
+
+		joseph_goebbels = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = totalist
+			}
+			
+			traits = { propaganda_expert }
+
+
+			
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		
+		
+		
+		joachim_von_ribbentrop = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = totalist
+			}
+			
+			traits = { backroom_backstabber }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		porsche = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		
+		henschel = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		GER_MAN = {
+
+			picture = GER_MAN
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		germaniawerft = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+		blohm_und_voss = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		messerschmitt = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		junkers = { 
+			allowed = {
+				original_tag = GER
+			}
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+
+		focke_wulf = { 
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		heinkel = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		dornier = {
+
+			allowed = {
+				original_tag = GER
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		ig_faben = {
+			
+			allowed = {
+				original_tag = GER
+			}
+                        modifier = {
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krupp = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+                        modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		siemens = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+                        modifier = {
+				research_speed_factor = 0.05
+			}
+						
+			research_bonus = {
+				electronics = 0.1
+			}
+			
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		rheinmetall = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		
+		mauser = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		
+
+		
+		opel = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		von_braun = {
+			ledger = air
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { rocket_scientist }
+		}
+		
+		heisenberg = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = GER
+			}
+		
+			research_bonus = {
+				nuclear = 0.15
+			}
+			
+			traits = { nuclear_scientist }
+		}
+		
+		
+		
+		
+		
+		walther_wever = {
+			ledger = air
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		ernst_udet = {
+			ledger = air
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { dive_bomber }
+		}
+		
+		alfred_saalwachter = {
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_trade_interdiction = 0.20
+			}
+			
+			traits = { submarine_specialist }
+		}
+		
+		otto_ciliax = {
+			ledger = navy
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+	}	
+		
+}

@@ -1,0 +1,28 @@
+state={
+	id=831
+	name="STATE_831"
+        
+	provinces={
+		852 906 912 978 3912 6963 9790 9795 9918 11770 11775 11828 11835 11896 
+	}
+        resources={
+		steel=18.000
+		tungsten=48.000
+	}
+
+	 state_category=town
+	manpower=3082312
+	history={
+		owner = JAP
+                add_core_of = KOR
+		buildings = {
+                        arms_factory = 1
+			infrastructure = 5
+                       
+
+		}
+		victory_points = { 11835 3 }
+
+	}
+	buildings_max_level_factor=1.000
+}

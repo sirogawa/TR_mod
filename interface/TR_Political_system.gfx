@@ -1,0 +1,42 @@
+spriteTypes = {
+
+
+	### CONSCRIPTION LAWS
+	spriteType = {
+		name = "GFX_idea_Democratic_Republic"
+		texturefile = "gfx/interface/ideas/idea_Democratic_Republic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Constitutional_monarchy"
+		texturefile = "gfx/interface/ideas/idea_Constitutional_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Absolute_monarchy"
+		texturefile = "gfx/interface/ideas/idea_Absolute_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_totalist_dictatorship"
+		texturefile = "gfx/interface/ideas/idea_totalist_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_militaly_dictatorship"
+		texturefile = "gfx/interface/ideas/idea_militaly_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Council_communism"
+		texturefile = "gfx/interface/ideas/idea_Council_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Democratic_centralism"
+		texturefile = "gfx/interface/ideas/idea_Democratic_centralism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_anarchism_society"
+		texturefile = "gfx/interface/ideas/idea_anarchism_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Colonical_system"
+		texturefile = "gfx/interface/ideas/idea_Colonical_system.dds"
+	}
+
+}

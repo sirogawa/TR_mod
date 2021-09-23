@@ -1,0 +1,125 @@
+add_namespace = TR_Mexico
+
+
+country_event = {
+	id = TR_Mexico.1
+	title = TR_Mexico.1.t
+	desc = TR_Mexico.1.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = { 
+		name = TR_Mexico.1.a
+                ai_chance = {
+			base = 100
+		}
+                trigger = {
+                        country_exists = MEX
+			is_subject = no	
+                        is_in_faction = no
+		}
+                USA = { add_to_faction = MEX }
+
+	}
+        option = { 
+		name = TR_Mexico.1.b
+                ai_chance = {
+			base = 0
+		}
+
+
+	}
+}
+
+country_event = {
+	id = TR_Mexico.2
+	title = TR_Mexico.2.t
+	desc = TR_Mexico.2.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = { 
+		name = TR_Mexico.2.a
+                ai_chance = {
+			base = 100
+		}
+                trigger = {
+                        country_exists = BRA
+			is_subject = no	
+                        is_in_faction = no
+		}
+                USA = { add_to_faction = BRA }
+
+	}
+        option = { 
+		name = TR_Mexico.2.b
+                ai_chance = {
+			base = 0
+		}
+
+
+	}
+}
+
+country_event = {
+	id = TR_Mexico.3
+	title = TR_Mexico.3.t
+	desc = TR_Mexico.3.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = { 
+		name = TR_Mexico.3.a
+                ai_chance = {
+			base = 100
+		}
+                trigger = {
+                        country_exists = COL
+			is_subject = no	
+                        is_in_faction = no
+		}
+                USA = { add_to_faction = COL }
+
+	}
+        option = { 
+		name = TR_Mexico.3.b
+                ai_chance = {
+			base = 0
+		}
+
+
+	}
+}
+country_event = {
+	id = TR_Mexico.4
+	title = TR_Mexico.4.t
+	desc = TR_Mexico.4.d
+	picture = GFX_report_event_france_parade
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = { 
+		name = TR_Mexico.4.a
+                declare_war_on = {
+			target = GUA
+			type = annex_everything
+		}
+                add_state_claim = 313
+	}
+}

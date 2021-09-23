@@ -1,0 +1,33 @@
+
+state={
+	id=864
+	name="STATE_864" #Fuzhou
+	manpower = 1111239
+	
+	state_category = city
+	
+	resources={
+	}
+
+	history={
+		owner = JAP
+		victory_points = { 
+			4196 3 
+		}
+		buildings = {
+			infrastructure = 5
+                        dockyard = 1
+                        4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+			air_base = 1
+		}
+		add_claim_by = CHI
+	}
+
+	provinces={
+		4196
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=869
+	name="STATE_869"
+	
+	state_category = rural
+
+	resources={
+		tungsten=5
+	}
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = COG
+		add_core_of = RCG
+                add_core_of = KIV
+                victory_points = {
+			1181 1
+		}
+	}
+
+	provinces={
+		7161 10766 4941 1181 12783 13176 4201 
+	}
+	manpower=869893
+	buildings_max_level_factor=1.000
+}

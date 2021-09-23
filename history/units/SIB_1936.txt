@@ -1,0 +1,91 @@
+﻿### Siberia OOB ###
+
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = SOV_INF_01			
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+
+
+units = {
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1735
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10699
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 7802
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1727
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10596
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+	
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SIB"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

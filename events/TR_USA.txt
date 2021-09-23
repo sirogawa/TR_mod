@@ -1,0 +1,781 @@
+add_namespace = TR_USA
+
+
+country_event = {
+	id = TR_USA.1
+	title = TR_USA.1.t
+	desc = TR_USA.1.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.1.a
+                trigger = {
+			NOT = { has_government = Gnosticism }
+		}
+                ai_chance = {
+			base = 100 #45
+		}
+                add_popularity = {
+			ideology = national_populist
+			popularity = 0.25
+		}
+                set_country_flag = USA_1936SENKYO
+                set_country_flag = USA_Smith_Win
+                load_focus_tree = america_focus_smith
+		hidden_effect = {
+                           country_event = {
+					id =  TR_USA.11
+					days = 22
+					
+				}
+		}
+	}
+        option = {
+		name = TR_USA.1.b
+                trigger = {
+			has_government = Gnosticism
+		}
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = { kill_ideology_leader = national_populist }
+                create_country_leader = {
+	                name = "繧ｸ繧ｧ繝ｩ繝ｫ繝鵜K繧ｹ繝溘せ"
+	                desc = "POLITICS_GERALD_DESC"
+	                picture = "Portrait_USA_Gerald.tga"
+	                expire = "1965.1.1"
+	                ideology = national_populist_subtype
+                 }
+	}
+        option = {
+		name = TR_USA.1.c
+                trigger = {
+			NOT = { has_government = Gnosticism }
+		}
+                ai_chance = {
+			base = 0 #35
+		}
+                add_popularity = {
+			ideology = totalist
+			popularity = 0.25
+		}
+                set_country_flag = USA_1936SENKYO
+                set_country_flag = USA_Browder_Win
+		hidden_effect = {
+                           country_event = {
+					id =  TR_USA.11
+					days = 22
+					
+				}
+		}
+	}
+        option = {
+		name = TR_USA.1.e
+                trigger = {
+			NOT = { has_government = Gnosticism }
+		}
+                ai_chance = {
+			base = 0 #10
+		}
+                add_popularity = {
+			ideology = social_conservative
+			popularity = 0.25
+		}
+                set_country_flag = USA_1936SENKYO
+                set_country_flag = USA_McArthur_Win
+		hidden_effect = {
+                           country_event = {
+					id =  TR_USA.11
+					days = 22
+					
+				}
+		}
+	}
+                option = {
+		name = TR_USA.1.f
+                trigger = {
+			NOT = { has_government = Gnosticism }
+		}
+                ai_chance = {
+			base = 0 #10
+		}
+                add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.25
+		}
+                set_country_flag = USA_1936SENKYO
+                set_country_flag = USA_Russell_Win
+		hidden_effect = {
+                           country_event = {
+					id =  TR_USA.11
+					days = 22
+					
+				}
+		}
+	}
+    
+}
+
+
+country_event = {
+	id = TR_USA.2
+	title = TR_USA.2.t
+	desc = TR_USA.2.d
+	picture = GFX_report_event_gathering_protest
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+	
+	option = {
+		name = TR_USA.2.a
+                remove_ideas = USA_LOSE_IN_CALIFORNIA
+                remove_ideas = USA_depression
+                add_ideas = USA_Anarchy_idea
+                set_country_flag = USA_anarchy
+                set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+
+                set_party_name = {
+			ideology = syndicalist
+			long_name = USA_anarchy_state_long
+			name = USA_anarchy_state
+		}
+                hidden_effect = { kill_ideology_leader = syndicalist }
+                create_country_leader = {
+                    	name = "無政府状態"
+	                desc = ""
+	                picture = "Anarchist_Flag.tga"
+	                expire = "1965.1.1"
+	                ideology = syndicalist_subtype
+	                traits = {}
+                    }
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.3
+					days = 30
+					
+				}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = TR_USA.3
+	title = TR_USA.3.t
+	desc = TR_USA.3.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.3.a
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.4
+					days = 30
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.4
+	title = TR_USA.4.t
+	desc = TR_USA.4.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.4.a
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.5
+					days = 30
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.5
+	title = TR_USA.5.t
+	desc = TR_USA.5.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.5.a
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.6
+					days = 60
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.6
+	title = TR_USA.6.t
+	desc = TR_USA.6.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.6.a
+                 set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.7
+					days = 30
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.7
+	title = TR_USA.7.t
+	desc = TR_USA.7.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.7.a
+                remove_ideas = USA_Anarchy_idea
+                add_ideas = USA_Cthulhu
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.8
+					days = 60
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.8
+	title = TR_USA.8.t
+	desc = TR_USA.8.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.8.a
+                add_ideas = USA_Innsmouth
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.9
+					days = 60
+					
+				}
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.9
+	title = TR_USA.9.t
+	desc = TR_USA.9.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.9.a
+                add_ideas = USA_Madness
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                hidden_effect = {
+                          country_event = {
+					id =  TR_USA.10
+					days = 999
+					
+				}
+		}
+	}
+}
+
+
+country_event = {
+	id = TR_USA.10
+	title = TR_USA.10.t
+	desc = TR_USA.10.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.10.a
+                add_ideas = USA_Nyarlathotep
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.05
+		}
+                declare_war_on = {
+				target = JAP type = annex_everything
+			}
+                declare_war_on = {
+				target = CAL type = annex_everything
+			}
+                declare_war_on = {
+				target = GER type = annex_everything
+			}
+                declare_war_on = {
+				target = CAN type = annex_everything
+			}
+                declare_war_on = {
+				target = ENR type = annex_everything
+			}
+                declare_war_on = {
+				target = RUS type = annex_everything
+			}
+                declare_war_on = {
+				target = SOV type = annex_everything
+			}
+                declare_war_on = {
+				target = MEX type = annex_everything
+			}
+                
+	}
+}
+
+
+country_event = {
+	id = TR_USA.11
+	title = TR_USA.11.t
+	desc = TR_USA.11.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.11.a
+                JAM = {
+			transfer_state = 690
+			transfer_state = 689
+                        transfer_state = 693
+			transfer_state = 686
+
+                      }
+                hidden_effect = {
+                         JAM = { country_event = {
+					id =  TR_USA.12
+					days = 2
+					
+				} 
+                    }
+		}
+	}
+}
+
+country_event = {
+	id = TR_USA.12
+	title = TR_USA.12.t
+	desc = TR_USA.12.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.12.a
+                set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+                division_template = {
+				name = "Libertarian Infantry"
+				division_names_group = USA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 689 }
+				create_unit = {
+					division = "division_template = \"Libertarian Infantry\" start_experience_factor = 0.1"
+					owner = JAM
+					count = 6
+				}
+			}
+	}
+}
+
+#東京条約破棄
+country_event = {
+	id = TR_USA.13
+	title = TR_USA.13.t
+	desc = TR_USA.13.d
+	picture = GFX_report_event_usa_macarthur_speech
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.13.a
+                ai_chance = {
+			base = 100
+		} 
+                add_political_power = 50
+                remove_ideas = USA_treaty_of_Tokyo
+                remove_ideas = USA_Extremism
+                reverse_add_opinion_modifier = {
+				target = JAP
+				modifier = TUR_Treatment_Revoke
+			}
+                388 = { set_demilitarized_zone = no }
+                381 = { set_demilitarized_zone = no }
+                382 = { set_demilitarized_zone = no }
+                376 = { set_demilitarized_zone = no }
+                add_named_threat = { threat = 5 name = USA_TRATMENT_BREAK }
+	        hidden_effect = {
+                         country_event = {
+					id = TR_news.37
+					days = 1
+					
+				}
+		}
+        }
+        option = {
+		name = TR_USA.13.b
+                ai_chance = {
+			base = 0
+		}
+                add_political_power = -500
+		add_stability = -0.5
+                
+	}
+}
+
+#テキサスクーデター
+country_event = {
+	id = TR_USA.14
+	title = TR_USA.14.t
+	desc = TR_USA.14.d
+	picture = GFX_report_event_american_hunger_march
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.14.a
+                ai_chance = {
+			base = 100
+		} 
+                remove_ideas = YUN_jap_economic
+                drop_cosmetic_tag = yes
+                add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.3
+		}
+                JAP = { diplomatic_relation = {
+                               country = TEX
+                               relation = guarantee
+                               active = no
+                             } 
+                         }
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+                hidden_effect = {
+                         country_event = {
+					id = TR_USA.15
+					days = 7
+					  }
+                         country_event = {
+					id = TR_news.38
+					days = 1
+					  }
+				}
+        }
+        option = {
+		name = TR_USA.14.b
+                ai_chance = {
+			base = 0
+		}
+                add_political_power = -200
+		add_stability = -0.3
+                JAP = { add_to_faction = TEX }
+                
+	}
+}
+
+#テキサスクーデター-合併要求
+country_event = {
+	id = TR_USA.15
+	title = TR_USA.15.t
+	desc = TR_USA.15.d
+	picture = GFX_report_event_american_hunger_march
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.15.a
+                ai_chance = {
+			base = 100
+		} 
+                trigger = {
+			NOT = { USA = { has_government = totalist } }
+		}
+                hidden_effect = {
+                      USA = {   country_event = {
+					id = TR_USA.16
+					days = 7
+					  }
+				}
+                            }
+        }
+        option = {
+		name = TR_USA.15.b
+                ai_chance = {
+			base = 100
+		} 
+                trigger = {
+		     USA  = { has_government = totalist }
+		}
+                hidden_effect = {
+                   USA  = {      country_event = {
+					id = TR_USA.17
+					days = 7
+					  }
+                                   }
+				}
+        }
+        option = {
+		name = TR_USA.15.c
+                ai_chance = {
+			base = 0
+		}
+                trigger = {
+			NOT = { USA = { has_government = totalist } }
+		}
+                add_political_power = -100
+		add_stability = -0.2
+                USA = { 
+                        create_wargoal = {
+				target = TEX
+				type = annex_everything
+			} 
+                       }
+	}
+}
+#テキサス併合
+country_event = {
+	id = TR_USA.16
+	title = TR_USA.16.t
+	desc = TR_USA.16.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.16.a
+		add_stability = 0.05
+           annex_country = {
+                        target = TEX
+                        transfer_troops = yes
+                      }
+           create_field_marshal = {
+           	name = "ドワイト・D・アイゼンハワー"
+           	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+           	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+           	skill = 5
+           	attack_skill = 3
+           	defense_skill = 3
+           	planning_skill = 5
+           	logistics_skill = 5
+                      }
+
+
+        }
+}
+
+#テキサス併合-拒否
+country_event = {
+	id = TR_USA.17
+	title = TR_USA.17.t
+	desc = TR_USA.17.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+        is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_USA.17.a
+		create_wargoal = {
+				target = TEX
+				type = annex_everything
+			} 
+
+
+        }
+}
+
+country_event = {
+	id = TR_USA.18
+	title = TR_USA.18.t
+	desc = TR_USA.18.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+
+
+        fire_only_once = yes
+        trigger = {
+                tag = USA
+                is_subject = yes
+	}
+
+	
+
+        option = { 
+		name = TR_USA.18.a
+                drop_cosmetic_tag = yes
+	}
+}
+#米中合作
+country_event = {
+	id = TR_USA.19
+	title = TR_USA.19.t
+	desc = TR_USA.19.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_USA.19.a
+                ai_chance = {
+			base = 100
+		}
+                add_political_power = -50
+                reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = medium_increase
+			}
+                CHI = { country_event = TR_USA.20 }
+
+	}
+        option = { 
+		name = TR_USA.19.b
+                ai_chance = {
+			base = 0
+		}
+               reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = medium_decrease
+			}
+
+	}
+}
+
+#米中合作
+country_event = {
+	id = TR_USA.20
+	title = TR_USA.20.t
+	desc = TR_USA.20.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_USA.20.a
+                add_ideas = CHI_USA_Collaborate
+
+	}
+}

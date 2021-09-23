@@ -1,0 +1,252 @@
+
+
+
+USA_naval_role_ratios_historical = {
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = USA
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 130 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 65 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 1		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 100		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 1		 #1 to 2
+	}
+}
+
+USA_naval_role_ratios_anti_submarine = {
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = USA
+	}
+	enable = {
+		anti_submarine_strategy_required_trigger = yes
+	}
+
+	abort = {
+		not = { anti_submarine_strategy_required_trigger = yes }
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = -20 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 50 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -15
+	}
+}
+
+
+
+USA_home_land_is_safe = {
+	allowed = { original_tag = USA }
+	enable = {
+		NOT = {
+			OR = {
+				has_civil_war = yes
+				has_war_with = CAN
+				has_war_with = MEX
+                                is_neighbor_of = CAL
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	
+	ai_strategy = {
+		type = garrison
+		value = -60
+	}
+}
+
+
+
+
+
+USA_convoy_hungry = {
+	enable = {
+		date > 1940.1.1
+		has_equipment = {
+  			convoy < 600
+  		}
+		convoy_threat < 0.2 # there are other strategies for this, so we dont want to double up
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 35
+	}
+}
+
+
+GER_is_bad = {
+	allowed = {
+		tag = USA
+	}
+	
+	enable = {
+		GER = {
+			exists = yes
+		}
+		NOT = { is_ally_with = GER }
+		FRA = {
+			has_war_with = GER
+		}
+		has_government = national_populist
+		date > 1943.1.1
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER
+		value = 100
+	}
+}
+
+CAL_is_bad = {
+	allowed = {
+		tag = USA
+	}
+	
+	enable = {
+		CAL = {
+			exists = yes
+		}
+		NOT = { is_ally_with = CAL }
+
+		has_government = national_populist
+		date > 1939.1.1
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = CAL
+		value = 100
+	}
+}
+
+USA_ignore_California_claims = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		is_faction_leader = yes
+		date < 1941.1.1
+		country_exists = CAL
+		NOT = { has_war_with = CAL }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "CAL"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "JAP"
+		value = 1
+	}
+}

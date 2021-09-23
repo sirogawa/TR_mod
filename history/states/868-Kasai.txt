@@ -1,0 +1,25 @@
+
+state={
+	id=868
+	name="STATE_868" #カサイ
+	manpower = 849308
+	
+	state_category = rural
+	
+	resources={
+		tungsten=6
+	}
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = COG
+		add_core_of = RCG
+	}
+
+	provinces={
+	   1731 1929 2024 7716 9986 10858
+	}
+}

@@ -1,0 +1,371 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+                victor_emmanuel = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05				
+			}
+		}
+                ITA_depression = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.10
+			}
+		}
+                ITA_ARMY = {
+			allowed = {
+				always = no
+			}
+                        picture = eng_imperial_conscription
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			war_support_factor = 0.20
+                        conscription_factor = 0.05
+			}
+		}
+                ITA_MAFIA_CORRUPT = {
+			allowed = {
+				always = no
+			}
+                        picture = officers_purged
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+			consumer_goods_factor = 0.05
+                        stability_factor = -0.1
+			}
+		}
+                ITA_Squadrismo = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        stability_factor = -0.1
+                        totalist_drift = 0.02
+			}
+		}
+                ITA_weak_Socialism = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_war_of_resistance3
+                        available = {
+					has_government = social_democrat
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        political_power_cost = 0.3
+                        stability_factor = -0.1
+                        social_democrat_drift = -0.02
+                        radical_socialist_drift = -0.01
+			}
+		}
+                ITA_Fascist_Council = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        political_power_factor = 0.1
+			}
+		}
+
+                ITA_Milizia = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        conscription = 0.015
+                        army_org_Factor = -0.1
+			}
+		}
+                ITA_Centralization = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                        political_power_cost = 0.15
+                        stability_factor = 0.05
+                        conscription = 0.005
+                        production_speed_buildings_factor = 0.05
+			}
+		}
+                ITA_Police_state = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.10
+				resistance_target = -0.2
+			}
+		}
+                ITA_Corporatism_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_max_efficiency_factor = -0.05
+                                 consumer_goods_factor = 0.05
+                                 production_speed_buildings_factor = 0.1
+                                 industrial_capacity_factory = 0.05
+                                 industrial_capacity_dockyard = 0.05
+                                 min_export = -0.05
+			}
+		}  
+                ITA_Corporatism_2 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_max_efficiency_factor = -0.05
+                                 production_factory_efficiency_gain_factor = -0.05
+                                 consumer_goods_factor = 0.05
+                                 production_speed_buildings_factor = 0.12
+                                 industrial_capacity_factory = 0.1
+                                 industrial_capacity_dockyard = 0.1
+                                 min_export = -0.1
+			}
+		}  
+                ITA_Corporatism_3 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 political_power_cost = 0.1
+                                 production_factory_max_efficiency_factor = -0.1
+                                 production_factory_efficiency_gain_factor = -0.1
+                                 consumer_goods_factor = 0.05
+                                 production_speed_buildings_factor = 0.15
+                                 industrial_capacity_factory = 0.15
+                                 industrial_capacity_dockyard = 0.15
+                                 min_export = -0.1
+			}
+		}  
+                ITA_Battle_for_the_Lira = {
+			allowed = {
+				always = no
+			}
+                        picture = can_wartime_prices_and_trade_board
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 production_factory_start_efficiency_factor = 0.05
+                                 production_factory_max_efficiency_factor = 0.05
+                                 production_factory_efficiency_gain_factor = 0.05
+			}
+		}  
+                ITA_Battle_for_Grain = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 consumer_goods_factor = -0.05
+                                 MONTHLY_POPULATION = 0.05
+			}
+		}  
+                ITA_Lateranensi = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                stability_factor = 0.1
+                                political_power_factor = 0.05
+			}
+		}  
+              ITA_New_Culture = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				totalist_drift = 0.1
+				political_power_cost = 0.25
+				stability_factor = -0.2
+			}
+		}
+             ITA_Seinsashudan = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 political_power_cost = 0.1
+                                 production_factory_max_efficiency_factor = 0.05
+                                 production_factory_efficiency_gain_factor = 0.05
+                                 consumer_goods_factor = 0.05
+                                 production_speed_buildings_factor = 0.1
+                                 industrial_capacity_factory = 0.1
+			}
+		}  
+              ITA_Proletarian_dictatorship = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+                                production_factory_max_efficiency_factor = 0.05
+                                production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+              ITA_Integralism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_fascism_drift_2
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+                                consumer_goods_factor = -0.02
+                                MONTHLY_POPULATION = 0.05
+                                global_building_slots_factor = 0.05
+			}
+		}
+              ITA_Atheism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.1
+                                industrial_capacity_factory = 0.1
+			}
+		}
+              ITA_Anti_International = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_fascism_drift_2
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.25
+			}
+		}
+
+}
+}

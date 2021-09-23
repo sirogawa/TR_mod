@@ -1,12 +1,76 @@
 ﻿capital = 430
-set_cosmetic_tag = BAN_peoples_republic
 
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+        Council_communism
+}
+set_convoys = 5
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = radical_socialist
+	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	totalist = 13
+	syndicalist = 12
+	radical_socialist = 60
+	social_democrat = 15
 }
+
+create_country_leader = {
+	
+	name = "スバス・チャンドラ・ボース"
+	picture = "gfx/leaders/RAJ/Portrait_Chandra_Bose.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+
+
+
+

@@ -1,0 +1,19 @@
+spriteTypes = {
+
+
+#####日本#####
+
+	SpriteType = {	
+		name = "GFX_idea_JAP_Emperor_Hirohito"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Hirohito.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Shading_sun"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Shading_sun.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Korean_question"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Korean_question.png"
+	}
+
+}

@@ -1,0 +1,39 @@
+state={
+	id=592
+	name="STATE_592"
+	manpower = 15012893
+	state_category = large_city
+	resources={
+		tungsten=8 # was: 10
+		steel= 15 # was: 20
+		chromium = 3 # was: 4
+	}
+
+	history={
+		owner = GUG
+                add_core_of = GUG
+                victory_points = {
+			9963 1
+		}
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			
+
+		}
+		victory_points = {
+			1047 5
+		}
+
+
+	}
+
+	provinces={
+	    1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 
+	}
+}
+

@@ -2293,7 +2293,7 @@ leader_traits = {
 				factor = 0
 				FROM = {
 					OR = {
-						neutrality < 0.05
+						paternal_autocrat < 0.05
 						always = no
 					}
 				}

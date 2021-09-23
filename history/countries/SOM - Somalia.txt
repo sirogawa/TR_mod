@@ -1,5 +1,12 @@
 ﻿capital = 559
-set_cosmetic_tag = SOM_republic
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
 
 set_politics = {
 	ruling_party = neutrality
@@ -8,5 +15,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	democratic = 25
+	fascism = 20
+	communism = 5
+	neutrality = 50
 }

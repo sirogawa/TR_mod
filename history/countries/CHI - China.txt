@@ -1,12 +1,354 @@
-﻿capital = 613
-set_cosmetic_tag = CHI_republic
+﻿capital = 620 #武漢
+
+oob = "CHI_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "CHI_1936_naval_mtg"
+	else = {
+		set_naval_oob = "CHI_1936_naval_legacy"
+	}
+}
+
+country_event = { id = TR_China.1 days = 7 }
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.4
+create_faction = Nationalist_China_faction
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+
+add_ideas = {
+        totalist_dictatorship
+        CHI_late_army
+        CHI_hikoritunatouti
+	CHI_fuannteinakokka
+        CHI_Shading_sun
+        partial_economic_mobilisation
+	CHI_soong_mei_ling
+}
+
+
+
+
+set_convoys = 5
+
+
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = national_populist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	neutrality = 100
+        social_conservative = 7
+        authoritarian_democrat = 5
+	paternal_autocrat = 38
+	national_populist = 50
+}
+
+create_country_leader = {
+	name = "蔣介石"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "蔣介石"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+              generallissimo
+	}
+}
+create_country_leader = {
+	name = "陳誠"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chen_Cheng.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+
+	}
+}
+create_country_leader = {
+	name = "趙恒惕"
+	desc = ""
+	picture = "Portrait_China_Zhao_Hengti.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "毛沢東"
+	desc = ""
+	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "張国燾"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {
+		cornered_fox
+	}
+}
+
+
+create_country_leader = {
+	name = "翁文灝" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "GFX_portrait_chi_weng_wenhao"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "汪兆銘"
+	desc = "POLITICS_WANG_DESC"
+	picture = "Portrait_CHI_Wang.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "汪兆銘"
+	desc = "POLITICS_WANG_DESC"
+	picture = "Portrait_CHI_Wang.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+add_opinion_modifier = { target = PRC modifier = hostile_status }
+
+create_field_marshal = {
+	name = "杜聿明"
+	gfx = "GFX_portrait_chi_du_yuming"
+	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "陳誠"
+	picture = "Portrait_China_Chen_Cheng.tga"
+	traits = { logistics_wizard organizer brilliant_strategist politically_connected }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "薛岳"
+	gfx = "GFX_portrait_chi_xue_yue"
+	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "戴安瀾"
+	gfx = "GFX_portrait_chi_tai_an_lan"
+	traits = {  trait_reckless career_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "王耀武"
+	gfx = "GFX_portrait_chi_wang_yaowu"
+	traits = { trait_cautious infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "孫立人"
+	gfx = "GFX_portrait_chi_sun_li_jen"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "胡宗南"
+	gfx = "GFX_portrait_chi_hu_zongnan"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "顧祝同"
+	gfx = "GFX_portrait_chi_gu_zhutong"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "衛立煌"
+	gfx = "GFX_portrait_chi_wei_lihuang"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Jianwei Class"			
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Hairong Class"					# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Haiqi Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ninghai Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
 }

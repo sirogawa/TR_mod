@@ -1,0 +1,120 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+
+
+
+
+
+ITA_naval_role_ratios_historical = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = ITA
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = -5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+}
+
+ITA_vs_France = {
+	enable = {
+		Tag = ITA
+                is_subject = no
+		country_exists = FRA
+		NOT = { ITA = { is_in_faction_with = FRA } }
+                FRA = { is_faction_leader = yes }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "FRA"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 200
+	}
+}
+
+ITA_vs_Austria = {
+	enable = {
+		Tag = ITA
+                is_subject = no
+		country_exists = AUS
+		NOT = { ITA = { is_in_faction_with = AUS } }
+                AUS = { is_faction_leader = yes }
+                AUS  = {  has_government = Gnosticism }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "AUS"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "AUS"
+		value = 200
+	}
+}
+
+

@@ -1,0 +1,664 @@
+
+ideas = {
+       
+     country = {
+
+
+       RUS_Panic = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.3
+                                stability_factor = -0.25
+                                war_support_factor = -0.15
+				conscription_factor = -0.2
+			}
+		}
+		RUS_Panic_1 = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                                political_power_cost = 0.2
+                                stability_factor = -0.15
+                                war_support_factor = -0.05
+				conscription_factor = -0.1
+			}
+		}
+		RUS_Panic_2 = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                political_power_cost = 0.1
+                stability_factor = -0.1
+		war_support_factor = 0.05
+			}
+		}
+        RUS_red_army = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = -0.1
+			        army_morale_factor = 0.15
+                    army_core_defence_factor = 0.05
+			}
+		}
+
+        RUS_red_army_1 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    army_morale_factor = 0.05
+                    army_core_defence_factor = 0.1
+			}
+		}
+
+        RUS_red_army_T = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    offence = 0.1
+                    army_speed_factor = 0.1
+			}
+		}
+
+        RUS_red_army_S = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    planning_speed = 0.10
+                    max_planning = 0.25
+                    army_org = 5
+			}
+		}
+        
+		RUS_Gosplan = {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_speed_buildings_factor = 0.1
+			}
+		}  
+        RUS_WAR_COMMUNISM = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.2
+                industrial_capacity_factory = 0.2
+				local_resources_factor = 0.1
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				resistance_damage_to_garrison = 0.1
+			}
+		}
+		RUS_NEW_ECONOMIC_POLICY = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		RUS_NEW_ECONOMIC_POLICY_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}	
+		RUS_NEW_ECONOMIC_POLICY_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}	
+		RUS_NEW_ECONOMIC_POLICY_3 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.07
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				local_resources_factor = 0.10
+			}
+		}	
+		RUS_NEW_ECONOMIC_POLICY_4 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				local_resources_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		RUS_Five_Years_Plan = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}	
+		RUS_Five_Years_Plan_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		RUS_Five_Years_Plan_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.3
+			}
+		}	
+		RUS_Five_Years_Plan_3 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = -0.1
+				political_power_cost = 0.2
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				local_resources_factor = 0.10
+				production_factory_max_efficiency_factor = 0.1
+	            production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.3
+			}
+		}	
+		RUS_Cheka = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.15
+				resistance_target = -0.2
+				subversive_activites_upkeep = -0.2
+			}
+		}
+
+		
+		RUS_Cheka_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.3
+				resistance_target = -0.25
+				subversive_activites_upkeep = -0.25
+			}
+		}
+
+		RUS_NKVD = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				army_morale_factor = 0.05
+				stability_factor = 0.2
+				resistance_target = -0.3
+				subversive_activites_upkeep = -0.3
+			}
+		}
+
+
+	    RUS_GER_COLLAB = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                        research_bonus = {
+				land_doctrine = 0.1
+			}
+                     
+			picture = tur_kemalist_officers
+			removal_cost = -1
+			modifier = {
+                                army_org_factor = 0.15
+			}
+		}
+		RUS_Kyouiku = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		RUS_Eiseikanri = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+                MONTHLY_POPULATION = 0.1
+			}
+		}
+		RUS_great_purge = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_purge
+			removal_cost = -1
+            research_bonus = {
+				land_doctrine = -0.5
+			}
+			modifier = {
+				conscription_factor = -0.25
+				research_speed_factor = -0.1
+				 MONTHLY_POPULATION = -0.7
+                 army_org_factor = -0.2
+                 industrial_capacity_factory = -0.2
+				 production_speed_buildings_factor = -0.2
+			}
+		}
+		RUS_Stalin_Constitution = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.15
+			}
+		}
+        RUS_Stalin_Tsar = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.25
+                stability_factor = 0.25
+			}
+		}
+		RUS_Cultural_Revolution = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				Gnosticism_drift = 0.1
+				political_power_cost = 0.5
+				stability_factor = -0.2
+			}
+		}
+		RUS_Syudantekisintai = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                    
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_start_efficiency_factor = 0.05
+                production_speed_buildings_factor = 0.1
+			}
+		}
+		RUS_Academy = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		RUS_New_God = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.1
+				war_support_factor = 0.2
+			}
+		}
+		RUS_New_Social = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				research_speed_factor = 0.05
+				army_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				
+			}
+		}
+		RUS_Proletaria_Humanism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.1
+                political_power_factor = 0.05
+			}
+		}		
+		RUS_Market_socialism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                consumer_goods_factor = -0.03
+                production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		RUS_nouchikaikaku = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+                MONTHLY_POPULATION = 0.1
+			}
+		}	
+		RUS_Revolutionary_agriculturism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+                MONTHLY_POPULATION = 0.1
+			}
+		}	
+		RUS_Ethnic_autonomy = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = 0.2
+			}
+		}
+		RUS_Lenin_is_God = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.2
+                political_power_factor = 0.2
+			}
+		}		
+}
+}

@@ -1,0 +1,28 @@
+state={
+	id=872
+	name="STATE_872"
+	
+	state_category = pastoral
+
+	resources={
+		
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+                add_core_of = HNA
+                add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		9982 1448 13143 12350 
+	}
+	manpower=512093
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	SpriteType = {	##
+		name = "GFX_report_event_JAP_2600th_Anniversary"
+		texturefile = "gfx/event_pictures/report_event_JAP_2600th_Anniversary.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_report_event_JAP_Kumohata"
+		texturefile = "gfx/event_pictures/report_event_JAP_Kumohata.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_report_event_JAP_Kurifuji"
+		texturefile = "gfx/event_pictures/report_event_JAP_Kurifuji.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_report_event_JAP_Stlite"
+		texturefile = "gfx/event_pictures/report_event_JAP_Stlite.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_report_event_JAP_hisatomo"
+		texturefile = "gfx/event_pictures/report_event_JAP_hisatomo.dds"
+	}
+}

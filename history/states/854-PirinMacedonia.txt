@@ -1,0 +1,24 @@
+
+state={
+	id=854
+	name="STATE_854"
+	manpower = 204936
+	
+	state_category = rural
+
+	resources={
+		chromium = 1
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+	}
+
+	provinces={
+		6857 9818 
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=211
+	name="STATE_211"
+	manpower = 688394
+
+
+	state_category = town
+
+	history={
+		owner = TUR
+		victory_points = { #Burgas
+			9902 3
+		}
+		victory_points = { #Sliven
+			6967 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+                        arms_factory = 2
+			9902 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = BUL
+	}
+
+	provinces={
+		6967 9888 9902 9919
+	}
+}

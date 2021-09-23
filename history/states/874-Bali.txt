@@ -1,0 +1,34 @@
+state={
+	id=874
+	name="STATE_874"
+	resources={
+		rubber=1
+	}
+
+	history={
+		owner = BLI
+		add_core_of = BLI
+                victory_points = {
+			4273 5 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+			4273 = {
+				naval_base = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4273
+	}
+	manpower=1031236
+	buildings_max_level_factor=1
+	state_category="town"
+}

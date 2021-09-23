@@ -30,22 +30,20 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Together for Victory"
-
-		if = {
-			limit = { has_dlc = "Death or Dishonor" }
-			NOT = { has_government = fascism }
-		}
+                OVERLORD = { original_tag = ENG }
 	}
 	
 	can_take_level = {
+		custom_trigger_tooltip = {
+			tooltip = can_raise_autonomy_level
+			always = no 
+		}
 	}
 
 	can_lose_level = {
-		if = {
-			limit = {
-
-			}
+		custom_trigger_tooltip = {
+			tooltip = can_lower_autonomy_level
+			always = no 
 		}
 	}
 }

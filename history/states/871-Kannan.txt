@@ -1,0 +1,32 @@
+state={
+	id=871
+	name="STATE_871"
+	
+	state_category = town
+
+	resources={
+		
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+                add_core_of = HNA
+                add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+                        arms_factory = 2
+			industrial_complex = 1
+
+		}
+                victory_points = {
+			12030 10 
+		}
+	}
+
+	provinces={
+		12030 10112 1053 7199 7172 1110 4183 7004  
+	}
+	manpower=4812093
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,70 @@
+﻿capital = 271
+
+oob = "ETH_1936"
+add_ideas = {
+      Absolute_monarchy
+      ETO_Rastafarianism
+}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+
+
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 5
+	syndicalist = 5
+	radical_socialist = 0
+	social_democrat = 9
+	social_liberal = 8
+	market_liberal = 5
+	social_conservative = 12
+	authoritarian_democrat = 0
+	paternal_autocrat = 23
+	national_populist = 5
+        Gnosticism = 28
+}
+
+create_country_leader = {
+	name = "ハイレ・セラシエ1世"
+	
+	picture = "gfx/leaders/Africa/Portrait_ETH_Selassie.tga"
+	expire = "1960.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = { Rastafari_traits
+		
+	}
+}
+
+create_country_leader = {
+		name = "ハイレ・セラシエ1世"
+
+		picture = "gfx/leaders/Africa/Portrait_ETH_Selassie.tga"
+		expire = "1965.1.1"
+		ideology = Gnosticism_subtype
+		traits = { Rastafari_traits
+
+		}
+	}
+
+create_corps_commander = {
+	name = "Seyoum Mengesha"
+	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	traits = {  desert_fox }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

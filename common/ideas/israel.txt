@@ -1,0 +1,54 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		ISR_Zionism = {
+			allowed = {
+				always = no
+			}
+                        picture =generic_production_bonus
+
+
+			
+			removal_cost = -1
+			modifier = {
+			     MONTHLY_POPULATION = 1.0
+			}
+		}
+                ISR_Technology = {
+			allowed = {
+				always = no
+			}
+                        picture =jap_supremacy_of_technology
+
+
+			
+			removal_cost = -1
+			modifier = {
+			     research_speed_factor = 0.1
+			}
+		}
+                ISR_palestine = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+
+			modifier = {
+                                stability_factor = -0.2
+                                war_support_factor = -0.2
+			        conscription_factor = -0.25
+			}
+		}
+
+}
+}

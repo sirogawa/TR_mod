@@ -48,7 +48,7 @@ autonomy_state = {
 			AND = {
 				OR = {
 					has_government = fascism
-					has_government = neutrality
+					has_government = paternal_autocrat
 				}
 				OR = {
 					OVERLORD = { original_tag = MAN }

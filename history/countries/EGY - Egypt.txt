@@ -1,12 +1,63 @@
 ﻿capital = 446
-set_cosmetic_tag = EGY_republic
+oob = "EGY_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+add_ideas = {
+      Absolute_monarchy
+}
+set_convoys = 20
+
+
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	totalist = 5
+	syndicalist = 5
+	radical_socialist = 5
+	social_democrat = 5
+	social_liberal = 5
+	market_liberal = 10
+	social_conservative = 10
+	authoritarian_democrat = 45
+	paternal_autocrat = 5
+	national_populist = 5
 }
+
+create_country_leader = {
+	name = "ムハンマド・ナギーブ"
+	desc = ""
+	picture = "Portrait_EGY_Naguib.tga"
+	ideology = radical_socialist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "ファールーク1世"
+	desc = ""
+	picture = "Kingfarouk.tga"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+

@@ -1,0 +1,29 @@
+state={
+	id=829
+	name="STATE_829"
+	provinces={
+		4052 7171 10065 
+	}
+	 state_category=Large_city
+	manpower=3728378
+	history={
+		owner = JAP
+		add_core_of = JAP
+                add_core_of = KOR
+		buildings = {
+			industrial_complex = 2
+                        arms_factory = 6
+			infrastructure = 8
+                        4052 = {
+				naval_base = 5
+			}
+                        air_base = 3
+		}
+		
+		victory_points = {
+			4052 20
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}

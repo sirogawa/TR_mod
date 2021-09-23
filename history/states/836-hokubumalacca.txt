@@ -1,0 +1,35 @@
+state={
+	id=836
+	name="STATE_836"
+        resources={
+		rubber=200.000
+		steel=5.000
+		tungsten=100.000
+		aluminium=10.000
+	}
+	provinces={
+		1291 1348 1364 1392 4310 4355 7329 7342 7399 10227 12144 12199 12215 
+	}
+	state_category=town
+	manpower=900000
+	history={
+                victory_points = {
+			7329 1 
+		}
+		owner = MAL
+		add_core_of = MAL
+		buildings = {
+                        industrial_complex = 1
+                        dockyard = 1
+			infrastructure = 5
+                        7329 = {
+				naval_base = 1
+
+			}
+                        
+		}
+		
+
+	}
+	buildings_max_level_factor=1.000
+}

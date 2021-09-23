@@ -1,0 +1,2495 @@
+focus_tree = {
+	id = bulgaria_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+        continuous_focus_position = { x = 2500 y = 1300 }
+	#Focus for ブルガリア王国の独立 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_ElpxumRY
+		icon = GFX_focus_BUL_promote_bulgarian_nationalism
+		x = 6
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+                completion_reward = {
+                        add_political_power = 100
+		}
+	}
+
+	#Focus for 急速な工業化政策 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_UVcjhOMo
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_GdrcfZao }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                    add_ideas = BUL_economic
+                    add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 3
+				category = industry
+			}
+                    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for ワラキアを取り戻せ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_yiqlSbMf
+		icon = GFX_focus_BUL_the_fate_of_the_balkans
+		x = 3
+		y = 4
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_hbnsiGtp 
+		}
+		prerequisite = { 
+			focus = BUL_UVcjhOMo 
+		}
+               available = {
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for 大ブルガール・ハン国を宣言 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_DynMWbim
+		icon = GFX_focus_BUL_supremacy_on_the_bosporus
+		x = 9
+		y = 1
+		cost = 15
+               available = {
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+                ai_will_do = {
+			factor = 50
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_ElpxumRY }
+		mutually_exclusive = { focus = BUL_naKgcXxB }
+	completion_reward = {
+                       add_named_threat = { threat = 5 name = BUL_EMPIRE_Threat }
+                       set_major = yes
+                       set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		          }
+                       add_popularity = {
+			ideology = national_populist
+			popularity = 1.0
+		       }
+                       set_cosmetic_tag = BUL_KHANATE
+                       add_state_claim = 46
+                       add_state_claim = 81
+                       add_state_claim = 79
+                       add_state_claim = 78
+                       add_state_claim = 766
+                       add_state_claim = 192
+                       add_state_claim = 196
+                       add_state_claim = 137
+                       add_state_claim = 197
+                       add_state_claim = 200
+                       add_state_claim = 227
+                       add_state_claim = 218
+                       add_state_claim = 228
+                       add_state_claim = 245
+                       add_state_claim = 238
+                       add_state_claim = 217
+                       add_state_claim = 265
+                       add_state_claim = 239
+                       add_state_claim = 401
+                       add_state_claim = 251
+                       add_state_claim = 651
+                       add_state_claim = 652
+                       add_state_claim = 252
+                       add_state_claim = 256
+                       add_state_claim = 249
+                       add_state_claim = 255
+                       add_state_claim = 250
+                                341 = {
+					add_core_of = BUL
+				}
+				184 = {
+					add_core_of = BUL
+				}
+				
+	}
+	}
+        #Focus for 蛮族経済 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_fVQOrwMW
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 10
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_aSTMlBfR }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                    add_ideas = BUL_BANZOKU
+	   }
+        }
+        #Focus for 母なるヴォルガ川 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_TjNcErKS
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = 9
+		y = 7
+		cost = 15
+               available = {
+                           owns_state = 249
+                           owns_state = 256 
+                           owns_state = 250
+                           owns_state = 251
+                           owns_state = 252    
+                           is_subject = no
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_ZNmpvfMC }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                        set_capital = 249
+                        add_research_slot = 1
+                        
+                                249 = {
+					add_core_of = BUL
+				}
+				251 = {
+					add_core_of = BUL
+				}
+                                250 = {
+					add_core_of = BUL
+				}
+				256 = {
+					add_core_of = BUL
+				}
+                                252 = {
+					add_core_of = BUL
+				}
+                                255 = {
+					add_core_of = BUL
+				}
+                                239 = {
+					add_core_of = BUL
+				}
+                                401 = {
+					add_core_of = BUL
+				}
+                                652 = {
+					add_core_of = BUL
+				}
+                                651 = {
+					add_core_of = BUL
+				}
+                                 
+
+		}
+	}
+
+	#Focus for ロシア内戦？関係ないね！ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_ZNmpvfMC
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 9
+		y = 6
+		cost = 10
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_NpcLYZrB 
+		}
+		prerequisite = { 
+			focus = BUL_rFMudlON 
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+                 
+	completion_reward = { 
+			create_wargoal = {
+				target = RUS
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for アナキストを潰せ！ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_NpcLYZrB
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 10
+		y = 5
+		cost = 10
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_ECKONvSr }
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for 北へ！ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_rFMudlON
+		icon = GFX_focus_rom_preserve_romania
+		x = 8
+		y = 5
+		cost = 10
+                available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_ECKONvSr }
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}
+
+		}
+	}
+	#Focus for 民族の故郷へ帰還せよ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_ECKONvSr
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		x = 9
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_nBUirHvJ 
+		}
+		prerequisite = { 
+			focus = BUL_fVQOrwMW 
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                    add_political_power = 50
+	   }
+        }
+
+	#Focus for 鋼鉄の馬 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_nBUirHvJ
+		icon = GFX_goal_continuous_armor_production
+		x = 8
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_aSTMlBfR }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                    add_ideas = BUL_METAL_HORSE
+                    add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+	   }
+        }
+	#Focus for 我らが大ハーンボリス - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_aSTMlBfR
+		icon = GFX_focus_BUL_plot_against_boris
+		x = 9
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_DynMWbim }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                       add_stability = 0.3
+                       add_war_support = 1.0
+				
+	}
+	}
+
+	#Focus for ハーンの野望は止まらない - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_IOTPobsJ
+		icon = GFX_focus_BUL_plot_against_boris
+		x = 9
+		y = 8
+		cost = 15
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_TjNcErKS }
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+                    add_ideas = BUL_KHANATE_IDEA
+                    create_wargoal = {
+				target = KAZ
+				type = annex_everything
+			}
+                    create_wargoal = {
+				target = UZB
+				type = annex_everything
+			}
+
+
+                    
+	   }
+        }
+
+	#Focus for ブルガリア第三帝国を宣言 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_naKgcXxB
+		icon = GFX_focus_BUL_guardians_of_the_balkans
+		x = 3
+		y = 1
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_ElpxumRY }
+		mutually_exclusive = { focus = BUL_DynMWbim }
+		ai_will_do = {
+			factor = 100
+		}
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+                completion_reward = {
+                       add_named_threat = { threat = 5 name = BUL_EMPIRE_Threat }
+                       set_major = yes
+                       set_cosmetic_tag = BUL_EMPIRE
+                       add_research_slot = 1
+                       add_state_claim = 802
+                       add_state_claim = 108
+                       add_state_claim = 107
+                       add_state_claim = 46
+                       add_state_claim = 81
+                       add_state_claim = 185
+                       add_state_claim = 802
+                       add_state_claim = 108
+                       add_state_claim = 47
+                                341 = {
+					add_core_of = BUL
+				}
+				731 = {
+					add_core_of = BUL
+				}
+				184 = {
+					add_core_of = BUL
+				}
+				797 = {
+					add_core_of = BUL
+				}
+				
+	}
+	}
+
+	#Focus for 我らがツァールボリス - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_GdrcfZao
+		icon = GFX_focus_BUL_power_to_the_tsar
+		x = 3
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_naKgcXxB }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                       add_stability = 0.5
+                       add_war_support = 0.5
+				
+	}
+	}
+
+	#Focus for 軍事化された国家 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_hbnsiGtp
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 2
+		y = 3
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_GdrcfZao }
+		ai_will_do = {
+			factor = 100
+		}
+                
+	completion_reward = {
+                    add_ideas = BUL_ARMY
+                    add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+                    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	#Focus for マケドニアを統一せよ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_svGfoeYi
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
+		x = 2
+		y = 5
+		cost = 10
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_yiqlSbMf }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = GRE
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for セルビアを打倒 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_XGtBApMw
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		x = 4
+		y = 5
+		cost = 10
+                 available = {
+
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_yiqlSbMf }
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = SER
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for コンスタンティノポリスを正教徒の下へ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_eUpSzfDq
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 3
+		y = 6
+		cost = 15
+                available = {
+                           owns_state = 46
+                           NOT = { has_country_flag = BUL_Surrender }
+                           is_subject = no
+                            }
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_svGfoeYi 
+		}
+		prerequisite = { 
+			focus = BUL_XGtBApMw 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+					any_neighbor_country = {
+						has_war_with = BUL
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = BUL
+							ratio > 0.6
+						}
+					}
+			}
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+                       add_state_claim = 340
+                       add_state_claim = 339
+                       add_state_claim = 187
+                       add_state_claim = 347
+                       add_state_claim = 343
+                       add_state_claim = 342
+                       add_state_claim = 49
+                       add_state_claim = 356
+                       add_state_claim = 354
+                       add_state_claim = 355
+		}
+	}
+
+	#Focus for 第四のローマ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_PEvMGmel
+		icon = GFX_focus_GRE_byzantine_themata
+		x = 3
+		y = 7
+		cost = 15
+                available = {
+                           is_subject = no
+                            NOT = { has_country_flag = BUL_Surrender }
+                           owns_state = 797
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_eUpSzfDq }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        set_capital = 797
+                        set_province_name = {
+                                  id = 9833
+                                  name = "ツァーリグラード"
+                           }
+                        remove_ideas = BUL_ARMY
+                        add_ideas = BUL_Foutrh_Roma
+                        add_research_slot = 1
+                        set_cosmetic_tag = BUL_BIZANTINE
+                        
+                                185 = {
+					add_core_of = BUL
+				}
+				47 = {
+					add_core_of = BUL
+				}
+                                186 = {
+					add_core_of = BUL
+				}
+				339 = {
+					add_core_of = BUL
+				}
+                                340 = {
+					add_core_of = BUL
+				}
+                                347 = {
+					add_core_of = BUL
+				}
+                                356 = {
+					add_core_of = BUL
+				}
+                                49 = {
+					add_core_of = BUL
+				}
+                                187 = {
+					add_core_of = BUL
+				}
+                                343 = {
+					add_core_of = BUL
+				}
+                                342 = {
+					add_core_of = BUL
+				}
+                                 
+
+		}
+	}
+
+
+	#Focus for ブルガリアの野望は止まらない - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = BUL_AibeHZFz
+		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+		x = 3
+		y = 8
+		cost = 10
+                available = {
+                           is_subject = no
+                            NOT = { has_country_flag = BUL_Surrender }
+                            }
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_PEvMGmel }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = { 
+		       add_ideas = BUL_YABOU
+                       add_state_claim = 44
+                       add_state_claim = 805
+                       add_state_claim = 104
+                       add_state_claim = 804
+                       add_state_claim = 105
+                       add_state_claim = 137
+                       add_state_claim = 103
+                       add_state_claim = 163
+                       add_state_claim = 115
+                       add_state_claim = 156
+                       add_state_claim = 117
+                       add_state_claim = 2
+
+		}
+	}
+focus = {
+		id = BUL_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+focus = {
+		id = BUL_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BUL_army_effort }
+		x = -1
+		y = 1
+		relative_position_id = BUL_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = BUL_army_effort }
+		bypass = { has_tech = BUL_motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = BUL_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BUL_army_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_army_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BUL_equipment_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_equipment_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = BUL_motorization_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_motorization_effort
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BUL_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_doctrine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = BUL_equipment_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = BUL_equipment_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = BUL_mechanization_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_mechanization_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = BUL_equipment_effort_3 }
+		prerequisite = { focus = BUL_doctrine_effort_2 }
+		prerequisite = { focus = BUL_armor_effort }
+		x = 1
+		y = 1
+		relative_position_id = BUL_equipment_effort_3
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 17
+		y = 0
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BUL_aviation_effort }
+		mutually_exclusive = { focus = BUL_bomber_focus }
+		x = -1
+		y = 1
+		relative_position_id = BUL_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BUL_aviation_effort }
+		mutually_exclusive = { focus = BUL_fighter_focus }
+		x = 1
+		y = 1
+		relative_position_id = BUL_aviation_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BUL_bomber_focus focus = BUL_fighter_focus }
+		x = -1
+		y = 1
+		relative_position_id = BUL_bomber_focus
+		cost = 10
+
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = BUL_aviation_effort_2 }
+		prerequisite = { focus = BUL_motorization_effort }
+		x = -1
+		y = 1
+		relative_position_id = BUL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = BUL_aviation_effort_2 }
+		prerequisite = { focus = BUL_infrastructure_effort }
+		x = 0
+		y = 2
+		relative_position_id = BUL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_NAV_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = BUL_aviation_effort_2 }
+		prerequisite = { focus = BUL_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = BUL_aviation_effort_2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_naval_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 21
+		y = 0
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = BUL_flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus =BUL_naval_effort }
+		mutually_exclusive = { focus = BUL_large_navy }
+		x = -1
+		y = 1
+		relative_position_id = BUL_naval_effort
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BUL_naval_effort }
+		mutually_exclusive = { focus = BUL_flexible_navy }
+		x = 1
+		y = 1
+		relative_position_id = BUL_naval_effort
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = BUL_flexible_navy focus = BUL_large_navy }
+		x = 0
+		y = 1
+		relative_position_id = BUL_flexible_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BUL_large_navy focus = BUL_flexible_navy }
+		x = 0
+		y = 1
+		relative_position_id = BUL_large_navy
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = BUL_submarine_effort }
+		x = 0
+		y = 1
+		relative_position_id = BUL_submarine_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = BUL_cruiser_effort }
+		x = 0
+		y = 1
+		relative_position_id = BUL_cruiser_effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 25
+		y = 0
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+				OR = { 
+					# we dont want chinese minors to go crazy on slots early since they get eaten
+					tag = GXC 
+					tag = YUN
+					tag = SHX
+					tag = XSM
+					tag = BEL
+					tag = LUX
+					tag = HOL
+					tag = DEN
+
+					# we also dont want tiny nations to go crazy with slots right away
+					num_of_controlled_states < 2
+				}				
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_industrial_effort }
+		x = -1
+		y = 1
+		relative_position_id = BUL_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_industrial_effort }
+		x = 1
+		y = 1
+		relative_position_id = BUL_industrial_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_construction_effort }
+		x = 0
+		y = 1
+		relative_position_id = BUL_construction_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = BUL_production_effort
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_construction_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = BUL_construction_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_production_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = BUL_production_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_infrastructure_effort }
+		x = 0
+		y = 1
+		relative_position_id = BUL_infrastructure_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_infrastructure_effort }
+		x = 2
+		y = 1
+		relative_position_id = BUL_infrastructure_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = BUL_infrastructure_effort_2 }
+		x = -2
+		y = 1
+		relative_position_id = BUL_infrastructure_effort_2
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+
+	focus = {
+		id = BUL_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = BUL_infrastructure_effort_2 }
+		x = 2
+		y = 1
+		relative_position_id = BUL_infrastructure_effort_2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	
+
+	
+	}	
+
+
+
+
+#End of focuses 
+ }

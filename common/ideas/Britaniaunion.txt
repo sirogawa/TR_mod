@@ -1,0 +1,166 @@
+ideas = {
+       
+     country = {
+
+		
+
+		ENR_REVOLUTION = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                         conscription = 0.02
+                         political_power_factor = 0.1
+			 war_support_factor = 1.0
+                         stability_factor = -0.25
+                         army_core_defence_factor = 0.2
+                         surrender_limit= 0.1
+			}
+		}
+                ENR_INGSOC = {
+			allowed = {
+				always = no
+			}
+                        picture = eng_imperial_conscription
+			
+			removal_cost = -1
+                     
+			modifier = {
+                         consumer_goods_factor = -0.03
+                         political_power_factor = 0.25
+			}
+		}
+                ENR_HIMITSUKEISATU = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_intel
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                                army_morale_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+                ENR_SANGYOUSHUYAKU = {
+			allowed = {
+				always = no
+			}
+                        picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                        production_factory_max_efficiency_factor = 0.15
+			industrial_capacity_factory = 0.15
+			production_speed_buildings_factor = 0.15
+			}
+		}
+                ENR_LOVE = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.05
+				resistance_target = -0.3
+			}
+		}
+                ENR_TRUTH = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_morale_bonus
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				war_support_factor = 0.5
+			}
+		}
+                ENR_Plenty = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+                ENR_PEACE = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_license_production
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                        conscription = 0.015
+			army_org_factor = 0.1
+			army_core_defence_factor = 0.1
+                        surrender_limit	= 0.1
+			}
+		}
+                ENR_Newspeak = {
+			allowed = {
+				always = no
+			}
+                        picture = jap_supremacy_of_technology
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                        research_speed_factor = -0.1
+			}
+		}
+              ENR_Arms_fac = {
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+                                production_speed_dockyard_factor = 0.10
+                                production_speed_arms_factory_factor = 0.10
+                                production_speed_industrial_complex_factor = -0.15
+			}
+		}
+                ENR_Airstrip_One = {
+			allowed = {
+				always = no
+			}
+
+			picture = eng_imperial_conscription
+			removal_cost = -1
+			modifier = {
+                                conscription = 0.01
+                                army_core_defence_factor = 0.25
+                                surrender_limit= 0.1
+			}
+		}
+
+}
+}

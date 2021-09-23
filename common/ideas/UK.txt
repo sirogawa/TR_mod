@@ -1,0 +1,80 @@
+
+ ideas = {
+       
+     country = {
+  
+
+		### Starting ###
+               george_v = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                              stability_factor = 0.1
+			}
+			
+
+		}
+
+		ENG_LOSE_IN_INDIA = {
+			allowed = {
+				always = no
+			}
+                       picture = raj_all_india_forward_bloc_fascism
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                              stability_factor = -0.20
+			      political_power_cost = 0.50
+			      production_factory_max_efficiency_factor = -0.2
+			      industrial_capacity_factory = -0.2
+			}
+		}
+                ENG_depression = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.25
+				min_export = -0.15
+			}
+		}
+
+                ENG_revolution = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+                                war_support_factor = -0.25
+			        conscription_factor = -0.3
+			}
+		}
+
+
+}
+}

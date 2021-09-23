@@ -1,0 +1,20 @@
+state={
+	id=859
+	name="STATE_859"
+	provinces={
+		1170 1566 1607 2061 4175 4210 4654 7400 7603 7909 7974 12363 
+	}
+	history={
+                add_core_of = BRM
+		owner = BRM
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	manpower=1444876
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

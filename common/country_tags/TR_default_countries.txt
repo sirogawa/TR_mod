@@ -1,0 +1,45 @@
+#アジア
+ANQ	= "countries/Asia.txt"	#安徽
+BLI	= "countries/Asia.txt"	#バリ
+CAL	= "countries/Asia.txt"	#カリフォルニア
+CEN	= "countries/Asia.txt"	#
+DTN	= "countries/Asia.txt"	#
+ETR	= "countries/Asia.txt"	#東トルキスタン
+FUJ	= "countries/Asia.txt"	#
+GUG	= "countries/Asia.txt"	#
+HNA	= "countries/Asia.txt"
+HYD	= "countries/Asia.txt"
+JPR	= "countries/Asia.txt"
+KUO	= "countries/Asia.txt"
+MIN	= "countries/Asia.txt"
+NAN	= "countries/Asia.txt"
+SAN	= "countries/Asia.txt"
+YNN	= "countries/Asia.txt"	#雲南
+
+#西欧
+BAD	= "countries/Western Europe.txt"	#バーデン
+BAL	= "countries/Western Europe.txt"	#バルト
+ENR	= "countries/Western Europe.txt"	#
+SIC	= "countries/Western Europe.txt"	#シチリア
+
+#東欧
+	= "countries/Eastern Europe.txt"	#
+GAL	= "countries/Eastern Europe.txt"	#
+HES	= "countries/Eastern Europe.txt"	#ヘッセン
+KIE	= "countries/Eastern Europe.txt"	#
+RUS	= "countries/Eastern Europe.txt"	#ロシア
+SIB	= "countries/Eastern Europe.txt"	#シベリア
+
+#アフリカ
+ESA	= "countries/Africa.txt"	#
+ETO	= "countries/Africa.txt"	#エチオピア
+KAT	= "countries/Africa.txt"
+KIS	= "countries/Africa.txt"
+KIV	= "countries/Africa.txt"
+MAU	= "countries/Africa.txt"
+SKT	= "countries/Africa.txt"
+SPO	= "countries/Africa.txt"
+
+#南米
+AMZ	= "countries/South America.txt"	#アマゾナス
+BRR	= "countries/South America.txt"	#

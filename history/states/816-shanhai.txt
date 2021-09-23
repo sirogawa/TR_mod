@@ -1,0 +1,27 @@
+state={
+	id=816
+	name="STATE_816"
+	provinces={
+		7014 12076
+	}
+        state_category=Large_city
+	manpower=1850000
+	history={
+		owner = JAP
+		add_claim_by = CHI
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 10
+                        7014 = {
+				naval_base = 5
+			}
+                        air_base = 3
+		}
+		
+		victory_points = {
+			7014 20
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,256 @@
+﻿capital = 602
+
+oob = "HNA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+set_stability = 0.4
+set_war_support = 0.4
+set_research_slots = 3
+
+
+
+
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1935.8.7"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 14
+	syndicalist = 4
+	radical_socialist = 7
+	social_democrat = 10
+	social_liberal = 5
+	market_liberal = 5
+	social_conservative = 35
+	authoritarian_democrat = 3
+	paternal_autocrat = 7
+	national_populist = 6
+        Gnosticism = 4
+}
+add_ideas = { 
+         Democratic_Republic
+         CHI_late_army
+         HNA_Constitution
+         HNA_PRC_partisan
+}
+
+create_country_leader = {
+	name = "毛沢東"
+	desc = ""
+	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "陳炯明"
+	desc = ""
+	picture = "Portrait_HNA_Chen_Chiungming.tga"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+	traits = {
+		
+	}
+}
+
+
+create_country_leader = {
+	name = "毛沢東"
+	desc = ""
+	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "陳炯明"
+	desc = ""
+	picture = "Portrait_HNA_Chen_Chiungming.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "陳炯明"
+	desc = ""
+	picture = "Portrait_HNA_Chen_Chiungming.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "趙恒惕"
+	desc = ""
+	picture = "Portrait_China_Zhao_Hengti.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "趙恒惕"
+	desc = ""
+	picture = "Portrait_China_Zhao_Hengti.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "趙恒惕"
+	desc = ""
+	picture = "Portrait_China_Zhao_Hengti.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "陳炯明"
+	picture = "Portrait_HNA_Chen_Chiungming.tga"
+	traits = { politically_connected offensive_doctrine organizer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_field_marshal = {
+	name = "趙恒惕"
+	picture = "Portrait_China_Zhao_Hengti.tga"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Jianwei Class"			
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Hairong Class"					# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Haiqi Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ninghai Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

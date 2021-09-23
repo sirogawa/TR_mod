@@ -1,0 +1,31 @@
+state={
+	id=718
+	name="STATE_718"
+	
+	state_category = rural
+
+	resources={
+		rubber=5 # was: 6.000
+                tungsten=3
+	}
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 2
+
+		}
+                victory_points = {
+			1950 2 
+		}
+		add_core_of = COG
+		add_core_of = RCG
+                add_core_of = KIS
+	}
+
+	provinces={
+		1950 2034 2073 2154 6027 11934 12808 12847 
+	}
+	manpower=679202
+	buildings_max_level_factor=1.000
+}

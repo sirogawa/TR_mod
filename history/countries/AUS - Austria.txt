@@ -1,12 +1,335 @@
 ﻿capital = 4
-set_cosmetic_tag = AUS_republic
+
+oob = "AUS_1936"
+
+set_research_slots = 4
+set_major = yes
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+	}
+       
+}
+
+add_ideas = {
+           Constitutional_monarchy
+           AUS_MINZOKUMONDAI
+}
+
+set_autonomy = {
+		target = BOS
+		autonomous_state = autonomy_integrated_puppet
+	}
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = social_conservative
+	last_election = "1935.11.9"
+	election_frequency = 60
+	elections_allowed = yes
 }
+
 set_popularities = {
-	neutrality = 100
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 15
+	social_conservative = 23
+	authoritarian_democrat = 10
+	paternal_autocrat = 2
+	national_populist = 10
+        Gnosticism = 20
+}
+
+set_stability = 0.50
+
+
+create_country_leader = {
+	name = "エンゲルベルト・ドルフース"
+	desc = "POLITICS_ADOLF_JOSEPH_DESC"
+	picture = "Portrait_AUS_Adolf_Joseph_Lanz.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "アドルフ・ヨーゼフ・ランツ"
+	desc = "POLITICS_ADOLF_JOSEPH_DESC"
+	picture = "Portrait_AUS_Adolf_Joseph_Lanz.tga"
+	expire = "1965.1.1"
+	ideology = Gnosticism_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "フランツ=ヨーゼフ2世"
+	desc = "POLITICS_OTTOI_DESC"
+	picture = "Portrait_AUS_otto1.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "フランツ=ヨーゼフ2世"
+	desc = "POLITICS_OTTOI_DESC"
+	picture = "Portrait_AUS_otto1.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "フランツ=ヨーゼフ2世"
+	desc = "POLITICS_OTTOI_DESC"
+	picture = "Portrait_AUS_otto1.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "フランツ=ヨーゼフ2世"
+	desc = "POLITICS_OTTOI_DESC"
+	picture = "Portrait_AUS_otto1.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "フランツ=ヨーゼフ2世"
+	desc = "POLITICS_OTTOI_DESC"
+	picture = "Portrait_AUS_otto1.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "カール・レンナー"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+
+create_field_marshal = {
+	name = "オイゲン・フォン・エスターライヒ"
+	picture = "portrait_AUS_Eugen.tga"
+	traits = { offensive_doctrine war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "カール・エグルゼーア"
+	picture = "Portrai_AUS_Eglseer.tga"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "オットー・スコルツェニー"
+	picture = "Portrai_AUS_Skorzeny.tga"
+	traits = { trait_mountaineer trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "ロタール・レンデュリック"
+	picture = "Portrai_AUS_Rendulic.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "フランツ・ベーメ"
+	picture = "Portrai_AUS_FranzBohme.tga"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "アドルフ・ヒトラー"
+	picture = "Portrai_AUS_Hitler.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "ハインリヒ・ヒムラー"
+	picture = "Portrait_AUS_Himmler.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "カール・マリア・ヴィリグート"
+	picture = "Portrait_AUS_Karl_Maria_Wiligut.tga"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Dubrovnik Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Dalmacija Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+	}
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "U-107 Class"				
+		type = ship_hull_submarine_2
+		name_group = AUS_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Radetzky Class"				
+		type = ship_hull_light_2
+		name_group = AUS_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Zenta Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = AUS_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
 }

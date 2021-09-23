@@ -1,0 +1,131 @@
+focus_tree = {
+	id = america_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+        default = no
+	#Focus for 社会党の政策 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = USA_GxEhtjnU
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 6
+		y = 0
+		cost = 7
+                available = {
+                          NOT  = { has_country_flag = USA_anarchy }
+                       }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.025
+                        add_political_power = 25	
+
+		}
+	}
+	#Focus for 全国産業復興法 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = USA_UlkfjqDO
+		icon = GFX_focus_generic_industry_3
+		x = 6
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_GxEhtjnU }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05
+
+		}
+	}
+	#Focus for 公正な雇用 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = USA_TfkrSUph
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_GxEhtjnU }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05
+
+		}
+	}
+	#Focus for 公共事業の促進 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = USA_TUOfVdro
+		icon = GFX_goal_generic_production2
+		x = 8
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_GxEhtjnU }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05	
+
+		}
+	}
+
+	#Focus for 恐慌からの部分的回復 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = USA_tRGCEpFy
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_TfkrSUph 
+		}
+		prerequisite = { 
+			focus = USA_TUOfVdro 
+		}
+		prerequisite = { 
+			focus = USA_UlkfjqDO 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                        
+			swap_ideas = {
+				remove_idea = USA_depression
+				add_idea = USA_depression_1
+			}	
+		}
+	}
+	#Focus for 1936年大統領選挙
+	focus = {
+		id = USA_1936
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 3
+                available = {
+                            always = no
+                       }
+                bypass = {
+			has_country_flag = USA_1936SENKYO
+		}
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_tRGCEpFy }
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+}

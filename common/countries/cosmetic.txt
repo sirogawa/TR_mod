@@ -1,0 +1,134 @@
+
+BUL_BIZANTINE = {
+	color = rgb { 143 12 125 }
+	color_ui = rgb { 143 12 125 }
+}
+NGA_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+KEN_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+NMB_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+MAL_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+MAN_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+GUG_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+INS_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+MAN_ANA = {
+	color = rgb { 0  0  0 }
+	color_ui = rgb { 0  0  0 }	
+}
+MAN_GASSYUKOKU = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
+COG_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+
+
+CEN_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+
+ESA_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+
+CAL_IND = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
+
+
+CAL_SHOGUNATE = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
+
+SAU_IND = {
+	color = rgb { 0 108 53 }
+	color_ui = rgb { 0 108 53 }
+}
+
+SAU_CALIPHATE = {
+	color = rgb { 10 102 0 }
+	color_ui = rgb { 10 102 0 }
+}
+
+SIB_IND = {
+	color = rgb { 235 246 247 }
+	color_ui = rgb { 235 246 247 }
+}
+
+SIB_soviet = {
+	color = rgb { 182 107 88 }
+	color_ui = rgb { 182 107 88 }
+}
+
+FRA_RNP = {
+	color = rgb { 30 84 183 }
+	color_ui = rgb { 35 101 222 }
+}
+
+FRA_PPF = {
+	color = rgb {  0  18  93 }
+	color_ui = rgb {  0  18  93 }
+}
+
+FRA_KING = {
+	color = rgb { 65 109 167 }
+	color_ui = rgb { 65 109 167 }
+}
+
+AUS_GER = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
+
+AUS_Aryan = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
+HUN_AUS = {
+        color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
+}
+
+AST_ENG = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
+}
+SHX_EMPIRE = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+
+SHX_QING = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+SPO_WIN = {
+	color = rgb { 76 145 63 }
+	color_ui = rgb { 99 189 82 }
+}

@@ -1,0 +1,166 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+                 HNA_PRC_partisan = {
+			allowed = {
+				always = no
+			}
+                        
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.05
+                                defense_bonus_against = -0.05
+			}
+			removal_cost = -1
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                              stability_factor = -0.1
+                              resistance_target = 0.1
+			}
+		}
+		HNA_Constitution = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              political_power_cost = -0.25
+                              stability_factor = 0.1
+			}
+		}
+                HNA_Ichigo_Ikko = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = 0.05
+			}
+		}
+                HNA_Crime_control = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.1
+				resistance_target = -0.1
+			}
+		}
+                HNA_Free_Trade_ideas = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                              consumer_goods_factor = -0.05
+                              production_factory_max_efficiency_factor = 0.05
+		              production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+                HNA_Decentralization = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 political_power_cost = 0.1
+                                 stability_factor = 0.05
+                                 global_building_slots_factor = 0.1
+			}
+		} 
+                HNA_Civilian_Focus = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+			}
+		} 
+                HNA_Kougyouka = {
+			allowed = {
+				always = no
+			}
+                        picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                production_speed_buildings_factor = 0.07
+			}
+		} 
+                HNA_Arms_Equipment = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_infantry_equipment_manufacturer_2
+
+			
+			removal_cost = -1
+                        equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					instant = yes
+                                        soft_attack = 0.05
+				        reliability = 0.05
+
+				}
+			}
+	
+	
+
+			modifier = {
+                                
+			}
+		} 
+                HNA_doctrines = {
+			allowed = {
+				always = no
+			}
+                        picture = cze_planning_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                max_planning = 0.15
+			}
+		} 
+
+    }
+}

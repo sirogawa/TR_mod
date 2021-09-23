@@ -1,0 +1,426 @@
+@stability_decision_duration = 180
+@stability_decision_reenable = 540
+
+political_actions = {
+
+	legislate_more_freedoms = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+                        NOT = { has_country_flag = TR_improving_stability }
+			has_stability < 0.50
+		}
+
+		visible = {
+			OR = { has_government = social_liberal
+                               has_government = market_liberal
+                               has_government = social_conservative }
+		}
+
+		cancel_trigger = {
+				has_stability > 0.75
+                       
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			political_power_cost = 0.1
+			consumer_goods_factor = 0.05
+		}
+
+		days_remove = @stability_decision_duration
+		days_re_enable = @stability_decision_reenable
+
+		cost = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision legislate_more_freedoms"
+			set_country_flag = { flag = TR_improving_stability days = @stability_decision_duration value = 1 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.25
+			}
+			modifier = {
+				add = 2
+				has_stability < 0.10
+			}
+		}
+	}
+
+	police_crackdown = {
+
+		icon = oppression
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = TR_improving_stability }
+			has_stability < 0.50
+		}
+
+		visible = {
+			has_government = authoritarian_democrat
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_stability > 0.75
+				NOT = { has_government = authoritarian_democrat }
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			political_power_cost = 0.1
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+		}
+
+		days_remove = @stability_decision_duration
+		days_re_enable = @stability_decision_reenable
+
+		cost = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision police_crackdown"
+	                set_country_flag = { flag = TR_improving_stability days = @stability_decision_duration value = 1 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.25
+			}
+			modifier = {
+				add = 2
+				has_stability < 0.10
+			}
+		}
+	}
+
+	improved_worker_conditions = {
+
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = TR_improving_stability }
+			has_stability < 0.50
+		}
+
+		visible = {
+			OR = {
+                               has_government = syndicalist
+                               has_government = radical_socialist
+                               has_government = social_democrat }
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_stability > 0.75
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			political_power_cost = 0.1
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+		}
+
+		days_remove = @stability_decision_duration
+		days_re_enable = @stability_decision_reenable
+
+		cost = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision improved_worker_conditions"
+			set_country_flag = { flag = TR_improving_stability days = @stability_decision_duration value = 1 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.25
+			}
+			modifier = {
+				add = 2
+				has_stability < 0.10
+			}
+		}
+	}
+
+	send_in_the_army = {
+
+		icon = GFX_decision_generic_army_support
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = TR_improving_stability }
+			has_stability < 0.50
+		}
+
+		visible = {
+			OR = {
+				has_government = paternal_autocrat
+				has_government = national_populist
+				has_government = totalist
+                                has_government = Gnosticism
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_stability > 0.75
+			}
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			stability_weekly = 0.005
+			political_power_cost = 0.1
+			army_morale_factor = -0.05
+			conscription_factor = -0.10
+		}
+
+		days_remove = @stability_decision_duration
+		days_re_enable = @stability_decision_reenable
+
+		cost = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision send_in_the_army"
+			set_country_flag = { flag = TR_improving_stability days = @stability_decision_duration value = 1 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.25
+			}
+			modifier = {
+				add = 2
+				has_stability < 0.10
+			}
+			modifier = {
+				add = 10
+				has_stability < 0
+			}
+		}
+	}
+
+	
+	}
+
+
+
+
+
+propaganda_efforts = {
+
+	war_propaganda = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			threat > 0.5
+			has_war_support < 0.5
+			has_offensive_war = no
+		}
+
+		visible = {
+			
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 180
+
+		cost = 150
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
+		}
+	}
+
+	#Propaganda campaign against a country in offensive that has caused a lot of tension and started a war
+	war_propaganda_against_warmonger = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			FROM = {
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						has_war_with = ROOT
+						is_neighbor_of = ROOT
+					}
+					has_offensive_war = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
+			
+			# lower the cost for neighbors
+			if = {
+				limit = {
+					FROM = {
+						is_neighbor_of = ROOT
+					}
+					set_temp_variable = { war_propaganda_cost = 50 }
+				}
+			}
+		}
+
+		visible = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+		}
+
+		days_remove = 90
+		days_re_enable = 180
+
+		fire_only_once = yes
+
+		cost = var:war_propaganda_cost?75
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war_support > 0.9
+			}
+		}
+	}
+}

@@ -1,0 +1,592 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		CHI_late_army = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_forced_conscription
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = -0.15
+                              defence = -0.2
+                              offence = -0.2
+                              army_org_factor = -0.2
+			      army_morale_factor = -0.2
+			}
+		}
+		CHI_late_army_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_forced_conscription
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = -0.1
+                              defence = -0.15
+                              offence = -0.15
+                              army_org_factor = -0.15
+			      army_morale_factor = -0.15
+			}
+		}
+		CHI_late_army_2 = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_forced_conscription
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = -0.065
+                              defence = -0.1
+                              offence = -0.1
+                              army_org_factor = -0.1
+			      army_morale_factor = -0.1
+			}
+		}
+		CHI_late_army_3 = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_forced_conscription
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = -0.03
+                              defence = -0.05
+                              offence = -0.05
+                              army_org_factor = -0.05
+			      army_morale_factor = -0.05
+			}
+		}
+                CHI_hikoritunatouti = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_warlord_integration
+
+			
+			removal_cost = -1
+            
+			modifier = {
+                             conscription_factor = -0.15
+                             consumer_goods_factor = 0.15
+                             political_power_factor = -0.3
+                             production_factory_max_efficiency_factor = -0.10
+			     production_factory_efficiency_gain_factor = -0.10
+			}
+		}
+                CHI_kaiseki_legacy = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_warlord_integration
+
+			
+			removal_cost = -1
+            
+			modifier = {
+                             stability_factor = 0.1
+                             consumer_goods_factor = 0.05
+                             political_power_factor = -0.1
+			}
+		}
+                CHI_fuannteinakokka = {
+			allowed = {
+				always = no
+			}
+                        picture = usa_great_depression_3
+
+			
+			removal_cost = -1
+            
+			modifier = {
+                             conscription_factor = -0.5
+                             stability_factor = -0.4
+                             war_support_factor = -0.4
+			}
+		}
+                 CHI_fuannteinakokka_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = usa_great_depression_3
+
+			
+			removal_cost = -1
+            
+			modifier = {
+                             conscription_factor = -0.2
+                             stability_factor = -0.15
+                             war_support_factor = -0.15
+			}
+		}
+                CHI_purge = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+            
+			research_bonus = {
+				land_doctrine = -0.5
+			}
+			modifier = {
+                                army_org_factor = -0.2
+                                war_support_factor = -0.2
+			}
+		}
+                CHI_guerrilla = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+            
+			modifier = {
+                                surrender_limit = 0.1
+                                resistance_growth_on_our_occupied_states = 0.3
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = 0.2
+				max_planning = -0.10
+				out_of_supply_factor = -0.2
+			}
+		}
+                CHI_terror = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+            
+			
+			modifier = {
+                             conscription_factor = -0.1
+                             MONTHLY_POPULATION = -0.25
+                             stability_factor = 0.2
+			}
+		}
+                CHI_police = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_intel
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                                army_morale_factor = 0.12
+				stability_factor = 0.25
+				resistance_target = -0.1
+			}
+		}
+                CHI_sanmin = {
+			allowed = {
+				always = no
+			}
+                       picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                             political_power_factor = 0.05
+                             stability_factor = 0.1
+			}
+		}
+                CHI_strongleader = {
+			allowed = {
+				always = no
+			}
+                       picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                             political_power_factor = 0.05
+                             stability_factor = 0.1
+			}
+		}
+                CHI_strongparty = {
+			allowed = {
+				always = no
+			}
+                       picture = generic_fascism_drift_2
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                             political_power_factor = 0.05
+                             stability_factor = 0.1
+			}
+		}
+                CHI_Shading_sun = {
+			allowed = {
+				always = no
+			}
+                        picture = sour_loser
+
+			
+			removal_cost = -1
+            
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+			}
+                        targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.1
+			}
+                        targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.1
+			}
+                        targeted_modifier = {
+				tag = GUG
+				attack_bonus_against = 0.1
+			}
+
+			modifier = {
+			       war_support_factor = 0.2
+                               political_power_factor = 0.1
+			}
+		}
+                CHI_Equipment_Idea = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_infantry_equipment_manufacturer_3
+
+			
+			removal_cost = -1
+                        equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+                                        reliability = -0.15
+				}
+			}
+	
+
+			modifier = {
+			}
+		}
+                CHI_command_group = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				land_reinforce_rate = 0.02
+				army_morale_factor = 0.10
+			}
+		}
+                CHI_Artillery_fire = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = generic_artillery_regiments
+			
+			modifier = {
+				army_artillery_attack_factor = 0.15
+			}
+		}
+                CHI_Reform_Army = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = hol_expand_the_colonial_army
+			
+			modifier = {
+				army_infantry_attack_factor = 0.05
+                                army_infantry_defence_factor = 0.05
+			}
+		}
+                CHI_USA_Collaborate = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+                        research_bonus = {
+				land_doctrine = 0.1
+			}
+                     
+			picture = tur_kemalist_officers
+			removal_cost = -1
+			modifier = {
+                                army_org_factor = 0.1
+			}
+		}
+}
+political_advisor = {
+		CHI_soong_mei_ling = {
+
+			picture = GFX_idea_chi_soong_mei_ling
+			
+			available = {
+				not = {
+                                        has_government = totalist
+                                        has_government = syndicalist
+                                        has_government = radical_socialist
+                                     }
+			}
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { TR_first_lady }
+		}
+
+		CHI_chiang_ching_kuo = {
+
+			picture = chi_chiang_ching_kuo
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { TR_silent_workhorse }
+		}
+
+		CHI_h_h_kung = {
+
+			picture = chi_h_h_kung
+				
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		CHI_chen_yi = {
+
+			picture = chi_chen_yi
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		CHI_t_v_soong = {
+
+			picture = GFX_idea_chi_t_v_soong
+
+			available = {
+				
+			}
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { financial_expert }
+		}
+	}	
+	army_chief = {
+		
+		#Nationalist
+
+		CHI_he_yingqin = {
+			
+			picture = generic_army_asia_1
+
+			allowed = {
+				original_tag = CHI
+			}
+						
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	air_chief = {
+		
+		#Nationalist
+
+		CHI_zhou_zhirou = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+
+			
+			traits = { air_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	navy_chief = {
+		
+
+	}
+	
+
+
+	theorist = {
+		CHI_bo_yibo = { 
+			ledger = army
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		CHI_fang_zeyi = { 
+			ledger = air
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		CHI_huang_shen = {
+			ledger = navy
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+	high_command = {
+
+		CHI_gao_zhihang = {
+			ledger = air
+
+			picture = CHI_gao_zihang
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { air_air_superiority_3 }
+			
+			ai_will_do = {
+				factor = 0.2
+			}
+		}
+		
+		CHI_xiao_yisu = {
+			ledger = army
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		CHI_chen_cheng = {
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		CHI_yu_hanmou = {
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = CHI
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+	}
+
+	industrial_concern = {
+
+
+	}
+}

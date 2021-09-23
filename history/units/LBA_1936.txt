@@ -1,0 +1,95 @@
+﻿
+
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = ITA_INF_01
+
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	##### Imperial Army #####
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10067
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4051
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1174
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12009
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4176
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1041
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.2
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ETH"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

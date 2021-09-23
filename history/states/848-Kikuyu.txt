@@ -1,0 +1,26 @@
+
+state={
+	id=848
+	name="STATE_848" #Kikuyu
+	manpower = 2392000
+	
+	state_category = city
+
+	history={
+		owner = KEN
+		buildings = {
+			infrastructure = 6
+                        arms_factory = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			1939 2
+		}
+		add_core_of = KEN
+                add_core_of = MAU
+	}
+
+	provinces={
+		1939 10860 10962 5160 11145 
+	}
+}

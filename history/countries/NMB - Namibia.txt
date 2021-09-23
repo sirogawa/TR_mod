@@ -1,12 +1,120 @@
 ﻿capital = 541
-set_cosmetic_tag = NMB_republic
+
+oob = "NMB_1936"
+
+set_cosmetic_tag = NMB_JAP
+set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+        tech_mountaineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+        trench_warfare = 1
+}
+add_ideas = {
+        Colonical_system
+        Tiyoda_Kensho
+        NMB_JAP_colony
+        NMB_JAP_Africa
+}
+add_timed_idea = {
+		idea = JAPCO_black_thursday
+		days = 500
+                 }  
+set_convoys = 20
+
+
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	authoritarian_democrat = 39
+	paternal_autocrat = 4 
+        social_conservative = 17
+        national_populist = 40
 }
+
+create_country_leader = {
+	name = "香椎浩平"
+	
+	picture = "gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+	expire = "1960.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "香椎浩平"
+	
+	picture = "gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+	expire = "1960.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		
+	}
+}
+
+
+create_field_marshal = {
+	name = "香椎浩平"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+	traits = { trait_engineer trait_cautious }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "柳川平助"
+	portrait_path = "gfx/leaders/JAP/Potraits_JAP_Yanagawa.tga"
+	traits = {  }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "安藤輝三"
+	portrait_path = "gfx/leaders/JAP/Potraits_JAP_Ando_Teruzo.tga"
+	traits = { infantry_officer }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "栗原安秀"
+	portrait_path = "gfx/leaders/JAP/Potraits_JAP_Kurihara.tga"
+	traits = { infantry_officer }
+	skill = 2 
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+

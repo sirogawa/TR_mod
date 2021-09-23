@@ -1,0 +1,99 @@
+﻿capital = 9340
+
+oob = "EST_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+        partial_economic_mobilisation
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_convoys = 5
+
+
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+
+create_country_leader = {
+	name = "ニコライ・ユデーニチ"
+	desc = ""
+	picture = "Portrait_Yudenich.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "ニコライ・ユデーニチ"
+	picture = "Portrait_Yudenich.tga"
+	traits = { defensive_doctrine career_officer  }
+	skill = 4
+
+
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+### VARIANTS ###
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Submarines #
+		create_equipment_variant = {
+			name = "Kalev Class"				
+			type = ship_hull_submarine_2
+			name_group = EST_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+	}
+}

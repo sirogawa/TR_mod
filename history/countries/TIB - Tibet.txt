@@ -1,12 +1,45 @@
 ﻿capital = 757
-set_cosmetic_tag = TIB_state
+
+oob = "TIB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+      Absolute_monarchy
+}
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+       authoritarian_democrat = 100
+	
+}
+
+create_country_leader = {
+	name = "ダライ・ラマ14世"
+	desc = ""
+	picture = "Portrait_Tibet_Tenzin_Gyatso.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "ダライ・ラマ14世"
+	desc = ""
+	picture = "Portrait_Tibet_Tenzin_Gyatso.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
 }

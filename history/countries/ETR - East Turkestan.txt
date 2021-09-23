@@ -1,0 +1,64 @@
+﻿capital = 618
+
+oob = "ETR_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.8.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 9
+	syndicalist = 4
+	radical_socialist = 7
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 5
+	social_conservative = 5
+	authoritarian_democrat = 33
+	paternal_autocrat = 7
+	national_populist = 6
+        Gnosticism = 4
+}
+
+create_country_leader = {
+	name = "アリハーン・トラ"
+	desc = ""
+	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "アリハーン・トラ"
+	desc = ""
+	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "アリハーン・トラ"
+	desc = ""
+	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+

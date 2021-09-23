@@ -1,0 +1,573 @@
+ideas = {
+
+	hidden_ideas = {
+
+		continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+
+
+		continuous_air_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				scout_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.10	
+				}
+			}		
+		}
+    }
+
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+	
+	}	
+	political_advisor = {
+		# POLITICAL	
+		generic_TR_silent_workhorse = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = AST tag = USA  } }
+
+			}
+
+			available = {
+
+			}
+			
+			traits = { TR_silent_workhorse }
+	
+			on_add = {
+
+			}
+	
+			do_effect = {
+
+			}
+	
+			ai_will_do = {
+				factor = 1
+			}
+		}
+			
+
+	}
+		
+	
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		generic_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		generic_naval_manufacturer = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		generic_light_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		generic_medium_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		generic_heavy_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		generic_naval_aircraft_manufacturer = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		generic_industrial_concern = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.1
+			}
+                        modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		generic_electronics_concern = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			modifier = {
+				research_speed_factor = 0.03
+			}
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.1
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		generic_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		generic_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		generic_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+
+	political_advisor = {
+
+		generic_captain_of_industry = {
+
+			allowed = {
+				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
+
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer = {
+
+			allowed = {
+				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
+
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		generic_war_industrialist = {
+
+			allowed = {
+				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
+
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		generic_army_chief_off = {
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA  } }
+
+			}
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def = {
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA  } }
+
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		generic_navy_chief_decisive_bat = {
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA  } }
+
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		generic_navy_anti_submarine = {
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA  } }
+
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+	air_chief = {
+
+		generic_air_close_air_sup = {
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA  } }
+
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+		generic_army_art = {
+			ledger = army
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = CHI tag = USA  } }
+
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		generic_army_log = {
+			ledger = army
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = CHI tag = USA   } }
+
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log = {
+			ledger = navy
+
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = CHI tag = USA  } }
+
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer = {
+			ledger = air
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = CHI tag = USA } }
+
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+	theorist = {
+
+		generic_military_theorist = {
+			ledger = army
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA tag = FRA tag = CHI  } }
+
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist = {
+			ledger = navy
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA tag = GER tag = FRA tag = CHI  } }
+
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist = {
+			ledger = air
+			
+			allowed = {
+				NOT = { OR = {  tag = JAP tag = BUL tag = USA tag = GER tag = FRA tag = CHI } }
+
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}
+

@@ -1,0 +1,689 @@
+focus_tree = {
+	id = ENR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENR
+		}
+	}
+        continuous_focus_position = { x = 2500 y = 1300 }
+	#Focus for 英国国民革命 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_ipdmJEqo
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 6
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                add_political_power = 50
+                
+	        add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
+		}
+	}
+
+	#Focus for イングランド社会主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_vNHJmZRb
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_jxJcdGfP 
+		}
+		prerequisite = { 
+			focus = ENR_jCsdgSUc 
+		}
+		prerequisite = { 
+			focus = ENR_hOkbjDXc 
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = ENR_INGSOC
+	        add_popularity = {
+ 
+			ideology = totalist
+			popularity = 0.5
+		}
+		}
+	}
+
+	#Focus for 階級闘争 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_jxJcdGfP
+		icon = GFX_focus_spr_unify_the_london_bureau
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_ipdmJEqo }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                add_stability = 0.05
+                add_war_support = 0.2
+	}
+ }
+
+	#Focus for 秘密警察の設置 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_jCsdgSUc
+		icon = GFX_goal_generic_political_pressure
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_ipdmJEqo }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                add_ideas = ENR_HIMITSUKEISATU
+	}
+ }
+
+
+	#Focus for 産業の集約 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_hOkbjDXc
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_ipdmJEqo }
+		ai_will_do = {
+			factor = 100
+		}
+             completion_reward = {
+                add_ideas = ENR_SANGYOUSHUYAKU
+                random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+                        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+ }
+
+	#Focus for ビッグ・モズレー - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_OQFNKZoE
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_vNHJmZRb }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                set_major = yes
+                add_stability = 0.25 
+                remove_ideas = ENR_REVOLUTION
+                add_timed_idea = {
+					idea = GER_CIVILWAR_MARKS
+					days = 730
+				} 
+	}
+ }
+
+
+	#Focus for 愛情省 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_OGviZYUb
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_OQFNKZoE }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_ideas = ENR_LOVE
+				
+	}
+	}
+
+	#Focus for 真理省 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_lIFaeMns
+		icon = GFX_goal_generic_propaganda
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_OQFNKZoE }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_ideas = ENR_TRUTH
+				
+	}
+	}
+
+	#Focus for 豊富省 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_eaHEkBmg
+		icon = GFX_goal_generic_consumer_goods
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_OQFNKZoE }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_ideas = ENR_Plenty
+				
+	}
+	}
+
+	#Focus for 平和省 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_iNOuQxUz
+		icon = GFX_goal_generic_major_war
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_OQFNKZoE }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_ideas = ENR_PEACE
+				
+	}
+	}
+
+	#Focus for オーウェリアンの陰謀 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_TJMCLgoQ
+		icon = GFX_focus_fra_loyalty_trotzky
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_OGviZYUb 
+		}
+		prerequisite = { 
+			focus = ENR_lIFaeMns 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	#Focus for ニュースピーク - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_aNiJkhwF
+		icon = GFX_focus_TUR_the_sun_language_theory
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_OGviZYUb }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_research_slot = 1
+                       add_ideas = ENR_Newspeak
+		}
+	}
+
+	#Focus for 娯楽の供給 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_rFPfvREB
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_lIFaeMns 
+		}
+		prerequisite = { 
+			focus = ENR_eaHEkBmg 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+	#Focus for 戦争産業の肥大化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_sgcCepDG
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_eaHEkBmg 
+		}
+		prerequisite = { 
+			focus = ENR_iNOuQxUz 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                    add_ideas = ENR_Arms_fac
+                    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for オズワルド・モズレーはあなたを見守っている - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_FrImbitG
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_TJMCLgoQ 
+		}
+		prerequisite = { 
+			focus = ENR_aNiJkhwF 
+		}
+		prerequisite = { 
+			focus = ENR_rFPfvREB 
+		}
+		prerequisite = { 
+			focus = ENR_sgcCepDG 
+		}
+		prerequisite = { 
+			focus = ENR_CZkbsPKB 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                        set_country_flag = ENR_BIGBIG
+			add_country_leader_trait = ENR_Bigbrother
+		}
+	}
+
+	#Focus for 不沈空母ブリタニア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_CZkbsPKB
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_iNOuQxUz }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_ideas = ENR_Airstrip_One
+		}
+	}
+
+	#Focus for -戦争は平和である- - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_MPhaAfjF
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 15
+		y = 0
+		cost = 10
+                available = {
+                            has_country_flag = ENR_BIGBIG 
+                       }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+                       add_war_support = 0.05
+		}
+	}
+
+	#Focus for ドイツとの提携 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_wmFxIeJj
+		icon = GFX_goal_generic_dangerous_deal
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_MPhaAfjF }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			GER = { add_to_faction = ENR }
+		}  
+	}
+
+	#Focus for 旧領の奪還 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_caMuvCzd
+		icon = GFX_focus_eng_global_defense
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_wmFxIeJj }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アイルランド - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_XMCZYbTl
+		icon = GFX_focus_eng_special_air_service
+		x = 15
+		y = 3
+		cost = 10
+		available = {
+			is_subject = no
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_caMuvCzd }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+                        add_state_claim = 113
+                        add_state_claim = 134
+                        add_state_claim = 135
+                        119 = {
+					add_core_of = ENR
+				}
+			create_wargoal = {
+				target = IRE
+				type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for カナダ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_CZidFBeb
+		icon = GFX_focus_attack_canada
+		x = 16
+		y = 4
+		cost = 10
+		available = {
+			is_subject = no
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_XMCZYbTl }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = CAN
+				type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for 南アフリカ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_OtTieZrH
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 14
+		y = 4
+		cost = 10
+		available = {
+			is_subject = no
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_XMCZYbTl }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = SAF
+				type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for アメリカ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_DNongWmi
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+                available = {
+			is_subject = no
+                        NOT = { has_war_with = IRE }
+                        NOT = { has_war_with = AUS }
+                        NOT = { has_war_with = FRA }
+		}
+		prerequisite = { 
+			focus = ENR_CZidFBeb 
+		}
+		prerequisite = { 
+			focus = ENR_OtTieZrH 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			declare_war_on = {
+				target = USA type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for 最も復讐すべき敵 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_KpiaFjJm
+		icon = GFX_focus_attack_japan
+		x = 16
+		y = 6
+		cost = 10
+                available = {
+			is_subject = no
+                        NOT = { has_war_with = USA }
+                        NOT = { has_war_with = AUS }
+                        NOT = { has_war_with = FRA }
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_DNongWmi }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = JAP
+				type = annex_everything
+			}
+
+		}
+	}
+
+	#Focus for オーストラリア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_PZXyildT
+		icon = GFX_focus_AST_never_gallipoli
+		x = 14
+		y = 6
+		cost = 10
+                available = {
+			is_subject = no
+                        NOT = { has_war_with = USA }
+                        NOT = { has_war_with = AUS }
+                        NOT = { has_war_with = FRA }
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = ENR_DNongWmi }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = { 
+			create_wargoal = {
+				target = AST
+				type = annex_everything
+			}
+                        create_wargoal = {
+				target = NZL
+				type = annex_everything
+			}
+
+
+		}
+	}
+
+	#Focus for オセアニア - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = ENR_OtKiysZU
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ENR_PZXyildT 
+		}
+		prerequisite = { 
+			focus = ENR_KpiaFjJm 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+                available = {
+                        owns_state = 361
+                        owns_state = 276
+                        owns_state = 285
+                        owns_state = 681
+                        NOT = { has_war_with = USA }
+			NOT = { has_war_with = JAP }
+			is_subject = no
+		}
+	        completion_reward = {  
+                     set_cosmetic_tag = ENR_OCE
+                        	
+		}
+	}
+
+
+
+
+#End of focuses 
+ }

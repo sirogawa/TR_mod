@@ -1,12 +1,76 @@
 ﻿capital = 8
-set_cosmetic_tag = LUX_grand_duchy
+
+oob = "LUX_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+add_ideas = {
+        Constitutional_monarchy
+}
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = social_conservative
+	last_election = "1934.6.3"
+	election_frequency = 36
+	elections_allowed = yes
 }
 set_popularities = {
-	neutrality = 100
+	social_democrat = 36
+	social_liberal = 10
+	market_liberal = 17
+	social_conservative = 37
+}
+
+
+create_country_leader = {
+	name = "シャルロッテ"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "シャルロッテ"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "シャルロッテ"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	name = "シャルロッテ"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+	
+	}
 }

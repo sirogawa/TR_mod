@@ -1,0 +1,25 @@
+state={
+	id=845
+	name="STATE_845"
+	provinces={
+		243 279 3295 6347 
+	}
+	manpower=440000
+        state_category=town
+	buildings_max_level_factor=1.000
+        history={
+		owner = GER
+		add_core_of = DDR
+		victory_points = {
+			362 10 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = POL
+		add_core_of = GER
+
+	}
+}

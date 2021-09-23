@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	SpriteType = {	##
+		name = "GFX_News_event_Austria_hungary"
+		texturefile = "gfx/event_pictures/News_event_Austria_hungary.dds"
+	}
+	SpriteType = {##
+		name = "GFX_News_event_Bloody_May_Day"
+		texturefile = "gfx/event_pictures/News_event_Bloody_May_Day.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_News_event_Febrevolution"
+		texturefile = "gfx/event_pictures/News_event_Febrevolution.dds"
+	}
+	SpriteType = {	##
+		name = "GFX_news_event_Smith_Caughlin_Townsend"
+		texturefile = "gfx/event_pictures/news_event_Smith_Caughlin_Townsend.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Tsar_Nikolai"
+		texturefile = "gfx/event_pictures/News_event_Tsar_Nikolai.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Kaiseki"
+		texturefile = "gfx/event_pictures/News_event_Kaiseki.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Magus_night"
+		texturefile = "gfx/event_pictures/News_event_Magus_night.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Strasser"
+		texturefile = "gfx/event_pictures/News_event_Strasser.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_EugenLevine"
+		texturefile = "gfx/event_pictures/News_event_EugenLevine.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Trotsky"
+		texturefile = "gfx/event_pictures/News_event_Trotsky.dds"
+	}
+        SpriteType = {	##
+		name = "GFX_News_event_Black_Thursday"
+		texturefile = "gfx/event_pictures/News_event_Black_Thursday.dds"
+	}
+
+}

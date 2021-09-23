@@ -1,0 +1,45 @@
+﻿capital = 847
+oob = "SKT_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+
+}
+
+
+add_ideas = {
+      Absolute_monarchy
+}
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+create_country_leader = {
+	name = "スィッディーク アブバカル2世"
+	
+	picture = "gfx/leaders/Africa/SiddiqAbubakarIII.tga"
+	expire = "1960.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "スィッディーク アブバカル2世"
+	portrait_path = "gfx/leaders/Africa/SiddiqAbubakarIII.tga"
+	traits = { offensive_doctrine politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}

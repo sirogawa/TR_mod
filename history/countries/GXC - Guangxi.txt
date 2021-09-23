@@ -1,12 +1,72 @@
-﻿capital = 594
-set_cosmetic_tag = GXC_warlord
+﻿capital = 599
+
+oob = "GXC_1936"
+
+set_stability = 0.6
+set_war_support = 0.4
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+        tech_support = 1		
+	tech_engineers = 1
+        mass_assault = 1
+}
+
+
+add_timed_idea = {
+		idea = JAPCO_black_thursday
+		days = 500
+                 }  
+set_convoys = 20
+
+add_ideas = {
+         militaly_dictatorship
+         YUN_jap_economic
+         CHI_late_army
+}
+
+set_convoys = 5
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	authoritarian_democrat = 5
+	paternal_autocrat = 91
+	national_populist = 4
+}
+
+create_country_leader = {
+	name = "安藤利吉"
+	
+	picture = "gfx/leaders/JAP/Portrait_JAP_Ando_RIkichi.tga"
+	expire = "1960.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "劉震寰"
+	
+	picture = "gfx/leaders/CHI/Portrait_China_Liu_Chen_fuan.tga"
+	expire = "1960.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Chen Jitang"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }

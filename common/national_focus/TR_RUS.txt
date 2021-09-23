@@ -1,0 +1,1102 @@
+focus_tree = {
+	id = soviet_focus
+	continuous_focus_position = { x = 1500 y = 1500 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	#軍事革命委員会
+	focus = {
+		id = RUS_junshigemingweiyuanhui
+		icon = GFX_focus_generic_soviet_politics
+		x = 11
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#戦時共産主義
+	focus = {
+		id = RUS_zhanshigongchanzhuyi
+		icon = GFX_focus_generic_soviet_politics
+		x = 9
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
+		completion_reward = {
+			add_ideas = RUS_WAR_COMMUNISM
+		}
+	}
+
+	#亡命者の帰国
+	focus = {
+		id = RUS_wangmingzhenoguiguo
+		icon = GFX_focus_generic_soviet_politics
+		x = 11
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
+	    completion_reward = {
+			add_manpower = 50000
+			add_equipment_to_stockpile = {
+                         type = infantry_equipment
+                         amount = 1000
+                         producer = RUS
+                      } 
+		}
+	}
+
+	#反革命の取締り
+	focus = {
+		id = RUS_fangemingnoqudiri
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 13
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
+	    completion_reward = {
+			add_ideas = RUS_Cheka
+		}
+	}
+
+	#人民委員会議の設立
+	focus = {
+		id = RUS_renminweiyuanhuiyinosheli
+		icon = GFX_focus_generic_soviet_politics
+		x = 11
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_zhanshigongchanzhuyi  } prerequisite = { focus = RUS_wangmingzhenoguiguo  } prerequisite = { focus = RUS_fangemingnoqudiri  }
+	    completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#労農赤軍
+	focus = {
+		id = RUS_laonongchijun
+		icon = GFX_focus_generic_soviet_politics
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
+	completion_reward = {
+		    army_experience = 20
+			swap_ideas = {
+				remove_idea = RUS_Red_Army
+				add_idea = RUS_Red_Army_1
+			}
+		}
+	}
+
+	#ドイツに支援を要請
+	focus = {
+		id = RUS_doitunizhiyuanwoyaoqing
+		icon = GFX_focus_generic_soviet_politics
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
+		completion_reward = {
+                        GER = { country_event = TR_Soviet.1 }
+		}
+	}
+
+	#新経済政策
+	focus = {
+		id = RUS_xinjingjizhengce
+		icon = GFX_focus_generic_industry_3
+		x = 17
+		y = 3
+		cost = 10
+		available = {
+			has_country_flag = SOV_Congress_END
+			has_global_flag = Soviet_Win_flag
+			NOT = { country_exists = SOV }
+			}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_WAR_COMMUNISM
+				add_idea = RUS_NEW_ECONOMIC_POLICY
+			}	
+		}
+	}
+
+	#トゥハチェフスキーの主導
+	focus = {
+		id = RUS_touhatiehusukinozhudao
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_laonongchijun  }
+		mutually_exclusive = { focus = RUS_suvuetinnozhudao  }
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_1
+				add_idea = RUS_Red_Army_T
+			}	
+		}
+	}
+
+		#軍事研究の強化
+		focus = {
+			id = RUS_sobietokexue1
+			icon = GFX_focus_generic_socialist_science
+			x = 5
+			y = 5
+			cost = 10
+			available = {
+				has_country_flag = SOV_Congress_END
+				num_of_factories > 150
+			}
+			search_filters = {
+				FOCUS_FILTER_RESEARCH
+			}
+			prerequisite = { focus = RUS_touhatiehusukinozhudao focus = RUS_suvuetinnozhudao }
+			completion_reward = {
+				add_research_slot = 1
+			}
+		}
+
+	#一国社会主義
+	focus = {
+		id = RUS_yiguoshehuizhuyi
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 5
+		cost = 10		
+		
+		available = {
+			OR = { 
+				has_country_flag = SOV_Stalin_Win
+			    has_country_flag = SOV_Bukharin_Win
+			     }
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_waijiaozhengce  }
+		mutually_exclusive = { focus = RUS_shijiegeming  }
+	    completion_reward = {
+			add_political_power= 50
+			custom_effect_tooltip = "一国社会主義ディシジョンをアンロックする予定"
+		}
+	}
+
+	#スヴェチンの主導
+	focus = {
+		id = RUS_suvuetinnozhudao
+		icon = GFX_goal_generic_army_doctrines
+		x = 6
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_laonongchijun  }
+		mutually_exclusive = { focus = RUS_touhatiehusukinozhudao  }
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_1
+				add_idea = RUS_Red_Army_S
+			}	
+		}
+	}
+
+	#外交政策
+	focus = {
+		id = RUS_waijiaozhengce
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 1
+		y = 4
+		cost = 10
+		available = {
+			    has_country_flag = SOV_Congress_END
+                has_global_flag = Soviet_Win_flag
+                NOT = { country_exists = SOV }
+                }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_doitunizhiyuanwoyaoqing  }
+	    completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+
+	#党大会
+	focus = {
+		id = RUS_dangdahui
+		icon = GFX_focus_generic_soviet_politics
+		x = 11
+		y = 3
+		cost = 8
+		available = {
+                has_global_flag = Soviet_Win_flag
+                NOT = { country_exists = SOV }
+                }
+		search_filters = {
+			FOCUS_FILTER_USA_CONGRESS
+		}
+		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
+	    completion_reward = {
+			country_event = TR_Soviet.2
+		}
+	}
+
+	#鋼鉄のヴォシチ
+	focus = {
+		id = RUS_gangtienovuositi
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 4
+		cost = 2
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_dangdahui  }
+	
+	completion_reward = {
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		        }
+		}
+	}
+
+	#社会制度の整備
+	focus = {
+		id = RUS_gangtienovuositi_1
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 5
+		cost = 15
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gangtienovuositi  }
+	
+	completion_reward = {
+		add_ideas = RUS_Kyouiku
+		add_ideas = RUS_Eiseikanri
+	}
+ }
+
+	
+	#情報機関の強化
+	focus = {
+		id = RUS_gangtienovuositi_2
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 6
+		cost = 10
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gangtienovuositi_1  }
+	
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_Cheka
+			add_idea = RUS_NKVD
+		}
+	}
+}
+
+	#大粛清
+	focus = {
+		id = RUS_gangtienovuositi_3
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 7
+		cost = 10
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gangtienovuositi_2  }
+	
+	completion_reward = {
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		        }
+		
+		remove_ideas = RUS_Panic
+		add_timed_idea = {
+			idea = RUS_great_purge
+			days = 365
+		}      
+	}
+	}
+	#スターリン憲法
+	focus = {
+		id = RUS_gangtienovuositi_4
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 8
+		cost = 10
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gangtienovuositi_3  }
+	
+	completion_reward = {
+		add_ideas = RUS_Stalin_Constitution
+	}
+}
+
+	#赤いツァーリ
+	focus = {
+		id = RUS_gangtienovuositi_5
+		icon = GFX_focus_fra_loyalty_stalin
+		x = 12
+		y = 9
+		cost = 10
+		available = {
+			has_country_flag = SOV_Stalin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gangtienovuositi_4  }
+	
+	completion_reward = {
+		add_ideas = RUS_Stalin_Tsar
+		}
+	}
+
+	#世界革命
+	focus = {
+		id = RUS_shijiegeming
+		icon = GFX_goal_support_fourth_int
+		x = 2
+		y = 5
+		cost = 10
+		available = {
+			OR = { 
+				has_country_flag = SOV_Bogdanov_Win
+			    has_country_flag = SOV_Zinoviev_Win
+			     }
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_waijiaozhengce  }
+		mutually_exclusive = { focus = RUS_yiguoshehuizhuyi  }
+	    completion_reward = {
+			add_political_power= 50
+			custom_effect_tooltip = "世界革命ディシジョンをアンロックする予定"
+		}
+	}
+
+	#赤い星
+	focus = {
+		id = RUS_chiixing
+		icon = GFX_focus_ger_great_red_menace
+		x = 14
+		y = 4
+		cost = 2
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_dangdahui  }
+	    completion_reward = {
+			add_popularity = {
+				ideology = Gnosticism
+				popularity = 0.2
+					}
+		}
+	}
+
+	#文化大革命
+	focus = {
+		id = RUS_chiixing_1
+		icon = GFX_focus_ger_great_red_menace
+		x = 14
+		y = 5
+		cost = 10
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_chiixing  }
+	    completion_reward = {
+
+		    swap_ideas = {
+				remove_idea = RUS_Panic
+				add_idea = RUS_Cultural_Revolution
+			}	
+		}
+	}
+
+	#集団的身体
+	focus = {
+		id = RUS_chiixing_2
+		icon = GFX_focus_ger_great_red_menace
+		x = 14
+		y = 6
+		cost = 10
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_chiixing_1  }
+	    completion_reward = {
+		    add_ideas = RUS_Syudantekisintai
+		}
+	}
+
+	#社会科学アカデミーの創設
+	focus = {
+		id = RUS_chiixing_3
+		icon = GFX_focus_ger_great_red_menace
+		x = 14
+		y = 7
+		cost = 10
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_chiixing_2  }
+	    completion_reward = {
+			add_ideas = RUS_Academy
+		}
+	}
+
+	#新たな神の構築
+	focus = {
+		id = RUS_chiixing_4
+		icon = GFX_focus_ger_great_red_menace
+		x = 14
+		y = 8
+		cost = 10
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_chiixing_3  }
+	    completion_reward = {
+			add_ideas = RUS_New_God
+		}
+	}
+
+		#未来的プロレタリア文化社会
+		focus = {
+			id = RUS_chiixing_5
+			icon = GFX_focus_ger_great_red_menace
+			x = 14
+			y = 9
+			cost = 10
+			available = {
+				has_country_flag = SOV_Bogdanov_Win
+				}
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_chiixing_4  }
+			completion_reward = {
+				add_ideas = RUS_New_Social
+				add_popularity = {
+					ideology = Gnosticism
+					popularity = 0.2
+						}
+			}
+		}
+
+	#農民の友
+	focus = {
+		id = RUS_nongminnoyou
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 4
+		cost = 2
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_dangdahui  }
+	    completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.2
+					}
+		}
+	}
+
+	#プロレタリア・ヒューマニズム
+	focus = {
+		id = RUS_nongminnoyou_1
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 5
+		cost = 10
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_nongminnoyou  }
+	    completion_reward = {
+			add_ideas = RUS_Proletaria_Humanism
+		}
+	}
+
+	#市場社会主義
+	focus = {
+		id = RUS_nongminnoyou_2
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 6
+		cost = 10
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_nongminnoyou_1  }
+	    completion_reward = {
+			add_ideas = RUS_Market_socialism
+		}
+	}
+
+
+	#農地改革
+	focus = {
+		id = RUS_nongminnoyou_3
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 7
+		cost = 10
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_nongminnoyou_2  }
+	    completion_reward = {
+			add_ideas = RUS_nouchikaikaku
+		}
+	}
+
+
+	#党支配の強化
+	focus = {
+		id = RUS_nongminnoyou_4
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 8
+		cost = 10
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_nongminnoyou_3  }
+	    completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.1
+					}
+			
+			remove_ideas = RUS_Panic
+		}
+	}
+
+
+	#革命的農本主義
+	focus = {
+		id = RUS_nongminnoyou_5
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 10
+		y = 9
+		cost = 10
+        available = {
+			has_country_flag = SOV_Bukharin_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_nongminnoyou_4  }
+	    completion_reward = {
+			add_ideas = RUS_Revolutionary_agriculturism
+		}
+	}
+
+	#レーニンに忠実に
+	focus = {
+		id = RUS_reninnohoujizhe
+		icon = GFX_focus_generic_soviet_politics
+		x = 8
+		y = 4
+		cost = 2
+		available = {
+			has_country_flag = SOV_Zinoviev_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_dangdahui  }
+	    completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.2
+					}
+		}
+	}
+
+	#チェキストの強化
+	focus = {
+		id = RUS_reninnohoujizhe_1
+		icon = GFX_focus_generic_soviet_politics
+		x = 8
+		y = 5
+		cost = 10
+		available = {
+			has_country_flag = SOV_Zinoviev_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_reninnohoujizhe  }
+	    completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Cheka
+				add_idea = RUS_Cheka_1
+			}
+		}
+	}
+
+	#民族自治
+	focus = {
+		id = RUS_reninnohoujizhe_2
+		icon = GFX_focus_generic_soviet_politics
+		x = 8
+		y = 6
+		cost = 10
+		available = {
+			has_country_flag = SOV_Zinoviev_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_reninnohoujizhe_1  }
+	    completion_reward = {
+			add_ideas = RUS_Ethnic_autonomy
+		}
+	}
+
+	#クラークの解体
+	focus = {
+		id = RUS_reninnohoujizhe_3
+		icon = GFX_focus_generic_soviet_politics
+		x = 8
+		y = 7
+		cost = 10
+		available = {
+			has_country_flag = SOV_Zinoviev_Win
+			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_reninnohoujizhe_2  }
+	    completion_reward = {
+			add_stability = -0.1
+		    swap_ideas = {
+				remove_idea = RUS_Panic
+				add_idea = RUS_Panic_1
+			}	
+		}
+	}
+
+		#正教会の破壊
+		focus = {
+			id = RUS_reninnohoujizhe_4
+			icon = GFX_focus_generic_soviet_politics
+			x = 8
+			y = 8
+			cost = 10
+			available = {
+				has_country_flag = SOV_Zinoviev_Win
+				}
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_reninnohoujizhe_3  }
+			completion_reward = {
+				add_stability = -0.1
+				swap_ideas = {
+					remove_idea = RUS_Panic_1
+					add_idea = RUS_Panic_2
+				}	
+			}
+		}
+
+		#レーニンを称えよ
+		focus = {
+			id = RUS_reninnohoujizhe_5
+			icon = GFX_focus_generic_soviet_politics
+			x = 8
+			y = 9
+			cost = 10
+			available = {
+				has_country_flag = SOV_Zinoviev_Win
+				}
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_reninnohoujizhe_4  }
+			completion_reward = {
+				add_ideas = RUS_Lenin_is_God
+			}
+		}
+	#ゴスプランの設立
+	focus = {
+		id = RUS_gosupurannosheli
+		icon = GFX_focus_generic_industry_3
+		x = 17
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_xinjingjizhengce  }
+	    completion_reward = {
+			add_ideas = RUS_Gosplan
+		}
+	}
+
+	#五ヵ年計画
+	focus = {
+		id = RUS_wukanianjihua
+		icon = GFX_RUS_wukanianjihua-424
+		x = 18
+		y = 5
+		cost = 10
+		available = {
+		 NOT = { 
+				has_country_flag = SOV_Bukharin_Win
+			     }
+			}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_gosupurannosheli  }
+		mutually_exclusive = { focus = RUS_netupunoweichi  }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = RUS_NEW_ECONOMIC_POLICY
+			add_idea = RUS_Five_Years_Plan
+		}
+		}
+	}
+	#ネップの維持
+	focus = {
+		id = RUS_netupunoweichi
+		icon = GFX_focus_generic_industry_3
+		x = 16
+		y = 5
+		cost = 10
+		available = {
+			NOT = { 
+				   has_country_flag = SOV_Stalin_Win
+					}
+			   }
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_gosupurannosheli  }
+		mutually_exclusive = { focus = RUS_wukanianjihua  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY
+				add_idea = RUS_NEW_ECONOMIC_POLICY_1
+			}
+			}
+		}
+
+	#農業集団化の強行
+	focus = {
+		id = RUS_nongyejituanhuanoqiangxing
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 18
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_wukanianjihua  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan
+				add_idea = RUS_Five_Years_Plan_1
+			}
+			}
+		}
+	#全てを重工業へ回せ
+	focus = {
+		id = RUS_quantewochonggongyehehuise
+		icon = GFX_focus_generic_industry_3
+		x = 18
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_nongyejituanhuanoqiangxing  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan_1
+				add_idea = RUS_Five_Years_Plan_2
+			}
+			}
+		}
+	#強制労働
+	focus = {
+		id = RUS_qiangzhilaodong
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 18
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_quantewochonggongyehehuise  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan_2
+				add_idea = RUS_Five_Years_Plan_3
+			}
+			}
+		}
+	#ソビエト科学
+	focus = {
+		id = RUS_sobietokexue
+		icon = GFX_focus_generic_socialist_science
+		x = 17
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = RUS_qiangzhilaodong  focus = RUS_weilainoweinojipan  }
+	    completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#漸進的社会化
+	focus = {
+		id = RUS_jianjindeshehuihua
+		icon = GFX_focus_generic_soviet_politics
+		x = 16
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_netupunoweichi  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_1
+				add_idea = RUS_NEW_ECONOMIC_POLICY_2
+			}
+			}
+		}
+
+	#農産物売買の自由化
+	focus = {
+		id = RUS_nongchanwumaimainoziyouhua
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 16
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_jianjindeshehuihua  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_2
+				add_idea = RUS_NEW_ECONOMIC_POLICY_3
+			}
+			}
+		}
+
+
+	#未来の為の基盤
+	focus = {
+		id = RUS_weilainoweinojipan
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 16
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_nongchanwumaimainoziyouhua  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_3
+				add_idea = RUS_NEW_ECONOMIC_POLICY_4
+			}
+			}
+		}
+	#第三インターナショナルへの加盟
+	focus = {
+		id = RUS_disanintanasiyonaruhenojiameng
+		icon = GFX_focus_generic_soviet_politics
+		x = 2
+		y = 6
+		cost = 10
+		available = {
+			is_subject = no
+                        is_in_faction = no
+			threat > 0.8
+            GER = { 
+			  is_subject = no	
+			  is_faction_leader = yes
+			 } 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_shijiegeming  }
+		completion_reward = {
+			GER = { add_to_faction = RUS }
+		}  
+	}
+
+	#第四インターナショナルの創設
+	focus = {
+		id = RUS_disiintanasiyonarunochuangshe
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 6
+		cost = 10
+		available = {
+			is_subject = no
+                        is_in_faction = no
+
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_yiguoshehuizhuyi  }
+		completion_reward = {                
+            create_faction = "Fourth_International"
+		}
+	}
+
+	#"中央アジアを征服"
+	focus = {
+		id = RUS_Diplomacy_Focus1
+		icon = GFX_focus_generic_soviet_politics
+		x = 1
+		y = 7
+		cost = 10
+		available = {
+			is_subject = no
+
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_disiintanasiyonarunochuangshe focus = RUS_disanintanasiyonaruhenojiameng }
+		completion_reward = { 
+			407 = {
+		            add_core_of = RUS
+	            }
+			406 = {
+		            add_core_of = RUS
+	            }
+			add_state_claim = 402
+			add_state_claim = 587
+			add_state_claim = 583
+			add_state_claim = 590
+			add_state_claim = 404
+			add_state_claim = 588
+			add_state_claim = 589
+			add_state_claim = 586
+			add_state_claim = 585
+			add_state_claim = 732
+			add_state_claim = 742
+			add_state_claim = 405
+			add_state_claim = 584
+            create_wargoal = {
+	            target = KAZ
+	            type = annex_everything
+            }
+			create_wargoal = {
+	            target = UZB
+	            type = annex_everything
+            }
+        }
+    }
+
+}

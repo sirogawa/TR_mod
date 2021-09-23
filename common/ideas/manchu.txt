@@ -1,0 +1,136 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		MAN_KAITAKUDAN = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+                              MONTHLY_POPULATION = 0.5
+			}
+		}
+                MAN_MINZOKUKYOUWA = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+                              stability_factor = 0.15
+                              resistance_target = -0.2
+
+			}
+		}
+                MAN_ODORAKUDO = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              MONTHLY_POPULATION = 0.2
+                              global_building_slots_factor = 0.2
+                              
+			}
+		}
+                MAN_HANEI = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              consumer_goods_factor = -0.05
+                              production_speed_buildings_factor = 0.1
+                              production_factory_max_efficiency_factor = 0.1
+		              production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+                MAN_JUKOGYOU = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              production_speed_buildings_factor = 0.1
+                              industrial_capacity_factory = 0.1
+			}
+		}
+                MAN_NOGYOUKAIHATU = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              consumer_goods_factor = -0.025
+                              MONTHLY_POPULATION = 0.1
+                              global_building_slots_factor = 0.15
+                              
+			}
+		}
+                MAN_Judea = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              research_speed_factor = 0.05
+                              MONTHLY_POPULATION = 0.1
+                              
+			}
+		}
+                MAN_TOKUJU = {
+			allowed = {
+				always = no
+			}
+                        picture = chi_chinese_unity
+			
+			removal_cost = -1
+            
+			modifier = {
+                              production_factory_max_efficiency_factor = 0.1
+		              production_factory_efficiency_gain_factor = 0.1
+                              industrial_capacity_factory = 0.1
+			}
+		}
+}
+        political_advisor = {	
+                MAN_Kishi_Nobusuke = {
+			
+			picture = GFX_idea_MAN_Kishi_Nobusuke
+			
+			allowed = {
+				original_tag = MAN
+                                  }
+                        available = {
+                               
+			}
+			
+			traits = { TR_planned_economy_proponent }
+		}
+               
+               }
+}

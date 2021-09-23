@@ -1,0 +1,34 @@
+
+state={
+	id=295
+	name="STATE_295" # Leopoldville
+	manpower = 1980249
+	
+	state_category = town
+	
+	resources={
+		tungsten=5
+                rubber=11
+	}
+
+	history={
+		owner = COG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+                        arms_factory = 1
+			10968 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			5117 3 
+		}
+		add_core_of = COG
+		add_core_of = RCG
+	}
+
+	provinces={
+		4128 5117 10025 10968 12896 12925 12945 
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=843
+	name="STATE_843"
+	provinces={
+		764 3764 3961 6975 9736 
+	}
+	manpower=500000
+        state_category=town
+	buildings_max_level_factor=1.000
+        history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = OCC
+		buildings = {
+			infrastructure = 4
+                        arms_factory = 2
+
+		}
+               
+
+	}
+
+}

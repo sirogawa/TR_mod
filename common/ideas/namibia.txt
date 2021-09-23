@@ -1,0 +1,68 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		NMB_Migration = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+			modifier = {
+                                MONTHLY_POPULATION = 0.25
+			}
+		}
+               NMB_Diamonds = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 consumer_goods_factor = -0.1
+			}
+		}  
+               NMB_Reconquest = {
+			allowed = {
+				always = no
+			}
+
+			picture = jap_militarism_shogun
+			removal_cost = -1
+			modifier = {
+                                justify_war_goal_time = -0.2
+				local_non_core_manpower = 0.1
+                                war_support_factor = 0.1
+                                surrender_limit= 0.1
+			}
+		}
+               NMB_Arms_Production = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+                        equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+	
+
+			modifier = {
+			}
+		}
+}
+}

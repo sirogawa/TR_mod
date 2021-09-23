@@ -1,0 +1,21 @@
+state={
+	id=855
+	name="STATE_855"
+	manpower = 65120
+	
+	state_category = pastoral
+
+	history={
+		owner = SIA
+		add_core_of = LAO
+                add_core_of = SIA
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		10456 10330 10356
+	}
+}

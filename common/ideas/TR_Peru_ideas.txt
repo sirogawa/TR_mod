@@ -1,0 +1,26 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		PRU_EL_CONDOR_PASA = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_manpower_bonus
+
+			
+			removal_cost = -1
+			modifier = {
+			        conscription = 0.025
+                                planning_speed = 0.1
+                                army_attack_factor = 0.1
+                                army_speed_factor = 0.1
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
+			}
+		}
+}
+}

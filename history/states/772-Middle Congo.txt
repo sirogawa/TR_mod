@@ -1,0 +1,32 @@
+
+state={
+	id=772
+	name="STATE_772" # Middle Congo (Brazzaville)
+	manpower = 1326415
+	
+	state_category = city
+	resources={
+		rubber=25
+	}
+	history={
+		owner = COG
+                add_core_of = COG
+		victory_points = {
+			8193 2
+		}
+		buildings = {
+			infrastructure = 5
+                        arms_factory = 1
+                        industrial_complex = 1
+                        dockyard = 1
+			12975 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		2192 3109 6008 8193 12975 
+	}
+}

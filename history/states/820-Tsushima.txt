@@ -1,0 +1,20 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		10011 
+	}
+	state_category=Small_island
+	manpower=30000
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+
+		}
+		
+
+	}
+	buildings_max_level_factor=1.000
+}

@@ -1,12 +1,45 @@
 ﻿capital = 617
-set_cosmetic_tag = SIK_warlord
+
+oob = "SIK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	
+}
+add_ideas = { 
+         militaly_dictatorship
+         CHI_late_army
+}
+
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	paternal_autocrat = 100
+}
+
+create_country_leader = {
+	name = "盛世才"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "Portrait_Shinjang_Sheng_Shicai.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Chiang Yu-fen"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }

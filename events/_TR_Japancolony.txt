@@ -1,0 +1,1115 @@
+add_namespace = TR_japfed
+
+country_event = {#1936年帝国会議
+	id = TR_japfed.1
+	title = TR_japfed.1.t
+	desc = TR_japfed.1.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.1.a
+                CAL = { country_event = TR_japfed.2 }
+                SAU = { country_event = TR_japfed.3 }
+                CEN = { country_event = TR_japfed.4 }
+                SIB = { country_event = TR_japfed.5 }
+                hidden_effect = {
+			country_event = {
+					id = TR_japfed.6
+					days = 7
+					
+				}
+		}
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-アラビア
+	id = TR_japfed.2
+	title = TR_japfed.2.t
+	desc = TR_japfed.2.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.2.a
+
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-カリフォルニア
+	id = TR_japfed.3
+	title = TR_japfed.3.t
+	desc = TR_japfed.3.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.3.a
+
+
+		
+	}
+}
+
+
+country_event = {#1936年帝国会議-中米連邦
+	id = TR_japfed.4
+	title = TR_japfed.4.t
+	desc = TR_japfed.4.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.4.a
+
+
+		
+	}
+}
+
+
+country_event = {#1936年帝国会議-シベリア
+	id = TR_japfed.5
+	title = TR_japfed.5.t
+	desc = TR_japfed.5.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.5.a
+
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-恐慌
+	id = TR_japfed.6
+	title = TR_japfed.6.t
+	desc = TR_japfed.6.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.6.a
+                add_political_power = -75
+                add_timed_idea = {
+					idea = Hakkouitiu
+					days = 365
+				}   
+                CAL = { country_event = TR_japfed.7 }
+                SAU = { country_event = TR_japfed.8 }
+                CEN = { country_event = TR_japfed.9 }
+                SIB = { country_event = TR_japfed.10 }
+                hidden_effect = {
+			country_event = {
+					id = TR_japfed.11
+					days = 7
+					
+				}
+		}
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-恐慌
+	id = TR_japfed.7
+	title = TR_japfed.7.t
+	desc = TR_japfed.7.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.7.a
+                add_political_power = -50
+                add_timed_idea = {
+					idea = Hakkouitiu
+					days = 365
+				}   
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-恐慌
+	id = TR_japfed.8
+	title = TR_japfed.8.t
+	desc = TR_japfed.8.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.8.a
+                add_political_power = -50
+                add_timed_idea = {
+					idea = Hakkouitiu
+					days = 365
+				}   
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-恐慌
+	id = TR_japfed.9
+	title = TR_japfed.9.t
+	desc = TR_japfed.9.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.9.a
+                add_political_power = -50
+                add_timed_idea = {
+					idea = Hakkouitiu
+					days = 365
+				}   
+
+		
+	}
+}
+
+
+country_event = {#1936年帝国会議-恐慌
+	id = TR_japfed.10
+	title = TR_japfed.10.t
+	desc = TR_japfed.10.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.10.a
+                add_political_power = -50
+                add_timed_idea = {
+					idea = Hakkouitiu
+					days = 365
+				}   
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-自治領の主権
+	id = TR_japfed.11
+	title = TR_japfed.11.t
+	desc = TR_japfed.11.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.11.a
+                end_puppet = CAL
+                end_puppet = SAU
+                end_puppet = CEN
+                end_puppet = SIB
+                JAP = { add_to_faction = CAL }
+                JAP = { add_to_faction = SAU }
+                JAP = { add_to_faction = CEN }
+                JAP = { add_to_faction = SIB }
+                CAL = { country_event = TR_japfed.12 }
+                SAU = { country_event = TR_japfed.13 }
+                CEN = { country_event = TR_japfed.14 }
+                SIB = { country_event = TR_japfed.15 }
+                hidden_effect = {
+			country_event = {
+					id = TR_japfed.16
+					days = 7
+					
+				}
+		}
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-自治領の主権
+	id = TR_japfed.12
+	title = TR_japfed.12.t
+	desc = TR_japfed.12.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.12.a
+                ai_chance = {
+			base = 50
+		}
+                set_cosmetic_tag = CAL_IND
+                JAP = { add_to_faction = CAL }
+
+		
+	}
+        option = {
+		name = TR_japfed.12.b
+                ai_chance = {
+			base = 50
+		}
+		add_ideas = Absolute_monarchy
+                set_cosmetic_tag = CAL_SHOGUNATE
+                add_popularity = {
+			ideology = national_populist
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+                JAP = { add_to_faction = CAL }
+
+		
+	}
+}
+
+country_event = {#1936年帝国会議-自治領の主権
+	id = TR_japfed.13
+	title = TR_japfed.13.t
+	desc = TR_japfed.13.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.13.a
+                ai_chance = {
+			base = 50
+		}
+                set_cosmetic_tag = SAU_IND
+                JAP = { add_to_faction = SAU }
+
+		
+	}
+        option = {
+		name = TR_japfed.13.b
+                ai_chance = {
+			base = 50
+		}
+		add_ideas = Absolute_monarchy
+                remove_ideas = Tiyoda_Kensho
+                set_cosmetic_tag = SAU_CALIPHATE
+                leave_faction = yes
+                add_popularity = {
+			ideology = national_populist
+			popularity = 1.0
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+        JAP = { country_event = TR_japfed.120 }
+		
+	}
+}
+
+country_event = {#アラビア反目
+	id = TR_japfed.120
+	title = TR_japfed.120.t
+	desc = TR_japfed.120.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.120.a
+                ai_chance = {
+			base = 95
+		}
+        add_political_power = -5
+
+		
+	}
+        option = {
+		name = TR_japfed.120.b
+                ai_chance = {
+			base = 5
+		}
+        add_political_power = -100
+		create_wargoal = {
+			target = SAU
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {#1936年帝国会議-自治領の主権
+	id = TR_japfed.14
+	title = TR_japfed.14.t
+	desc = TR_japfed.14.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.14.a
+                set_cosmetic_tag = CEN
+                JAP = { add_to_faction = CEN }
+
+		
+	}
+
+}
+
+
+country_event = {#1936年帝国会議-自治領の主権
+	id = TR_japfed.15
+	title = TR_japfed.15.t
+	desc = TR_japfed.15.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.15.a
+                ai_chance = {
+			base = 50
+		}
+                set_cosmetic_tag = SIB_IND
+                add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+                JAP = { add_to_faction = SIB }
+
+
+		
+	}
+        option = {
+		name = TR_japfed.15.b
+                ai_chance = {
+			base = 50
+		}
+		add_ideas = Council_communism
+                remove_ideas = Tiyoda_Kensho
+                set_cosmetic_tag = SIB_IND
+                leave_faction = yes
+                add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+        JAP = { country_event = TR_japfed.121 }
+		
+	}
+}
+
+
+country_event = {#シベリア反目
+	id = TR_japfed.121
+	title = TR_japfed.121.t
+	desc = TR_japfed.121.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.121.a
+                ai_chance = {
+			base = 80
+		}
+        add_political_power = -5
+
+		
+	}
+        option = {
+		name = TR_japfed.121.b
+                ai_chance = {
+			base = 20
+		}
+        add_political_power = -50
+		create_wargoal = {
+			target = SIB
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {#1936年帝国会議-終了
+	id = TR_japfed.16
+	title = TR_japfed.16.t
+	desc = TR_japfed.16.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.16.a
+
+		
+	}
+}
+
+
+country_event = {#満州
+	id = TR_japfed.17
+	title = TR_japfed.17.t
+	desc = TR_japfed.17.d
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.17.a
+                ai_chance = {
+			base = 95
+		}
+                create_wargoal = {
+				target = MAN
+				type = annex_everything
+			}
+
+
+		
+	}
+        option = {
+		name = TR_japfed.17.b
+                ai_chance = {
+			base = 5
+		}
+                
+
+		
+	}
+}
+
+
+
+country_event = {#マウマウ団
+	id = TR_japfed.18
+	title = TR_japfed.18.t
+	desc = TR_japfed.18.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.18.a
+        remove_ideas = African_Independence_movement
+            MAU = {
+			transfer_state = 848
+                         country_event = {
+					id = TR_japfed.19
+					days = 2
+			}		
+		}
+               
+
+	}
+
+}
+
+
+
+country_event = {#マウマウ団
+	id = TR_japfed.19
+	title = TR_japfed.19.t
+	desc = TR_japfed.19.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.19.a
+                division_template = {
+				name = "Mau Mau Infantry"
+				division_names_group = UKR_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1939 }
+				create_unit = {
+					division = "division_template = \"Mau Mau Infantry\" start_experience_factor = 0.1"
+					owner = MAU
+					count = 6
+				}
+			}
+                KEN = {
+                         country_event = {
+					id = TR_japfed.20
+					days = 2
+			}		
+		}
+               
+
+	}
+
+}
+
+country_event = {#マウマウ団
+	id = TR_japfed.20
+	title = TR_japfed.20.t
+	desc = TR_japfed.20.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.20.a
+
+        declare_war_on = {
+			target = MAU
+			type = annex_everything
+		}
+               
+
+        hidden_effect = {
+                         country_event = {
+					id = TR_news.17
+					days = 1
+					
+				}
+		}
+
+}
+}
+
+country_event = {#ソコト王国
+	id = TR_japfed.21
+	title = TR_japfed.21.t
+	desc = TR_japfed.21.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.21.a
+		remove_ideas = African_Independence_movement
+		remove_state_core = 776
+		remove_state_core = 777
+		remove_state_core = 781
+		remove_state_core = 515
+                JAP = {
+                       end_puppet = SKT
+		}
+                SKT = {
+                       leave_faction = yes
+		}
+        declare_war_on = {
+			target = SKT
+			type = annex_everything
+		}
+		ITA = {
+			transfer_state = 515
+            transfer_state = 781
+		}
+		FRA = {
+			transfer_state = 776
+            transfer_state = 777
+		}
+                 hidden_effect = {
+                         country_event = {
+					id = TR_news.18
+					days = 1
+					
+				}
+		}
+               
+
+	}
+
+}
+
+
+country_event = {#アフリカ植民地の整理
+	id = TR_japfed.22
+	title = TR_japfed.22.t
+	desc = TR_japfed.22.d
+	picture = GFX_report_event_african_soldiers
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_japfed.22.a
+        ai_chance = {
+			base = 52
+		}
+		add_political_power = -10
+		remove_ideas = JAP_colony_deficit
+		add_timed_idea = {
+			idea = Nippon_Tettai_JAPAN
+			days = 90
+		}  
+		JAP = { end_puppet = ESA }
+	    ESA = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+			  }
+		JAP = { end_puppet = KEN }
+	    KEN = { leave_faction = yes }
+		KEN = { leave_faction = yes 
+		drop_cosmetic_tag = yes
+		remove_ideas = Tiyoda_Kensho
+		remove_ideas = JAP_colony
+		remove_ideas = JAP_JAP_colony
+		remove_ideas = NMB_JAP_colony
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = Nippon_Tettai_Africa
+			days = 365
+		    }  
+	    }
+		JAP = { end_puppet = COG }
+	    COG = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+			  }
+		JAP = { end_puppet = NGA }
+	    NGA = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+	          }
+		JAP = { end_puppet = NMB }
+	    NMB = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+	          }
+		JAP = { end_puppet = EGY}
+	    EGY = { leave_faction = yes 
+		             add_timed_idea = {
+			              idea = Nippon_Tettai_Africa
+			              days = 180
+	                   }  
+					}
+		JAP = { end_puppet = ETO}
+	    ETO = { leave_faction = yes 
+		          add_timed_idea = {
+			              idea = Nippon_Tettai_Africa
+			              days = 180
+	                }  
+				}
+		hidden_effect = {
+			KEN = { country_event = { id = TR_japfed.18 days = 31 } }
+			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
+			COG = { country_event = { id = TR_japfed.23 days = 12 } }
+			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
+			ETO = { country_event = { id = TR_japfed.25 days = 22 } }
+			    country_event = {
+	                    id = TR_news.40
+	                    days = 1
+					}
+                }	
+	}
+    option = {
+		name = TR_japfed.22.b
+        ai_chance = {
+			base = 46
+		}
+		add_political_power = -50
+		add_timed_idea = {
+			idea = Nippon_Tettai_JAPAN
+			days = 45
+		}  
+		swap_ideas = {
+			remove_idea = JAP_colony_deficit
+			add_idea = JAP_colony_deficit_1
+		}	
+		JAP = { end_puppet = COG }
+        COG = { leave_faction = yes 
+		       	drop_cosmetic_tag = yes
+				   remove_ideas = Tiyoda_Kensho
+				   remove_ideas = Tiyoda_Kensho
+				   remove_ideas = JAP_colony
+				   remove_ideas = JAP_JAP_colony
+				   remove_ideas = NMB_JAP_colony
+				   remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+			  }
+		JAP = { end_puppet = NGA }
+	    NGA = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+	          }
+		JAP = { end_puppet = NMB }
+	    NMB = { leave_faction = yes 
+		        drop_cosmetic_tag = yes
+				remove_ideas = Tiyoda_Kensho
+				remove_ideas = JAP_colony
+				remove_ideas = JAP_JAP_colony
+				remove_ideas = NMB_JAP_colony
+				remove_ideas = JAPCO_black_thursday
+				add_timed_idea = {
+					idea = Nippon_Tettai_Africa
+					days = 365
+				}  
+	          }
+		JAP = { end_puppet = ETO}
+	    ETO = { leave_faction = yes 
+		        add_timed_idea = {
+			              idea = Nippon_Tettai_Africa
+			              days = 365
+		            }  
+				}
+		hidden_effect = {
+			ESA = { remove_ideas = African_Independence_movement }
+		    KEN = { remove_ideas = African_Independence_movement }
+			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
+			COG = { country_event = { id = TR_japfed.23 days = 17 } }
+			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
+			ETO = { country_event = { id = TR_japfed.26 days = 22 } }
+			country_event = {
+				id = TR_news.41
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_japfed.22.c
+                ai_chance = {
+			base = 2
+		}
+		add_political_power = -200
+		hidden_effect = {
+			COG = { remove_ideas = African_Independence_movement }
+			ESA = { remove_ideas = African_Independence_movement }
+			NGA = { remove_ideas = African_Independence_movement }
+			KEN = { remove_ideas = African_Independence_movement }
+			NGA = { annex_country = {
+				            target = SKT
+				            transfer_troops = no
+				                  } 
+			       }
+	    }
+	}
+}
+
+country_event = {#中央アフリカ崩壊
+	id = TR_japfed.23
+	title = TR_japfed.23.t
+	desc = TR_japfed.23.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.23.a
+		remove_ideas = African_Independence_movement
+		remove_state_core = 295
+		remove_state_core = 538
+		remove_state_core = 718
+		remove_state_core = 660
+        remove_state_core = 867
+		remove_state_core = 868
+		remove_state_core = 869
+		remove_state_core = 870
+		remove_state_core = 773
+		remove_state_core = 774
+		remove_state_core = 775
+        release = KAT
+		release = KIS
+		release = KIV
+		release = CAR
+		release = RCG
+		release = CMR
+		country_event = {
+			id = TR_news.42
+			days = 1
+		}
+	}
+
+}
+
+country_event = {#南西アフリカの決断
+	id = TR_japfed.24
+	title = TR_japfed.24.t
+	desc = TR_japfed.24.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.24.a
+		set_country_flag = NMB_Koudo_Afirica
+        remove_ideas = Nippon_Tettai_Africa
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+    }
+}
+
+country_event = {#汎アフリカ宣言
+	id = TR_japfed.25
+	title = TR_japfed.25.t
+	desc = TR_japfed.25.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.25.a
+		ai_chance = {
+			base = 100
+		}
+		create_faction = "Pan-Africa_faction"
+        remove_ideas = Nippon_Tettai_Africa
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+		declare_war_on = {
+			target = ESA
+			type = annex_everything
+		}
+    }
+	option = { 
+		name = TR_japfed.25.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = 50
+		
+
+    }
+}
+
+country_event = {#汎アフリカ宣言
+	id = TR_japfed.26
+	title = TR_japfed.26.t
+	desc = TR_japfed.26.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.25.a
+		ai_chance = {
+			base = 75
+		}
+		create_faction = "Pan-Africa_faction"
+        remove_ideas = Nippon_Tettai_Africa
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+        JAP = { country_event = { id = TR_japfed.27 days = 7 } }
+    }
+	option = { 
+		name = TR_japfed.25.b
+		ai_chance = {
+			base = 25
+		}
+		add_political_power = 50
+		JAP = { country_event = { id = TR_japfed.27 days = 7 } }
+		
+
+    }
+}
+
+country_event = {#エチオピア独立宣言
+	id = TR_japfed.27
+	title = TR_japfed.27.t
+	desc = TR_japfed.27.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.27.a
+		declare_war_on = {
+			target = ETO
+			type = annex_everything
+		}
+		271 = {
+			add_claim_by = ESA
+		}
+		852 = {
+			add_claim_by = ESA
+		}
+    }
+
+}
+
+
+country_event = {#東アフリカが日本再建同盟に加盟
+	id = TR_japfed.28
+	title = TR_japfed.28.t
+	desc = TR_japfed.28.d
+	picture = GFX_report_event_japan_army_mountainside
+
+
+    fire_only_once = yes
+       trigger = {
+        tag = KEN
+		is_subject = no
+		is_in_faction = no
+        NMB = { is_faction_leader = yes }
+	   }
+	option = { 
+		name = TR_japfed.28.a
+        NMB = { add_to_faction = KEN }
+    }
+
+}

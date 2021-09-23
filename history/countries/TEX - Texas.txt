@@ -1,0 +1,156 @@
+﻿capital = 375
+
+oob = "TEX_1936"
+set_cosmetic_tag = TEX_JAP
+set_research_slots = 3
+country_event = { id = TR_USA.14 days = 676 }
+add_timed_idea = {
+		idea = JAPCO_black_thursday
+		days = 365
+                 }  
+# Starting tech
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+        mobile_warfare = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+	
+}
+
+
+add_ideas = {
+        Democratic_Republic
+        YUN_jap_economic
+}
+
+set_convoys = 250
+
+set_stability = 0.5
+set_war_support = 0.4
+
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1933.8.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+        totalist = 12
+	social_democrat = 5
+	social_liberal = 5
+	market_liberal = 5
+	social_conservative = 14
+	authoritarian_democrat = 33
+	paternal_autocrat = 7
+	national_populist = 19
+}
+
+create_country_leader = {
+	name = "リンドン・ジョンソン"
+	desc = ""
+	picture = ""
+	ideology = social_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "河相達夫"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_JAP_Kawai_Tatsuo.tga"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "ドワイト・D・アイゼンハワー"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "ドワイト・D・アイゼンハワー"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+
+

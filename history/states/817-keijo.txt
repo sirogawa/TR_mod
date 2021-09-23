@@ -1,0 +1,29 @@
+state={
+	id=817
+	name="STATE_817"
+	provinces={
+		7125 7221 
+	}
+        state_category=Large_city
+	manpower=5437890
+	history={
+		owner = JAP
+		add_core_of = JAP
+                add_core_of = KOR
+		buildings = {
+			industrial_complex = 3
+			infrastructure = 8
+			dockyard = 1
+                        7221 = {
+				naval_base = 5
+			}
+                        air_base = 3
+		} 
+		
+		victory_points = {
+			7125 20
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}
