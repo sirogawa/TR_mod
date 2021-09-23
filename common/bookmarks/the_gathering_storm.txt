@@ -1,0 +1,50 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JAP"
+		default = yes
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"FRA"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		ITA ={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+}

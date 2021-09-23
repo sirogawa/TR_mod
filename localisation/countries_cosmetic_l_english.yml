@@ -1,0 +1,41 @@
+﻿l_english:
+##国家形成
+#アジア
+ IRAN_empire:0 "イラン帝国"
+ IRAN_empire_DEF:0 "イラン帝国"
+ IRAN_empire_ADJ:0 "イラン"
+ 
+ THAILAND_kingdom:0 "タイ王国"
+ THAILAND_kingdom_DEF:0 "タイ王国"
+ THAILAND_kingdom_ADJ:0 "タイ"
+ 
+ MUSCAT-OMAN_sultanate:0 "マスカット・オマーン・スルタン国"
+ MUSCAT-OMAN_sultanate_DEF:0 "マスカット・オマーン・スルタン国"
+ MUSCAT-OMAN_sultanate_ADJ:0 "マスカット・オマーン"
+ 
+#ヨーロッパ
+ BOS-HRZ:0 "ボスニア・ヘルツェゴヴィナ"
+ BOS-HRZ_DEF:0 "ボスニア・ヘルツェゴヴィナ"
+ BOS-HRZ_ADJ:0 "ボスニア・ヘルツェゴヴィナ"
+ 
+ CZE-SLO_republic:0 "チェコスロバキア共和国"
+ CZE-SLO_republic_DEF:0 "チェコスロバキア共和国"
+ CZE-SLO_republic_authoritarian_socialism:0 "チェコスロバキア社会主義共和国"
+ CZE-SLO_republic_authoritarian_socialism_DEF:0 "チェコスロバキア社会主義共和国"
+ CZE-SLO_republic_authoritarian_socialism_ADJ:0 "チェコスロバキア社会主義共和国"
+ CZE-SLO_republic_ADJ:0 "チェコスロバキア"
+ 
+ CZEandSLO_federative_republic:0 "チェコ及びスロバキア連邦共和国"
+ CZEandSLO_federative_republic_DEF:0 "チェコ及びスロバキア連邦共和国"
+ CZEandSLO_federative_republic_authoritarian_socialism:0 "チェコ及びスロバキア社会主義連邦共和国"
+ CZEandSLO_federative_republic_authoritarian_socialism_DEF:0 "チェコ及びスロバキア社会主義連邦共和国"
+ CZEandSLO_federative_republic_ADJ:0 "チェコ及びスロバキア"
+ 
+ ENG-GBRandNIR_united_kingdom:0 "グレートブリテン及び北アイルランド連合王国"
+ ENG-GBRandNIR_united_kingdom_DEF:0 "グレートブリテン及び北アイルランド連合王国"
+ ENG-GBRandNIR_united_kingdom_ADJ:0 "イギリス"
+ 
+#アフリカ
+ ETH-ERI_federation:0 "エチオピア・エリトリア連邦"
+ ETH-ERI_federation_DEF:0 "エチオピア・エリトリア連邦"
+ ETH-ERI_federation_ADJ:0 "エチオピア・エリトリア" 

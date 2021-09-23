@@ -1,0 +1,49 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1939.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "JAP"
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"FRA"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		ITA ={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		effect = {
+			randomize_weather = 12345
+		}
+	}
+}
