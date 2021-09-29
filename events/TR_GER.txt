@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = TR_germany
 
 #ドイツ内戦
@@ -32,7 +32,113 @@ country_event = {
                         transfer_state = 68
                         transfer_state = 66
                         transfer_state = 63
-                      }
+	        }
+                      
+hidden_effect = {
+			DDR = {
+             division_template = {
+				name = "Prussia Infantry"
+				division_names_group = GER_Inf_01
+
+	        regiments = {
+	            infantry = { x = 0 y = 0 }
+		        infantry = { x = 0 y = 1 }
+		        infantry = { x = 0 y = 2 }
+                infantry = { x = 1 y = 0 }
+		        infantry = { x = 1 y = 1 }
+		        infantry = { x = 1 y = 2 }
+                infantry = { x = 2 y = 0 }
+		        infantry = { x = 2 y = 1 }
+		        infantry = { x = 2 y = 2 }
+                infantry = { x = 3 y = 0 }
+	        }
+	
+	        support = {
+                engineer = { x = 0 y = 0 }
+                artillery = { x = 0 y = 1 }
+	        }
+			}
+			random_owned_controlled_state = {
+				prioritize = { 5 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+                        random_owned_controlled_state = {
+				prioritize = { 68 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 63 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+                        random_owned_controlled_state = {
+				prioritize = { 67 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 66 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 3
+				}
+			}
+                        random_owned_controlled_state = {
+				prioritize = { 5 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 85 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 2
+				}
+			}
+                        random_owned_controlled_state = {
+				prioritize = { 68 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 63 }
+				create_unit = {
+					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
+					owner = DDR
+					count = 2
+				}
+			}
+		}
                       hidden_effect = {
                          country_event = {
 					id = TR_news.5
@@ -41,6 +147,9 @@ country_event = {
 				}
 		}
 	}
+}
+	
+
         option = {
 		name = TR_germany.1.b
                 ai_chance = { factor = 0 }
@@ -175,6 +284,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = TR_germany.2
 	title = TR_germany.2.t
