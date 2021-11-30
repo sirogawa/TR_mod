@@ -9,12 +9,13 @@ state={
 	history={
 		owner = CAN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		add_core_of = CAN
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		7259 1214 12259 12272 1420 
 	}
 	

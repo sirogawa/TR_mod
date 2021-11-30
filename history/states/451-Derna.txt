@@ -13,7 +13,7 @@ state={
 			1130 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
                         arms_factory = 1
 			air_base = 4
@@ -24,7 +24,8 @@ state={
 		add_core_of = LBA
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1130 1204 4136 4151 7082 9992 10120 12094 
 	}
 }

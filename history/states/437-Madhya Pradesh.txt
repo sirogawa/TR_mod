@@ -10,13 +10,14 @@ state={
 		owner = RAJ
                 add_core_of = RAJ
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 		}
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1949 2036 2092 2105 4106 7080 7205 8076 10807 10816 11993 11995 12080 
 	}
 }

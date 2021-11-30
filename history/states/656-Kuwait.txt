@@ -12,14 +12,15 @@ state={
 			8085 1 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			8085 = {
 				naval_base = 4
 			}
 		}
 
 	}
-	provinces={
+	local_supplies=0.0 
+provinces={
 		8085
 	}
 }

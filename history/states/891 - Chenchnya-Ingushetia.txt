@@ -1,0 +1,26 @@
+
+state = {
+	id = 891
+	name = "STATE_891"
+	manpower = 731985
+	
+	state_category = rural
+	
+	resources={
+		oil = 9 # was split from Dagestan which had 19 oil, and retained 10
+	}
+
+	history = {
+		owner = GEO
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = GEO
+	}
+	##
+	provinces = {
+		666 670 1455 3667
+	}
+
+	local_supplies=0.0 
+}

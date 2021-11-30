@@ -19,7 +19,7 @@ state={
 			12120 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			4268 = {
 				naval_base = 1
 
@@ -35,7 +35,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1237 1263 4231 4247 4268 7264 10160 12120 12132 
 	}
 	manpower=51876

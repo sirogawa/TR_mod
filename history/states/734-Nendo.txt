@@ -9,7 +9,7 @@ state={
                 owner = JAP
 		add_core_of = TAH
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			7390 = {
 				naval_base = 1
 			}
@@ -18,7 +18,8 @@ state={
 
 	buildings_max_level_factor=1.000
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		7390 
 	}
 }

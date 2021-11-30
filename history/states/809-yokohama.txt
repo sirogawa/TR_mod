@@ -1,7 +1,8 @@
 state={
 	id=809
 	name="STATE_809"
-	provinces={
+	local_supplies=0.0 
+provinces={
 		9998 
 	}
         state_category=metropolis
@@ -11,7 +12,7 @@ state={
 		add_core_of = JAP
 		buildings = {
 		
-			infrastructure = 10
+			infrastructure = 5
 			dockyard = 10
                         9998 = {
 				naval_base = 10

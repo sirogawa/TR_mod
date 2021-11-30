@@ -11,7 +11,7 @@ state={
                 add_core_of = SHX
                 add_claim_by = CHI
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 3
 			air_base = 3
@@ -29,7 +29,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1134 4137 4140 6828 9843 9969 10068 11761 12026 
 	}
 }

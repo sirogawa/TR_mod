@@ -20,13 +20,14 @@ state={
 		owner = GER
                 add_core_of = DDR
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
                         arms_factory = 1
 		}
 		add_core_of = GER
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		479 6512 9457 9511 11467 
 	}
 }

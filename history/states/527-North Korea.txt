@@ -9,7 +9,7 @@ state={
 	history={
 		owner = JAP
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 
 		}
@@ -17,7 +17,8 @@ state={
                 victory_points = { 7155 3 }
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1003 4107 7070 7155 9981 11915 12040 
 	}
 	manpower=4012423

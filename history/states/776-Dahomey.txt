@@ -16,14 +16,15 @@ state={
                         arms_factory = 1
                         dockyard = 1
 			industrial_complex = 1
-			infrastructure = 3
+			infrastructure = 2
 			10919 = {
 				naval_base = 1
 			}
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		10919 12874 12762
 	}
 }

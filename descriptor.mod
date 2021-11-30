@@ -9,7 +9,7 @@ tags={
 	"Events"
 	"National Focuses"
 }
-supported_version = "1.10.*"
+supported_version = "1.11.*"
 remote_file_id="2484590996"
 replace_path="common/abilities"
 replace_path="common/ai_areas"

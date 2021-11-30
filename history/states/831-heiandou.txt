@@ -2,7 +2,8 @@ state={
 	id=831
 	name="STATE_831"
         
-	provinces={
+	local_supplies=0.0 
+provinces={
 		852 906 912 978 3912 6963 9790 9795 9918 11770 11775 11828 11835 11896 
 	}
         resources={
@@ -17,7 +18,7 @@ state={
                 add_core_of = KOR
 		buildings = {
                         arms_factory = 1
-			infrastructure = 5
+			infrastructure = 3
                        
 
 		}

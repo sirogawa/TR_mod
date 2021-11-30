@@ -13,7 +13,7 @@ state={
                 add_core_of = AMZ
 		add_core_of = BRA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 3
 			industrial_complex = 3
 			dockyard = 1
@@ -27,7 +27,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		5172 8190 10980 12996 
 	}
 }

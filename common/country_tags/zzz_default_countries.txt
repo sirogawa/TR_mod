@@ -41,6 +41,21 @@ UZB	= "countries/Asia.txt"	#ウズベキスタン
 VIN	= "countries/Asia.txt"	#ベトナム
 XSM	= "countries/Asia.txt"	#馬家
 YUN	= "countries/Asia.txt"	#雲南
+BUK = "countries/Asia.txt"  #ブハラ
+ALT = "countries/Asia.txt"  #アルタイ
+BYA = "countries/Asia.txt"  #ブリヤート
+CKK = "countries/Asia.txt"  #チュクチ
+FER = "countries/Asia.txt"  #極東共和国
+YAK = "countries/Asia.txt"  #ヤクート
+VLA = "countries/Asia.txt"  #ウラジオストク
+KKP = "countries/Asia.txt"  #カラカルパクスタン
+YAM = "countries/Asia.txt"  #ヤマロネネツ
+TAY = "countries/Asia.txt"  #タイミル
+OVO = "countries/Asia.txt"  #オスチャクヴォルガ
+NEN = "countries/Asia.txt"  #ネネツ
+BSK = "countries/Asia.txt"  #バシコルトスタン
+KHI = "countries/Asia.txt"  #ヒヴァ
+
 
 #中東
 AFG	= "countries/Middle East.txt"	#アフガニスタン
@@ -62,6 +77,15 @@ SYR	= "countries/Middle East.txt"	#シリア
 TUR	= "countries/Middle East.txt"	#トルコ
 UAE	= "countries/Middle East.txt"	#アラブ首長国連邦
 YEM	= "countries/Middle East.txt"	#イエメン
+DON = "countries/Middle East.txt"   #ドン共和国
+KUB = "countries/Middle East.txt"   #クバン
+KAL = "countries/Middle East.txt"   #カルムイキア
+CIN = "countries/Middle East.txt"   #イングーシ
+DAG = "countries/Middle East.txt"   #ダゲスタン
+ABK = "countries/Middle East.txt"   #アブハジア
+KBK = "countries/Middle East.txt"   #カバルダ・バルカル
+NOA = "countries/Middle East.txt"   #北オセチア
+
 
 #英連邦王国
 AST	= "countries/Commonwealth.txt"	#オーストラリア
@@ -137,6 +161,17 @@ SOV	= "countries/Eastern Europe.txt"	#ソビエト
 TRA	= "countries/Eastern Europe.txt"	#トランシルヴァニア
 UKR	= "countries/Eastern Europe.txt"	#ウクライナ
 YUG	= "countries/Eastern Europe.txt"	#ユーゴスラビア
+DNZ = "countries/Eastern Europe.txt"    #ダンツィヒ
+SIL = "countries/Eastern Europe.txt"    #シレジア
+KSH = "countries/Eastern Europe.txt"    #カスフビア
+CRI = "countries/Eastern Europe.txt"    #クリミア
+KAR = "countries/Eastern Europe.txt"    #カレリア
+TAT = "countries/Eastern Europe.txt"    #タタールスタン
+VGE = "countries/Eastern Europe.txt"    #ヴォルガドイツ
+KOM = "countries/Eastern Europe.txt"    #コミ
+CHU = "countries/Eastern Europe.txt"    #チュヴァシ
+UDM = "countries/Eastern Europe.txt"    #ウドムルト
+MEL = "countries/Eastern Europe.txt"    #マリエル
 
 #アフリカ
 ALG	= "countries/Africa.txt"	#アルジェリア

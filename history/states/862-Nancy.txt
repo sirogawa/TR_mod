@@ -18,12 +18,13 @@ state={
 			3560 1
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 		}
 		add_core_of = FRA
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		521 11516 3560 5291
 	}
 }

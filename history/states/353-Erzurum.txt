@@ -18,7 +18,7 @@ state={
 			9868 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 			add_core_of = TUR
@@ -26,7 +26,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}
 	manpower=523537

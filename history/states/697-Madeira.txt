@@ -11,7 +11,7 @@ state={
 			3118 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			3118 = {
 				naval_base = 1
 			}
@@ -19,7 +19,8 @@ state={
 		add_core_of = POR
 	}
 	
-	provinces={
+	local_supplies=0.0 
+provinces={
 		3118 
 	}
 }

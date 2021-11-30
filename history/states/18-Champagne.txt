@@ -16,14 +16,15 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 10
 		}
 		add_core_of = FRA
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		551 3533 3546 6531 6545 9472 9490 9505 11732 13011 
 	}
 }

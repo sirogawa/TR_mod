@@ -11,7 +11,7 @@ state={
 		}
 		
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 1
 			dockyard = 1
@@ -31,7 +31,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		334 362 389 3324 9263 
 	}
 	manpower=1840100

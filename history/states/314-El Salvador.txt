@@ -13,7 +13,7 @@ state=
 	{
 		owner = CEN
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 2 
 			air_base = 1
@@ -27,7 +27,8 @@ state=
 		}
 
 	}
-	provinces={
+	local_supplies=0.0 
+provinces={
 		12823 13093 
 	}
 }

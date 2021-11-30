@@ -16,7 +16,7 @@ state={
 			6967 3
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
                         arms_factory = 2
 			9902 = {
@@ -26,7 +26,8 @@ state={
 		add_core_of = BUL
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		6967 9888 9902 9919
 	}
 }

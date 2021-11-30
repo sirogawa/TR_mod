@@ -14,13 +14,14 @@ state={
 	history={
 		owner = BOL
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		add_core_of = ARG
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2106 2208 5143 5213 8169 8255 10944 10965 10986 12922 12943 
 	}
 }

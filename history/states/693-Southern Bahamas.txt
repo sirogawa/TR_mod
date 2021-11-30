@@ -9,7 +9,7 @@ state={
 		add_core_of = JAM
 		owner = ENG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			10440 = {
 				naval_base = 1
 			}
@@ -19,7 +19,8 @@ state={
 		}
 	}
 	
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1513 10440 
 	}
 }

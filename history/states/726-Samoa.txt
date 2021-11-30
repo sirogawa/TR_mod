@@ -9,7 +9,7 @@ state={
                 add_core_of = JAP
 		add_core_of = SAM
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			7290 = {
 				naval_base = 1
 			}
@@ -18,7 +18,8 @@ state={
 			7290 1
 		}
 	}
-	provinces={
+	local_supplies=0.0 
+provinces={
 		7290 13080 
 	}
 }

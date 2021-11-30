@@ -16,12 +16,13 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 1
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		454 3402 3447 6585 9561 11420 11549
 	}
 }

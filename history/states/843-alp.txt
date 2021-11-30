@@ -1,7 +1,8 @@
 state={
 	id=843
 	name="STATE_843"
-	provinces={
+	local_supplies=0.0 
+provinces={
 		764 3764 3961 6975 9736 
 	}
 	manpower=500000
@@ -12,7 +13,7 @@ state={
 		add_core_of = FRA
 		add_core_of = OCC
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
                         arms_factory = 2
 
 		}

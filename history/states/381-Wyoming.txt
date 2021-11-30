@@ -9,12 +9,13 @@ state={
 		owner = USA
                 set_demilitarized_zone = yes
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		add_core_of = USA
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
 	}
 	

@@ -12,7 +12,7 @@ state={
 	history={
 		owner = PRU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 6
 			air_base = 3
@@ -27,7 +27,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2156 2162 5190 8199 12969 12983 12997 
 	}
 }

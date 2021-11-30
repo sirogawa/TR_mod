@@ -1,7 +1,8 @@
 state={
 	id=812
 	name="STATE_812"
-	provinces={
+	local_supplies=0.0 
+provinces={
 		12031 
 	}
 	state_category=metropolis
@@ -12,7 +13,7 @@ state={
 		buildings = {
 		        arms_factory = 2
 			industrial_complex = 3
-			infrastructure = 10
+			infrastructure = 5
 			dockyard = 5
                         12031 = {
 				naval_base = 5

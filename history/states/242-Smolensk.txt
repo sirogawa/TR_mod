@@ -12,7 +12,7 @@ state={
 			306 15
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 5
 		}
@@ -20,7 +20,8 @@ state={
                 add_core_of = RUS
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		306 335 3247 3279 3313 3362 6273 6387 9272 9318 9382 9399 11254 11290 11353 11384 
 	}
 }

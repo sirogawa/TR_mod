@@ -11,7 +11,7 @@ state={
 			12376 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		if = {
 			limit = {
@@ -29,7 +29,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		652 4583 6935 7470 11880 12376 13121 
 	}
 	manpower = 365490

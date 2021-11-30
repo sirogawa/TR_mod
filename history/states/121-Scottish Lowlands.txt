@@ -12,7 +12,7 @@ state={
 		victory_points = { 9392 10 }
 		victory_points = { 6300 1 }
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 3
@@ -23,7 +23,8 @@ state={
 		add_core_of = ENG
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		159 6300 9314 9383 9392 11378 
 	}
 }

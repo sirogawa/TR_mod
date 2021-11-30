@@ -9,7 +9,7 @@ state={
 	history={
 		owner = GER
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 3
 		}
@@ -19,7 +19,8 @@ state={
 		add_core_of = GER
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		6444 6488 589 3574  
 	}
 }

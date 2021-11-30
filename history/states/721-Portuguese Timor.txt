@@ -9,14 +9,15 @@ state={
 	history={
 		owner = POR
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			12190 ={
 				naval_base = 1
 			}
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1326 12178 12190 12206 13001 
 	}
 }

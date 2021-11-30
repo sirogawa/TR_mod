@@ -1,7 +1,8 @@
 state={
 	id=817
 	name="STATE_817"
-	provinces={
+	local_supplies=0.0 
+provinces={
 		7125 7221 
 	}
         state_category=Large_city
@@ -12,7 +13,7 @@ state={
                 add_core_of = KOR
 		buildings = {
 			industrial_complex = 3
-			infrastructure = 8
+			infrastructure = 4
 			dockyard = 1
                         7221 = {
 				naval_base = 5

@@ -9,7 +9,7 @@ state={
 	history={
 		owner = KEN
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
 
@@ -21,7 +21,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		3854 7088 7133 8223 12929 12989 13177 
 	}
 	manpower=3515625

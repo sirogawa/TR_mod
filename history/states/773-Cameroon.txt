@@ -14,7 +14,7 @@ state={
 			2080 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 			6039 = {
@@ -24,7 +24,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2080 5036 5054 6039 7963 9137 11194 
 	}
 }

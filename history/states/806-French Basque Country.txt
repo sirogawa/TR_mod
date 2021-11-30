@@ -10,7 +10,7 @@ state={
 		}
 		add_core_of = NAV
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
                         arms_factory = 1
 
 		}
@@ -18,7 +18,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		743 9710 11697 
 	}
 	manpower=480723

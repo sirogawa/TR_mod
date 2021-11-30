@@ -862,3 +862,152 @@ KIE = {
 	color = rgb { 71 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+UZB = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+BAN = {
+	color = rgb { 204 204 0 }
+	color_ui = rgb { 204 204 0 }
+}
+BRM = {
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76 153 0 }
+}
+BOS = {
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 204 102 0 }
+}
+DNZ = {
+	color = rgb { 78 129 151 }
+	color_ui = rgb { 78 129 151 }
+}
+SIL = {
+	color = rgb { 84 166 93 }
+	color_ui = rgb { 84 166 93 }
+}
+KSH = {
+	color = rgb { 255 220 0 }
+	color_ui = rgb { 255 220 0 }
+}
+DON = {
+	color = rgb { 255 220 0 }
+	color_ui = rgb { 255 220 0 }
+}
+KUB = {
+	color = rgb { 220 20 125 }
+	color_ui = rgb { 220 20 125 }
+}
+BUK = {
+	color = { 204 153 102 }
+	color_ui = { 204 153 102 }
+}
+ALT = {
+	color = { 204 255 255 }
+	color_ui = { 204 255 255 }
+}
+KAL = {
+	color = { 255 204 0 }
+	color_ui = { 255 204 0 }
+}
+KAR = {
+	color = { 0 153 51 }
+	color_ui = { 0 153 51 }
+}
+CRI = {
+	color = { 255 80 80 }
+	color_ui = { 255 80 80 }
+}
+TAT = {
+	color = { 255 51 0 }
+	color_ui = { 255 51 0 }
+}
+CIN = {
+	color = { 0 204 0 }
+	color_ui = { 0 204 0 }
+}
+DAG = {
+	color = rgb { 0 204 255 }
+	color_ui = rgb { 0 204 255 }
+}
+BYA = {
+	color = rgb { 0 64 255 }
+	color_ui = { 0 64 255 }
+}
+CKK = {
+	color = { 179 179 0 }
+	color_ui = { 179 179 0 }
+}
+FER = {
+	color = { 179 45 0 }
+	color_ui = { 179 45 0 }
+}
+YAK = {
+	color = { 0 255 255 }
+	color_ui = { 0 255 255 }
+}
+VLA = {
+	color = { 255 204 0 }
+	color_ui = { 255 204 0 }
+}
+KKP = {
+	color = { 255 128 0 }
+	color_ui = { 255 128 0 }
+}
+YAM = {
+	color = { 204 153 0 }
+	color_ui = { 204 153 0 }
+}
+TAY = {
+	color = { 0 102 153 }
+	color_ui = { 0 102 153 }
+}
+OVO = {
+	color = { 0 153 51 }
+	color_ui = { 0 153 51 }
+}
+NEN = {
+	color = { 204 255 204 }
+	color_ui = { 204 255 204 }
+}
+KOM = {
+	color = { 0 230 184 }
+	color_ui = { 0 230 184 }
+}
+ABK = {
+	color = { 51 204 51 }
+	color_ui = { 51 204 51 }
+}
+KBK = {
+	color = { 255 71 26 }
+	color_ui = { 255 71 26 }
+}
+NOA = {
+	color = { 255 170 0 }
+	color_ui = { 255 170 0 }
+}
+VGE = {
+	color = { 153 153 153 }
+	color_ui = { 153 153 153 }
+}
+BSK = {
+	color = { 51 204 51 }
+	color_ui = { 51 204 51 }
+}
+KHI = {
+	color = { 51 204 255 }
+	color_ui = { 51 204 255 }
+}
+UDM = {
+	color = { 64 64 64 }
+	color_ui = { 64 64 64 }
+}
+UDM = {
+	color = { 191 128 64 }
+	color_ui = { 191 128 64 }
+}
+MEL = {
+	color = { 255 230 230 }
+	color_ui = { 255 230 230 }
+}
+

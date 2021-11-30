@@ -15,7 +15,7 @@ state={
 			11673 5
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
 			dockyard = 1
 			9817 = {
@@ -25,7 +25,8 @@ state={
 		add_core_of = POR
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		724 877 3892 6921 6941 9817 11673 
 	}
 }

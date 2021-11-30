@@ -10,7 +10,7 @@ state={
                 add_core_of = PAR
 
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		add_core_of = BRR
@@ -20,7 +20,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2111 2181 5200 8189 8224 10959 12951 
 	}
 	manpower=229900

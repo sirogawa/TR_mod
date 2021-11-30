@@ -14,7 +14,8 @@ state={
 		}
 		add_core_of = ANG
 	}
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2115 
 	}
 	manpower=25000

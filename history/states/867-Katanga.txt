@@ -13,7 +13,7 @@ state={
 	history={
 		owner = COG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {
@@ -24,7 +24,8 @@ state={
 		add_core_of = RCG
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 	   1516 12795 1968 4515 191 1817 12907
 	}
 }

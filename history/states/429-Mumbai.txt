@@ -13,7 +13,7 @@ state={
 		owner = SRL
                 add_core_of = SRL
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
@@ -27,7 +27,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 
 	}
 }

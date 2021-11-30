@@ -9,7 +9,7 @@ state={
 		}
 		owner = SER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 
@@ -18,7 +18,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		6940 9849 9874 9890 
 	}
 	manpower=616000

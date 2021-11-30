@@ -10,7 +10,7 @@ state=
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			air_base = 7
 			industrial_complex = 3
 			arms_factory = 1
@@ -28,7 +28,8 @@ state=
 		}
 
 	}
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1091 1175 4096 7186 7214 9955 11914 11959 12027 12068
 		}
 }

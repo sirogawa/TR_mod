@@ -8,7 +8,7 @@ state={
 	history={
 		owner = CZE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = CZE
@@ -19,7 +19,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		9551 9567 
 	}
 }

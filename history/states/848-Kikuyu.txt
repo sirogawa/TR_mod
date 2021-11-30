@@ -9,7 +9,7 @@ state={
 	history={
 		owner = KEN
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
                         arms_factory = 2
 			industrial_complex = 2
 		}
@@ -20,7 +20,8 @@ state={
                 add_core_of = MAU
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1939 10860 10962 5160 11145 
 	}
 }

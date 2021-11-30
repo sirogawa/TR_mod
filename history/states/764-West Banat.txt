@@ -12,7 +12,7 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 		}
 
                 add_core_of = AUS
@@ -20,7 +20,8 @@ state={
 		add_core_of = TRA
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		614 3614 6643 11787
 	}
 }

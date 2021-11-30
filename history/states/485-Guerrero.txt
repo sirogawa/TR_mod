@@ -14,7 +14,7 @@ state={
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			8032 = {
 				naval_base = 3
@@ -32,7 +32,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		4887 5066 8032 10730 10832 
 	}
 	

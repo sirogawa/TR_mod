@@ -20,7 +20,7 @@ state={
 		buildings = {
 			arms_factory = 2
 			industrial_complex = 6
-			infrastructure = 7
+			infrastructure = 4
                         air_base = 4
 			7960 = {
 				naval_base = 3
@@ -29,7 +29,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		2048 7960 8108 10904 
 	}
 }

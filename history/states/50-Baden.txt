@@ -24,7 +24,7 @@ state={
 		#	6712 3
 		#}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 3
@@ -33,7 +33,8 @@ state={
 		add_core_of = GER
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		519 694 3690 6555 6934 9517 9545 9655 11486 11499 13126 
 	}
 	manpower=4711209

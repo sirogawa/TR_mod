@@ -15,7 +15,7 @@ state={
 		add_core_of = GXC
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = { 
@@ -38,7 +38,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1018 4023 4121 4177 7044 7137 7192 10004 10050 10105 11926 11983 12023 
 	}
 }

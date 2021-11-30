@@ -13,7 +13,7 @@ state={
 			4401 3 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 1
@@ -27,7 +27,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1285 1300 1328 1400 1605 4334 4363 4401 4405 7238 7271 7347 7380 10162 10232 10261 12109 12150 12176 12204 12232 
 	}
 	manpower=3962235

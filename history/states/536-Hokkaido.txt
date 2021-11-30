@@ -11,7 +11,7 @@ state={
 		add_core_of = JAP
 		buildings = {
 			arms_factory = 1
-			infrastructure = 4
+			infrastructure = 2
                         1512 = {
 				naval_base = 5
 
@@ -23,7 +23,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1512 4646 7595 10512 12493 
 	}
 	manpower=712000

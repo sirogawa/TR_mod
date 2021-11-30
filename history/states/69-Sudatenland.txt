@@ -15,7 +15,7 @@ state={
 		}
 		owner = CZE
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 2
 			anti_air_building = 1
 			424 = {
@@ -57,7 +57,8 @@ state={
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		424 469 3418 3585 6470 9555 11401 11414 11432 
 	}
 	manpower=2060000

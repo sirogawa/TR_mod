@@ -14,7 +14,7 @@ state={
                 add_core_of = HNA
                 add_claim_by = CHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
                         arms_factory = 2
 			industrial_complex = 1
 
@@ -24,7 +24,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		12030 10112 1053 7199 7172 1110 4183 7004  
 	}
 	manpower=4812093

@@ -1,7 +1,8 @@
 state={
 	id=860
 	name="STATE_860"
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1648 4652 7658 7673 8360 10509 10522 12488 
 	}
         resources={
@@ -15,7 +16,7 @@ state={
 			4652 1 
 		}
         buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			4652 = {
 				naval_base = 3

@@ -8,13 +8,14 @@ state={
 			3933 1
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 		}
 		add_core_of = SPR
 
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		932 3737 3931 3933 9857 
 	}
 	manpower=359880

@@ -14,7 +14,7 @@ state={
 		}
 
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 2
 			6332 = {
 				bunker = 1
@@ -35,7 +35,8 @@ state={
 		}
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		281 348 395 3384 6332 11265
 	}
 }

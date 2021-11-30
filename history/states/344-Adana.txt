@@ -21,7 +21,7 @@ state={
 			11746 5 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 2
 			11746 = {
 				naval_base = 3
@@ -31,7 +31,8 @@ state={
 		add_claim_by = KUR
 	}
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		806 3889 6813 7620 9893 9912 11746 
 	}
 

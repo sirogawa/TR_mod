@@ -9,7 +9,7 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			dockyard = 3
 			1136 = {
 				naval_base = 10
@@ -23,7 +23,8 @@ state={
 		}
 
 
-	provinces={
+	local_supplies=0.0 
+provinces={
 		1067 1136 4142 9985 
 	}
 	manpower=1005000
