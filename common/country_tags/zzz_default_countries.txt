@@ -27,7 +27,7 @@ PNG	= "countries/Asia.txt"	#パプアニューギニア
 PRC	= "countries/Asia.txt"	#人民中華
 RAJ	= "countries/Asia.txt"	#インド
 SAM	= "countries/Asia.txt"	#サモア
-SHX	= "countries/Asia.txt"	#山西
+SHX	= "countries/Asia.txt"	#北京総督府
 SIA	= "countries/Asia.txt"	#シャム
 SIK	= "countries/Asia.txt"	#新疆
 SOL	= "countries/Asia.txt"	#ソロモン
@@ -40,7 +40,7 @@ TMS	= "countries/Asia.txt"	#トルクメニスタン
 UZB	= "countries/Asia.txt"	#ウズベキスタン
 VIN	= "countries/Asia.txt"	#ベトナム
 XSM	= "countries/Asia.txt"	#馬家
-YUN	= "countries/Asia.txt"	#雲南
+YUN	= "countries/Asia.txt"	#重慶
 BUK = "countries/Asia.txt"  #ブハラ
 ALT = "countries/Asia.txt"  #アルタイ
 BYA = "countries/Asia.txt"  #ブリヤート
@@ -85,7 +85,6 @@ DAG = "countries/Middle East.txt"   #ダゲスタン
 ABK = "countries/Middle East.txt"   #アブハジア
 KBK = "countries/Middle East.txt"   #カバルダ・バルカル
 NOA = "countries/Middle East.txt"   #北オセチア
-
 
 #英連邦王国
 AST	= "countries/Commonwealth.txt"	#オーストラリア

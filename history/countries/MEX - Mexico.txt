@@ -10,6 +10,11 @@ if = {
 }
 add_ideas = {
         totalist_dictatorship
+        trinket_minimum_wage
+        trinket_safety_regulations
+        trinket_school_system
+        trinket_pensions
+        trinket_health_care
 }
 country_event = { id = TR_Mexico.4 days = 829 }
 # Starting tech

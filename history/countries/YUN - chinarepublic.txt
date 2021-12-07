@@ -14,20 +14,21 @@ set_technology = {
 }
 
 
-	add_ideas = {
-                Democratic_Republic
-		YUN_jap_economic
-		CHI_late_army
+add_ideas = {
+        Democratic_Republic
+        trinket_minimum_wage
+        trinket_Unemployment_subsidies
+        trinket_school_system
+        trinket_pensions
+        YUN_jap_economic
+	CHI_late_army
 	}
 
 add_timed_idea = {
 		idea = JAPCO_black_thursday
 		days = 500
                  }  
-set_autonomy = {
-	target = YNN
-	autonomous_state = autonomy_puppet
-}
+
 
 
 set_politics = {

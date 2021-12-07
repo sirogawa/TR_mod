@@ -1,0 +1,22 @@
+
+
+leader_traits = {
+#役職
+        Head_of_State = {}
+        Government_leaders = {}
+        Minister_of_Foreign_Affairs = {}
+        Minister_of_Economy = {}
+        Minister_of_Interior = {}
+#イデオロギー
+	totalist = {}
+	radical_socialist = {}
+	syndicalist = {}
+	social_democrat = {}
+	social_liberal = {}
+	market_liberal = {}
+	social_conservative = {}
+	authoritarian_democrat = {}
+	paternal_autocrat = {}
+	national_populist = {}
+        Gnosticism = {}
+}

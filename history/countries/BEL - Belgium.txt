@@ -7,6 +7,13 @@ set_stability = 0.8
 set_war_support = 0.3 #we see what you are doing there Adolf
 add_ideas = {
         Constitutional_monarchy
+        acceptable_minimum_wage
+        good_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
 }
 set_technology = {
 	infantry_weapons = 1

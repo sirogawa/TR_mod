@@ -1,0 +1,6 @@
+JAP_Imperialisation_policy = {
+	icon = generic_political_actions
+	allowed = {
+		original_tag = JAP
+	}
+}

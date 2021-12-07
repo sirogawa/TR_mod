@@ -39,7 +39,12 @@ add_timed_idea = {
 set_convoys = 5
 
 
-
+JAP = { 
+        set_autonomy = {
+	   target = COG
+	   autonomous_state = imperial_colony
+        }
+      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

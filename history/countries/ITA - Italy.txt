@@ -7,6 +7,9 @@ set_stability = 0.5
 set_war_support = 0.4
 add_ideas = {
         Constitutional_monarchy
+        acceptable_minimum_wage
+        trinket_safety_regulations
+        acceptable_school_system
 	victor_emmanuel
         ITA_ARMY
         ITA_MAFIA_CORRUPT

@@ -2,7 +2,48 @@ spriteTypes = {
 
 
 #####日本#####
-
+        #国家元首
+	SpriteType = {	
+		name = "GFX_idea_JAP_Emperor_Hirohito"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Hirohito.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Chichibunomiya"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Chichibunomiya.png"
+	}
+        #首相
+	SpriteType = {	
+		name = "GFX_idea_JAP_machida_chuji"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_machida_chuji.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Abe_Iso"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Abe_Iso.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Araki_Sadao"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Araki_Sadao.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Inukai_Tsuyoshi"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Inukai_Tsuyoshi.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Kita_Ikki"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Kita_Ikki.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Konoe_Fumimaro"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Konoe_Fumimaro.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Nagata_Tetsuzan"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Nagata_Tetsuzan.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Suzuki_Kisaburo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Suzuki_Kisaburo.png"
+	}
 	SpriteType = {	
 		name = "GFX_idea_JAP_Hatoyama_Ichiro"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Hatoyama_Ichiro.png"
@@ -11,6 +52,44 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Kuhara_Fusanosuke"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Kuhara_Fusanosuke.png"
 	}
+        #外相
+        SpriteType = {	
+		name = "GFX_idea_JAP_Shidehara_Kijuro"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Shidehara_Kijuro.png"
+	}
+
+        #経済
+	SpriteType = {	
+		name = "GFX_idea_JAP_Kaya_Okinori"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Kaya_Okinori.png"
+	}
+        SpriteType = {	
+		name = "GFX_idea_JAP_Inoue_junnosuke"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Inoue_junnosuke.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Takahashi_Korekiyo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Takahashi_Korekiyo.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Kataoka_Naoharu"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Kataoka_Naoharu.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_JAP_Katsu_Masanori"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Katsu_Masanori.png"
+	}
+        #内相
+        SpriteType = {	
+		name = "GFX_idea_JAP_Yamamoto_Tatsuo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Yamamoto_Tatsuo.png"
+	}
+        SpriteType = {	
+		name = "GFX_idea_JAP_Suma_Yakichiro"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Suma_Yakichiro.png"
+	}
+        #用途未定
+
 	SpriteType = {	
 		name = "GFX_idea_JAP_Miki_Bukichi"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Miki_Bukichi.png"
@@ -24,26 +103,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Saito_Takao.png"
 	}
         SpriteType = {	
-		name = "GFX_idea_JAP_Suma_Yakichiro"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Suma_Yakichiro.png"
-	}
-	SpriteType = {	
-		name = "GFX_idea_JAP_Takahashi_Korekiyo"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Takahashi_Korekiyo.png"
-	}
-        SpriteType = {	
 		name = "GFX_idea_JAP_Tokugawa_Yoshichika"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Tokugawa_Yoshichika.png"
 	}
-	SpriteType = {	
-		name = "GFX_idea_JAP_Kaya_Okinori"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Kaya_Okinori.png"
-	}
-    SpriteType = {	
-		name = "GFX_idea_JAP_Inoue_junnosuke"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Inoue_junnosuke.png"
-	}
-
 ###満州###
 
     SpriteType = {	

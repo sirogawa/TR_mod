@@ -33,6 +33,12 @@ add_ideas = {
         Tiyoda_Kensho
         JAP_JAP_colony
 }
+JAP = { 
+        set_autonomy = {
+	   target = ESA
+	   autonomous_state = imperial_colony
+        }
+      }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
 		days = 500

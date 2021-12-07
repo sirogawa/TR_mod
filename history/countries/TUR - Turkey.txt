@@ -28,6 +28,10 @@ set_war_support = 0.3
 
 add_ideas = {
         Absolute_monarchy
+        low_max_workhours
+        low_Unemployment_subsidies
+        acceptable_school_system
+        low_pensions
         limited_conscription
 	partial_economic_mobilisation
 	TUR_SAIMUKANRI

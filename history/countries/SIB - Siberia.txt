@@ -29,6 +29,11 @@ set_technology = {
 add_ideas = {
         Constitutional_monarchy
         Tiyoda_Kensho
+        low_safety_regulations
+        low_Unemployment_subsidies
+        low_school_system
+        low_pensions
+        low_health_care
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -40,7 +45,12 @@ set_research_slots = 4
 set_stability = 0.5
 set_war_support = 0.4
 
-
+JAP = { 
+        set_autonomy = {
+	   target = SIB
+	   autonomous_state = imperial_dominion
+        }
+      }
 
 
 set_politics = {

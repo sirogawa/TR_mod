@@ -9,7 +9,7 @@ country_event = { id = TR_USA.13 days = 345 }
 set_research_slots = 4
 set_stability = 0.4
 set_war_support = 0.4
-
+starting_train_buffer = 1
 
 # Starting tech
 set_technology = {
@@ -34,6 +34,7 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 	superior_firepower = 1
+	basic_train = 1
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -117,6 +118,13 @@ set_popularities = {
 }
 
 add_ideas = {
+        acceptable_minimum_wage
+        acceptable_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
         USA_treaty_of_Tokyo
 	USA_LOSE_IN_CALIFORNIA
         USA_depression

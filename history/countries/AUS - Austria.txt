@@ -52,6 +52,12 @@ if = {
 
 add_ideas = {
            Constitutional_monarchy
+           acceptable_minimum_wage
+           trinket_safety_regulations
+           trinket_Unemployment_subsidies
+           trinket_pensions
+           trinket_health_care
+           acceptable_school_system
            AUS_MINZOKUMONDAI
 }
 

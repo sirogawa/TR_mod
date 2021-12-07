@@ -11,23 +11,37 @@ set_technology = {
 }
 set_research_slots = 2
 set_convoys = 20
+set_cosmetic_tag = NAN_JAP
 
 add_ideas = {
         militaly_dictatorship
-        CHI_late_army
 }
-	
-
+country_event = { id = TR_China.6 days = 50 }
+JAP = { 
+        set_autonomy = {
+	   target = NAN
+	   autonomous_state = imperial_colony
+        }
+      }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1936.1.1"
+	ruling_party = paternal_autocrat
+	last_election = "1935.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 70
-        Gnosticism = 30
+		totalist = 4
+	syndicalist = 4
+	radical_socialist = 2
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 5
+	social_conservative = 8
+	authoritarian_democrat = 4
+	paternal_autocrat = 29
+	national_populist = 24
+        Gnosticism = 0
 }
 
 create_country_leader = {
@@ -40,7 +54,16 @@ create_country_leader = {
 		#
 	}
 }
-
+create_country_leader = {
+	name = "本庄繁"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Shigeru_Honjo.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
 create_country_leader = {
 	name = "夢野久作"
 	desc = ""
@@ -51,8 +74,17 @@ create_country_leader = {
 		#
 	}
 }
-
-create_field_marshal = {
+create_corps_commander = {
+	name = "本庄繁"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Shigeru_Honjo.dds"
+	traits = { old_guard war_hero }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
 	name = "小日向白朗"
 	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Kohinata.tga"
 	traits = { }

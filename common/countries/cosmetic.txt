@@ -11,6 +11,10 @@ KEN_JAP = {
 	color = rgb { 252 201 185 }
 	color_ui = rgb { 252 201 185 }
 }
+KOR_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
 NMB_JAP = {
 	color = rgb { 252 201 185 }
 	color_ui = rgb { 252 201 185 }
@@ -24,6 +28,10 @@ MAN_JAP = {
 	color_ui = rgb { 252 201 185 }
 }
 GUG_JAP = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
+NAN_JAP = {
 	color = rgb { 252 201 185 }
 	color_ui = rgb { 252 201 185 }
 }

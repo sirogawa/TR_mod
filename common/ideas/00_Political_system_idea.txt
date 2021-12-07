@@ -4,15 +4,16 @@ ideas = {
 		use_list_view = yes
 
 		Democratic_Republic = {
-			level = 1
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を民主共和政へ変更する" }
+                        
 
 			modifier = {
-				political_power_gain = 0.1
+				political_power_gain = 0.3
+                                stability_factor = -0.03
+				drift_defence_factor = -0.2
 			}
 
 			allowed_to_remove = {
@@ -24,15 +25,16 @@ ideas = {
 			}
 		}
 		Constitutional_monarchy = {
-			level = 2
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を立憲君主制へ変更する" }
+                        
 
 			modifier = {
+                                political_power_gain = 0.12
 				stability_factor = 0.05
+.                               drift_defence_factor = 0.1
 			}
 
 			allowed_to_remove = {
@@ -44,12 +46,11 @@ ideas = {
 			}
 		}
 		Absolute_monarchy = {
-			level = 3
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を絶対君主制へ変更する" }
+                        
 
 			modifier = {
 				political_power_factor = -0.1
@@ -65,14 +66,15 @@ ideas = {
 			}
 		}
 		totalist_dictatorship = {
-			level = 4
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-            on_add = { log = "[GetDateText] [Root.GetName]: 政体を全体主義体制へ変更する" }
+            
 			modifier = {
-				war_support_factor = 0.10
+                                political_power_factor = 0.03
+				war_support_factor = 0.1
+                                mobilization_speed = 0.1
 			}
 
 			allowed_to_remove = {
@@ -84,15 +86,17 @@ ideas = {
 			}
 		}
 		militaly_dictatorship = {
-			level = 5
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を軍事独裁制へ変更する" }
+                      
 
 			modifier = {
 				conscription = 0.003
+                                command_power_gain_mult = 0.25
+				stability_factor = 0.02
+                                political_power_factor = -0.1
 			}
 
 			allowed_to_remove = {
@@ -104,15 +108,17 @@ ideas = {
 			}
 		}
 		Council_communism = {
-			level = 6
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]:政体を評議会共産主義へ変更する" }
+                        
 
 			modifier = {
+                                consumer_goods_factor = 0.05
+                                production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
+                                resistance_damage_to_garrison_on_our_occupied_states = 0.1
 			}
 
 			allowed_to_remove = {
@@ -124,15 +130,16 @@ ideas = {
 			}
 		}
 		Democratic_centralism = {
-			level = 7
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を民主集中制へ変更する" }
+                        
 
 			modifier = {
 				conversion_cost_civ_to_mil_factor = -0.1
+                                conscription_factor = 0.1
+                                resistance_damage_to_garrison_on_our_occupied_states = 0.25
 			}
 
 			allowed_to_remove = {
@@ -144,12 +151,11 @@ ideas = {
 			}
 		}
 		anarchism_society = {
-			level = 8
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を無政府社会へ変更する" }
+                        
 
 			modifier = {
 				consumer_goods_factor = -0.5
@@ -167,15 +173,16 @@ ideas = {
 			}
 		}
 		Colonical_system = {
-			level = 9
 			allowed = { }
 			cost = 0
 			removal_cost = -1
 			cancel_if_invalid = no
-                        on_add = { log = "[GetDateText] [Root.GetName]: 政体を植民地政府へ変更する" }
+                        
 
 			modifier = {
-				political_power_cost = 0.10
+				political_power_cost = 0.3
+                                resistance_target = 0.1
+                                non_core_manpower = 0.1
 			}
 
 			allowed_to_remove = {

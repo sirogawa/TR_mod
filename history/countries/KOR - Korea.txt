@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Korea_I_Eun.tga"
 	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}

@@ -37,7 +37,12 @@ set_war_support = 0.4
 
 
 
-
+JAP = { 
+        set_autonomy = {
+	   target = FUJ
+	   autonomous_state = imperial_protectorate
+        }
+      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

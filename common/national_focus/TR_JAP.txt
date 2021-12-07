@@ -11,7 +11,7 @@
 	}
 	default = no
 
-	continuous_focus_position = { x = 2500 y = 1300 }
+	continuous_focus_position = { x = 1700 y = 700 }
 
 	########################
 	###     経済ツリー   ###
@@ -24,7 +24,7 @@
 		ai_will_do = {
 			factor = 300
 		}
-		x = 8
+		x = 3
 		y = 0
 		cost = 1
 		cancelable = no
@@ -32,17 +32,16 @@
 			country_event = TR_japan.1	
 		}
 	}
-        focus = {
+    focus = {
 		id = JAP_KYOKOHENOTAISAKU
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = {
-			
-                        focus = JAP_black_thursday1
+			focus = JAP_black_thursday1
 		}
 		ai_will_do = {
 			factor = 300
 		}
-		x = 8
+		x = 3
 		y = 1
 		cost = 5
 		cancelable = no
@@ -61,7 +60,7 @@
 		ai_will_do = {
 			factor = 300
 		}
-		x = 8
+		x = 3
 		y = 2
 		cost = 6
 		cancelable = no
@@ -105,20 +104,19 @@
         focus = {
 		id = JAP_TAKAHASHI
 		icon = GFX_focus_generic_industry_3
-                prerequisite = {
-			
-                        focus = JAP_blockeconomy
-		}
-                available = {
-                             has_country_flag = JAP_1936SENKYO
-                             
-                            OR = {
-                             has_government = social_conservative
-                             has_government = social_democrat
-                             has_government = authoritarian_democrat
-                             has_government = social_liberal
-                             }
-                            }
+            prerequisite = {
+			    focus = JAP_blockeconomy
+		    }
+            available = {
+                    has_country_flag = JAP_1936SENKYO
+					NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }        
+                    OR = {
+                        has_government = social_conservative
+                        has_government = social_democrat
+                        has_government = authoritarian_democrat
+                        has_government = social_liberal
+                    }
+                }
 		mutually_exclusive = {
 			    focus = JAP_KAYA
                             focus = JAP_INOUE
@@ -127,7 +125,7 @@
 			factor = 300
 		}
                 
-		x = 8
+		x = 3
 		y = 3
 		cost = 15
 		cancelable = yes
@@ -157,7 +155,7 @@
 			factor = 300
 		}
                 
-		x = 8
+		x = 3
 		y = 4
 		cost = 12
 		cancelable = yes
@@ -186,7 +184,7 @@
 			factor = 300
 		}
                 
-		x = 8
+		x = 3
 		y = 5
 		cost = 12
 		cancelable = yes
@@ -201,33 +199,33 @@
         focus = {
 		id = JAP_INOUE
 		icon = GFX_focus_generic_industry_3
-                prerequisite = {
-			
-                        focus = JAP_blockeconomy
-		}
-                available = {
-                             has_country_flag = JAP_1936SENKYO
-                             OR = {
-                             has_government = market_liberal
-                             has_government = authoritarian_democrat
-                             has_government = social_liberal
-                             }
-                            }
+        prerequisite = {
+            focus = JAP_blockeconomy
+		}       
+        available = {
+            has_country_flag = JAP_1936SENKYO
+			NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }
+            OR = {
+                has_government = market_liberal
+                has_government = authoritarian_democrat
+                has_government = social_liberal
+                }
+            }
 		mutually_exclusive = {
-			    focus = JAP_TAKAHASHI
-                            focus = JAP_KAYA
+			focus = JAP_TAKAHASHI
+            focus = JAP_KAYA
 		}
 		ai_will_do = {
 			factor = 300
 		}
                 
-		x = 10
+		x = 5
 		y = 3
 		cost = 15
 		cancelable = yes
 		completion_reward = {
-                        set_country_flag = JAP_INOUE_flag
-                        add_ideas = JAP_Inoue_junnosuke
+            set_country_flag = JAP_INOUE_flag
+            add_ideas = JAP_Katsu_Masanori
 			swap_ideas = {
 				remove_idea = JAP_black_thursday
 				add_idea = JAP_black_thursdayk_INOUE
@@ -252,7 +250,7 @@
 			factor = 300
 		}
                 
-		x = 10
+		x = 5
 		y = 4
 		cost = 12
 		cancelable = yes
@@ -281,7 +279,7 @@
 			factor = 300
 		}
                 
-		x = 10
+		x = 5
 		y = 5
 		cost = 12
 		cancelable = yes
@@ -296,29 +294,27 @@
         focus = {
 		id = JAP_KAYA
 		icon = GFX_focus_generic_industry_3
-                prerequisite = {
-			
-                        focus = JAP_blockeconomy
+        prerequisite = {
+            focus = JAP_blockeconomy
 		}
-                available = {
-                            has_country_flag = JAP_1936SENKYO
-                        OR = {
-                             has_government = authoritarian_democrat
-                             has_government = paternal_autocrat
-                             has_government = national_populist
-                             has_government = social_democrat
-                             }
-                            }
+        available = {
+            has_country_flag = JAP_1936SENKYO
+			NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }
+            OR = {
+                has_government = authoritarian_democrat
+                has_government = social_democrat
+                 }
+            }
 		mutually_exclusive = {
-                                    focus = JAP_TAKAHASHI
-                                    focus = JAP_INOUE
+            focus = JAP_TAKAHASHI
+            focus = JAP_INOUE
 			
 		}
 		ai_will_do = {
 			factor = 300
 		}
                 
-		x = 6
+		x = 1
 		y = 3
 		cost = 15
 		cancelable = yes
@@ -331,7 +327,7 @@
 			}	
 		}
             }
-            focus = {
+        focus = {
 		id = JAP_KAYA1
 		icon = GFX_focus_generic_industry_3
                 prerequisite = {
@@ -348,12 +344,12 @@
 			factor = 300
 		}
                 
-		x = 6
+		x = 1
 		y = 4
 		cost = 12
 		cancelable = yes
 		completion_reward = {
-                        add_timed_idea = {
+                add_timed_idea = {
 					idea = JAP_yonkanen
 					days = 1440
 				}              
@@ -364,7 +360,7 @@
 			}	
 		}
 	}
-         focus = {
+    focus = {
 		id = JAP_KAYA2
 		icon = GFX_focus_generic_industry_3
                 prerequisite = {
@@ -381,12 +377,12 @@
 			factor = 300
 		}
                 
-		x = 6
+		x = 1
 		y = 5
 		cost = 12
 		cancelable = yes
 		completion_reward = {
-                        swap_ideas = {
+            swap_ideas = {
 				remove_idea = JAP_blockeconomy_nf
 				add_idea = JAP_Autarkie
 			}	
@@ -394,6 +390,7 @@
 				remove_idea = JAP_black_thursdayk_KAYA1
 				add_idea = JAP_black_thursdayk_KAYA2
 			}	
+			add_ideas = limited_exports
 		}
 	}
         focus = {
@@ -416,7 +413,7 @@
 			factor = 300
 		}
                 
-		x = 8
+		x = 3
 		y = 6
 		cost = 12
 		cancelable = yes
@@ -429,10 +426,10 @@
 	}
        
 
-        ########################
+	########################
 	###民主主義政治ツリー###
 	########################
-        focus = {
+    focus = {
 		id =JAP_SHUGIIN
 		icon = GFX_goal_support_democracy
                 prerequisite = {
@@ -447,10 +444,10 @@
 		ai_will_do = {
 			factor = 300
 		}
-                bypass = {
+        bypass = {
 			has_country_flag = JAP_1936SENKYO
 		}
-		x = 17
+		x = 11
 		y = 0
 		cost = 5
 		cancelable = no
@@ -459,52 +456,203 @@
 		}
        
 	}
-         focus = {
-		id =JAP_TAISHUTO_WIN
-		icon = GFX_focus_prc_agrarian_socialism
-                prerequisite = {
+    #東洋革新党の勝利
+    focus = {
+	    id =JAP_KAKUSHINTO_WIN
+	    icon = GFX_focus_usa_focus_on_asia
+        prerequisite = {
 			focus = JAP_SHUGIIN
 		}
-                available = {
-                            always = no
-                       }
+        available = {
+            always = no
+            }
 		mutually_exclusive = {
 			
 		}
 		ai_will_do = {
 			factor = 100
 		}
-                bypass = {
-			has_country_flag = JAP_TAISHUTO
-		}
-		x = 14
-		y = 1
-		cost = 5
-		cancelable = no
-		completion_reward = {
-			
-		}
-       
-	}
-        focus = {
-		id =JAP_KAKUSHINTO_WIN
-		icon = GFX_focus_usa_focus_on_asia
-                prerequisite = {
-			focus = JAP_SHUGIIN
-		}
-                available = {
-                            always = no
-                       }
-		mutually_exclusive = {
-			
-		}
-		ai_will_do = {
-			factor = 100
-		}
-                bypass = {
+        bypass = {
 			has_country_flag = JAP_KAKUSHINTO
 		}
-		x = 16
+		x = 9
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+       }
+	}
+	#大陸への投資
+	focus = {
+		id =JAP_KAKUSHINTO1
+		icon = GFX_focus_usa_focus_on_asia
+        prerequisite = {
+			focus = JAP_KAKUSHINTO_WIN
+		}
+		available = {
+			has_country_flag = JAP_KAIGEN_TEPPAI
+		}
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 2
+		cost = 10
+		cancelable = no
+		completion_reward = {
+			if = {
+				limit = { owns_state = 326 }
+				326 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = { owns_state = 743 }
+				743 = { add_extra_state_shared_building_slots = 1 } 
+			}
+			if = {
+				limit = { owns_state = 745 }
+				745 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = { owns_state = 844 }
+				844 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = { owns_state = 845 }
+				845 = { add_extra_state_shared_building_slots = 1 }
+			}
+		}
+       
+	}
+
+	#選挙粛正運動
+	focus = {
+		id =JAP_KAKUSHINTO2
+		icon = GFX_goal_support_democracy
+        prerequisite = {
+			focus = JAP_KAKUSHINTO1
+		}
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 3
+		cost = 10
+		cancelable = no
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.03
+			}
+		}
+       
+	}
+	
+	#知事公選制
+	focus = {
+		id =JAP_KAKUSHINTO3
+		icon = GFX_goal_support_democracy
+        prerequisite = {
+			focus = JAP_KAKUSHINTO2
+		}
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 4
+		cost = 10
+		cancelable = no
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.04
+			}
+			add_political_power= 60
+		}
+       
+	}
+
+	#独立運動家との会談
+	focus = {
+		id =JAP_KAKUSHINTO4
+		icon = GFX_goal_support_democracy
+        prerequisite = {
+			focus = JAP_KAKUSHINTO3
+		}
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 5
+		cost = 10
+		cancelable = no
+		completion_reward = {
+			country_event = TR_japan.13
+		}
+       
+	}
+	
+
+	#アジアの夜明け
+	focus = {
+		id = JAP_tOZMBWqw
+		icon = GFX_focus_usa_focus_on_asia
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_KAKUSHINTO4
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_ASIANMORNING
+
+		}
+	}
+    focus = {
+		id =JAP_KYOKOKUITTI
+		icon = GFX_focus_jap_spiritual_mobilization
+        prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+        available = {
+            always = no
+        }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        bypass = {
+			has_country_flag = JAP_KYOKOKUITTITAISEI
+		}
+		x = 13
 		y = 1
 		cost = 5
 		cancelable = no
@@ -513,10 +661,253 @@
 		}
        
 	}
-        focus = {
-		id =JAP_MINSEITO_WIN
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+
+	#日はまた昇る
+	focus = {
+		id = JAP_WOFBuHbq
+		icon = GFX_focus_jap_showa_restoration
+		x = 11
+		y = 7
+		cost = 20
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_cejxWJlk 
+			focus = JAP_NQdrekax 
+			focus = JAP_XSGzyqvB 
+			focus = JAP_tOZMBWqw 
+		}
+        available = {
+			has_completed_focus = JAP_KAIGEN_TEPPAI_NF
+			NOT = { has_idea = JAP_Korean_Question }
+            has_country_flag = JAP_KEIZAIFUKKO
+            }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+            add_research_slot = 1
+            swap_ideas = {
+				remove_idea = JAP_Shading_sun
+				add_idea = JAP_rising_sun
+			}	
+		}
+	}
+	#教育の振興
+	focus = {
+		id = JAP_PYQuxTzV
+		icon = GFX_focus_research2
+		x = 11
+		y = 4
+        available = {
+           
+            }
+		cost = 10
+        prerequisite = {
+            focus = JAP_UHmdcxaz
+        }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05
+			add_political_power= 50
+
+		}
+	}
+	#植民地政策の転換
+	focus = {
+		id = JAP_Minseito4
+		icon = GFX_focus_research2
+		x = 11
+		y = 5
+        available = {
+           
+            }
+		cost = 10
+        prerequisite = {
+            focus = JAP_PYQuxTzV
+        }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = TR_japan.14
+
+		}
+	}
+	#議会の擁護者
+	focus = {
+		id = JAP_XSGzyqvB
+		icon = GFX_goal_support_democracy
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_Minseito4
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_Parliament
+
+		}
+	}
+
+	#社会大衆党の勝利
+	focus = {
+	    id =JAP_TAISHUTO_WIN
+	    icon = GFX_focus_prc_agrarian_socialism
+        prerequisite = {
+			focus = JAP_SHUGIIN
+		}
+        available = {
+            always = no
+            }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 100
+		}
+        bypass = {
+				has_country_flag = JAP_TAISHUTO
+		}
+		x = 7
+		y = 1
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+       }
+	}
+
+	#協同組合法
+	focus = {
+		id = JAP_nwrPBdjE
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 7
+		y = 2
+        available = {
+			OR = { 
+				has_country_flag = JAP_KAIGEN_TEPPAI
+				has_country_flag = JAP_KAKUMEI_SEIKO
+		    }
+        }
+		cost = 10
                 prerequisite = {
+                             focus = JAP_TAISHUTO_WIN
+                             }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+	#教育改革
+	focus = {
+		id = JAP_IypmrVhM
+		icon = GFX_focus_research2
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_nwrPBdjE }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+
+	
+	#無産統一戦線
+	focus = {
+		id = JAP_ReDzwurS
+		icon = GFX_goal_support_communism
+		x = 7
+		y = 4
+        available = {
+                has_country_flag = JAP_KAIGEN_TEPPAI
+        }
+        prerequisite = {
+			focus = JAP_IypmrVhM
+            }
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.02
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.05
+		}
+		}
+	}
+	#インドを訪れる
+	focus = {
+		id = JAP_FzHbvhst
+		icon = GFX_goal_generic_defence
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_ReDzwurS }
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = JAP_ReDzwurS
+        }
+	completion_reward = {
+		country_event = TR_japan.12
+
+		}
+	}
+	#日本型社会主義
+	focus = {
+		id = JAP_cejxWJlk
+		icon = GFX_focus_generic_join_comintern
+		x = 7
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_FzHbvhst
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+                 add_ideas = JAP_SOCIALISM
+
+		}
+	}
+
+
+	#立憲民政党の勝利
+    focus = {
+	    id =JAP_MINSEITO_WIN
+	    icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+        prerequisite = {
 			focus = JAP_SHUGIIN
 		}
                 available = {
@@ -531,15 +922,60 @@
                 bypass = {
 			has_country_flag = JAP_MINSEITO
 		}
-		x = 18
+		x = 11
 		y = 1
 		cost = 5
 		cancelable = no
 		completion_reward = {
 			
        }
-}
-        focus = {
+    }
+	#自由貿易
+	focus = {
+		id = JAP_DGuUraYs
+		icon = GFX_goal_generic_trade
+		x = 11
+		y = 2
+		cost = 10
+		mutually_exclusive = {
+			focus = JAP_iPurUSHL
+	    }  
+        available = {
+            has_country_flag = JAP_KAIGEN_TEPPAI
+        }
+        prerequisite = {
+            focus = JAP_MINSEITO_WIN
+			focus = JAP_KYOKOKUITTI
+        }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05
+			add_ideas = free_trade
+
+		}
+	}
+	#行政改革
+	focus = {
+		id = JAP_UHmdcxaz
+		icon = GFX_goal_support_democracy
+		x = 11
+		y = 3
+		cost = 10  
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_DGuUraYs }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1	
+
+		}
+	}
+	#立憲政友会の勝利
+	focus = {
 		id =JAP_SEIYUKAI_WIN
 		icon = GFX_goal_generic_defence
                 prerequisite = {
@@ -557,7 +993,7 @@
                 bypass = {
 			has_country_flag = JAP_SEIYUKAI
 		}
-		x = 20
+		x = 15
 		y = 1
 		cost = 5
 		cancelable = no
@@ -571,38 +1007,293 @@
 		}
        
 	}
-}
-        focus = {
-		id =JAP_KYOKOKUITTI
-		icon = GFX_focus_jap_spiritual_mobilization
-                prerequisite = {
-			
-		}
-                available = {
-                           always = no
-                       }
+    }
+	#財閥との提携強化
+	focus = {
+		id = JAP_iPurUSHL
+		icon = GFX_focus_jap_zaibatsu
+		x = 15
+		y = 2
+		cost = 10
 		mutually_exclusive = {
-			
+			focus = JAP_DGuUraYs
+	    }  
+        available = {
+                    has_country_flag = JAP_KAIGEN_TEPPAI
+               }
+        prerequisite = {
+            focus = JAP_SEIYUKAI_WIN
+			focus = JAP_KYOKOKUITTI
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.1
+			add_political_power= -50
+
+		}
+	}
+
+	#交通網の充実
+	focus = {
+		id = JAP_WmuAywKB
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_iPurUSHL }
+		ai_will_do = {
+			factor = 100
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#在郷軍人会の支援
+	focus = {
+		id = JAP_cDrYUnKC
+		icon = GFX_focus_generic_combined_arms
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_WmuAywKB }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_stability = 0.05
+            add_political_power= 25
+		}
+	}
+
+	#東洋のセシル・ローズ
+	focus = {
+		id = JAP_seiyukai4
+		icon = GFX_focus_generic_combined_arms
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_cDrYUnKC }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = TR_japan.15
+
+		}
+	}
+	
+#国家公党
+	focus = {
+		id = JAP_NQdrekax
+		icon = GFX_focus_jap_pacific_guardian
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = JAP_seiyukai4
 		}
 		ai_will_do = {
 			factor = 100
 		}
-                bypass = {
-			 has_country_flag = JAP_KYOKOKUITTITAISEI
+	completion_reward = {
+                 add_ideas = JAP_KOKKAKOTO
+
 		}
-		x = 22
-		y = 1
-		cost = 1
-		cancelable = no
-		completion_reward = {
+	}
+
+    ########################
+	###   朝鮮問題ツリー  ###
+	########################
+	#朝鮮問題
+	focus = {
+		id = JAP_Korean_focus
+		icon = GFX_focus_jap_cast_the_die
+		x = 19
+		y = 3
+        available = {
+            has_country_flag = JAP_Korean_Autonomy
+            }
+		cost = 4
+		bypass = {
 			
 		}
-       
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = TR_japan.20
+
+		}
 	}
-        ########################
-	### 革命→軍部ツリー ###
+
+	
+	#同化！
+	focus = {
+		id = JAP_Korean_focus_1
+		icon = GFX_focus_jap_cast_the_die
+		x = 21
+		y = 4
+        available = {
+            has_country_flag = JAP_Korean_Autonomy1
+            }
+		cost = 6
+		prerequisite = { 
+			focus = JAP_Korean_focus
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+		custom_effect_tooltip = JAP_Korean_focus_1_text
+		remove_ideas = JAP_Korean_Question
+		add_stability = -0.1	
+        country_event = TR_japan.16
+		}
+	}
+
+	
+	#連邦！
+	focus = {
+		id = JAP_Korean_focus_2
+		icon = GFX_focus_jap_cast_the_die
+		x = 19
+		y = 4
+        available = {
+			has_country_flag = JAP_Korean_Autonomy2
+            }
+		cost = 6
+		prerequisite = { 
+			focus = JAP_Korean_focus
+			
+		}
+		bypass = {
+			
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+			custom_effect_tooltip = JAP_Korean_focus_2_text
+			remove_ideas = JAP_Korean_Question
+            country_event = TR_japan.17
+		}
+	}
+
+	#完全自治！
+	focus = {
+		id = JAP_Korean_focus_3
+		icon = GFX_focus_jap_cast_the_die
+		x = 17
+		y = 4
+        available = {
+            has_country_flag = JAP_Korean_Autonomy3
+            }
+		cost = 6
+		prerequisite = { 
+			focus = JAP_Korean_focus
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+			custom_effect_tooltip = JAP_Korean_focus_3_text
+			remove_ideas = JAP_Korean_Question
+			country_event = TR_japan.18
+		}
+	}
+    ########################
+	###     革命ツリー    ###
 	########################
-        focus = {
+	focus = {
 		id =JAP_KAKUMEI_NF
 		icon = GFX_goal_tfv_burn_the_royal_portraits
                 prerequisite = {
@@ -620,7 +1311,7 @@
                 bypass = {
 			 has_country_flag = JAP_KAKUMEI_1
 		}
-		x = 25
+		x = 18
 		y = 0
 		cost = 1
 		cancelable = no
@@ -629,39 +1320,33 @@
 		}
        
 	}
-         focus = {
+    focus = {
 		id =JAP_KAKUMEI_SUC
 		icon = GFX_focus_generic_soviet_politics
-                prerequisite = {
+        prerequisite = {
 			focus = JAP_KAKUMEI_NF
 		}
-                available = {
-                           has_country_flag = JAP_KAKUMEI_SEIKO
-                       }
+        available = {
+            has_country_flag = JAP_KAKUMEI_SEIKO
+            }
 		mutually_exclusive = {
 			
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 300
 		}
-                bypass = {
+        bypass = {
 			 
 		}
-		x = 24
+		x = 17
 		y = 1
-		cost = 3
+		cost = 2
 		cancelable = no
 		completion_reward = {
-			hidden_effect = {
-                         country_event = {
-					id = TR_news.2
-					days = 5
-					
-				}
-		}
+			add_ideas = JAP_Three_labour_laws
 		}
        
-	}
+	    }
         focus = {
 		id =JAP_KAIGEN_NF
 		icon = GFX_focus_jap_manchurian_project
@@ -680,7 +1365,7 @@
                 bypass = {
 			 has_country_flag = JAP_KAIGEN
 		}
-		x = 26
+		x = 19
 		y = 1
 		cost = 1
 		cancelable = no
@@ -692,12 +1377,16 @@
         focus = {
 		id =JAP_KAIGEN_TEPPAI_NF
 		icon = GFX_focus_jap_pacific_guardian
-                prerequisite = {
+        prerequisite = {
 			focus = JAP_KAIGEN_NF
+			focus = JAP_KAKUMEI_SUC
 		}
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
+        available = {
+			OR = { 
+				has_country_flag = JAP_KAIGEN_TEPPAI
+				has_country_flag = JAP_KAKUMEI_SEIKO
+		    }
+            }
 		mutually_exclusive = {
 			
 		}
@@ -707,7 +1396,7 @@
                 bypass = {
 			 
 		}
-		x = 25
+		x = 18
 		y = 2
 		cost = 3
 		cancelable = no
@@ -716,7 +1405,7 @@
 		}
        
 	}
-         focus = {
+    focus = {
 		id =JAP_KAIGEN_KEIZOKU_NF
 		icon = GFX_focus_generic_japanese_imperial_glory
                 prerequisite = {
@@ -734,631 +1423,1713 @@
                 bypass = {
 			 
 		}
-		x = 27
+		x = 20
 		y = 2
-		cost = 2
+		cost = 1
 		cancelable = no
 		completion_reward = {
-		add_ideas = militaly_dictatorship
+		custom_effect_tooltip = JAP_KAIGEN_KEIZOKU_NF_text
+		hidden_effect = {
+		load_focus_tree = japan_focus_02
 		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-                hidden_effect = { kill_ideology_leader = national_populist }
+		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
 		create_country_leader = {
-			name = "永田鉄山"
-			desc = "POLITICS_NAGATA_DESC"
-			picture = "Portrait_JAP_nagata.tga"
+			name = "大本営"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_JAP_Daihonei.tga"
 			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
+			ideology = authoritarian_democrat_subtype
+			traits = { Power_struggle }
 		}
-                create_country_leader = {
-	                name = "荒木貞夫"
-	                desc = "POLITICS_ARAKI_DESC"
-	                picture = "Portrait_JAP_araki.tga"
-	                expire = "1965.1.1"
-	                ideology = national_populist_subtype
-                 }
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = JAP_Kaigensireibu_long
+			name = JAP_Kaigensireibu_a
 		}
-                add_popularity = {
-			ideology = paternal_autocrat
-			popularity = 0.3
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
 		}
-                set_party_name = {
-			ideology = paternal_autocrat
-			long_name = JAP_KOKUBOU_long
-			name = JAP_KOKUBOU_a
-		}
-                set_party_name = {
-			ideology = national_populist
-			long_name = JAP_KOUDOU_long
-			name = JAP_KOUDOU_a
-		}
-                hidden_effect = {
-                         country_event = {
-					id = TR_news.4
-					days = 5
-					
-				}
-		}
+		hidden_effect = {			
+			load_focus_tree = japan_focus_02
+        country_event = {
+			    id = TR_news.4
+			    days = 5
+			    }
+		    }
+	    }
 	 }
        
 	}
-#Focus for 国家公党 - focus ID randomly generated due to title being in non-latin characters
+	########################
+	### 1940年政治ツリー  ###
+	########################
+	#1940年衆議院議員総選挙
 	focus = {
-		id = JAP_NQdrekax
-		icon = GFX_focus_jap_pacific_guardian
-		x = 20
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_WmuAywKB 
-		}
-		prerequisite = { 
-			focus = JAP_cDrYUnKC 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_stability = 0.10
-                 add_ideas = JAP_KOKKAKOTO
-
-		}
-	}
-
-	#Focus for 日はまた昇る - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_WOFBuHbq
-		icon = GFX_focus_jap_showa_restoration
-		x = 17
-		y = 5
-		cost = 20
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_cejxWJlk 
-			focus = JAP_NQdrekax 
-			focus = JAP_XSGzyqvB 
-			focus = JAP_tOZMBWqw 
-		}
-                available = {
-                           has_country_flag = JAP_KEIZAIFUKKO
-                       }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        add_research_slot = 1
-                        swap_ideas = {
-				remove_idea = JAP_Shading_sun
-				add_idea = JAP_rising_sun
-			}	
-                        load_focus_tree = japan_focus_01
-		}
-	}
-
-	#Focus for 教育の振興 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_PYQuxTzV
-		icon = GFX_focus_research2
-		x = 19
-		y = 2
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
-		cost = 10
-                prerequisite = {
-                             focus = JAP_MINSEITO_WIN
-                             focus = JAP_SEIYUKAI_WIN
-                             }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
-	}
-
-	#Focus for 日本型社会主義 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_cejxWJlk
-		icon = GFX_focus_generic_join_comintern
-		x = 14
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_IypmrVhM 
-		}
-		prerequisite = { 
-			focus = JAP_FzHbvhst 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_stability = 0.10
-                 add_ideas = JAP_SOCIALISM
-
-		}
-	}
-
-	#Focus for アジアの夜明け - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_tOZMBWqw
-		icon = GFX_focus_usa_focus_on_asia
-		x = 16
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_UHmdcxaz 
-		}
-		prerequisite = { 
-			focus = JAP_FzHbvhst 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_stability = 0.10
-                 add_ideas = JAP_ASIANMORNING
-
-		}
-	}
-
-	#Focus for 議会の擁護者 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_XSGzyqvB
+		id = JAP_SHUGIIN_1940
 		icon = GFX_goal_support_democracy
-		x = 18
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
+        available = {
+            always = no
+            }
 		prerequisite = { 
-			focus = JAP_WmuAywKB 
+			focus = JAP_WOFBuHbq
+
 		}
+		ai_will_do = {
+			factor = 300
+		}
+        bypass = {
+			has_country_flag = JAP_1940SENKYO
+		}
+		x = 11
+		y = 8
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#国民勤労者の党
+	focus = {
+		id = JAP_Taishuto_focus_1
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_democrat
+            }
+		mutually_exclusive = {
+			focus = JAP_Kakushinto_focus_1
+			focus = JAP_Minseito_focus_1
+			focus = JAP_Dairenritu_focus_1
+			focus = JAP_Seiyukai_focus_1
+	    }  
 		prerequisite = { 
-			focus = JAP_UHmdcxaz 
+			focus = JAP_SHUGIIN_1940
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 5
 		}
-	completion_reward = {
-                 add_stability = 0.10
-                 add_ideas = JAP_Parliament
-
-		}
-	}
-
-	#Focus for 交通網の充実 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_WmuAywKB
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 19
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_PYQuxTzV }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
-	}
-
-	#Focus for 政治的革新 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_nwrPBdjE
-		icon = GFX_focus_focus_fra_revolution_utmost
-		x = 15
-		y = 2
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
-		cost = 10
-                prerequisite = {
-                             focus = JAP_TAISHUTO_WIN
-                             focus = JAP_KAKUSHINTO_WIN
-                             }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
-	}
-
-	#Focus for 平和主義 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_FzHbvhst
-		icon = GFX_goal_generic_defence
-		x = 15
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_nwrPBdjE }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
-	}
-
-	#Focus for 全ては大御心のままに - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_WJdsrqIO
-		icon = GFX_focus_jap_manchurian_project
-		x = 33
+		x = 3
 		y = 9
-		cost = 20
-                available = {
-                           has_country_flag = JAP_KEIZAIFUKKO
-                       }
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_YkAXnJxo }
-		ai_will_do = {
-			factor = 100
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
 		}
-	completion_reward = {
-                        set_cosmetic_tag = JAP_KO
-                        add_research_slot = 1
-                        swap_ideas = {
-				remove_idea = JAP_Shading_sun
-				add_idea = JAP_Omikokoro
-			}	
-                        load_focus_tree = japan_focus_01
+       
+	}
+	#共産主義を糾弾
+	focus = {
+		id = JAP_Taishuto_focus_2
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_democrat
+            }
+		prerequisite = { 
+			focus = JAP_Taishuto_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#超国家主義を糾弾
+	focus = {
+		id = JAP_Taishuto_focus_3
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_democrat
+            }
+		prerequisite = { 
+			focus = JAP_Taishuto_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 4
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#民主社会主義
+	focus = {
+		id = JAP_Taishuto_focus_4
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_democrat
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_2 }
+		prerequisite = { focus = JAP_Taishuto_focus_3 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 11
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#積極的平和外交
+	focus = {
+		id = JAP_Taishuto_focus_5
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_4 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 12
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#東南アジアに安定を
+	focus = {
+		id = JAP_Taishuto_focus_6
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 2
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#印度に安定を
+	focus = {
+		id = JAP_Taishuto_focus_7
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 4
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#中国に統一を
+	focus = {
+		id = JAP_Taishuto_focus_8
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_6 }
+		prerequisite = { focus = JAP_Taishuto_focus_7 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 14
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#平和と安定
+	focus = {
+		id = JAP_Taishuto_focus_9
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Taishuto_focus_8 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 3
+		y = 15
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#興亜の大義
+	focus = {
+		id = JAP_Kakushinto_focus_1
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_liberal
+            }
+		prerequisite = { 
+			focus = JAP_SHUGIIN_1940
+		}
+		mutually_exclusive = {
+			focus = JAP_Seiyukai_focus_1
+			focus = JAP_Minseito_focus_1
+			focus = JAP_Dairenritu_focus_1
+			focus = JAP_Taishuto_focus_1
+	    }  
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 9
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#党弊との戦い
+	focus = {
+		id = JAP_Kakushinto_focus_2
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Kakushinto_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 6
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
 		}
 	}
-
-	#Focus for 財閥との連携 - focus ID randomly generated due to title being in non-latin characters
+	#民力休養
 	focus = {
-		id = JAP_iPurUSHL
-		icon = GFX_focus_jap_zaibatsu
-		x = 21
-		y = 2
-		cost = 10
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
-                prerequisite = {
-                             focus = JAP_SEIYUKAI_WIN
-                             }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
+		id = JAP_Kakushinto_focus_3
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Kakushinto_focus_1
 		}
-	completion_reward = {
-			add_stability = 0.1	
-
+		ai_will_do = {
+			factor = 5
+		}
+		x = 8
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
 		}
 	}
-
-	#Focus for 自由貿易 - focus ID randomly generated due to title being in non-latin characters
+	#革新政党として
 	focus = {
-		id = JAP_DGuUraYs
-		icon = GFX_goal_generic_trade
+		id = JAP_Kakushinto_focus_4
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Kakushinto_focus_2
+		}
+		prerequisite = { 
+			focus = JAP_Kakushinto_focus_3
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 11
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	#真の共栄圏
+	focus = {
+		id = JAP_Kakushinto_focus_5
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { 
+			focus = JAP_Kakushinto_focus_4
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 12
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	#植民地解放
+	focus = {
+		id = JAP_Kakushinto_focus_6
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Kakushinto_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 6
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#巨頭を呼ぶ
+	focus = {
+		id = JAP_Kakushinto_focus_7
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Kakushinto_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 8
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#武漢での会談
+	focus = {
+		id = JAP_Kakushinto_focus_8
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Kakushinto_focus_6 }
+		prerequisite = { focus = JAP_Kakushinto_focus_7 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 14
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#八紘一宇
+	focus = {
+		id = JAP_Kakushinto_focus_9
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Kakushinto_focus_8 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 7
+		y = 15
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#ノントウ、再び
+	focus = {
+		id = JAP_Minseito_focus_1
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = market_liberal
+            }
+		prerequisite = { 
+			focus = JAP_SHUGIIN_1940
+		}
+		mutually_exclusive = {
+			focus = JAP_Kakushinto_focus_1
+			focus = JAP_Seiyukai_focus_1
+			focus = JAP_Dairenritu_focus_1
+			focus = JAP_Taishuto_focus_1
+	    }  
+		ai_will_do = {
+			factor = 5
+		}
+		x = 11
+		y = 9
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#経済活動により自由を！
+	focus = {
+		id = JAP_Minseito_focus_2
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = market_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Minseito_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 10
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#社会により自由を！
+	focus = {
+		id = JAP_Minseito_focus_3
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = market_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Minseito_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 12
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#進歩の道
+	focus = {
+		id = JAP_Minseito_focus_4
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = market_liberal
+            }
+		prerequisite = { 
+			focus = JAP_Minseito_focus_2
+		}
+		prerequisite = { 
+			focus = JAP_Minseito_focus_3
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 11
+		y = 11
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#価値観外交
+	focus = {
+		id = JAP_Minseito_focus_5
+		icon = GFX_goal_support_democracy
+        available = {
+            }
+		prerequisite = { 
+			focus = JAP_Minseito_focus_4
+			focus = JAP_Dairenritu_focus_4
+		}
+		mutually_exclusive = {
+			focus = JAP_Seiyukai_focus_5
+	    } 
+		ai_will_do = {
+			factor = 5
+		}
+		x = 13
+		y = 12
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#約束を守る
+	focus = {
+		id = JAP_Minseito_focus_6
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Minseito_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 12
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#デリーへの支持を表明
+	focus = {
+		id = JAP_Minseito_focus_7
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Minseito_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 14
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#中国を片付ける
+	focus = {
+		id = JAP_Minseito_focus_8
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Minseito_focus_6 }
+		prerequisite = { focus = JAP_Minseito_focus_7 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 13
+		y = 14
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#自由主義陣営の盟主
+	focus = {
+		id = JAP_Minseito_focus_9
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Minseito_focus_8 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 13
+		y = 15
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#鳩山=三木体制
+	focus = {
+		id = JAP_Dairenritu_focus_1
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = authoritarian_democrat
+            }
+		prerequisite = { 
+			focus = JAP_SHUGIIN_1940
+		}
+		mutually_exclusive = {
+			focus = JAP_Kakushinto_focus_1
+			focus = JAP_Minseito_focus_1
+			focus = JAP_Seiyukai_focus_1
+			focus = JAP_Taishuto_focus_1
+	    }  
+		ai_will_do = {
+			factor = 5
+		}
+		x = 15
+		y = 9
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#自由主義
+	focus = {
+		id = JAP_Dairenritu_focus_2
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = authoritarian_democrat
+            }
+		prerequisite = { 
+			focus = JAP_Dairenritu_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 14
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	#保守主義
+	focus = {
+		id = JAP_Dairenritu_focus_3
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = authoritarian_democrat
+            }
+		prerequisite = { 
+			focus = JAP_Dairenritu_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 16
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	#二大政党の合同交渉
+	focus = {
+		id = JAP_Dairenritu_focus_4
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = authoritarian_democrat
+            }
+		prerequisite = { 
+			focus = JAP_Dairenritu_focus_2
+		}
+		prerequisite = { 
+			focus = JAP_Dairenritu_focus_3
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 15
+		y = 11
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+	}
+	#フィクサーの降臨
+	focus = {
+		id = JAP_Seiyukai_focus_1
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_conservative
+            }
+		prerequisite = { 
+			focus = JAP_SHUGIIN_1940
+		}
+		mutually_exclusive = {
+			focus = JAP_Kakushinto_focus_1
+			focus = JAP_Minseito_focus_1
+			focus = JAP_Dairenritu_focus_1
+			focus = JAP_Taishuto_focus_1
+	    }  
+		ai_will_do = {
+			factor = 5
+		}
+		x = 19
+		y = 9
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}  
+	}
+	#経済連盟会との協力
+	focus = {
+		id = JAP_Seiyukai_focus_2
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_conservative
+            }
+		prerequisite = { 
+			focus = JAP_Seiyukai_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 18
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}  
+	}
+	#中島との会談
+	focus = {
+		id = JAP_Seiyukai_focus_3
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_conservative
+            }
+		prerequisite = { 
+			focus = JAP_Seiyukai_focus_1
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 20
+		y = 10
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}  
+	}
+	#保守の道
+	focus = {
+		id = JAP_Seiyukai_focus_4
+		icon = GFX_goal_support_democracy
+        available = {
+            has_government = social_conservative
+            }
+		prerequisite = { 
+			focus = JAP_Seiyukai_focus_2
+		}
+		prerequisite = { 
+			focus = JAP_Seiyukai_focus_3
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 19
+		y = 11
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}  
+	}
+	#新植民地主義
+	focus = {
+		id = JAP_Seiyukai_focus_5
+		icon = GFX_goal_support_democracy
+        available = {
+            }
+
+		prerequisite = { 
+			focus = JAP_Seiyukai_focus_4
+			focus = JAP_Dairenritu_focus_4
+		}
+		mutually_exclusive = {
+			focus = JAP_Seiyukai_focus_5
+	    } 
+		ai_will_do = {
+			factor = 5
+		}
 		x = 17
-		y = 2
-		cost = 10
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
-                prerequisite = {
-                             focus = JAP_KAKUSHINTO_WIN
-                             focus = JAP_MINSEITO_WIN
-                             }
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
+		y = 12
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}  
 	}
-
-	#Focus for 限定的軍備拡張 - focus ID randomly generated due to title being in non-latin characters
+	#従属の下での自由
 	focus = {
-		id = JAP_cDrYUnKC
-		icon = GFX_focus_generic_combined_arms
-		x = 21
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_iPurUSHL }
+		id = JAP_Seiyukai_focus_6
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Seiyukai_focus_5 }
 		ai_will_do = {
-			factor = 100
+			factor = 5
 		}
-	completion_reward = {
-			add_stability = 0.1	
-
+		x = 16
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
 		}
+       
 	}
-
-	#Focus for 皇国精神の称揚 - focus ID randomly generated due to title being in non-latin characters
+	#利権を拡大せよ
 	focus = {
-		id = JAP_YkAXnJxo
-		icon = GFX_focus_jap_spiritual_mobilization
-		x = 33
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
+		id = JAP_Seiyukai_focus_7
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Seiyukai_focus_5 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 18
+		y = 13
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#南米市場に触手を伸ばす
+	focus = {
+		id = JAP_Seiyukai_focus_8
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Seiyukai_focus_6 }
+		prerequisite = { focus = JAP_Seiyukai_focus_7 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 17
+		y = 14
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#特務機関
+	focus = {
+		id = JAP_Seiyukai_focus_9
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
+		prerequisite = { focus = JAP_Seiyukai_focus_8 }
+		ai_will_do = {
+			factor = 5
+		}
+		x = 17
+		y = 15
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
+		}
+       
+	}
+	#亜細亜経済共同体
+	focus = {
+		id = JAP_Asian_Economy_focus
+		icon = GFX_goal_support_democracy
+        available = {
+            
+            }
 		prerequisite = { 
-			focus = JAP_jXvqbdkn 
-		}
-		prerequisite = { 
-			focus = JAP_UgcFtlHV 
+			focus = JAP_Taishuto_focus_9 
+		    focus = JAP_Kakushinto_focus_9 
+			focus = JAP_Minseito_focus_9 
+		    focus = JAP_Seiyukai_focus_9 
 		}
 		ai_will_do = {
-			factor = 100
+			factor = 5
 		}
-	completion_reward = {
-                 add_ideas = JAP_KOUKOKUSEISIN
-               }
-}
-
-	#Focus for 財閥を解体 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_jXvqbdkn
-		icon = GFX_focus_jap_zaibatsu
-		x = 34
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_LdIHqsUN }
-		ai_will_do = {
-			factor = 100
+		x = 11
+		y = 16
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			
 		}
-	completion_reward = {
-                        add_offsite_building = { type = industrial_complex level = -5 }
-                        add_ideas = JAP_KAIZOUKEIKAKU
-		    }
-	        }
-
-	#Focus for 国体明徴声明 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_UgcFtlHV
-		icon = GFX_focus_jap_pacific_guardian
-		x = 32
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_LdIHqsUN }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_ideas = JAP_KOKUTAIMEITYOU
-
-		}
+       
 	}
-
-	#Focus for 帝国は常に先を行く - focus ID randomly generated due to title being in non-latin characters
+    ########################
+	###     経済ツリー    ###
+	########################	
+	#経済政策
 	focus = {
-		id = JAP_oPdyzOjb
-		icon = GFX_goal_support_fascism
-		x = 29
-		y = 8
-		cost = 20
-		available_if_capitulated = yes
-                available = {
-                           has_country_flag = JAP_KEIZAIFUKKO
-                       }
-		prerequisite = { 
-			focus = JAP_dbmzWcVS 
-		}
-		prerequisite = { 
-			focus = JAP_DLHCTnXi 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                         add_research_slot = 1
-                        swap_ideas = {
-				remove_idea = JAP_Shading_sun
-				add_idea = JAP_SAISENTAN
-			}	
-                        load_focus_tree = japan_focus_01
-		}
-	}
-
-	#Focus for 従わぬならば挿げ替えよ - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_LdIHqsUN
-		icon = GFX_focus_jap_showa_restoration
-		x = 33
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_CZWkgPiS }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = Absolute_monarchy
-        add_stability = -0.2
-        remove_ideas = JAP_hirohito
-        add_ideas = JAP_SHINSEI
-        effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
-		create_country_leader = {
-			name = "雍仁"
-			desc = "POLITICS_TITIBU_DESC"
-			picture = "Portrait_Japan_titibu.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-                        traits = { Yasuhito_traits }
-		}
-		}
-	}
-
-	#Focus for 独裁者 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_DLHCTnXi
-		icon = GFX_focus_mex_support_general_cedillo
-		x = 28
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_jBtdHwAf }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-            add_stability = 0.05
-			add_country_leader_trait = dictator
-
-		}
-	}
-
-	#Focus for 産業の国有化 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_dbmzWcVS
-		icon = GFX_goal_support_communism
+		id = JAP_TruqXPet
+		icon = GFX_goal_continuous_non_factory_construct
 		x = 30
-		y = 7
-		cost = 10
+		y = 12
+		cost = 2
 		available_if_capitulated = yes
-		prerequisite = { focus = JAP_XAznejdg }
 		ai_will_do = {
-			factor = 100
-		}
-           completion_reward = {
-                    add_tech_bonus = {
+			factor = 3
+				}
+		available = {
+			has_completed_focus = JAP_WOFBuHbq
+			}
+		completion_reward = {
+			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 1
 				category = industry
 			}
-                    random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
+		}
+	}
+	
+	#農業政策
+	focus = {
+		id = JAP_EvHNbpzl
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 26
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = JAP_TruqXPet }
+		ai_will_do = {
+			factor = 3
+			}
+		completion_reward = {
+						   add_political_power = 50
+					
+		}
+	}
+	
+	#民需産業への投資
+	focus = {
+		id = JAP_YBPVRknb
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 30
+		y = 13
+		cost = 6
+		prerequisite = { focus = JAP_TruqXPet }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+			}
+		completion_reward = {
+						random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
 									}
-									is_in_home_area = yes
 								}
 							}
 						}
 					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
+							random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
-	}
-
-	#Focus for 総力戦体制の構築 - focus ID randomly generated due to title being in non-latin characters
+		#軍需産業への投資
+		focus = {
+			id = JAP_rfvNaiJD
+			icon = GFX_goal_generic_construct_mil_factory
+			x = 34
+			y = 13
+			cost = 6
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_TruqXPet }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+							random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	
+		#全国総合開発計画
+		focus = {
+			id = JAP_IClXveKW
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 30
+			y = 14
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_YBPVRknb }
+			ai_will_do = {
+				factor = 3
+			}
+		
+		}
+	
+	
+		#弾丸列車計画
+		focus = {
+			id = JAP_IVORrole
+			icon = GFX_goal_generic_construct_infrastructure
+			x = 30
+			y = 15
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_IClXveKW }
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#過密都市問題
+		focus = {
+			id = JAP_mzVJeSun
+			icon = GFX_focus_generic_industry_3
+			x = 28
+			y = 15
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_MnREbgYL 
+			}
+			prerequisite = { 
+				focus = JAP_IClXveKW 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+	
+	
+		}
+	
+		#太平洋ベルト地帯構想
+		focus = {
+			id = JAP_jcQGTlAO
+			icon = GFX_goal_generic_construct_civ_factory
+			x = 32
+			y = 15
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_IClXveKW }
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#農地改革の開始
+		focus = {
+			id = JAP_MnREbgYL
+			icon = GFX_focus_prc_agrarian_socialism
+			x = 26
+			y = 14
+			cost = 6
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_EvHNbpzl }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						  add_ideas = JAP_agricultural
+					
+		}
+		}
+		#農地調整法の制定 
+		focus = {
+			id = JAP_eGVsDCBz
+			icon = GFX_goal_generic_production2
+			x = 26
+			y = 15
+			cost = 6
+					prerequisite = { focus = JAP_MnREbgYL }
+			available_if_capitulated = yes
+			ai_will_do = {
+				factor = 1
+			}
+		completion_reward = {
+						  swap_ideas = {
+					remove_idea = JAP_agricultural
+					add_idea = JAP_agricultural_1
+				}	
+					
+		}
+		}
+	
+		#農業の機械化
+		focus = {
+			id = JAP_NdZGmARP
+			icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+			x = 24
+			y = 16
+			cost = 6
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_SXKNOVdi }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						  swap_ideas = {
+					remove_idea = JAP_agriculture_1
+					add_idea = JAP_agriculture_2
+				}	
+					
+		}
+		}
+	
+		#東京・下関間新幹線建設基準
+		focus = {
+			id = JAP_TezXPUYC
+			icon = GFX_goal_generic_construct_infrastructure
+			x = 30
+			y = 16
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_IVORrole }
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#東京都市圏
+		focus = {
+			id = JAP_zTPOXfSs
+			icon = GFX_focus_generic_industry_3
+			x = 32
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_srDXjRVm 
+			}
+			prerequisite = { 
+				focus = JAP_jcQGTlAO 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#大阪都市圏
+		focus = {
+			id = JAP_tRjUvNHu
+			icon = GFX_focus_generic_industry_3
+			x = 34
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_srDXjRVm 
+			}
+			prerequisite = { 
+				focus = JAP_jcQGTlAO 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#名古屋都市圏
+		focus = {
+			id = JAP_kcBtGOvX
+			icon = GFX_focus_generic_industry_3
+			x = 36
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_srDXjRVm 
+			}
+			prerequisite = { 
+				focus = JAP_jcQGTlAO 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+	
+		}
+	
+	
+		#海軍造船所の大拡張
+		focus = {
+			id = JAP_JUAnhDTI
+			icon = GFX_goal_generic_construct_naval_dockyard
+			x = 36
+			y = 14
+			cost = 15
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_rfvNaiJD }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+					}
+	
+					random_owned_controlled_state = {
+						limit = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_state = {
+						limit = {
+							controller = { tag = ROOT }
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}		
+			}
+		}
+	
+	
+	
+		#軍産複合体の強化
+		focus = {
+			id = JAP_PmCNaHds
+			icon = GFX_goal_generic_construct_mil_factory
+			x = 34
+			y = 14
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_rfvNaiJD 
+			}
+			prerequisite = { 
+				focus = JAP_YBPVRknb 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						 add_ideas = JAP_Military_industrial_complex
+					
+		   }
+		}
+			
+		#財閥
+		focus = {
+			id = JAP_aByenGxp
+			icon = GFX_focus_jap_zaibatsu
+			x = 34
+			y = 15
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_PmCNaHds }
+			ai_will_do = {
+				factor = 3
+			}
+					available = {
+								NOT = {
+								 has_government = national_populist
+								 }
+								NOT = {
+								 has_government = paternal_autocrat
+								 }
+								}
+		completion_reward = {
+						 add_research_slot = 1
+							swap_ideas = {
+					remove_idea = JAP_Military_industrial_complex
+					add_idea = JAP_Military_industrial_complex_1
+				}
+					
+		   }
+		}
+	
+	
+		#植民都市
+		focus = {
+			id = JAP_UXcKLrxk
+			icon = GFX_goal_generic_air_doctrine
+			x = 28
+			y = 17
+			cost = 5
+			available = {
+                is_subject = no
+					}
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_pKHYnXif }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+			activate_decision = Integrate_Foreign_land_decision
+		   }
+		}
+	
+	
+		#ベッドタウンの拡大
+		focus = {
+			id = JAP_pKHYnXif
+			icon = GFX_goal_generic_construct_civilian
+			x = 28
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_mzVJeSun }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+				810 = { add_extra_state_shared_building_slots = 2 }    
+				531 = { add_extra_state_shared_building_slots = 2 }   
+				532 = { add_extra_state_shared_building_slots = 2 }              
+				811 = { add_extra_state_shared_building_slots = 2 }	
+				827 = { add_extra_state_shared_building_slots = 2 }
+		   }
+		}
+	
+	
+		#農村部への投資
+		focus = {
+			id = JAP_SXKNOVdi
+			icon = GFX_goal_generic_intelligence_exchange
+			x = 24
+			y = 15
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_MnREbgYL }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						  add_ideas = JAP_agriculture_1
+					
+		}
+		}
+	
+		#効率化された農業
+		focus = {
+			id = JAP_ZJwBkFPW
+			icon = GFX_goal_generic_trade
+			x = 24
+			y = 17
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_NdZGmARP }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						  remove_ideas = JAP_food_import
+						  swap_ideas = {
+					remove_idea = JAP_agriculture_2
+					add_idea = JAP_agriculture_3
+				}
+					
+		}
+		}
+	  
+	
+		#農地委員会の設置
+		focus = {
+			id = JAP_VdkEGTRv
+			icon = GFX_goal_generic_demand_territory
+			x = 26
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+			prerequisite = { focus = JAP_eGVsDCBz }
+			ai_will_do = {
+				factor = 3
+			}
+		completion_reward = {
+						  swap_ideas = {
+					remove_idea = JAP_agricultural_1
+					add_idea = JAP_agricultural_2
+				}	
+					
+		}
+		}
+	
+		#所得倍増計画
+		focus = {
+			id = JAP_XsPakUNJ
+			icon = GFX_focus_jap_pacific_guardian
+			x = 34
+			y = 17
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { 
+				focus = JAP_zTPOXfSs 
+			}
+			prerequisite = { 
+				focus = JAP_tRjUvNHu 
+			}
+			prerequisite = { 
+				focus = JAP_kcBtGOvX 
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	#大東亜縦貫鉄道構想
 	focus = {
-		id = JAP_TXpZvfHj
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		x = 25
-		y = 8
-		cost = 20
-                available = {
-                           has_country_flag = JAP_KEIZAIFUKKO
-                       }
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = JAP_cQGzruNX 
-		}
-		prerequisite = { 
-			focus = JAP_HXdZfTDO 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        add_research_slot = 1
-                        swap_ideas = {
-				remove_idea = JAP_Shading_sun
-				add_idea = JAP_soryokusen
-			}	
-                        load_focus_tree = japan_focus_01
-		}
-	}
-
-	#Focus for 政党の解散 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_jBtdHwAf
-		icon = GFX_focus_focus_fra_fascist_threat
-		x = 28
-		y = 6
+		id = JAP_DvZitCYq
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 30
+		y = 17
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = JAP_TCvmjxwJ }
+		prerequisite = { focus = JAP_TezXPUYC }
 		ai_will_do = {
-			factor = 100
+			factor = 3
 		}
-	completion_reward = {
-	        add_popularity = {
-			ideology = national_populist
-			popularity = 1.0
-		}
+	completion_reward = {   
+                                   
+
 		}
 	}
 
-
-	#Focus for 戦争プロパガンダ - focus ID randomly generated due to title being in non-latin characters
+	#農村部への移住を奨励
 	focus = {
-		id = JAP_cQGzruNX
-		icon = GFX_focus_AST_war_japan
+		id = JAP_HXDknsIh
+		icon = GFX_goal_generic_propaganda
 		x = 26
-		y = 7
-		cost = 10
+		y = 17
+		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = JAP_eLXflUDW }
-		ai_will_do = {
-			factor = 100
+		prerequisite = { 
+			focus = JAP_pKHYnXif 
 		}
-	completion_reward = {
-                       add_war_support = 0.4
-				
-	}
+		prerequisite = { 
+			focus = JAP_VdkEGTRv 
+		}
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {   
+                                remove_ideas = JAP_Toshikamitu
+                                808 = {
+					add_manpower = -100000
+				}
+                                807 = {
+					add_manpower = -100000
+				}
+                                812 = {
+					add_manpower = -50000
+				}
+                                809 = {
+					add_manpower = -50000
+				}
+                                533 = {
+					add_manpower = 100000
+				}
+                                824 = {
+					add_manpower = 100000
+				}
+                                827 = {
+					add_manpower = 50000
+				}
+                                814 = {
+					add_manpower = 50000
+				}                                     
+
+		}
 	}
 
-
-	#Focus for 軍事産業の整備 - focus ID randomly generated due to title being in non-latin characters
+	#大規模拡張計画
 	focus = {
-		id = JAP_HXdZfTDO
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 24
-		y = 7
+		id = JAP_srDXjRVm
+		icon = GFX_goal_generic_army_tanks
+		x = 36
+		y = 15
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = JAP_noWCdfXk }
+		prerequisite = { focus = JAP_PmCNaHds }
 		ai_will_do = {
-			factor = 100
+			factor = 3
 		}
 	completion_reward = {
-                    random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1381,10 +3152,100 @@
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
+					instant_build = yes
+				}
+			}
+                        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+                        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+                        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1392,282 +3253,2407 @@
 	}
 
 
-	#Focus for 憲兵隊の強化 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_eLXflUDW
-		icon = GFX_goal_generic_political_pressure
-		x = 26
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_CBYikcEb }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_ideas = JAP_KENPEITAI
-               }
-}
+    ########################
+	###    軍事ツリー     ###
+	########################	
 
-	#Focus for 計画経済 - focus ID randomly generated due to title being in non-latin characters
+	#大軍縮
 	focus = {
-		id = JAP_noWCdfXk
-		icon = GFX_focus_generic_industry_3
-		x = 24
-		y = 6
+		id = JAP_Army_focus_1
+		icon = GFX_goal_generic_small_arms
+		x = 40
+		y = 0
 		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_CBYikcEb }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_ideas = JAP_KEIKAKUKEIZAI
-	         
-               }
-}
-
-	#Focus for 軍国主義の復活 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_jXBnErKe
-		icon = GFX_focus_generic_military_academy
-		x = 27
-		y = 3
-                prerequisite = {
-			focus = JAP_KAIGEN_KEIZOKU_NF
-		}
-		cost = 10
+		available = {
+			
+            }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 100
+			factor = 3
 		}
 	completion_reward = {
-                        
-			swap_ideas = {
-				remove_idea = JAP_ugaki_gunshuku
-				add_idea = JAP_MILITARISM_TR
-			}	
+		    add_political_power = 150
+			add_timed_idea = {
+				idea = JAP_Gunshuku_research
+				days = 730
+			}
 		}
 	}
-
-	#Focus for 永田の後に永田なし - focus ID randomly generated due to title being in non-latin characters
+	#国家総動員法
 	focus = {
-		id = JAP_WobBtkmp
-		icon = GFX_focus_generic_japanese_imperial_glory
-		x = 25
-		y = 4
+		id = JAP_Army_focus_2
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 1
 		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_1 }
+		available = {
+			has_completed_focus = JAP_WOFBuHbq
+            }
 		available_if_capitulated = yes
-		prerequisite = { focus = JAP_jXBnErKe }
-		mutually_exclusive = { focus = JAP_XtuZRJSr }
 		ai_will_do = {
-			factor = 100
-		}
-         completion_reward = {
-	         add_popularity = {
-			ideology = paternal_autocrat
-			popularity = 0.3
-		 }
-               }
-}
-
-	#Focus for 相沢事件 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_XtuZRJSr
-		icon = GFX_focus_hun_assassinate_horthy
-		x = 29
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_jXBnErKe }
-		mutually_exclusive = { focus = JAP_WobBtkmp }
-		ai_will_do = {
-			factor = 100
+			factor = 5
 		}
 	completion_reward = {
-                add_political_power = -100
-		add_stability = -0.1
-                remove_unit_leader = 2606
-		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-		create_country_leader = {
-			name = "東條英機"
-			desc = "POLITICS_TOJO_DESC"
-			picture = "Portrait_JAP_tojo.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
-                set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-	 }
-       
-	}
-
-	#Focus for 昭和維新 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_CZWkgPiS
-		icon = GFX_focus_jap_showa_restoration
-		x = 33
-		y = 5
-		cost = 10
-                mutually_exclusive = {
-			    focus = JAP_TCvmjxwJ
-		}   
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_XtuZRJSr }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
-		}
-	 }
-       
-	}
-
-	#Focus for 高度国防国家 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_CBYikcEb
-		icon = GFX_goal_generic_fortify_city
-		x = 25
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_WobBtkmp }
-		ai_will_do = {
-			factor = 100
-		}
-	 completion_reward = {
-                 add_stability = 0.25
-	         
-               }
-}
-
-	#Focus for 計画経済 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_IypmrVhM
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 13
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_ReDzwurS }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
 
 		}
 	}
-
-	#Focus for 行政改革 - focus ID randomly generated due to title being in non-latin characters
+	#参謀本部の設置
 	focus = {
-		id = JAP_UHmdcxaz
-		icon = GFX_goal_support_democracy
-		x = 17
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_DGuUraYs }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_stability = 0.1	
-
-		}
-	}
-
-	#Focus for 新体制運動 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_TCvmjxwJ
-		icon = GFX_goal_support_fascism
-		x = 29
-		y = 5
-		cost = 10
-                mutually_exclusive = {
-			    focus = JAP_CZWkgPiS
-		}   
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_XtuZRJSr }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = totalist_dictatorship
-		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
-		create_country_leader = {
-			name = "近衞文麿"
-			desc = "POLITICS_KONOE_DESC"
-			picture = "Portrait_Japan_konoe.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-                        traits = { TR_Popular_Politician }
-		}
-                set_party_name = {
-			ideology = national_populist
-			long_name = JAP_TAISEI_long
-			name = JAP_TAISEI_a
-		}
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
-		}
-	 }
-       
-	}
-
-	#Focus for 産業報国会の設置 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_XAznejdg
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 30
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = JAP_TCvmjxwJ }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                 add_ideas = JAP_SANGYOUHOKKOKAI
-               }
-}
-
-	#Focus for 高福祉国家 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = JAP_ReDzwurS
-		icon = GFX_goal_support_communism
-		x = 13
+		id = JAP_Army_focus_3
+		icon = GFX_goal_generic_small_arms
+		x = -8
 		y = 2
-                available = {
-                           has_country_flag = JAP_KAIGEN_TEPPAI
-                       }
-                prerequisite = {
-                             focus = JAP_TAISHUTO_WIN
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_2 }
+		available = {
 
-                             }
-		cost = 10
+            }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 100
+			factor = 3
 		}
 	completion_reward = {
-			add_stability = 0.1	
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 4
+				category = land_doctrine
+			}
+		}
+	}
+	#参謀本部の強化
+	focus = {
+		id = JAP_Army_focus_11
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 3
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_3 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+        add_ideas = JAP_General_Staff 
+		}
+	}
+	#精神的優越
+	focus = {
+		id = JAP_Army_focus_4
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 2
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_2 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+            add_ideas = JAP_superior_will
+		}
+	}
+	#技術的優越
+	focus = {
+		id = JAP_Army_focus_10
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_4 }
+		prerequisite = { focus = JAP_Army_focus_5 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+            add_ideas = JAP_supremacy_of_technology
+		}
+	}
+	#携行火器の開発
+	focus = {
+		id = JAP_Army_focus_12
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 4
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_10 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
 
 		}
 	}
+	#野砲の開発
+	focus = {
+		id = JAP_Army_focus_13
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 4
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_10 }
+		available = {
 
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.4
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	#陸軍の刷新
+	focus = {
+		id = JAP_Army_focus_19
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 5
+		cost = 9
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_13 }
+		available = {
 
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
 
+		}
+	}
+	#本土の要塞化
+	focus = {
+		id = JAP_Army_focus_20
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_19 }
+		available = {
 
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
 
+		}
+	}
+	#本土用装備
+	focus = {
+		id = JAP_Army_focus_21
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 7
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_20 }
+		available = {
 
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#機械化歩兵
+	focus = {
+		id = JAP_Army_focus_22
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 8
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_27 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#機動火砲
+	focus = {
+		id = JAP_Army_focus_23
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 9
+		cost = 2
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_22 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#本土用戦車
+	focus = {
+		id = JAP_Army_focus_24
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 8
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_21 }
+		prerequisite = { focus = JAP_Army_focus_27 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#列車砲の強化
+	focus = {
+		id = JAP_Army_focus_25
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 9
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_24 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#作戦の強化
+	focus = {
+		id = JAP_Army_focus_26
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 6
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_19 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦車の強化
+	focus = {
+		id = JAP_Army_focus_27
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 7
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_26 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#大陸用戦車
+	focus = {
+		id = JAP_Army_focus_28
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 8
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_27 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型戦車の開発
+	focus = {
+		id = JAP_Army_focus_29
+		icon = GFX_goal_generic_small_arms
+		x = -10
+		y = 9
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_24 }
+		prerequisite = { focus = JAP_Army_focus_28 }
+		prerequisite = { focus = JAP_Army_focus_33 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#沿岸の要塞化
+	focus = {
+		id = JAP_Army_focus_31
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_19 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#沿岸用装備
+	focus = {
+		id = JAP_Army_focus_32
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 7
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_31 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#沿岸用戦車
+	focus = {
+		id = JAP_Army_focus_33
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 8
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_27 }
+		prerequisite = { focus = JAP_Army_focus_32 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#沿岸要塞の強化
+	focus = {
+		id = JAP_Army_focus_34
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 9
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_33 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#小火器の開発
+	focus = {
+		id = JAP_Army_focus_14
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 4
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_10 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#小火器の強化
+	focus = {
+		id = JAP_Army_focus_30
+		icon = GFX_goal_generic_small_arms
+		x = -8
+		y = 5
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_14 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#士官の強化
+	focus = {
+		id = JAP_Army_focus_15
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 5
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_12 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#士官学校の強化
+	focus = {
+		id = JAP_Army_focus_16
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_15 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#陸軍学校の強化
+	focus = {
+		id = JAP_Army_focus_17
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 7
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_16 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#士官装備の強化
+	focus = {
+		id = JAP_Army_focus_18
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 5
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_12 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#技術本部の設置
+	focus = {
+		id = JAP_Army_focus_5
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 2
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_2 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+        add_tech_bonus = {
+	        bonus = 0.2
+	        uses = 1
+	        technology = army
+         }
+		}
+	}
+	#技術本部の強化
+	focus = {
+		id = JAP_Army_focus_9
+		icon = GFX_goal_generic_small_arms
+		x = -12
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_5 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+        add_ideas = JAP_army_technology
+		}
+	}
+	#都市の要塞化
+	focus = {
+		id = JAP_Army_focus_6
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 2
+		cost = 9
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_2 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#港湾の要塞化
+	focus = {
+		id = JAP_Army_focus_7
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 3
+		cost = 8
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_6 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#要衝の要塞化
+	focus = {
+		id = JAP_Army_focus_8
+		icon = GFX_goal_generic_small_arms
+		x = -14
+		y = 4
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_7 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#独立空軍
+	focus = {
+		id = JAP_Air_focus_1
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_1 }
+		available = {
+			has_completed_focus = JAP_WOFBuHbq
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型爆弾の開発
+	focus = {
+		id = JAP_Air_focus_2
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 2
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#空軍士官学校
+	focus = {
+		id = JAP_Air_focus_3
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 2
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#首都防空の強化
+	focus = {
+		id = JAP_Air_focus_4
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 2
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#第一飛行隊
+	focus = {
+		id = JAP_Air_focus_5
+		icon = GFX_focus_jap_zero
+		x = 0
+		y = 2
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#飛行艇の強化
+	focus = {
+		id = JAP_Air_focus_6
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_1 }
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+			has_completed_focus = JAP_WOFBuHbq
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型機銃の開発
+	focus = {
+		id = JAP_Air_focus_7
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_2 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#旧式機の現用化
+	focus = {
+		id = JAP_Air_focus_8
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 4
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_7 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#旧式機の現用化
+	focus = {
+		id = JAP_Air_focus_81
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 5
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_8 }
+		prerequisite = { focus = JAP_Army_focus_14 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦艦砲弾改造爆弾
+	focus = {
+		id = JAP_Air_focus_9
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 6
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_81 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#徹甲爆弾
+	focus = {
+		id = JAP_Air_focus_10
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 7
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_9 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#究極の爆弾
+	focus = {
+		id = JAP_Air_focus_11
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 8
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_10 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#ベテランによる教育
+	focus = {
+		id = JAP_Air_focus_12
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 3
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_3 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#制空の要
+	focus = {
+		id = JAP_Air_focus_13
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#航空要塞
+	focus = {
+		id = JAP_Air_focus_14
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+
+		}
+	}
+	#艦隊防空の要
+	focus = {
+		id = JAP_Air_focus_15
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 3
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#航空基地の拡充
+	focus = {
+		id = JAP_Air_focus_16
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_13 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+	completion_reward = {
+
+		}
+	}
+	#軍民共用飛行場の建設
+	focus = {
+		id = JAP_Air_focus_17
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 5
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_16 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 2
+		}
+	completion_reward = {
+
+		}
+	}
+	#航空支援重視
+	focus = {
+		id = JAP_Air_focus_18
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 4
+		cost = 3
+		mutually_exclusive = { focus = JAP_Air_focus_20 }
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_13 }
+		prerequisite = { focus = JAP_Air_focus_15 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦場支援
+	focus = {
+		id = JAP_Air_focus_19
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 5
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_18 }
+		mutually_exclusive = { focus = JAP_Air_focus_21 }
+		mutually_exclusive = { focus = JAP_Air_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦略爆撃重視
+	focus = {
+		id = JAP_Air_focus_20
+		icon = GFX_goal_generic_air_bomber
+		x = 2
+		y = 4
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		mutually_exclusive = { focus = JAP_Air_focus_18 }
+		prerequisite = { focus = JAP_Air_focus_13 }
+		prerequisite = { focus = JAP_Air_focus_15 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦術と戦略の両立
+	focus = {
+		id = JAP_Air_focus_21
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 5
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_18 focus = JAP_Air_focus_20 }
+		mutually_exclusive = { focus = JAP_Air_focus_19 }
+		mutually_exclusive = { focus = JAP_Air_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#全方位破壊作戦
+	focus = {
+		id = JAP_Air_focus_22
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 5
+		cost = 3
+		mutually_exclusive = { focus = JAP_Air_focus_19 }
+		mutually_exclusive = { focus = JAP_Air_focus_21 }
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_20 }
+		prerequisite = { focus = JAP_Navy_focus_10 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#小型爆弾の開発
+	focus = {
+		id = JAP_Air_focus_23
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 6
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_19 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#収束爆弾
+	focus = {
+		id = JAP_Air_focus_24
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 7
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#爆撃による圧倒
+	focus = {
+		id = JAP_Air_focus_25
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_19 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦術爆撃機のコンペ
+	focus = {
+		id = JAP_Air_focus_26
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 7
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_25 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#支援と制空
+	focus = {
+		id = JAP_Air_focus_27
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_21 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦闘爆撃機のコンペ
+	focus = {
+		id = JAP_Air_focus_28
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 7
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_27 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#無差別通商破壊
+	focus = {
+		id = JAP_Air_focus_29
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦略爆撃機のコンペ
+	focus = {
+		id = JAP_Air_focus_30
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 7
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_29 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型機の開発
+	focus = {
+		id = JAP_Air_focus_31
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 8
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_26 focus = JAP_Air_focus_28 focus = JAP_Air_focus_30 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#ロケットの開発
+	focus = {
+		id = JAP_Air_focus_32
+		icon = GFX_goal_generic_small_arms
+		x = -6
+		y = 9
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#オートジャイロの開発
+	focus = {
+		id = JAP_Air_focus_33
+		icon = GFX_goal_generic_small_arms
+		x = -4
+		y = 9
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型迎撃機の開発
+	focus = {
+		id = JAP_Air_focus_34
+		icon = GFX_goal_generic_small_arms
+		x = -2
+		y = 9
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型輸送機の開発
+	focus = {
+		id = JAP_Air_focus_35
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 9
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新型偵察機の開発
+	focus = {
+		id = JAP_Air_focus_36
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 9
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Air_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#海軍軍縮の完遂
+	focus = {
+		id = JAP_Navy_focus_1
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 1
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_1 }
+		available = {
+			has_completed_focus = JAP_WOFBuHbq
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#標準商船の設計
+	focus = {
+		id = JAP_Navy_focus_2
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 2
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#海軍陸戦隊
+	focus = {
+		id = JAP_Navy_focus_3
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 2
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#艦隊運用の更新
+	focus = {
+		id = JAP_Navy_focus_4
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 2
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#士官学校の強化
+	focus = {
+		id = JAP_Navy_focus_5
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 2
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#設計局の強化
+	focus = {
+		id = JAP_Navy_focus_33
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 3
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#艦載兵器の強化
+	focus = {
+		id = JAP_Navy_focus_34
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 4
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#船体の強化
+	focus = {
+		id = JAP_Navy_focus_35
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 5
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_34 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#機関の強化
+	focus = {
+		id = JAP_Navy_focus_36
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_35 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#砲弾の強化
+	focus = {
+		id = JAP_Navy_focus_37
+		icon = GFX_goal_generic_small_arms
+		x = 14
+		y = 7
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_36 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#参謀本部の設立
+	focus = {
+		id = JAP_Navy_focus_38
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 3
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#艦砲の強化
+	focus = {
+		id = JAP_Navy_focus_39
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 4
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_33 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#対空砲の強化
+	focus = {
+		id = JAP_Navy_focus_40
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 5
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_34 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#装甲の強化
+	focus = {
+		id = JAP_Navy_focus_41
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 6
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_35 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#特設艦船の再設計
+	focus = {
+		id = JAP_Navy_focus_6
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 3
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_2 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#海兵隊の構築
+	focus = {
+		id = JAP_Navy_focus_7
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 3
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_3 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#多角的ドクトリン
+	focus = {
+		id = JAP_Navy_focus_8
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 3
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_4 }
+		mutually_exclusive = { focus = JAP_Navy_focus_9 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#保守的ドクトリン
+	focus = {
+		id = JAP_Navy_focus_9
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 3
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_4 }
+		mutually_exclusive = { focus = JAP_Navy_focus_8 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#護衛艦隊
+	focus = {
+		id = JAP_Navy_focus_20
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_8 }
+		mutually_exclusive = { focus = JAP_Navy_focus_21 }
+		mutually_exclusive = { focus = JAP_Navy_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#バランスを重視
+	focus = {
+		id = JAP_Navy_focus_21
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { 
+			focus = JAP_Navy_focus_8 
+		    focus = JAP_Navy_focus_9 
+						}
+		mutually_exclusive = { focus = JAP_Navy_focus_20 }
+		mutually_exclusive = { focus = JAP_Navy_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#戦艦を重視
+	focus = {
+		id = JAP_Navy_focus_22
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_9 }
+		mutually_exclusive = { focus = JAP_Navy_focus_20 }
+		mutually_exclusive = { focus = JAP_Navy_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#新・八八艦隊計画
+	focus = {
+		id = JAP_Navy_focus_23
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 5
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_20 }
+		prerequisite = { focus = JAP_Navy_focus_21 }
+		prerequisite = { focus = JAP_Navy_focus_22 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#近海防衛の強化
+	focus = {
+		id = JAP_Navy_focus_24
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 6
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#造船力の強化
+	focus = {
+		id = JAP_Navy_focus_25
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 6
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#護衛艦の近代化
+	focus = {
+		id = JAP_Navy_focus_26
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 7
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#主力艦の近代化
+	focus = {
+		id = JAP_Navy_focus_27
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 7
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#空母の近代化
+	focus = {
+		id = JAP_Navy_focus_28
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 7
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_23 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#駆逐艦の近代化
+	focus = {
+		id = JAP_Navy_focus_29
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 8
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_26 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#軽空母の近代化
+	focus = {
+		id = JAP_Navy_focus_30
+		icon = GFX_goal_generic_small_arms
+		x = 12
+		y = 8
+		cost = 1
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_28 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#外海の支配
+	focus = {
+		id = JAP_Navy_focus_31
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 8
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_27 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#潜水艦の発展
+	focus = {
+		id = JAP_Navy_focus_10
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_8 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#隠匿性の強化
+	focus = {
+		id = JAP_Navy_focus_11
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 5
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_10 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#雷撃力の強化
+	focus = {
+		id = JAP_Navy_focus_12
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 6
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_11 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#船体の強化
+	focus = {
+		id = JAP_Navy_focus_13
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 7
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_12 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#対空兵装の強化
+	focus = {
+		id = JAP_Navy_focus_14
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 8
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_13 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#潜水艦隊
+	focus = {
+		id = JAP_Navy_focus_15
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 9
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_14 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#潜水艦の近代化
+	focus = {
+		id = JAP_Navy_focus_16
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 7
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_10 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#沿岸の支配
+	focus = {
+		id = JAP_Navy_focus_17
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 8
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_16 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#商船護衛の発展
+	focus = {
+		id = JAP_Navy_focus_18
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 4
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_8 focus = JAP_Navy_focus_9 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#海上護衛本部の設立
+	focus = {
+		id = JAP_Navy_focus_19
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 5
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_18}
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#帝国は大会を統べる
+	focus = {
+		id = JAP_Navy_focus_32
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 9
+		cost = 6
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Navy_focus_17 }
+		prerequisite = { focus = JAP_Navy_focus_31 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#三軍の提携強化
+	focus = {
+		id = JAP_Army_focus_35
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 10
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_29 }
+		prerequisite = { focus = JAP_Air_focus_35 }
+		prerequisite = { focus = JAP_Navy_focus_32 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#大本営の強化
+	focus = {
+		id = JAP_Army_focus_36
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 11
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_35 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#大本営の移設
+	focus = {
+		id = JAP_Army_focus_37
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 12
+		cost = 10
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_36 }
+		available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+
+		}
+	}
+	#情報機関の人員整理
+	focus = {
+		id = JAP_Intel_focus_1
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 1
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Army_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+              add_ideas = JAP_TO_Kikan
+		}
+	}
+	#情報機関の統率
+	focus = {
+		id = JAP_Intel_focus_2
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 2
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Intel_focus_1 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_TO_Kikan
+				add_idea = JAP_TO_Kikan2
+			}
+		}
+	}
+	#諜報機関の管理
+	focus = {
+		id = JAP_Intel_focus_3
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 3
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Intel_focus_2 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_TO_Kikan2
+				add_idea = JAP_TO_Kikan3
+			}
+		}
+	}
+	#諜報機関の強化
+	focus = {
+		id = JAP_Intel_focus_4
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 4
+		cost = 4
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Intel_focus_3 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_TO_Kikan3
+				add_idea = JAP_TO_Kikan4
+			}
+		}
+	}
+	#諜報学校の設立
+	focus = {
+		id = JAP_Intel_focus_5
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 5
+		cost = 5
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Intel_focus_4 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+                  add_ideas = JAP_CIRO
+		}
+	}
+	#諜報学校の強化
+	focus = {
+		id = JAP_Intel_focus_6
+		icon = GFX_goal_generic_small_arms
+		x = 18
+		y = 6
+		cost = 3
+		relative_position_id = JAP_Army_focus_1
+		prerequisite = { focus = JAP_Intel_focus_5 }
+		available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 3
+		}
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_CIRO
+				add_idea = JAP_CIRO2
+			}
+		}
+	}
 #End of focuses 
  }

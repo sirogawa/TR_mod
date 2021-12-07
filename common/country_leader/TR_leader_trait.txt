@@ -1,7 +1,11 @@
 leader_traits = {
 	
 ####政治指導者特性#####
-
+        Power_struggle = {
+		random = no
+		stability_factor = -0.2
+		political_power_factor = 0.5
+	}
 	ENR_Bigbrother = {
 		random = no
 		political_power_factor = 0.1
@@ -66,50 +70,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-        Nonkinatousan = {
-		random = no
-                political_power_factor = 0.03
-		production_factory_efficiency_gain_factor = 0.03
-		industrial_capacity_factory = 0.03
-		consumer_goods_factor = -0.02
-		ai_will_do = {
-			factor = 1
-		}
-	}
-        Pan_Asian_Politician = {
-		random = no
-                stability_factor = 0.05
-                opinion_gain_monthly_factor = 0.15
-                send_volunteer_size = 1
-                ai_strategy = {
-			type = befriend
-			id = "CHI"			
-			value = 50
-		}
-                ai_strategy = {
-			type = befriend
-			id = "RAJ"			
-			value = 50
-		}
-                ai_strategy = {
-			type = befriend
-			id = "KOR"			
-			value = 50
-		}
-                ai_strategy = {
-			type = befriend
-			id = "SIA"			
-			value = 50
-		}
-                ai_strategy = {
-			type = befriend
-			id = "BRM"			
-			value = 50
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
         BUL_Khan = {
 		random = no
                 offensive_war_stability_factor = 0.3
@@ -151,112 +112,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	Yasuhito_traits = {
-		random = no
-                stability_factor = 0.05
-                war_support_factor = 0.05
-                offensive_war_stability_factor = 0.1
-		justify_war_goal_time = -0.1
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	TR_Popular_Politician = {
-		random = no
-		stability_factor = 0.1
-		political_power_cost = -0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-        Rastafari_traits = {
-		random = no
-                non_core_manpower = 0.05
-                war_support_factor = 0.05
-                stability_factor = 0.1
-                political_power_factor = 0.1
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-####大臣特性#####
-
-        JAP_Zaibatsu_Sousui = {
-		random = no
-                political_power_factor = -0.05
-                research_speed_factor = 0.02
-                consumer_goods_factor = -0.02
-                production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		ai_will_do = {
-			factor = 2
-		}
-	}
-        JAP_Oodanuki = {
-		random = no
-                stability_factor = 0.05
-                political_power_factor = 0.1
-		consumer_goods_factor = -0.03 
-		ai_will_do = {
-			factor = 2
-		}
-	}
-        Labor_activist = {
-		random = no
-                stability_factor = 0.05
-		industrial_capacity_factory = 0.05
-                production_factory_max_efficiency_factor = 0.05
-		ai_will_do = {
-			factor = 2
-		}
-	}
-        Defender_of_freedom = {
-		random = no
-
-                political_power_factor = 0.05
-                drift_defence_factor = 0.20
-                stability_factor = 0.1
-		ai_will_do = {
-			factor = 1
-		}
-	}
-        Founder_of_intelligence = {
-		random = no
-
-                resistance_damage_to_garrison = -0.1
-		foreign_subversive_activites = -0.2
-                decryption_factor = 0.1
-                encryption_factor = 0.1
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-        TR_silent_workhorse = {
-
-		random = no
-
-		political_power_gain = 0.15
-                production_speed_buildings_factor = 0.05
-		industrial_capacity_factory = 0.05
-
-		ai_will_do = {
-			factor = 2
-		}
-	}
-	JAP_Daruma_Traits = {
-
-                production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_factory = 0.075
-		production_speed_buildings_factor = 0.075
-
-		random = no
-	}
 	JAP_Kakushinkizoku_Traits = {        
         
                 political_power_factor = 0.1
@@ -264,24 +119,7 @@ leader_traits = {
 
 		random = no
 	}
-	TR_planned_economy_proponent = {
 
-		production_speed_buildings_factor = 0.20
-		local_resources_factor = -0.02
-		conscription_factor = -0.02
-                industrial_capacity_factory = -0.02
-		political_power_gain = -0.1
-
-		random = no
-	}
-
-	TR_bank_president = {
-		production_factory_max_efficiency_factor = 0.1
-                production_factory_efficiency_gain_factor = 0.05
-                production_factory_start_efficiency_factor = 0.05
-
-		random = no
-	}
 	TR_Orgone = {
                 stability_factor = -0.05
                 consumer_goods_factor = -0.05
@@ -336,13 +174,6 @@ leader_traits = {
                 resistance_damage_to_garrison = -0.2
 
 		random = no
-	}
-	TR_prince_of_terror = {
-
-		non_core_manpower = 0.05
-                MONTHLY_POPULATION = -0.1
-                decryption_factor = 0.05
-                encryption_factor = 0.05
 	}
         Ernst_von_Salomon_traits = {
 		random = no

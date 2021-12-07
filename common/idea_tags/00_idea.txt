@@ -34,15 +34,35 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}	
-        minister = {       
-                slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		ledger = civilian
+	social_system_work = {
+		slot = minimum_wage
+		slot = max_workhours
+		slot = safety_regulations
+		slot = Unemployment_subsidies
+		
 		cost = 150
 		removal_cost = 0
+		ledger = civilian
+	}
+	social_system = {
+		slot = school_system
+		slot = pensions
+		slot = health_care
+		
+		cost = 150
+		removal_cost = 0
+		ledger = civilian
+	}
+	Minister = {
+		slot = Head_of_State 
+		slot = Government_leaders 
+		slot = Minister_of_Foreign_Affairs
+		slot = Minister_of_Economy
+		slot = Minister_of_Interior
+		
+		ledger = civilian
+
+		removal_cost = -1
 	}
 	research_production = {
 		slot = tank_manufacturer

@@ -38,10 +38,6 @@ political_actions = {
 	icon = generic_political_actions
 
 	allowed = {
-		NOT = {
-			original_tag = COS
-			original_tag = OTT
-		}
 	}
 }
 

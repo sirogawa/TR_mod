@@ -5,6 +5,8 @@ oob = "BRR_1936"
 add_ideas = {
         militaly_dictatorship
 	BRA_CIVIL_WAR
+        low_school_system
+        low_minimum_wage
 }
 # Starting tech
 set_technology = {

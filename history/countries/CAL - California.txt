@@ -7,6 +7,13 @@ set_research_slots = 3
 TEX = { give_military_access = CAL }
 add_ideas = {
         Constitutional_monarchy
+        good_minimum_wage 
+        good_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -97,7 +104,12 @@ set_convoys = 250
 set_stability = 0.5
 set_war_support = 0.4
 
-
+JAP = { 
+        set_autonomy = {
+	   target = CAL
+	   autonomous_state = imperial_dominion
+        }
+      }
 
 set_politics = {
 	ruling_party = social_conservative

@@ -10,15 +10,10 @@ set_technology = {
 	tech_engineers = 1
         mass_assault = 1
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 365
-                 }  
 set_convoys = 20
 
 add_ideas = {
          militaly_dictatorship
-         YUN_jap_economic
          CHI_late_army
 }
 	

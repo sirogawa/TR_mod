@@ -12,8 +12,12 @@ country_event = { id = TR_Peru.1 days = 245 }
 set_research_slots = 3
 
 add_ideas = {
-       Democratic_centralism
+        Democratic_centralism
 	PRU_EL_CONDOR_PASA
+        acceptable_minimum_wage
+        trinket_max_workhours
+        low_safety_regulations
+        low_pensions
 	limited_conscription
 	partial_economic_mobilisation
 }

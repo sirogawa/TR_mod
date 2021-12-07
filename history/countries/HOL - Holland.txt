@@ -10,6 +10,12 @@ if = {
 }
 add_ideas = {
         Constitutional_monarchy
+        acceptable_minimum_wage
+        low_max_workhours
+        low_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        acceptable_health_care
 }
 set_research_slots = 3
 set_stability = 0.75

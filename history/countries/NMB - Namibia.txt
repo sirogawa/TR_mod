@@ -25,6 +25,10 @@ set_technology = {
 }
 add_ideas = {
         Colonical_system
+        low_minimum_wage 
+        low_school_system
+        low_pensions
+        low_health_care
         Tiyoda_Kensho
         NMB_JAP_colony
         NMB_JAP_Africa
@@ -35,7 +39,12 @@ add_timed_idea = {
                  }  
 set_convoys = 20
 
-
+JAP = { 
+        set_autonomy = {
+	   target = NMB
+	   autonomous_state = imperial_colony
+        }
+      }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

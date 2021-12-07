@@ -82,6 +82,12 @@ if = {
 		transport = 1
 	}
 }
+JAP = { 
+        set_autonomy = {
+	   target = GUG
+	   autonomous_state = imperial_colony
+        }
+      }
 set_cosmetic_tag = GUG_JAP
 add_timed_idea = {
 		idea = JAPCO_black_thursday

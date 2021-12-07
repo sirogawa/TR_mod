@@ -42,7 +42,13 @@ if = {
 	}
 }
 
-
+ENG = { 
+        set_autonomy = {
+	  target = NZL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+        }
+      }
 
 set_politics = {
 	ruling_party = social_democrat

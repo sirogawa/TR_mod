@@ -1,9 +1,8 @@
-﻿capital = 844
-
+﻿capital = 890
 oob = "GER_1936"
 
 set_fuel_ratio = 0.8
-
+starting_train_buffer = 1
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -27,7 +26,7 @@ set_technology = {
 	CAS1 = 1
 	naval_bomber1 = 1
         mass_assault = 1
-	
+	basic_train = 1
 
 }
 
@@ -130,6 +129,13 @@ give_guarantee = POL
 
 add_ideas = {
             Council_communism
+            acceptable_minimum_wage
+            good_max_workhours
+            good_safety_regulations
+            good_Unemployment_subsidies
+            acceptable_school_system
+            good_pensions
+            good_health_care
             GER_Junker_resistance
             GER_WAR_HORROR
             GER_REVOLUTION_ARMY
@@ -310,7 +316,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "エルヴィン・ロンメル"
-	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	picture = "Portrait_GER_Rommel.tga"
 	traits = { trickster trait_reckless war_hero armor_officer media_personality }
 	skill = 4
 	id = 4

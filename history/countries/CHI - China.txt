@@ -46,6 +46,10 @@ if = {
 
 add_ideas = {
         totalist_dictatorship
+        trinket_minimum_wage
+        trinket_Unemployment_subsidies
+        trinket_school_system
+        trinket_pensions
         CHI_late_army
         CHI_hikoritunatouti
 	CHI_fuannteinakokka

@@ -51,7 +51,12 @@ if = {
 		basic_battery = 1
 	}
 }
-
+JAP = { 
+        set_autonomy = {
+	   target = INS
+	   autonomous_state = imperial_colony
+        }
+      }
 set_convoys = 75
 set_politics = {
 	ruling_party =authoritarian_democrat

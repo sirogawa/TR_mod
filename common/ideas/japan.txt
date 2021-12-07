@@ -12,20 +12,6 @@ ideas = {
 
 	
 
-		JAP_hirohito = {
-			allowed = {
-				always = no
-			}
-                        picture = JAP_Emperor_Hirohito
-
-			
-			removal_cost = -1
-	                traits = { emperor_showa }
-
-			modifier = {
-                                
-			}
-		}
                 SHX_hirohito = {
 			allowed = {
 				always = no
@@ -55,6 +41,22 @@ ideas = {
                                  production_speed_buildings_factor = 0.1
                                  industrial_capacity_factory = 0.05
                                  war_support_factor = -0.15
+			}
+		}  
+                JAP_Three_labour_laws = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                 industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = 0.1
 			}
 		}  
                 JAP_agricultural = {
@@ -629,7 +631,7 @@ ideas = {
 
 			removal_cost = -1
                         research_bonus = {
-				land_doctrine = -0.1
+				land_doctrine = -0.5
 			}
 			modifier = {
                         research_speed_factor = 0.05
@@ -712,7 +714,7 @@ ideas = {
 
 			modifier = {
 				 consumer_goods_factor = 0.1
-                                 production_speed_buildings_factor = 0.15
+                                 production_speed_buildings_factor = 0.1
                                  production_factory_max_efficiency_factor = 0.15
 				 production_factory_efficiency_gain_factor = 0.15
 				 industrial_capacity_factory = 0.15
@@ -769,7 +771,8 @@ ideas = {
                                 research_speed_factor = 0.1
                                 global_building_slots_factor = 0.15
                                 production_speed_industrial_complex_factor = 0.1
-                                production_speed_infrastructure_factor = 0.15
+                                production_speed_infrastructure_factor = 0.1
+                                production_speed_rail_way_factor = 0.1
                                 min_export = 0.1
 			}
 		}
@@ -789,7 +792,8 @@ ideas = {
                               research_speed_factor = 0.05
                               production_speed_dockyard_factor = 0.1
                               production_speed_arms_factory_factor = 0.1
-                              production_speed_infrastructure_factor = 0.15
+                              production_speed_infrastructure_factor = 0.1
+                              production_speed_rail_way_factor = 0.1
                               production_factory_max_efficiency_factor = 0.1
                               production_factory_efficiency_gain_factor = 0.1
 			}
@@ -1034,6 +1038,167 @@ ideas = {
                             offence = 0.1
                             planning_speed = 0.10
                             max_planning = 0.1
+			}
+		}
+		JAP_superior_will = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_supremacy_of_will
+			
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		JAP_supremacy_of_technology = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+				armor = 0.05
+			}
+		}
+               JAP_Gunshuku_research = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+                                stability_factor = -0.05
+				war_support_factor = -0.10
+                                political_power_factor = 0.05
+			}
+		}
+               JAP_TO_Kikan = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_to_kikan
+			
+			modifier = {
+                                operative_slot = 2
+			}
+		}
+               JAP_TO_Kikan2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_to_kikan
+			
+			modifier = {
+                                operative_slot = 2
+                                intelligence_agency_defense = 0.5
+			}
+		}               
+                JAP_TO_Kikan3 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_to_kikan
+			
+			modifier = {
+                                operative_slot = 2
+                                intelligence_agency_defense = 0.5
+                                enemy_operative_capture_chance_factor = 0.2
+			}
+		}
+                JAP_TO_Kikan4 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_to_kikan
+			
+			modifier = {
+                                operative_slot = 2
+                                intelligence_agency_defense = 0.5
+                                enemy_operative_capture_chance_factor = 0.2
+                                own_operative_detection_chance_factor = -0.2
+			}
+		}
+                JAP_CIRO = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+                                stability_factor = 0.05
+                                war_support_factor = 0.10
+                                political_power_factor = -0.05
+			}
+		}
+                JAP_CIRO2 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_intel
+			
+			modifier = {
+                                stability_factor = 0.1
+                                war_support_factor = 0.15
+                                political_power_factor = -0.075
+			}
+		}
+                JAP_army_technology = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_supremacy_of_technology
+			
+			research_bonus = {
+                                army = 0.05
+				land_doctrine = 0.1
+			}
+			modifier = {
+                                political_power_factor = -0.01
 			}
 		}
 }
@@ -1410,251 +1575,902 @@ naval_manufacturer = {
 			traits = { rocket_scientist }
 		}
 	}	
-        #Advisor
-        political_advisor = {	
-		
-                JAP_Hatoyama_Ichiro = {
-			
-			picture = GFX_idea_JAP_Hatoyama_Ichiro
-			
+    #minister
+    Head_of_State = {	
+                
+		JAP_hirohito = {
 			allowed = {
 				original_tag = JAP
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = social_liberal
-                                      has_government = social_conservative
-                                      has_government = authoritarian_democrat
-                                     }
 			}
+			available = {
+					always = no
+			}
+            picture = JAP_Emperor_Hirohito
+
 			
-			traits = { TR_silent_workhorse }
-			ai_will_do = {
-				factor = 2
+			removal_cost = -1
+	        traits = { 
+				Head_of_State
+				emperor_showa 
 			}
 		}
-                JAP_Kuhara_Fusanosuke = {
-			
-			picture = GFX_idea_JAP_Kuhara_Fusanosuke
-			
+		JAP_yasuhito = {
 			allowed = {
 				original_tag = JAP
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = social_conservative
-                                      has_government = authoritarian_democrat
-                                      has_government = paternal_autocrat
-                                      has_government = national_populist
-                                     }
-                        }
-			ai_will_do = {
-				factor = 10
 			}
-			
-			
-			traits = { JAP_Zaibatsu_Sousui }
-		}
-                JAP_Miki_Bukichi = {
-			
-			picture = GFX_idea_JAP_Miki_Bukichi
-			
-			allowed = {
-				original_tag = JAP
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = market_liberal
-                                      has_government = authoritarian_democrat
-                                     }
+			available = {
+					always = no
 			}
-			ai_will_do = {
-				factor = 10
-			}
-			
-			traits = { JAP_Oodanuki }
-		}
-                JAP_Nishio_Suehiro = {
-			
-			picture = GFX_idea_JAP_Nishio_Suehiro
-			
-			allowed = {
-				original_tag = JAP
-                                  }
-                        available = {
-                                has_government = social_democrat
-			}
-			ai_will_do = {
-				factor = 10
-			}
-			traits = { Labor_activist }
-		}
+            picture = JAP_Chichibunomiya
 
-                JAP_Saito_Takao = {
 			
-			picture = GFX_idea_JAP_Saito_Takao
-			
-			allowed = {
-				original_tag = JAP
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = market_liberal
-                                      has_government = authoritarian_democrat
-                                     }
-			}
-			ai_will_do = {
-				factor = 5
-			}
-			
-			traits = { Defender_of_freedom }
-		}
-                JAP_Suma_Yakichiro = {
-			
-			picture = GFX_idea_JAP_Suma_Yakichiro
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { Founder_of_intelligence }
-			ai_will_do = {
-				factor = 1
+			removal_cost = -1
+	        traits = { 
+				Head_of_State
+				Yasuhito_traits
 			}
 		}
-
-                JAP_Takahashi_Korekiyo = {
+    }
+    Government_leaders = { 	
+		JAP_Kita_Ikki = {
 			
-			picture = GGFX_idea_JAP_Takahashi_Korekiyo
-			
-			allowed = {
-				original_tag = JAP
-                                  }
-                        available = {
-                                has_country_flag = JAP_Takahashi_flag
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			
-			traits = { JAP_Daruma_Traits }
-		}
-                JAP_Tokugawa_Yoshichika = {
-			
-			picture = GFX_idea_JAP_Tokugawa_Yoshichika
+			picture = JAP_Kita_Ikki
 			
 			allowed = {
 				original_tag = JAP
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = totalist
-                                      has_government = social_democrat
-                                      has_government = authoritarian_democrat
-                                      has_government = paternal_autocrat
-                                      has_government = national_populist
-                                     }
-			}
-			ai_will_do = {
-				factor = 3
-			}
-			
-			traits = { JAP_Kakushinkizoku_Traits }
-		}
-
-                JAP_Kaya_Okinori = {
-			
-			picture = GFX_idea_JAP_Kaya_Okinori
-			
-			allowed = {
-				original_tag = JAP
-                                  }
-                        available = {
-                                has_country_flag = JAP_Kaya_flag
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			
-			traits = { TR_planned_economy_proponent }
-		}
-                JAP_Inoue_junnosuke = {
-			
-			picture = GFX_idea_JAP_Inoue_junnosuke
-			
-			allowed = {
-				original_tag = JAP
-			}
-                        available = {
-                                 has_country_flag = JAP_INOUE_flag
-			}
-			ai_will_do = {
-				factor = 100
-			}
-			
-			traits = { TR_bank_president }
-		}
-
-
-		JAP_mitsumasa_yonai = {
-			
-			picture = generic_political_advisor_asia_2
-			
-			allowed = {
-				original_tag = JAP
-			}
-			ai_will_do = {
-				factor = 0
-			}
-			
-			traits = { quartermaster_trainee }
-		}
-
-		JAP_hiroshi_oshima = {
-			
-			picture = generic_political_advisor_asia_1
-			
-			allowed = {
-				original_tag = JAP
-			}
-			
-			traits = { prince_of_terror }
-
-			ai_will_do = {
-				factor = 1
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				totalist
+				Kitaikki_traits
 			}
 		}
-
-		JAP_chiune_sugihara = {
+		JAP_Abe_Iso = {
 			
-			picture = generic_political_advisor_asia_3
+			picture = JAP_Abe_Iso
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_democrat
+				TR_ambitious_union_boss
+			}
+		}
+		JAP_Katayama_Tetsu = {
+			
+			picture = JAP_Katayama_Tetsu
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_democrat
+				TR_happy_amateur
+			}
+		}
+		JAP_Inukai_Tsuyoshi = {
+			
+			picture = JAP_Inukai_Tsuyoshi
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_liberal
+				Pan_Asian_Politician
+			}
+		}
+		JAP_Nakano_Seigo = {
+			
+			picture = JAP_Nakano_Seigo
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_liberal
+				TR_flamboyant_tough_guy
+			}
+		}
+		JAP_machida_chuji = {
+			
+			picture = JAP_machida_chuji
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				market_liberal
+				Nonkinatousan 
+			}
+		}
+		JAP_Suzuki_Kisaburo = {
+			
+			picture = JAP_Suzuki_Kisaburo
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_happy_amateur
+			}
+		}
+		JAP_Hatoyama_Ichiro = {
+			
+			picture = JAP_Hatoyama_Ichiro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_silent_workhorse
+			}
+		}
+		JAP_Kuhara_Fusanosuke = {
+			
+			picture = JAP_Kuhara_Fusanosuke
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				JAP_Zaibatsu_Sousui
+			}
+		}
+		JAP_Ugaki_Kazushige = {
+			
+			picture = JAP_Ugaki_Kazushige
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+			    Ugaki_traits
+			}
+		}
+		JAP_Nagata_Tetsuzan = {
+			
+			picture = JAP_Kita_Ikki
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+				Nagata_traits
+			}
+		}
+		JAP_Konoe_Fumimaro = {
+			
+			picture = JAP_Kita_Ikki
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_Popular_Politician
+			}
+		}
+		JAP_Araki_Sadao = {
+			
+			picture = JAP_Kita_Ikki
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_old_general
+			}
+		}	
+	}
+    Minister_of_Foreign_Affairs = { 
+		JAP_Okawa_Shumei = {
+			
+			picture = JAP_Okawa_Shumei
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				totalist
+				TR_biased_intellectual
+			}
+		}
+		JAP_Suzuki_Bunji = {
+			
+			picture = JAP_Suzuki_Bunji 
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				social_democrat
+				TR_great_compromiser
+			}
+		}
+		JAP_Yoshizawa_Kenkichi = {
+			
+			picture = JAP_Yoshizawa_Kenkichi
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				social_liberal
+				TR_ideological_crusader
+			}
+		}
+		JAP_Shidehara_Kijuro = {
+			
+			picture = JAP_Shidehara_Kijuro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				market_liberal
+				TR_apologetic_clerk
+			}
+		}
+		JAP_Shigemitsu_Mamoru = {
+			
+			picture = JAP_Shigemitsu_Mamoru
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				market_liberal
+				TR_great_compromiser
+			}
+		}
+		JAP_Mori_Kaku = {
+			
+			picture = JAP_Mori_Kaku
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				social_conservative
+				TR_iron_fisted_brute
+			}
+		}
+		JAP_Togo_Shigenori = {
+			
+			picture = JAP_Togo_Shigenori
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_apologetic_clerk
+			}
+		}
+		JAP_Matsuoka_Yousuke = {
+			
+			picture = JAP_Matsuoka_Yousuke
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_iron_fisted_brute
+			}
+		}
+		JAP_Shiratori_Toshio = {
+			
+			picture = JAP_Shiratori_Toshio
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_iron_fisted_brute
+			}
+		}
+               	
+	}
+    Minister_of_Economy = { 
+		JAP_Akamatsu_Katsumaro = {
+			
+			picture = JAP_Akamatsu_Katsumaro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				totalist
+				TR_planned_economy_proponent
+			}
+		}
+		JAP_Mizutani_Chozaburou = {
+			
+			picture = JAP_Mizutani_Chozaburou
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_democrat
+				TR_mixed_economy
+			}
+		}
+		JAP_Katou_Kanzyu = {
+			
+			picture = JAP_Katou_Kanzyu
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_democrat
+				TR_steel_magnate
+			}
+		}
+		JAP_Hoshishima_Nirou = {
+			
+			picture = JAP_Hoshishima_Nirou
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_liberal
+				TR_laissez_faire_capitalist
+			}
+		}
+		JAP_Kiyose_Ichiro = {
+			
+			picture = JAP_Kiyose_Ichiro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_liberal
+				TR_resource_industrialist
+			}
+		}
+		JAP_Kataoka_Naoharu = {
+			
+			picture = JAP_Shidehara_Kijuro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				market_liberal
+				TR_Businessman
+			}
+		}
+		JAP_Inoue_junnosuke = {
+			
+			picture = JAP_Inoue_junnosuke
 			
 			allowed = {
 				original_tag = JAP
 			}
-			ai_will_do = {
-				factor = 0
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				market_liberal
+				TR_bank_president 
 			}
+		}
+		JAP_Katsu_Masanori = {
 			
-			traits = { compassionate_gentleman }
+			picture = JAP_Katsu_Masanori
+			
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				market_liberal
+				TR_reformer
+			 }
+		}
+        JAP_Takahashi_Korekiyo = {
+			
+			picture = JAP_Takahashi_Korekiyo
+			
+			allowed = {
+				original_tag = JAP
+                }
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_conservative
+				JAP_Daruma_Traits
+		    }
+		}
+		JAP_Kono_Ichiro = {
+			
+			picture = JAP_Kono_Ichiro
+			
+			allowed = {
+				original_tag = JAP
+                }
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_conservative
+				TR_construction_magnate
+		    }
+		}
+		JAP_Ikeda_Shigeaki = {
+			
+			picture = JAP_Ikeda_Shigeaki 
+			
+			allowed = {
+				original_tag = JAP
+                }
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_conservative
+				TR_bank_president
+		    }
+		}
+		JAP_Kaya_Okinori = {
+			
+			picture = JAP_Kaya_Okinori
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_planned_economy_proponent 
+			}
+		}
+		JAP_Yuuki_Toyotaro = {
+			
+			picture = JAP_Yuuki_Toyotaro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_bank_president
+			}
+		}
+		JAP_Shoda_Kazue = {
+			
+			picture = JAP_Shoda_Kazue
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				paternal_autocrat
+				TR_administrative_genius
+			}
 		}
 
-		takuo_godo = {
-
-			picture = takuo_godo
-
+	}
+    Minister_of_Interior = { 
+		JAP_Aso_Hisashi = {
+			
+			picture = JAP_Aso_Hisashi
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				totalist
+				TR_back_stabber
+			}
+		}
+		JAP_Katayama_Tetsu_Int = {
+			
+			picture = JAP_Katayama_Tetsu
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_democrat
+				TR_compassionate_gentleman
+			}
+		}
+		JAP_Nishio_Suehiro = {
+			
+			picture = JAP_Nishio_Suehiro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_democrat
+				TR_man_of_the_people
+			}
+		}
+		JAP_Uehara_Etsujiro = {
+			
+			picture = JAP_Uehara_Etsujiro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_liberal
+				TR_silent_lawyer
+			}
+		}
+		JAP_Ogata_Taketora = {
+			
+			picture = JAP_Ogata_Taketora
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_liberal
+				TR_media_magnate
+			}
+		}
+		JAP_Yamamoto_Tatsuo = {
+			
+			picture = JAP_Yamamoto_Tatsuo
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				market_liberal
+				TR_compassionate_gentleman
+			}
+		}
+		JAP_Saito_Takao = {
+			
+			picture = JAP_Saito_Takao
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				market_liberal
+				TR_man_of_the_people
+			}
+		}
+		JAP_Oasa_Tadao = {
+			
+			picture = JAP_Oasa_Tadao
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				market_liberal
+				TR_back_stabber
+			}
+		}
+		JAP_Miki_Bukichi = {
+			
+			picture = JAP_Miki_Bukichi
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				market_liberal
+				JAP_Oodanuki
+			}
+		}
+		JAP_Mitsuchi_Chuzo = {
+			
+			picture = JAP_Mitsuchi_Chuzo
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_conservative
+				TR_crime_fighter
+			}
+		}
+        JAP_Suma_Yakichiro = {
+			
+			picture = JAP_Suma_Yakichiro
+			
 			allowed = {
 				original_tag = JAP
 			}
-
-			traits = { war_industrialist }
-
-			ai_will_do = {
-				factor = 3
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+				Founder_of_intelligence
+			}
+		}
+		JAP_Kido_Koichi = {
+			
+			picture = JAP_Kido_Koichi
+			
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				TR_back_stabber
+			}
+		}
+		JAP_Masaki_Jinsaburo = {
+			
+			picture = JAP_Masaki_Jinsaburo 
+			
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+				TR_crooked_kleptocrat
+			}
+		}
+		JAP_Kawarada_Kakichi = {
+			
+			picture = JAP_Kawarada_Kakichi
+			
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+				TR_back_stabber
 			}
 		}
 	}
-		
 	# MILITARY
 	army_chief = {
 		

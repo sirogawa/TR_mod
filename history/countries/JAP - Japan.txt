@@ -8,13 +8,26 @@ set_major = yes
 
 set_stability = 0.3
 set_war_support = 0.3
-
+starting_train_buffer = 5
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
+        #法律
         Constitutional_monarchy
+        good_minimum_wage 
+        good_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
+        #大臣
+        JAP_hirohito#昭和天皇
+        JAP_machida_chuji#町田忠治
+        JAP_Shidehara_Kijuro#幣原喜重郎
+        JAP_Kataoka_Naoharu#片岡直温
+        JAP_Yamamoto_Tatsuo#山本達雄
         JAP_asian_leader
-	JAP_hirohito
 	JAP_Shading_sun
         JAP_black_thursday
         JAP_ugaki_gunshuku
@@ -25,11 +38,13 @@ add_ideas = {
 }
 country_event = { id = TR_news.36 days = 1 }
 country_event = { id = TR_japan.2 days = 56 }
+country_event = { id = TR_japan.5 days = 120 }
 country_event = { id = TR_japan.9 days = 12 }
 country_event = { id = TR_japan.10 days = 302 }
+country_event = { id = TR_japan.19 days = 382 }
+country_event = { id = TR_japan.30 days = 1491 }
 country_event = { id = TR_japfed.1 days = 75 }
 country_event = { id = TR_japfed.22 days = 276 }
-country_event = { id = TR_japan.5 days = 120 }
 country_event = { id = TR_jap_flavor.1 days = 1460 }
 country_event = { id = TR_jap_flavor.2 days = 1243 }
 country_event = { id = TR_jap_flavor.3 days = 2713 }
@@ -52,6 +67,7 @@ set_technology = {
 	improved_light_tank = 1
 	cv_early_fighter = 1
 	cv_CAS1 = 1
+	basic_train = 1
 	cv_naval_bomber1 = 1
 	early_fighter = 1
 	naval_bomber1 = 1
@@ -64,6 +80,26 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
         trench_warfare = 1
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+	set_oob = "JAP_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	set_oob = "JAP_1936_nsb"
 }
 if = {
 	limit = {
@@ -146,8 +182,8 @@ set_popularities = {
 	social_liberal = 7
 	market_liberal = 18
 	social_conservative = 17
-	authoritarian_democrat = 9
-	paternal_autocrat = 2
+	authoritarian_democrat = 2
+	paternal_autocrat = 9
 	national_populist = 9
 }
 
@@ -170,103 +206,35 @@ add_to_faction = MAL
 add_to_faction = PHI
 add_to_faction = INS
 
-set_autonomy = {
-	target = MAN
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = SRL
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = SAU
-	autonomous_state = imperial_dominion
-}
-set_autonomy = {
-	target = MAL
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = COG
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = KEN
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = NMB
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = NGA
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = ESA
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = CAL
-	autonomous_state = imperial_dominion
-}
-set_autonomy = {
-	target = SHX
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = GUG
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = INS
-	autonomous_state = imperial_colony
-}
-set_autonomy = {
-	target = SIB
-	autonomous_state = imperial_dominion
-}
-set_autonomy = {
-	target = CEN
-	autonomous_state = imperial_dominion
-}
-set_autonomy = {
-	target = SKT
-	autonomous_state = imperial_protectorate
-}
-set_autonomy = {
-	target = EGY
-	autonomous_state = imperial_protectorate
-}
 
 
 
 ### Heads of State ###
 create_country_leader = {
-	name = "赤松克麿"
-	desc = "POLITICS_AKAMATSU_DESC"
-	picture = "Portrait_JAP_akamatu.tga"
+	name = "北一輝"
+	desc = "POLITICS_Kitaikki_DESC"
+	picture = "gfx/leaders/JAP/Portrait_JAP_Kita_Ikki2.tga"
 	expire = "1981.3.6"
 	ideology = totalist_subtype
 }
 create_country_leader = {
 	name = "大杉栄"
 	desc = "POLITICS_OSUGI_DESC"
-	picture = "Portrait_JAP_osugi.tga"
+	picture = "gfx/leaders/JAP/Portrait_JAP_osugi.tga"
 	expire = "1981.3.6"
 	ideology = syndicalist_subtype
 }
 create_country_leader = {
 	name = "田中清玄"
 	desc = "POLITICS_SEIGEN_DESC"
-	picture = "Portrait_JAP_tanakaseigen.tga"
+	picture = "gfx/leaders/JAP/Portrait_JAP_tanakaseigen.tga"
 	expire = "1981.3.6"
 	ideology = radical_socialist_subtype
 }
 create_country_leader = {
 	name = "安倍磯雄"
 	desc = "POLITICS_ABEISO_DESC"
-	picture = "portrait_JAP_Abeiso.tga"
+	picture = "gfx/leaders/JAP/portrait_JAP_Abeiso.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
         traits = {  }
@@ -274,59 +242,58 @@ create_country_leader = {
 create_country_leader = {
 	name = "犬養毅"
 	desc = "POLITICS_INUKAI_DESC"
-	picture = "portrait_JAP_inukai.tga"
+	picture = "gfx/leaders/JAP/portrait_JAP_inukai.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
-        traits = { Pan_Asian_Politician }
+        traits = {  }
 }
 create_country_leader = {
 	name = "町田忠治"
 	desc = "POLITICS_MACHIDA_DESC"
-	picture = "Portrait_Japan_machida.tga"
+	picture = "gfx/leaders/JAP/Portrait_Japan_machida.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
-        traits = { Nonkinatousan }
+        traits = {  }
 }
 create_country_leader = {
 	name = "鈴木喜三郎"
 	desc = "POLITICS_SUZUKIKISA_DESC"
-	picture = "portrait_JAP_suzukikisa.tga"
+	picture = "gfx/leaders/JAP/portrait_JAP_suzukikisa.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 }
 create_country_leader = {
 	name = "床次竹二郎"
 	desc = "POLITICS_TOKONAMI_DESC"
-	picture = "portrait_JAP_tokonami.tga"
+	picture = "gfx/leaders/JAP/portrait_JAP_tokonami.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 }
 create_country_leader = {
-	name = "安達謙蔵"
-	desc = "POLITICS_ADACHI_DESC"
-	picture = "portrait_JAP_adachi.tga"
+        name = "永田鉄山"
+	desc = "POLITICS_NAGATA_DESC"
+	picture = "gfx/leaders/JAP/Portrait_JAP_nagata.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 }
 create_country_leader = {
-	name = "中野正剛"
-	desc = "POLITICS_nakano_DESC"
-	picture = "Portrait_JAP_nakanoseigo.tga"
+	name = "荒木貞夫"
+	desc = "POLITICS_ARAKI_DESC"
+	picture = "gfx/leaders/JAP/Portrait_JAP_araki.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
 }
-
 create_country_leader = {
 	name = "酒井勝軍"
 	desc = "POLITICS_KONOE_DESC"
-	picture = "Portrait_JAP_sakaikatutoki.tga"
+	picture = "gfx/leaders/JAP/Portrait_JAP_sakaikatutoki.tga"
 	expire = "1965.1.1"
 	ideology = Gnosticism_subtype
 }
 
 create_corps_commander = {
 	name = "山下奉文"
-		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = {
 		trickster trait_engineer brilliant_strategist armor_officer
 	}
@@ -339,7 +306,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "寺内寿一"
-	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
 	traits = { 
 		offensive_doctrine
 		JAP_samurai_lineage   # hakushaku
@@ -354,7 +321,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "畑俊六"
-		picture = "Portrait_Japan_Shunroku_Hata.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Shunroku_Hata.dds"
 	traits = { offensive_doctrine JAP_samurai_lineage }
 	skill = 4
 	attack_skill = 3
@@ -365,7 +332,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "白川義則"
-		picture = "portrait_JAP_shirakawa.tga"
+	portrait_path = "gfx/leaders/JAP/portrait_JAP_shirakawa.tga"
 	traits = { trait_engineer trait_cautious brilliant_strategist JAP_samurai_lineage war_hero }
 	skill = 4
 	attack_skill = 4
@@ -376,7 +343,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "武藤信義"
-		picture = "portrait_JAP_muto.tga"
+	portrait_path = "gfx/leaders/JAP/portrait_JAP_muto.tga"
 	traits = { logistics_wizard organizer JAP_samurai_lineage war_hero }
 	skill = 5
 	attack_skill = 4
@@ -387,7 +354,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "荒木貞夫"
-		picture = "portrait_JAP_araki.tga"
+	portrait_path = "gfx/leaders/JAP/portrait_JAP_araki.tga"
 	traits = { JAP_samurai_lineage }
 	skill = 1
 	attack_skill = 1
@@ -397,7 +364,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "牟田口廉也"
-		picture = "Portrait_JAP_mutaguchi.tga"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
 	traits = { JAP_samurai_lineage }
 	skill = 1
 	attack_skill = 1
@@ -409,7 +376,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "永田鉄山"
          id = 2606
-		picture = "Portrait_JAP_nagata.tga"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_nagata.tga"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 2
@@ -420,7 +387,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "武藤章"
-		picture = "Portrait_Japan_Akira_Muto.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Akira_Muto.dds"
 	traits = { career_officer  }
 	skill = 2
 	attack_skill = 2
@@ -431,7 +398,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "石原莞爾"
-		picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kanji_Ishiwara.dds"
 	traits = { JAP_samurai_lineage }
 	skill = 2
 	attack_skill = 1
@@ -442,7 +409,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "東條英機"
-		picture = "Portrait_JAP_tojo.tga"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_tojo.tga"
 	traits = { JAP_samurai_lineage }
 	skill = 2
 	attack_skill = 1
@@ -453,7 +420,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "田中静壱"
-		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Shizuichi_Tanaka.dds"
 	traits = { trickster career_officer infantry_officer }
 	skill = 4
 	attack_skill = 4
@@ -463,7 +430,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "小畑敏四郎"
-	picture = "Potraits_JAP_ObataToshiro.tga"
+	portrait_path = "gfx/leaders/JAP/Potraits_JAP_ObataToshiro.tga"
 	traits = { JAP_samurai_lineage brilliant_strategist armor_officer }
 	skill = 4
 	attack_skill = 5
@@ -474,7 +441,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "岡村寧次"
-		picture = "Portrait_Japan_Yasuji_Okamura.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Yasuji_Okamura.dds"
 	traits = { trickster career_officer infantry_officer }
 	skill = 4
 	attack_skill = 3
@@ -485,7 +452,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "西尾寿造" #Toshizo
-		picture = "Portrait_Japan_Toshizo_Nishio.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Toshizo_Nishio.dds"
 	traits = { brilliant_strategist infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -496,7 +463,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "安藤利吉" #Ando
-		picture = "Portrait_Japan_Rikichi_Ando.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Rikichi_Ando.dds"
 	traits = { career_officer }
 	skill = 3
 	attack_skill = 1
@@ -507,7 +474,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "東久邇宮稔彦"
-	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Naruhiko_Higashikuni.dds"
 	traits = { JAP_samurai_lineage politically_connected }
 	skill = 3 
 	attack_skill = 3
@@ -518,7 +485,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "板垣征四郎"
-		picture = "Portrait_Japan_Seishiro_Itagaki.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Seishiro_Itagaki.dds"
 	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
 	skill = 3
 	attack_skill = 3
@@ -529,7 +496,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "酒井隆"
-		picture = "Portrait_Japan_Takashi_Sakai.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Takashi_Sakai.dds"
 	traits = { infantry_officer trait_reckless }
 	skill = 3
 	attack_skill = 2
@@ -540,7 +507,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "土肥原賢二"
-		picture = "Portrait_Japan_Doihara.tga"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
 	traits = { career_officer }
 	skill = 3 
 	attack_skill = 1
@@ -551,7 +518,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "植田謙吉"
-		picture = "Portrait_Japan_Kenkichi_Ueda.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kenkichi_Ueda.dds"
 	traits = { old_guard cavalry_officer trait_reckless }
 	skill = 4
 	attack_skill = 3
@@ -560,20 +527,10 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
-create_corps_commander = {
-	name = "本庄繁"
-		picture = "Portrait_Japan_Shigeru_Honjo.dds"
-	traits = { old_guard war_hero }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
 
 create_corps_commander = {
 	name = "梅津美治郎"
-		picture = "Portrait_Japan_Yoshijiro_Umezu.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Yoshijiro_Umezu.dds"
 	traits = { trait_cautious politically_connected }
 	skill = 3
 	attack_skill = 3
@@ -584,7 +541,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "山田乙三"
-		picture = "Portrait_Japan_Otozo_Yamada.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Otozo_Yamada.dds"
 	traits = { cavalry_officer career_officer }
 	skill = 3
 	attack_skill = 3
@@ -595,7 +552,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "安達二十三"
-		picture = "Portrait_Japan_Hatazo_Adachi.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Hatazo_Adachi.dds"
 	traits = { trickster JAP_samurai_lineage trait_reckless infantry_officer }
 	skill = 2
 	attack_skill = 1
@@ -606,7 +563,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "松井石根"
-		picture = "Portrait_JAP_Matuiiwane.tga"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Matuiiwane.tga"
 	traits = { old_guard trait_reckless }
 	skill = 3
 	attack_skill = 3
@@ -618,7 +575,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "藤江恵輔"
-		picture = "Portrait_Japan_Keisuke_Fujie.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Keisuke_Fujie.dds"
 	traits = { fortress_buster career_officer politically_connected } 
 	skill = 3
 	attack_skill = 1
@@ -628,7 +585,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "樋口季一郎"
-		picture = "Portrait_Japan_Kiichiro_Higuchi.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kiichiro_Higuchi.dds"
 	traits = { career_officer trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -639,7 +596,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "本間雅晴"
-		picture = "Portrait_Japan_Masaharu_Homma.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Masaharu_Homma.dds"
 	traits = { media_personality trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -650,7 +607,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "百武晴吉"
-		picture = "Portrait_Japan_Harukichi_Hyakutake.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Harukichi_Hyakutake.dds"
 	traits = { infantry_officer  }
 	skill = 3
 	attack_skill = 2
@@ -661,7 +618,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "飯村穣"
-		picture = "Portrait_Japan_Jo_Iimura.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Jo_Iimura.dds"
 	traits = { career_officer }
 	skill = 2
 	attack_skill = 1
@@ -672,7 +629,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "今村均"
-		picture = "Portrait_Japan_Hitoshi_Imamura.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Hitoshi_Imamura.dds"
 	traits = {  commando career_officer infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -683,7 +640,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "神田正種"
-		picture = "Portrait_Japan_Masatane_Kanda.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Masatane_Kanda.dds"
 	traits = { trait_cautious }
 	skill = 2
 	attack_skill = 2
@@ -694,7 +651,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "小磯國昭"
-		picture = "Portrait_Japan_Kuniaki_Koiso.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kuniaki_Koiso.dds"
 	traits = { JAP_samurai_lineage old_guard politically_connected }
 	skill = 2
 	attack_skill = 2
@@ -705,7 +662,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Isoroku Yamamoto"
-		picture = "Portrait_Japan_Isoroku_Yamamoto.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
 	traits = { aviation_enthusiast bold air_controller flight_deck_manager superior_tactician spotter }
 	skill = 5
 	attack_skill = 5
@@ -716,7 +673,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Mineichi Koga"
-		picture = "Portrait_Japan_Mineichi_Koga.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Mineichi_Koga.dds"
 	traits = { bold battleship_adherent superior_tactician spotter }
 	skill = 4
 	attack_skill = 4
@@ -727,7 +684,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Kiyoshi Hasegawa"
-		picture = "Portrait_Japan_Hasegawa_Kiyoshi.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Hasegawa_Kiyoshi.dds"
 	traits = { gentlemanly }
 	skill = 2
 	attack_skill = 2
@@ -739,7 +696,7 @@ create_navy_leader = {
 # Keen on planes
 create_navy_leader = {
 	name = "Shigeyoshi Inoue"
-		picture = "Portrait_Japan_Shigeyoshi_Inoue.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Shigeyoshi_Inoue.dds"
 	traits = { aviation_enthusiast navy_career_officer }
 	skill = 2
 	attack_skill = 2
@@ -750,7 +707,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Nobutake Kondō"
-		picture = "Portrait_Japan_Nobutake_Kondo.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Nobutake_Kondo.dds"
 	traits = { battleship_adherent naval_lineage fly_swatter }
 	skill = 3
 	attack_skill = 4
@@ -761,7 +718,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Takeo Takagi"
-		picture = "Portrait_Japan_Takeo_Takagi.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Takeo_Takagi.dds"
 	traits = { spotter }
 	skill = 3
 	attack_skill = 3
@@ -772,7 +729,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Soemu Toyoda"
-		picture = "Portrait_Japan_Soemu_Toyoda.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Soemu_Toyoda.dds"
 	traits = { bold ironside old_guard_navy }
 	skill = 3
 	attack_skill = 5
@@ -783,7 +740,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Jisaburo Ozawa"
-		picture = "Portrait_Japan_Jisaburo_Ozawa.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Jisaburo_Ozawa.dds"
 	traits = { bold aviation_enthusiast navy_career_officer blockade_runner superior_tactician }
 	skill = 5
 	attack_skill = 5
@@ -794,7 +751,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Zengo Yoshida"
-		picture = "Portrait_Japan_Zengo_Yoshida.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Zengo_Yoshida.dds"
 	traits = { old_guard_navy }
 	skill = 2
 	attack_skill = 2
@@ -805,7 +762,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Hiroaki Abe"
-		picture = "Portrait_Japan_Hiroaki_Abe.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Hiroaki_Abe.dds"
 	traits = { battleship_adherent }
 	skill = 2
 	attack_skill = 3
@@ -816,7 +773,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Tadashige Daigo"
-		picture = "Portrait_Japan_Tadashige_Daigo.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Tadashige_Daigo.dds"
 	traits = { navy_career_officer seawolf }
 	skill = 1
 	attack_skill = 1
@@ -827,7 +784,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Gengo Hyakutake"
-		picture = "Portrait_Japan_Gengo_Hyakutake.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Gengo_Hyakutake.dds"
 	traits = { gentlemanly }
 	skill = 2
 	attack_skill = 1

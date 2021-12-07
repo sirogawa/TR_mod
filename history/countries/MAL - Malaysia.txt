@@ -76,7 +76,12 @@ if = {
 }
 set_convoys = 300
 
-
+JAP = { 
+        set_autonomy = {
+	   target = MAL
+	   autonomous_state = imperial_colony
+        }
+      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

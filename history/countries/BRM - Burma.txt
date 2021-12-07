@@ -8,6 +8,7 @@ set_technology = {
 }
 add_ideas = {
         militaly_dictatorship
+        trinket_minimum_wage
 }
 set_convoys = 5
 

@@ -81,7 +81,7 @@ if = {
 		transport = 1
 	}
 }
-country_event = { id = TR_China.6 days = 50 }
+
 set_convoys = 20
 
 add_ideas = {
@@ -93,18 +93,13 @@ add_ideas = {
 		idea = JAPCO_black_thursday
 		days = 500
                  }  
-set_autonomy = {
-	target = SAN
-	autonomous_state = autonomy_puppet
-}
-set_autonomy = {
-	target = FUJ
-	autonomous_state = autonomy_puppet
-}
-set_autonomy = {
-	target = ANQ
-	autonomous_state = autonomy_puppet
-}
+JAP = { 
+        set_autonomy = {
+	   target = SHX
+	   autonomous_state = imperial_colony
+        }
+      }
+
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

@@ -32,7 +32,12 @@ add_ideas = {
         MAN_Kishi_Nobusuke
 }
 set_convoys = 5
-
+JAP = { 
+        set_autonomy = {
+	   target = MAN
+	   autonomous_state = imperial_colony
+        }
+      }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

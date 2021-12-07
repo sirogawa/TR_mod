@@ -13,7 +13,7 @@ if = {
 
 set_research_slots = 4
 set_stability = 0.5
-
+starting_train_buffer = 1
 create_faction = FRENCH_FACTION
 add_to_faction = FRA
 
@@ -45,6 +45,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
         mobile_warfare = 1
+	basic_train = 1
 }
 
 if = {
@@ -130,6 +131,13 @@ set_popularities = {
 
 add_ideas = {
             totalist_dictatorship
+            acceptable_minimum_wage
+            low_max_workhours
+            acceptable_safety_regulations
+            good_Unemployment_subsidies
+            acceptable_school_system
+            low_pensions
+            good_health_care
             FRA_JEAN_III
             FRA_revenge
             FRA_black_thursday

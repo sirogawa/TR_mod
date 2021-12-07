@@ -80,6 +80,7 @@ set_stability = 0.5
 
 add_ideas = {
         Absolute_monarchy
+        trinket_school_system
 	SPR_carlismo
         SPR_bundansyakai
         SPR_depression

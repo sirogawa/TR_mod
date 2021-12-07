@@ -30,7 +30,12 @@ add_timed_idea = {
 set_research_slots = 3
 
 set_convoys = 5
-
+JAP = { 
+        set_autonomy = {
+	   target = SRL
+	   autonomous_state = imperial_colony
+        }
+      }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

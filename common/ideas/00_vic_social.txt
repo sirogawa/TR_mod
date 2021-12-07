@@ -1,0 +1,756 @@
+#vic2風政策の効果を定義
+
+ideas = {
+ 
+	minimum_wage = { 
+		law = yes
+		use_list_view = yes
+
+		no_minimum_wage = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.2
+				consumer_goods_factor = -0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_minimum_wage = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				consumer_goods_factor = -0.025
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_minimum_wage = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				political_power_gain = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_minimum_wage = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.025
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_minimum_wage = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.2
+				consumer_goods_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+		
+###########################################################################################
+		
+		max_workhours = { 
+		law = yes
+		use_list_view = yes
+
+		no_max_workhours = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = -0.2		
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_max_workhours = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_max_workhours = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_max_workhours = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_max_workhours = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_factory_max_efficiency_factor = 0.2
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+#####################################################################
+
+	safety_regulations = { 
+		law = yes
+		use_list_view = yes
+
+		no_safety_regulations = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				monthly_population = -0.2
+				conscription_factor = -0.1
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_safety_regulations = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				monthly_population = -0.1
+				conscription_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_safety_regulations = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				monthly_population = -0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_safety_regulations = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				monthly_population = 0.25
+				conscription_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_safety_regulations = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				monthly_population = 0.5
+				conscription_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+########################################################################
+
+	Unemployment_subsidies = { 
+		law = yes
+		use_list_view = yes
+
+		no_Unemployment_subsidies = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				line_change_production_efficiency_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+				consumer_goods_factor = -0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_Unemployment_subsidies = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				line_change_production_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_factor = -0.025
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_Unemployment_subsidies = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				line_change_production_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_Unemployment_subsidies = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = 0.025
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_Unemployment_subsidies = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			allowed = { always = yes }
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+#######################################################################
+
+	school_system = { 
+		law = yes
+		use_list_view = yes
+
+		no_school_system = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_school_system = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				research_speed_factor = -0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.025
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_school_system = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.025
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_school_system = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				research_speed_factor = 0.15
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+
+########################################################
+
+	pensions = { 
+		law = yes
+		use_list_view = yes
+
+		no_pensions = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				compliance_gain = -0.02
+				required_garrison_factor = 0.15
+				political_power_factor = 0.15
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_pensions = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				compliance_gain = -0.01
+				required_garrison_factor = 0.1
+				political_power_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_pensions = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				compliance_gain = -0.005
+				required_garrison_factor = 0.05
+				political_power_factor = 0.05
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_pensions = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				compliance_gain = 0.01
+				required_garrison_factor = -0.1
+				political_power_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_pensions = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				compliance_gain = 0.02
+				required_garrison_factor = -0.15
+				political_power_factor = -0.15
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+	
+###############################################################
+
+	health_care = { 
+		law = yes
+		use_list_view = yes
+
+		no_health_care = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.1
+				non_core_manpower = -0.1
+				monthly_population = -0.5
+				production_factory_start_efficiency_factor = 0.15
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+		
+		trinket_health_care = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = -0.05
+				non_core_manpower = -0.05
+				monthly_population = -0.25
+				production_factory_start_efficiency_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		low_health_care = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 3
+			allowed = { always = yes }
+			
+			modifier = {
+				non_core_manpower = -0.01
+				monthly_population = -0.1
+				production_factory_start_efficiency_factor = 0.05
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		acceptable_health_care = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.05
+				non_core_manpower = 0.05
+				monthly_population = 0.3
+				production_factory_start_efficiency_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		good_health_care = {
+			
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.1
+				non_core_manpower = 0.1
+				monthly_population = 0.5
+				production_factory_start_efficiency_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+}

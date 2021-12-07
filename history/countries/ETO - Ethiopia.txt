@@ -15,7 +15,12 @@ set_convoys = 5
 
 
 
-
+JAP = { 
+        set_autonomy = {
+	   target = ETO
+	   autonomous_state = imperial_protectorate
+        }
+      }
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1935.1.1"

@@ -1,0 +1,30 @@
+state={
+	id=906
+	name="STATE_906"
+	
+	state_category = town
+
+	resources={
+		
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+                add_core_of = MIN
+		buildings = {
+			infrastructure = 1
+                        industrial_complex = 1
+
+		}
+                victory_points = {
+			7459 1
+		}
+	}
+
+	provinces={
+		6932 1603 4519 4547 7459 7508 12012 7568 10446 12426 10434 
+	}
+	manpower=14820930
+	local_supplies=0.0 
+}

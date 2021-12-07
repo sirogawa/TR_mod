@@ -6,6 +6,10 @@ set_convoys = 5
 
 add_ideas = {
         Absolute_monarchy
+        low_max_workhours
+        low_Unemployment_subsidies
+        acceptable_school_system
+        low_pensions
 	limited_conscription
 	partial_economic_mobilisation
 }

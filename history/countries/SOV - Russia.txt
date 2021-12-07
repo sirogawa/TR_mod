@@ -14,11 +14,7 @@ country_event = { id = TR_russia.1 days = 15 }
 country_event = { id = TR_russia.2 days = 69 }
 country_event = { id = TR_russia.5 days = 312 }
 
-set_autonomy = {
-		target = UZB
-		autonomous_state = autonomy_colony
-		freedom_level = 0.1
-	}
+
 
 set_research_slots = 3
 set_stability = 0.4

@@ -1,7 +1,14 @@
-﻿capital = 844
+﻿capital = 890
 
 add_ideas = {
         Constitutional_monarchy
+        acceptable_minimum_wage
+        good_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
 	limited_conscription
 	partial_economic_mobilisation
         DDR_Prussianarmy
@@ -252,7 +259,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Erich von Manstein"
-	portrait_path = "gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
+	portrait_path = "Portrait_DDR_Erich_von_Manstein.tga"
 	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 4
 
@@ -264,7 +271,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Heinz Guderian"
-	portrait_path = "gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
+	portrait_path = "Portrait_DDR_Heinz_Guderian.tga"
 	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 	skill = 4
 

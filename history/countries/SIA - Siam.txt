@@ -10,6 +10,10 @@ if = {
 }
 add_ideas = {
       Absolute_monarchy
+      trinket_minimum_wage
+      trinket_max_workhours
+      trinket_health_care
+      low_school_system
 }
  
 # Starting tech

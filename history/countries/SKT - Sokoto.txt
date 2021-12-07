@@ -12,6 +12,12 @@ set_technology = {
 add_ideas = {
       Absolute_monarchy
 }
+JAP = { 
+        set_autonomy = {
+	   target = SKT
+	   autonomous_state = imperial_protectorate
+        }
+      }
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"

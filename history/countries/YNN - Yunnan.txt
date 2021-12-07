@@ -18,8 +18,12 @@ set_technology = {
                 militaly_dictatorship
 		CHI_late_army
 	}
-
-
+YUN = { 
+      set_autonomy = {
+	   target = YNN
+	   autonomous_state = autonomy_puppet
+      }
+}
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"

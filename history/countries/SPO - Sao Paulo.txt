@@ -6,6 +6,8 @@ add_ideas = {
         Democratic_Republic
 	BRA_CIVIL_WAR
         SPO_jap_economic
+        low_school_system
+        low_minimum_wage
 }
 # Starting tech
 set_technology = {

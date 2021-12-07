@@ -10,6 +10,11 @@ if = {
 }
 add_ideas = {
         Constitutional_monarchy
+        acceptable_minimum_wage
+        trinket_Unemployment_subsidies
+        trinket_max_workhours
+        trinket_pensions
+        trinket_health_care
 }
 set_research_slots = 3
 set_stability = 0.6

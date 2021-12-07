@@ -40,7 +40,12 @@ add_ideas = {
 
 set_convoys = 50
 
-
+JAP = { 
+        set_autonomy = {
+	   target = KEN
+	   autonomous_state = imperial_colony
+        }
+      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

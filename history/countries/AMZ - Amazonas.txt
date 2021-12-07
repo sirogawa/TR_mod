@@ -6,6 +6,8 @@ add_ideas = {
 	BRA_CIVIL_WAR
         AMZ_SANTO_DAIME
         totalist_dictatorship
+        low_school_system
+        low_minimum_wage
 }
 # Starting tech
 set_technology = {

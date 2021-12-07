@@ -1,0 +1,143 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_no_minimum_wage"
+		texturefile = "gfx/interface/ideas/idea_M1_minimum_wage.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_minimum_wage"
+		texturefile = "gfx/interface/ideas/idea_M2_minimum_wage.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_minimum_wage"
+		texturefile = "gfx/interface/ideas/idea_M3_minimum_wage.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_minimum_wage"
+		texturefile = "gfx/interface/ideas/idea_M4_minimum_wage.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_minimum_wage"
+		texturefile = "gfx/interface/ideas/idea_M5_minimum_wage.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_max_workhours"
+		texturefile = "gfx/interface/ideas/idea_W1_max_workhours.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_max_workhours"
+		texturefile = "gfx/interface/ideas/idea_W2_max_workhours.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_max_workhours"
+		texturefile = "gfx/interface/ideas/idea_W3_max_workhours.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_max_workhours"
+		texturefile = "gfx/interface/ideas/idea_W4_max_workhours.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_max_workhours"
+		texturefile = "gfx/interface/ideas/idea_W5_max_workhours.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_safety_regulations"
+		texturefile = "gfx/interface/ideas/idea_S1_safety_regulations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_safety_regulations"
+		texturefile = "gfx/interface/ideas/idea_S2_safety_regulations.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_safety_regulations"
+		texturefile = "gfx/interface/ideas/idea_S3_safety_regulations.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_safety_regulations"
+		texturefile = "gfx/interface/ideas/idea_S4_safety_regulations.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_safety_regulations"
+		texturefile = "gfx/interface/ideas/idea_S5_safety_regulations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_Unemployment_subsidies"
+		texturefile = "gfx/interface/ideas/idea_U1_Unemployment_subsidies.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_Unemployment_subsidies"
+		texturefile = "gfx/interface/ideas/idea_U2_Unemployment_subsidies.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_Unemployment_subsidies"
+		texturefile = "gfx/interface/ideas/idea_U3_Unemployment_subsidies.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_Unemployment_subsidies"
+		texturefile = "gfx/interface/ideas/idea_U4_Unemployment_subsidies.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_Unemployment_subsidies"
+		texturefile = "gfx/interface/ideas/idea_U5_Unemployment_subsidies.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_idea_no_school_system"
+		texturefile = "gfx/interface/ideas/idea_B1_school_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_school_system"
+		texturefile = "gfx/interface/ideas/idea_B2_school_system.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_school_system"
+		texturefile = "gfx/interface/ideas/idea_B3_school_system.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_school_system"
+		texturefile = "gfx/interface/ideas/idea_B4_school_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_pensions"
+		texturefile = "gfx/interface/ideas/idea_P1_pensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_pensions"
+		texturefile = "gfx/interface/ideas/idea_P2_pensions.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_pensions"
+		texturefile = "gfx/interface/ideas/idea_P3_pensions.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_pensions"
+		texturefile = "gfx/interface/ideas/idea_P4_pensions.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_pensions"
+		texturefile = "gfx/interface/ideas/idea_P5_pensions.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_idea_no_health_care"
+		texturefile = "gfx/interface/ideas/idea_H1_health_care.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trinket_health_care"
+		texturefile = "gfx/interface/ideas/idea_H2_health_care.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_low_health_care"
+		texturefile = "gfx/interface/ideas/idea_H3_health_care.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_acceptable_health_care"
+		texturefile = "gfx/interface/ideas/idea_H4_health_care.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_good_health_care"
+		texturefile = "gfx/interface/ideas/idea_H5_health_care.dds"
+		
+	}
+	
+}

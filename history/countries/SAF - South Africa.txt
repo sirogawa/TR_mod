@@ -1,7 +1,15 @@
 ﻿capital = 275
 
 oob = "SAF_1936"
-
+add_ideas = {
+        acceptable_minimum_wage
+        good_max_workhours
+        good_safety_regulations
+        good_Unemployment_subsidies
+        acceptable_school_system
+        good_pensions
+        good_health_care
+}
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech
@@ -56,7 +64,13 @@ if = {
 }
 
 
-
+ENG = { 
+        set_autonomy = {
+	  target = SAF
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+        }
+      }
 set_convoys = 25
 set_politics = {
 	ruling_party = social_conservative

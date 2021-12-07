@@ -6,6 +6,8 @@ set_cosmetic_tag = CEN_JAP
 add_ideas = {
         Constitutional_monarchy
 	Dainihon_Seito
+        trinket_school_system
+        trinket_health_care
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -98,7 +100,12 @@ set_stability = 0.5
 set_war_support = 0.4
 
 
-
+JAP = { 
+        set_autonomy = {
+	   target = CEN
+	   autonomous_state = imperial_dominion
+        }
+      }
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1936.1.1"

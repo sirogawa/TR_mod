@@ -1,0 +1,30 @@
+state={
+	id=907
+	name="STATE_907"
+	
+	state_category = town
+
+	resources={
+		
+	}
+
+	history={
+		owner = SHX
+		add_core_of = SHX
+                add_core_of = MIN
+                add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+                victory_points = {
+			7074 1
+		}
+	}
+
+	provinces={
+		7074 4114 4144 1139 4606 
+	}
+	manpower=4820930
+	local_supplies=0.0 
+}

@@ -22,7 +22,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		9982 1448 13143 12350 
+		9982 1448 12350 
 	}
 	manpower=512093
 	buildings_max_level_factor=1.000
