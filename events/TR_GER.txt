@@ -1,4 +1,4 @@
-
+﻿
 add_namespace = TR_germany
 
 #ドイツ内戦
@@ -571,7 +571,7 @@ country_event = {
 		    transfer_state = 50
 			add_state_core = 54
 			transfer_state = 54
-			transfer_state = 52
+			add_state_core = 52
             add_state_core = 53
 		}
 		HES = {
@@ -601,7 +601,7 @@ country_event = {
 		    transfer_state = 50
 			add_state_core = 54
 			transfer_state = 54
-			transfer_state = 52
+			add_state_core= 52
             add_state_core = 53
 		}
 		HES = {
@@ -634,7 +634,7 @@ country_event = {
 		    transfer_state = 50
 			add_state_core = 54
 			transfer_state = 54
-			transfer_state = 52
+			add_state_core = 52
             add_state_core = 53
 			change_tag_from = GER
 		}

@@ -283,86 +283,87 @@
 		}
              }
 			}
-        #Advisor
-        political_advisor = {	
+        #Minister
+        Government_leaders = {	
 		
-                AUS_Adolf_Hitler = {
+            AUS_Adolf_Hitler = {
 			
 			picture = AUS_Hitler
 			
 			allowed = {
 				original_tag = AUS
                                   }
-                        available = {
-                                OR = {
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                     }
-			}
-			
-			traits = { AUS_Hitler_traits }
-			ai_will_do = {
-				factor = 5
-			}
+			available = {
+				always = no
+		                  }
+			removal_cost = -1
+			traits = { 
+                        Government_leaders
+                        Gnosticism
+                        AUS_Hitler_traits 
+                        }
 		  }
-                AUS_Heinrich_Himmler = {
-			
-			picture = AUS_Himmler
-			
-			allowed = {
-				original_tag = AUS
-                                  }
-                        available = {
-                                OR = {
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                     }
-			}
-			
-			traits = { AUS_Himmler_traits }
-			ai_will_do = {
-				factor = 5
-			}
-		  }
-                AUS_Erik_Jan_Hanussen = {
+        }
+		Minister_of_Foreign_Affairs = {	
+		
+            AUS_Erik_Jan_Hanussen = {
 			
 			picture = AUS_Erik_Jan_Hanussen
 			
 			allowed = {
 				original_tag = AUS
                                   }
-                        available = {
-                                OR = {
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                     }
-			}
-			
-			traits = { AUS_Hanussen_traits }
-			ai_will_do = {
-				factor = 5
-			}
+			available = {
+				always = no
+		                  }
+			removal_cost = -1
+			traits = { 
+                        Minister_of_Foreign_Affairs
+                        Gnosticism
+                        AUS_Hanussen_traits 
+                        }
 		  }
-                AUS_Karl_Maria_Wiligut = {
+        }
+		Minister_of_Economy = {	
+		
+            AUS_Karl_Maria_Wiligut = {
 			
 			picture = AUS_Karl_Maria_Wiligut
 			
 			allowed = {
 				original_tag = AUS
                                   }
-                        available = {
-                                OR = {
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                     }
-			}
-			
-			traits = { AUS_Wiligut_traits }
-			ai_will_do = {
-				factor = 5
-			}
+			available = {
+				always = no
+		                  }
+			removal_cost = -1
+			traits = { 
+                        Minister_of_Economy
+                        Gnosticism
+                        AUS_Wiligut_traits
+                        }
 		  }
-
+        }
+        Minister_of_Interior = {	
+            AUS_Heinrich_Himmler = {
+			
+			picture = AUS_Himmler
+			
+			allowed = {
+				original_tag = AUS
+                                  }
+			available = {
+				always = no
+		                  }
+			
+			traits = { 
+                        Minister_of_Interior
+                        Gnosticism
+                        AUS_Himmler_traits 
+                    }
+		        }
             }
+
+
 
 }

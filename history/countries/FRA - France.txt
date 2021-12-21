@@ -150,7 +150,7 @@ add_ideas = {
 create_country_leader = {
 	name = "モーリス・トレーズ"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
+	picture = "gfx/leaders/FRA/GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
 	traits = {
@@ -160,7 +160,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "アルベール・カミュ"
 	desc = ""
-	picture = "Portrait_France_Camus.tga"
+	picture = "gfx/leaders/FRA/Portrait_France_Camus.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 
@@ -169,7 +169,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ジャン＝ポール・サルトル"
 	desc = ""
-	picture = "Portrait_France_Sartre.tga"
+	picture = "gfx/leaders/FRA/Portrait_France_Sartre.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 
@@ -179,7 +179,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "エドゥアール・ダラディエ"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	picture = "gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -201,7 +201,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "シャルル・モーラス"
 	desc = ""
-	picture = "Portrait_Charles_Maurras.tga"
+	picture = "gfx/leaders/FRA/Portrait_Charles_Maurras.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
         traits = { dislikes_germany }
@@ -211,7 +211,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ジャン3世"
 	desc = ""
-	picture = "Portrait_FRA_Jean_dOrleans.tga"
+	picture = "gfx/leaders/FRA/ Portrait_FRA_Jean_dOrleans.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 
@@ -220,7 +220,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "トリスタン・ツァラ"
 	desc = ""
-	picture = "Portrait_FRA_Tzara.tga"
+	picture = "gfx/leaders/FRA/Portrait_FRA_Tzara.tga"
 	expire = "1965.1.1"
 	ideology = Gnosticism_subtype
 
@@ -228,7 +228,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
-	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 	traits = { trickster brilliant_strategist cavalry_officer war_hero }
 	skill = 4
 	attack_skill = 4
@@ -239,7 +239,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Alphonse Juin"
-	picture = "Portrait_France_Alphonse_Juin.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
 	traits = { armor_officer career_officer trait_cautious  }
 	skill = 4
 	attack_skill = 3
@@ -250,7 +250,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "モーリス・ガムラン"
-	picture = "Portrait_France_Maurice_Gamelin.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
 	traits = { defensive_doctrine old_guard war_hero }
 	skill = 4
 	attack_skill = 2
@@ -261,7 +261,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "マキシム・ウェイガン"
-	picture = "Portrait_FRA_Maxime_Weygand.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.tga"
 	traits = { organizer old_guard inflexible_strategist career_officer }
 	skill = 3
 	attack_skill = 4
@@ -272,7 +272,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "モーリス・ピュジョ"
-	picture = "Portrait_FRA_Maurice_Pujo.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Maurice_Pujo.tga"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 1
@@ -283,7 +283,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "フランソワ・ド・ラロック"
-	picture = "Portrait_FRA_Francois_de_La_Rocque.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Francois_de_La_Rocque.tga"
 	traits = { politically_connected }
 	skill = 2
 	attack_skill = 2
@@ -294,7 +294,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "アルフォンス・ジョルジュ"
-	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
 	traits = { old_guard trait_cautious }
 	skill = 3
 	attack_skill = 2
@@ -305,7 +305,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "ジョゼフ・ダルナン"
-	picture = "Portrait_FRA_Joseph_Darnand.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Joseph_Darnand.tga"
 	traits = {  }
 
 	skill = 3
@@ -317,7 +317,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "マルク・オージェ"
-	picture = "Portrait_FRA_Marc_Augier.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Marc_Augier.tga"
 	traits = { trait_mountaineer ranger }
 
 	skill = 3
@@ -329,7 +329,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "マルセル・ビュカール"
-	picture = "Portrait_FRA_Marcel_Bucard.tga"
+	portrait_path = "gfx/leaders/FRA/Portrait_FRA_Marcel_Bucard.tga"
 	traits = {  }
 
 	skill = 2
@@ -342,7 +342,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Charles De Gaulle"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
 	traits = {  armor_officer harsh_leader media_personality }
 	id = 101
 	skill = 4
@@ -354,7 +354,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Philippe Leclerc"
-	picture = "portrait_france_philippe_leclerc.dds"
+	portrait_path = "gfx/leaders/FRA/portrait_france_philippe_leclerc.dds"
 	traits = {  armor_officer trait_reckless career_officer }
 	skill = 3
 	attack_skill = 3
@@ -365,7 +365,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Henri Giraud"
-	picture = "portrait_france_henri_giraud.dds"
+	portrait_path = "gfx/leaders/FRA/portrait_france_henri_giraud.dds"
 	traits = {  trickster trait_cautious career_officer infantry_officer }
 	skill = 3
 	attack_skill = 2
@@ -376,7 +376,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Charles Huntziger"
-	picture = "portrait_france_charles_huntziger.dds"
+	portrait_path = "gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
 	traits = { old_guard infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -387,7 +387,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Gaston-Henri Billotte"
-	picture = "Portrait_France_Generic_land_1.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
 	traits = { old_guard trait_cautious infantry_officer }
 	skill = 2
 	attack_skill = 1
@@ -398,7 +398,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Henry Freydenberg"
-	picture = "Portrait_France_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
 	traits = { old_guard infantry_officer }
 	skill = 2
 	attack_skill = 1
@@ -409,7 +409,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "René Olry"
-	picture = "Portrait_France_Generic_land_5.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
 	traits = { old_guard infantry_officer trait_mountaineer }
 	skill = 3
 	attack_skill = 2
@@ -420,7 +420,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "François Darlan"
-	picture = "Portrait_France_Francois_Darlan.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Francois_Darlan.dds"
 	traits = { naval_lineage bold superior_tactician }
 	id = 102
 	skill = 3
@@ -432,7 +432,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
-	picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Marie_Charles_Abrial.dds"
 	traits = { chief_engineer superior_tactician }
 	skill = 3
 	attack_skill = 2
@@ -443,7 +443,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
-	picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean-Pierre_Esteva.dds"
 	traits = { aviation_enthusiast }
 	skill = 2
 	attack_skill = 1
@@ -454,7 +454,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "René-Émile Godfroy"
-	picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Rene-Emile_Godfroy.dds"
 	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
 	skill = 2
 	attack_skill = 2
@@ -465,7 +465,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Jean de Laborde"
-	picture = "Portrait_France_Jean_de_Laborde.dds"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Jean_de_Laborde.dds"
 	traits = { naval_lineage aviation_enthusiast }
 	skill = 1
 	attack_skill = 1

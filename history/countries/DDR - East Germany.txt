@@ -108,7 +108,7 @@ set_popularities = {
 create_country_leader = {
 	name = "エーリヒ・ルーデンドルフ"
 	desc = ""
-	picture = "Portrait_Ludendorff.tga"
+	picture = "gfx/leaders/DDR/Portrait_Ludendorff.tga"
 	expire = "1965.1.1"
 	ideology = Gnosticism_subtype
 	traits = {		
@@ -135,7 +135,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "オットー・フォン・ビスマルク"
 	desc = ""
-	picture = "Portrait_Bismark.tga"
+	picture = "gfx/leaders/DDR/Portrait_Bismark.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {		
@@ -213,7 +213,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "エーリヒ・ルーデンドルフ"
-	picture = "Portrait_Ludendorff.tga"
+	portrait_path = "gfx/leaders/DDR/Portrait_Ludendorff.tga"
 	traits = { war_hero old_guard }
 	skill = 3
 	attack_skill = 3
@@ -224,7 +224,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "クルト・フォン・シュライヒャー"
-	picture = "Portrait_GER_Schleicher.tga"
+	portrait_path = "gfx/leaders/DDR/Portrait_GER_Schleicher.tga"
 	traits = { organizer media_personality  }
 	skill = 3
 	attack_skill = 2
@@ -259,7 +259,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Erich von Manstein"
-	portrait_path = "Portrait_DDR_Erich_von_Manstein.tga"
+	portrait_path = "gfx/leaders/DDR/Portrait_DDR_Erich_von_Manstein.tga"
 	traits = { trickster armor_officer brilliant_strategist trait_engineer }
 	skill = 4
 
@@ -271,7 +271,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Heinz Guderian"
-	portrait_path = "Portrait_DDR_Heinz_Guderian.tga"
+	portrait_path = "gfx/leaders/DDR/Portrait_DDR_Heinz_Guderian.tga"
 	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
 	skill = 4
 

@@ -9,8 +9,8 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category=town
 	history={
-		owner = ANQ
-                add_core_of = ANQ
+		owner = NAN
+                add_core_of = NAN
                 add_core_of = CHI
 
 

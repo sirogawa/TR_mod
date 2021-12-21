@@ -217,6 +217,14 @@ leader_traits = {
 			factor = 1
 		}
 	}
+        AUS_Hitler_traits = {#ヒトラー
+
+                stability_factor = 0.1
+                war_support_factor = 0.1
+
+
+		random = no
+	}
         ####外務大臣#####
         #共通
 	TR_biased_intellectual = {
@@ -265,9 +273,17 @@ leader_traits = {
 
 		random = no
 	}
+        #固有
+        AUS_Hanussen_traits = {#エリック・ヤン・ハヌッセン
+
+               political_power_factor = 0.12
+               opinion_gain_monthly_factor = -0.3
+
+
+		random = no
+	}
         ####経済大臣#####
         #共通
-
 	TR_administrative_genius = {
 		industrial_capacity_factory = 0.05
                 production_speed_buildings_factor = 0.05
@@ -379,6 +395,15 @@ leader_traits = {
 
 		random = no
 	}
+        #固有
+        AUS_Wiligut_traits = {#カール・マリア・ヴィリグート
+                
+                non_core_manpower = 0.02
+                stability_factor = -0.1
+                consumer_goods_factor = -0.05
+
+		random = no
+	}
         ####内務大臣#####
         #共通
         Founder_of_intelligence = {
@@ -473,6 +498,18 @@ leader_traits = {
 	TR_silent_lawyer = {
 		political_power_gain = 0.1
 		production_speed_buildings_factor = 0.03
+
+		random = no
+	}
+        #固有
+        AUS_Himmler_traits = {#ヒムラー
+
+                resistance_damage_to_garrison = -0.1
+		foreign_subversive_activites = -0.1
+                subversive_activites_upkeep = -0.1
+                decryption_factor = 0.1
+                encryption_factor = 0.1
+
 
 		random = no
 	}

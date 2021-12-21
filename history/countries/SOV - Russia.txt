@@ -133,7 +133,7 @@ add_ideas = {
 create_country_leader = {
 	name = "ヨシフ・ジュガシヴィリ"
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_SOV_stalin.tga"
+	picture = "gfx/leaders/SOV/Portrait_SOV_stalin.tga"
 	expire = "1953.3.1"
 	ideology = totalist_subtype
 	traits = { Stalin_traits
@@ -156,7 +156,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ニコライ・ブハーリン"
 	desc = "POLITICS_BUKHARIN_STALIN_DESC"
-	picture = "Portrait_SOV_bukharin.tga"
+	picture = "gfx/leaders/SOV/Portrait_SOV_bukharin.tga"
 	expire = "1953.3.1"
 	ideology = radical_socialist_subtype
 	traits = {
@@ -168,7 +168,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ニコライ2世"
 	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-	picture = "RUS_nikolai_ii.tga"
+	picture = "gfx/leaders/SOV/RUS_nikolai_ii.tga"
 	expire = "1953.3.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -179,7 +179,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ピョートル・ヴラーンゲリ"
 	desc = "POLITICS_WRANGEL_DESC"
-	picture = "RUS_wrangel2.tga"
+	picture = "gfx/leaders/SOV/RUS_wrangel2.tga"
 	expire = "1963.3.1"
 	ideology = national_populist_subtype
 	traits = {
@@ -190,7 +190,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ボリス・サヴィンコフ"
 	desc = "POLITICS_SAVINKOV_DESC"
-	picture = "RUS_savinkov.tga"
+	picture = "gfx/leaders/SOV/RUS_savinkov.tga"
 	expire = "1953.3.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -201,7 +201,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "パーヴェル・ミリュコーフ"
 	desc = "POLITICS_MILYUKOV_DESC"
-	picture = "RUS_milyukov.tga"
+	picture = "gfx/leaders/SOV/RUS_milyukov.tga"
 	expire = "1953.3.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -212,7 +212,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ドミトリー・パヴロヴィチ"
 	desc = "POLITICS_DMITRI_DESC"
-	picture = "RUS_Dmitri.tga"
+	picture = "gfx/leaders/SOV/RUS_Dmitri.tga"
 	expire = "1953.3.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {
@@ -223,7 +223,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ユーリー・マルトフ"
 	desc = "POLITICS_MARTOV_DESC"
-	picture = "RUS_martov.tga"
+	picture = "gfx/leaders/SOV/RUS_martov.tga"
 	expire = "1953.3.1"
 	ideology = social_democrat_subtype
 	traits = {
@@ -244,7 +244,7 @@ add_namespace = {
 
 create_field_marshal = {
 	name = "ピョートル・ヴラーンゲリ"
-		picture = "RUS_wrangel2.tga"
+	portrait_path = "gfx/leaders/SOV/RUS_wrangel2.tga"
 	traits = { defensive_doctrine career_officer war_hero }
 	skill = 4
 
@@ -258,7 +258,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "アントン・デニーキン"
-	picture = "Portrait_SOV_denikin.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_SOV_denikin.tga"
 	traits = { career_officer war_hero infantry_officer }
 	skill = 4
 
@@ -273,7 +273,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "ウラジミール・カッペル"
-	picture = "Portrait_SOV_kappel.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_SOV_kappel.tga"
 	traits = { infantry_officer career_officer }
 	skill = 5
 
@@ -287,7 +287,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "セルゲイ・マルコフ"
-	picture = "Portrait_Russia_Markov.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Markov.tga"
 	traits = { armor_officer career_officer }
 	skill = 4
 
@@ -301,7 +301,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "アブラム・ドラゴミロフ"
-	picture = "Portrait_Russia_Dragomirov.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Dragomirov.tga"
 	traits = { cavalry_officer career_officer }
 	skill = 2
 
@@ -315,7 +315,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "ミハイル・ドロズドフスキー"
-	picture = "Portrait_Russia_Drozdovskiy.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Drozdovskiy.tga"
 	traits = { infantry_officer career_officer }
 	skill = 2
 
@@ -329,7 +329,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "ピョートル・クラスノフ"
-	picture = "Portrait_Russia_Krasnov.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Krasnov.tga"
 	traits = { cavalry_officer career_officer }
 	skill = 4
 
@@ -343,7 +343,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "イヴァン・ロマノフスキー"
-	picture = "Portrait_Russia_Romanovsky.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Romanovsky.tga"
 	traits = { career_officer }
 	skill = 2
 
@@ -357,7 +357,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "パーヴェル・シャチーロフ"
-	picture = "Portrait_Russia_shatilov.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_shatilov.tga"
 	traits = { career_officer }
 	skill = 3
 
@@ -372,7 +372,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "ピョートル・マクロフ"
-	picture = "Portrait_Russia_Mahrov.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Mahrov.tga"
 	traits = { cavalry_officer career_officer }
 	skill = 1
 
@@ -385,7 +385,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "アレクサンドル・コルチャーク"
-		picture = "Portrait_Russia_Kolchak.tga"
+	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Kolchak.tga"
 	traits = { battleship_adherent }
 	skill = 3
 	attack_skill = 3

@@ -56,6 +56,12 @@ country_event = {
 			ruling_party = Gnosticism
 			elections_allowed = no
 		}
+        hidden_effect = {
+			add_ideas = AUS_Adolf_Hitler
+			add_ideas = AUS_Erik_Jan_Hanussen
+			add_ideas = AUS_Karl_Maria_Wiligut
+			add_ideas = AUS_Heinrich_Himmler
+		}
 
 
 	}

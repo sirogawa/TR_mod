@@ -134,7 +134,7 @@ add_ideas = {
 create_country_leader = {
 	name = "ハーバート・W・アームストロング"
 	desc = ""
-	picture = "Portrait_USA_Armstrong.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Armstrong.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -144,7 +144,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "リチャード・ラッセル・ジュニア"
 	desc = ""
-	picture = "Portrait_USA_Russell.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Russell.tga"
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {
@@ -155,7 +155,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "フランクリン・ルーズベルト"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_FDR.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_FDR.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {
@@ -166,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ダグラス・マッカーサー"
 	desc = ""
-	picture = "Portrait_USA_McArthur.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_McArthur.tga"
 	expire = "1965.1.1"
 	ideology = market_liberal_subtype
 	traits = {
@@ -177,7 +177,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ダグラス・マッカーサー"
 	desc = ""
-	picture = "Portrait_USA_McArthur.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_McArthur.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 	traits = {
@@ -187,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "H.P.ラヴクラフト"
 	desc = ""
-	picture = "Portrait_USA_Lovecraft.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Lovecraft.tga"
 	expire = "1965.1.1"
 	ideology = Gnosticism_subtype
 	traits = {
@@ -198,7 +198,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ノーマン・トーマス"
 	desc = ""
-	picture = "Portrait_USA_Norman_Thomas.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Norman_Thomas.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
 	traits = { champion_of_peace_1
@@ -209,7 +209,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ジェラルド.L.K.スミス"
 	desc = "POLITICS_GERALD_DESC"
-	picture = "Portrait_USA_Gerald.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Gerald.tga"
 	expire = "1965.1.1"
 	ideology = national_populist_subtype
 	traits = {
@@ -219,7 +219,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "アール・ブラウダー"
 	desc = "POLITICS_BROWDER_DESC"
-	picture = "Portrait_USA_Browder.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Browder.tga"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
 	traits = {
@@ -230,7 +230,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ビル・ヘイウッド"
 	desc = ""
-	picture = "Portrait_USA_Haywood.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Haywood.tga"
 	expire = "1965.1.1"
 	ideology = syndicalist_subtype
 	traits = {
@@ -241,7 +241,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "ファーザー・ディヴァイン"
 	desc = ""
-	picture = "Portrait_USA_Divine.tga"
+	picture = "gfx/leaders/USA/Portrait_USA_Divine.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
 	traits = {
@@ -251,7 +251,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "George S. Patton"
-	picture = "Portrait_USA_George_S_Patton.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
 	skill = 5
 
@@ -263,7 +263,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Omar Bradley"
-	picture = "Portrait_USA_Omar_Bradley.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Omar_Bradley.dds"
 	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
 	skill = 5
 
@@ -277,7 +277,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Geoffrey Keyes"
-	picture = "Portrait_USA_Geoffrey_Keyes.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Geoffrey_Keyes.dds"
 	traits = { armor_officer career_officer }
 	skill = 2
 
@@ -289,7 +289,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lucian Truscott"
-	picture = "Portrait_USA_Lucian_Truscott.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lucian_Truscott.dds"
 	traits = { trait_engineer commando cavalry_officer }
 	skill = 3
 
@@ -301,7 +301,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Mark Clark"
-	picture = "Portrait_USA_Mark_W_Clark.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
 	traits = { infantry_officer trait_reckless }
 	skill = 4
 
@@ -314,7 +314,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
-	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
 	skill = 4
 
@@ -326,7 +326,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Walter Krueger"
-	picture = "Portrait_USA_Walter_Krueger.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Walter_Krueger.dds"
 	traits = { armor_officer career_officer brilliant_strategist }
 	skill = 3
 
@@ -338,7 +338,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Lloyd Fredendall"
-	picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lloyd_Fredendall.dds"
 	traits = { old_guard infantry_officer inflexible_strategist }
 	skill = 2
 
@@ -350,7 +350,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Leslie McNair"
-	picture = "Portrait_USA_Lesley_McNair.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lesley_McNair.dds"
 	traits = {  old_guard career_officer armor_officer }
 	skill = 3
 
@@ -362,7 +362,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Jonathan Wainwright"
-	picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Jonathan_Wainwright.dds"
 	traits = {  }
 	skill = 1
 	attack_skill = 1
@@ -373,7 +373,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Russell Hartle"
-	picture = "Portrait_USA_Russell_P_Hartle.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Russell_P_Hartle.dds"
 	traits = { infantry_officer }
 	skill = 1
 	rank = 1
@@ -385,7 +385,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Leonard Gerow"
-	picture = "Portrait_USA_Leonard_T_Gerow.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Leonard_T_Gerow.dds"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 3
@@ -396,7 +396,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Edward Brooks"
-	picture = "Portrait_USA_Edward_Brooks.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Edward_Brooks.dds"
 	traits = { armor_officer trait_reckless }
 	skill = 2
 	attack_skill = 2
@@ -407,7 +407,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Clarence Huebner"
-	picture = "Portrait_USA_Clarence_Huebner.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Clarence_Huebner.dds"
 	traits = { old_guard harsh_leader }
 	skill = 2
 	attack_skill = 1
@@ -418,7 +418,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Alexander Patch"
-	picture = "Portrait_USA_Alexander_Patch.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Alexander_Patch.dds"
 	traits = {  commando infantry_officer }
 	skill = 3
 
@@ -430,7 +430,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Simpson"
-	picture = "Portrait_USA_William_Hood_Simpson.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Hood_Simpson.dds"
 	traits = { infantry_officer }
 	skill = 3
 	
@@ -442,7 +442,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "J. Lawton Collins"
-	picture = "Portrait_USA_Lawton_Collins.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Lawton_Collins.dds"
 	traits = {  trickster career_officer }
 	skill = 3
 	attack_skill = 3
@@ -453,7 +453,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Courtney Hodges"
-	picture = "Portrait_USA_Cortney_Hodges.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Cortney_Hodges.dds"
 	traits = {  panzer_leader career_officer infantry_officer }
 	skill = 4
 	attack_skill = 4
@@ -464,7 +464,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Joseph Stilwell"
-	picture = "Portrait_USA_Joseph_Stilwell.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Joseph_Stilwell.dds"
 	traits = { politically_connected infantry_officer career_officer harsh_leader }
 	skill = 1 
 	id = 601
@@ -476,7 +476,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Oscar Griswold"
-	picture = "Portrait_USA_Oscar_Griswold.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Oscar_Griswold.dds"
 	traits = { infantry_officer  }
 	skill = 2
 	attack_skill = 2
@@ -487,7 +487,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Maurice Rose"
-	picture = "Portrait_USA_Maurice_Rose.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Maurice_Rose.dds"
 	traits = { armor_officer trait_reckless brilliant_strategist  }
 	skill = 3
 	attack_skill = 4
@@ -498,7 +498,7 @@ create_corps_commander = {
 
 create_navy_leader = {
 	name = "Ernest King"
-		picture = "Portrait_USA_Earnest_King.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Earnest_King.dds"
 	traits = { navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
 	skill = 5
 	attack_skill = 4
@@ -509,7 +509,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Chester_W_Nimitz.dds"
 	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
 	skill = 5
 	attack_skill = 3
@@ -520,7 +520,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "William Halsey, Jr."
-		picture = "Portrait_USA_William_Halsey_Jr.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_William_Halsey_Jr.dds"
 	traits = { bold aviation_enthusiast superior_tactician spotter }
 	skill = 4
 	attack_skill = 5
@@ -531,7 +531,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Frank Jack Fletcher"
-		picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Frank_Jack_Fletcher.dds"
 	traits = { gunnery_expert superior_tactician spotter }
 	skill = 3
 	attack_skill = 2
@@ -542,7 +542,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Raymond A. Spruance"
-		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Raymond_A_Spruance.dds"
 	traits = { navy_career_officer gentlemanly superior_tactician }
 	skill = 4
 	attack_skill = 4
@@ -553,7 +553,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Harold Rainsford Stark"
-		picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Harold_Rainsford_Stark.dds"
 	traits = { cuts_corners blockade_runner spotter }
 	skill = 2
 	attack_skill = 2
@@ -564,7 +564,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Arleigh Burke"
-		picture = "Portrait_USA_Arleigh_Burke.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Arleigh_Burke.dds"
 	traits = { bold fleet_protector old_guard_navy superior_tactician }
 	skill = 4
 	attack_skill = 3
@@ -575,7 +575,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Charles M. Cooke, Jr."
-		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Charles_M_Cooke.dds"
 	traits = { career_officer }
 	skill = 2
 	attack_skill = 1

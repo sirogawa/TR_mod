@@ -189,10 +189,9 @@ country_event = {
 	
 	option = {
 		name = TR_China.6.a
-                 set_cosmetic_tag = SHX_KTU
-                 ai_chance = { factor = 100 }
-                 end_puppet = ANQ
-                 end_puppet = FUJ
+		         JAP = { end_puppet = ANQ }
+                 JAP = { end_puppet = FUJ }
+                 JAP = { end_puppet = NAN }
                  ANQ = {
                        remove_ideas = YUN_jap_economic
                        leave_faction = yes
@@ -202,11 +201,6 @@ country_event = {
                        leave_faction = yes
 		 }
                  hidden_effect = {
-			country_event = {
-					id = TR_China.8
-					days = 7
-					
-				}
                         country_event = {
 					id = TR_news.21
 					days = 2
@@ -215,9 +209,8 @@ country_event = {
 		}
 
                  NAN = {
-			transfer_state = 613
-                        transfer_state = 598
-                        transfer_state = 596
+                        leave_faction = yes
+                        drop_cosmetic_tag = yes
     		        country_event = {
 					id = TR_China.7
 					days = 3
@@ -228,47 +221,7 @@ country_event = {
                  
 		
 	}
-        option = {
-		name = TR_China.6.b
-                ai_chance = { factor = 0 }
-                 set_cosmetic_tag = SHX_KTU
-                 end_puppet = ANQ
-                 end_puppet = FUJ
-                 FUJ = {
-                       remove_ideas = YUN_jap_economic
-                       leave_faction = yes
-		 }
-                 ANQ = {
-                       remove_ideas = YUN_jap_economic
-                       leave_faction = yes
-		 }
-                 hidden_effect = {
-			country_event = {
-					id = TR_China.8
-					days = 7
-					
-				}
-                        country_event = {
-					id = TR_news.21
-					days = 2
-					
-				}
-		}
-                 NAN = {
-                        change_tag_from = SHX
-			transfer_state = 613
-                        transfer_state = 598
-                        transfer_state = 596
-		        country_event = {
-					id = TR_China.7
-					days = 3
-					
-				}
-		
-		}
-                 
-		
-	}
+
 }
 
 country_event = {
@@ -300,7 +253,7 @@ country_event = {
 				target = ANQ type = annex_everything
 			}
 			add_state_core = 606
-                        add_state_core = 749
+                        add_state_core = 598
                 division_template = {
 				name = "Nanjing Infantry"
 				division_names_group = CHI_GAR_01
@@ -321,7 +274,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
 					owner = NAN
-					count = 10
+					count = 4
 				}
 			}
                 
@@ -335,7 +288,7 @@ country_event = {
 				target = ANQ type = annex_everything
 			}
 			add_state_core = 606
-                        add_state_core = 749
+                        add_state_core = 598
                 division_template = {
 				name = "Nanjing Infantry"
 				division_names_group = CHI_GAR_01
@@ -356,7 +309,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
 					owner = NAN
-					count = 10
+					count = 4
 				}
 			}
                
@@ -365,124 +318,4 @@ country_event = {
 
 }
 
-country_event = {
-	id = TR_China.8
-	title = TR_China.8.t
-	desc = TR_China.8.d
-	picture = GFX_report_event_france_parade
 
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
-	
-	option = { 
-		name = TR_China.8.a
-		add_ideas = totalist_dictatorship
-                ai_chance = { factor = 32 }
-                remove_ideas = JAP_colony
-                add_ideas = SHX_Hirohito
-                JAP = { end_puppet = SHX }
-                set_major = yes
-                set_cosmetic_tag = SHX_EMPIRE
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
-		}
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-                end_puppet = SAN
-                 SAN = {
-                       remove_ideas = YUN_jap_economic
-                       leave_faction = yes
-		 }
-                 create_wargoal = {
-				target = SAN
-				type = annex_everything
-			}
-                 add_state_core = 615
-                
-               
-
-	}
-        option = { 
-		name = TR_China.8.b
-                ai_chance = { factor = 2 }
-                end_puppet = SAN
-                 SAN = {
-                       remove_ideas = YUN_jap_economic
-                       leave_faction = yes
-		 }
-               
-
-	}
-        option = { 
-		name = TR_China.8.c
-		add_ideas = Absolute_monarchy
-                ai_chance = { factor = 66 }
-                remove_ideas = JAP_colony
-                JAP = { end_puppet = SHX }
-                set_major = yes
-                set_cosmetic_tag = SHX_QING
-                hidden_effect = { kill_ideology_leader = authoritarian_democrat 
-                                  kill_ideology_leader = social_liberal 
-                                  kill_ideology_leader = market_liberal
-                                  kill_ideology_leader = social_conservative
-                                  create_country_leader = {
-	                                     name = "溥儀"
-	                                     desc = "POLITICS_PUYI_DESC"
-	                                     picture = "Portrait_Qing_PuYi.tga"
-	                                     expire = "1965.1.1"
-	                                     ideology = market_liberal_subtype
-	                                     traits = {}
-                                             }
-                                  create_country_leader = {
-	                                     name = "溥儀"
-	                                     desc = "POLITICS_PUYI_DESC"
-	                                     picture = "Portrait_Qing_PuYi.tga"
-	                                     expire = "1965.1.1"
-	                                     ideology = social_conservative_subtype
-	                                     traits = {}
-                                             }
-                                 create_country_leader = {
-	                                     name = "溥儀"
-	                                     desc = "POLITICS_PUYI_DESC"
-	                                     picture = "Portrait_Qing_PuYi.tga"
-	                                     expire = "1965.1.1"
-	                                     ideology = authoritarian_democrat_subtype
-	                                     traits = {}
-                                             }
-                                  create_country_leader = {
-	                                     name = "溥儀"
-	                                     desc = "POLITICS_PUYI_DESC"
-	                                     picture = "Portrait_Qing_PuYi.tga"
-	                                     expire = "1965.1.1"
-	                                     ideology = social_liberal_subtype
-	                                     traits = {}
-                                             }
-                }
-                add_popularity = {
-			ideology = paternal_autocrat
-			popularity = 0.3
-		}
-		set_politics = {
-			ruling_party = paternal_autocrat
-			elections_allowed = no
-		}
-                end_puppet = SAN
-                 SAN = {
-                       remove_ideas = YUN_jap_economic
-                       leave_faction = yes
-		 }
-                create_wargoal = {
-				target = SAN
-				type = annex_everything
-			}
-                 add_state_core = 615
-               
-
-	}
-
-}

@@ -34,7 +34,7 @@ JAP_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { JAP NMB }
+	for_countries = { JAP }
 
 	can_use = { always = yes }
 
@@ -728,7 +728,7 @@ JAP_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { JAP NMB }
+	for_countries = { JAP }
 
 	can_use = { always = yes }
 
@@ -774,7 +774,7 @@ JAP_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { JAP NMB }
+	for_countries = { JAP }
 
 	can_use = { always = yes }
 
