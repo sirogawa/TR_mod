@@ -5,6 +5,7 @@ oob = "ITA_1936"
 set_research_slots = 4
 set_stability = 0.5
 set_war_support = 0.4
+starting_train_buffer = 1.5
 add_ideas = {
         Constitutional_monarchy
         acceptable_minimum_wage
@@ -44,6 +45,7 @@ set_technology = {
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	basic_train = 1
 }
 
 if = {
@@ -180,7 +182,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "アルチーデ・デ・ガスペリ"
 	desc = ""
-	picture = ""gfx/leaders/ITA/Portrait_ITA_Gasperi.tga"
+	picture = "gfx/leaders/ITA/Portrait_ITA_Gasperi.tga"
 	expire = "1965.1.1"
 	ideology = social_conservative_subtype
 	traits = {

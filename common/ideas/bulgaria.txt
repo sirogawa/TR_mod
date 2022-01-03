@@ -171,111 +171,6 @@
              }
              
 
-	political_advisor = { 
-
-
-
-
-
-		BUL_konstantin_muraviev_bftb = { #DLC
-
-			picture = bul_konstantin_muraviev
-			
-			allowed = {
-				original_tag = BUL
-			}
-
-
-			
-			traits = { compassionate_gentleman }
-
-			ai_will_do = {
-				base = 1
-			}
-		}
-
-		BUL_stefan_stefanov = { #DLC
-
-			picture = bul_stefan_stefanov
-			
-			allowed = {
-				
-				original_tag = BUL
-			}
-
-
-			
-			traits = { industry_reformer }
-
-			ai_will_do = {
-				base = 1
-			}
-		}
-
-
-		BUL_valko_chervenkov = { #DLC
-
-			picture = bul_valko_chervenkov
-			
-			allowed = {
-				
-				original_tag = BUL
-			}
-
-
-			
-			traits = { captain_of_industry }
-
-			ai_will_do = {
-				base = 1
-			}
-		}
-
-
-
-
-
-
-
-		BUL_dobri_bozhilov_bftb = { #DLC
-
-			picture = bul_dobri_bozhilov
-			
-			allowed = {
-				original_tag = BUL
-			}
-
-
-			
-			traits = { captain_of_industry }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-
-
-
-
-
-		BUL_georgi_ivanov_kyoseivanov = { #VANILLA
-
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-			
-				original_tag = BUL
-			}
-			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
-
 	theorist = {
 
 
@@ -576,7 +471,6 @@
 				factor = 1
 				modifier = {
 					factor = 0.1
-					BUL_save_money_for_decisions = yes
 				}
 			}
 		}
@@ -604,7 +498,6 @@
 				factor = 1
 				modifier = {
 					factor = 0.1
-					BUL_save_money_for_decisions = yes
 				}
 			}
 		}
@@ -627,7 +520,6 @@
 				factor = 1
 				modifier = {
 					factor = 0.1
-					BUL_save_money_for_decisions = yes
 				}
 			}
 		}

@@ -158,7 +158,7 @@ focus_tree = {
 		create_country_leader = {
 			name = "マルセル・デア"
 			desc = "POLITICS_MARSEL_DESC"
-			picture = "Portrait_FRA_marsell.tga"
+			picture = "gfx/leaders/FRA/Portrait_FRA_marsell.tga"
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
 		}
@@ -200,7 +200,7 @@ focus_tree = {
 		create_country_leader = {
 			name = "ジャック・ドリオ"
 			desc = "POLITICS_DORIOT_DESC"
-			picture = "Portrait_FRA_doriot.tga"
+			picture = "gfx/leaders/FRA/Portrait_FRA_doriot.tga"
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
 		}

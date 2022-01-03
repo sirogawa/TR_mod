@@ -74,7 +74,7 @@ create_country_leader = {
 		#
 	}
 }
-create_corps_commander = {
+create_field_marshal = {
 	name = "本庄繁"
 	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Shigeru_Honjo.dds"
 	traits = { old_guard war_hero }
@@ -95,3 +95,13 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
+create_corps_commander = {
+	name = "石原莞爾"
+	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}

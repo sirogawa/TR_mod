@@ -375,38 +375,6 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
-
-		generic_captain_of_industry = {
-
-			allowed = {
-				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
-
-			}
-			
-			traits = { captain_of_industry }
-		}
-		
-		generic_fortification_engineer = {
-
-			allowed = {
-				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
-
-			}
-			
-			traits = { fortification_engineer }
-		}
-
-		generic_war_industrialist = {
-
-			allowed = {
-				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = CHI tag = USA  } }
-
-			}
-			
-			traits = { war_industrialist }
-		}
-	}
 
 	army_chief = {
 		

@@ -4,7 +4,7 @@ spriteTypes = {
 #####日本#####
         #国家元首
 	SpriteType = {	
-		name = "GFX_idea_JAP_Emperor_Hirohito"
+		name = "GFX_idea_JAP_Emperor_Hirohito1"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Hirohito.png"
 	}
 	SpriteType = {	

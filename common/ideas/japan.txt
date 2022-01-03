@@ -867,6 +867,28 @@ ideas = {
 			       
 			}
 		}
+		JAP_KOR_Constitution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantee
+			
+			modifier = {
+                                consumer_goods_factor = 0.01
+                                political_power_cost = 0.1
+			       	stability_factor = 0.10
+                                conscription_factor = 0.05
+                                non_core_manpower = 0.02
+                                compliance_growth_on_our_occupied_states = 0.25
+			}
+		}
                 JAP_Toshikamitu = {
 			allowed = {
 				always = no
@@ -1040,6 +1062,7 @@ ideas = {
                             max_planning = 0.1
 			}
 		}
+
 		JAP_superior_will = {
 			allowed = {
 				always = no
@@ -1585,10 +1608,10 @@ naval_manufacturer = {
 			available = {
 					always = no
 			}
-            picture = JAP_Emperor_Hirohito
+            picture = JAP_Emperor_Hirohito1
 
 			
-			removal_cost = -1
+		removal_cost = -1
 	        traits = { 
 				Head_of_State
 				emperor_showa 

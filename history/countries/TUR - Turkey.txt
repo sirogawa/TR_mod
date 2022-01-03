@@ -21,7 +21,7 @@ if = {
 
 
 set_research_slots = 3
-
+starting_train_buffer = 1
 set_convoys = 50
 set_stability = 0.5
 set_war_support = 0.3
@@ -52,6 +52,7 @@ set_technology = {
 	CAS1 = 1
 	gwtank = 1
 	basic_light_tank = 1
+	basic_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -103,7 +104,7 @@ set_popularities = {
 	create_country_leader = {
 		name = "ムスタファ・ケマル"
 		desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
-		picture = "gfx/leaders/TUR/Portrait_Turkey_kemal.tga"
+		picture = "gfx/leaders/TUR/gfx/leaders/TUR/Portrait_Turkey_kemal.tga"
 		expire = "1965.1.1"
 		ideology = authoritarian_democrat_subtype
 		traits = {
@@ -114,7 +115,7 @@ set_popularities = {
 	create_country_leader = {
 		name = "アブデュルメジト2世"
 		desc = "POLITICS_Abdulmecid_DESC"
-		picture = "portrait_TUR_Abdulmecid.tga"
+		picture = "gfx/leaders/TUR/portrait_TUR_Abdulmecid.tga"
 		expire = "1965.1.1"
 		ideology = paternal_autocrat_subtype
 		traits = {
@@ -124,7 +125,7 @@ set_popularities = {
 	create_country_leader = {
 		name = "サバハディン王子"
 		desc = "POLITICS_SABAHADDIN_DESC"
-		picture = "Portrait_Ottoman_Sabahaddin.tga"
+		picture = "gfx/leaders/TUR/Portrait_Ottoman_Sabahaddin.tga"
 		expire = "1965.1.1"
 		ideology = market_liberal_subtype
 		traits = {
@@ -134,7 +135,7 @@ set_popularities = {
 	create_country_leader = {
 		name = "シャキーブ・アルスラン"
 		desc = "POLITICS_ARSLAN_DESC"
-		picture = "Portrait_Ottoman_Shakib_Arslan.tga"
+		picture = "gfx/leaders/TUR/Portrait_Ottoman_Shakib_Arslan.tga"
 		expire = "1965.1.1"
 		ideology = social_conservative_subtype
 		traits = {
@@ -144,7 +145,7 @@ set_popularities = {
 	create_country_leader = {
 		name = "エンヴェル・パシャ"
 		desc = ""
-		picture = "Portrait_Turkey_Enver.tga"
+		picture = "gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
 		expire = "1965.1.1"
 		ideology = national_populist_subtype
 		traits = {
@@ -155,7 +156,7 @@ set_popularities = {
 
         create_field_marshal = {
 	         name = "ムスタファ・ケマル"
-	         picture = "Portrait_Turkey_kemal.tga"
+	         portrait_path = "gfx/leaders/TUR/Portrait_Turkey_kemal.tga"
 	         traits = { 
                          logistics_wizard 
                          organizer
@@ -170,7 +171,7 @@ set_popularities = {
                  }
         create_field_marshal = {
 	         name = "エンヴェル・パシャ"
-	         picture = "Portrait_Turkey_Enver.tga"
+	         portrait_path = "gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
 	         traits = {  
                          offensive_doctrine
 		         politically_connected

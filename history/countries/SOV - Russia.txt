@@ -17,6 +17,7 @@ country_event = { id = TR_russia.5 days = 312 }
 
 
 set_research_slots = 3
+starting_train_buffer = 1
 set_stability = 0.4
 set_war_support = 0.3
 # Starting tech
@@ -44,6 +45,7 @@ set_technology = {
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
+        basic_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

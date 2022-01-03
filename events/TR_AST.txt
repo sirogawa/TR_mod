@@ -44,35 +44,35 @@ country_event = {
 		create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
 			expire = "1965.1.1"
 			ideology = social_democrat_subtype
 		}
                 create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
 			expire = "1965.1.1"
 			ideology = social_liberal_subtype
 		}
                 create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
 			expire = "1965.1.1"
 			ideology = market_liberal_subtype
 		}
                 create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
 			expire = "1965.1.1"
 			ideology = social_conservative_subtype
 		}
                 create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
 			expire = "1965.1.1"
 			ideology = Gnosticism_subtype
 		}

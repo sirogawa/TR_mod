@@ -12,9 +12,9 @@
  AZR_DEF:0 "アゼルバイジャン"
  AZR_ADJ:0 "アゼルバイジャン"
  
- BAN:0 "バングラデシュ"
- BAN_DEF:0 "バングラデシュ"
- BAN_ADJ:0 "バングラデシュ"
+ BAN:0 "ベンガル"
+ BAN_DEF:0 "ベンガル"
+ BAN_ADJ:0 "ベンガル"
  
  BHU:0 "ブータン"
  BHU_DEF:0 "ブータン"
@@ -96,10 +96,6 @@
  MAN_DEF:0 "満州"
  MAN_ADJ:0 "満州"
  
- MEN:0 "蒙疆"
- MEN_DEF:0 "蒙疆"
- MEN_ADJ:0 "蒙疆"
- 
  MLD:0 "モルディブ"
  MLD_DEF:0 "モルディブ"
  MLD_ADJ:0 "モルディブ"
@@ -155,9 +151,6 @@
  SIK_DEF:0 "新疆"
  SIK_ADJ:0 "新疆"
  
- SRL:0 "スリランカ"
- SRL_DEF:0 "スリランカ"
- SRL_ADJ:0 "スリランカ"
  
  SYR:0 "シリア"
  SYR_DEF:0 "シリア"
