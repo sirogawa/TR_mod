@@ -19,7 +19,8 @@ provinces={
 			infrastructure = 3
 
 		}
-                victory_points = { 7145 5 }
+                victory_points = { 7145 1 }
+                victory_points = { 10055 1 }
 	}
 	buildings_max_level_factor=1.000
 }

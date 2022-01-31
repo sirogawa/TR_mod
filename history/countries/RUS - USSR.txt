@@ -16,6 +16,10 @@ add_ideas = {
 	limited_conscription
         partial_economic_mobilisation
         RUS_Panic
+        trinket_minimum_wage
+        trinket_max_workhours
+        trinket_safety_regulations
+        trinket_Unemployment_subsidies
 }
 
 
@@ -120,7 +124,7 @@ add_ideas = {
 create_country_leader = {
 	name = "アレクサンドル・ボグダーノフ"
 	desc = ""
-	picture = "Portrait_Soviet_Bogdanov.tga"
+	picture = "gfx/leaders/RUS/Portrait_Soviet_Bogdanov.tga"
 	expire = "1953.3.1"
 	ideology = Gnosticism_subtype
 	traits = {

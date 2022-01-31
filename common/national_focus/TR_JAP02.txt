@@ -29,6 +29,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power= 100
+			country_event = TR_japan.34
 		}
 	}
 	#貴族
@@ -40,18 +41,27 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_tooltip = {
+			add_political_power= 30
+			country_event = TR_japan.39
+			activate_decision = JAP_Kazoku_Kaiju
+		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.39
+
 		}
 	}
-	#貴族
+	#国家社会主義者
 	focus = {
 		id = JAP_Power_Struggle_3
 		icon = GFX_goal_
@@ -60,15 +70,24 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_tooltip = {
+			add_political_power= 30
+			country_event = TR_japan.40
+			activate_decision = JAP_NSP_Kaiju
+			activate_decision = JAP_NSP_Break
+		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.40
 		}
 	}
 	#陸軍
@@ -80,15 +99,24 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_tooltip = {
+			add_political_power= 30
+			country_event = TR_japan.41
+			activate_decision = JAP_Syukusei_Jinji
+			activate_decision = JAP_Toseiha_Disappoint
+		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.41
 		}
 	}
 	#重臣
@@ -100,15 +128,23 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_tooltip = {
+			add_political_power= 30
+			country_event = TR_japan.43
+			activate_decision = JAP_Jyushin_Kousaku
+		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.43
 		}
 	}
 	#議会
@@ -120,15 +156,23 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		complete_tooltip = {
+			add_political_power= 25
+			country_event = TR_japan.44
+			activate_decision = JAP_Party_Kaiju
+		}
 		completion_reward = {
-			
+			add_political_power= 25
+			country_event = TR_japan.44
 		}
 	}
 	#昭和研究会
@@ -140,7 +184,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_2 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -148,7 +194,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.42
+
 		}
 	}
 	#革新
@@ -160,7 +208,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_1 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -168,7 +218,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.46
 		}
 	}
 	#皇道
@@ -180,7 +231,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_4 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -188,7 +241,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.45
 		}
 	}
 	#統制
@@ -200,7 +254,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_4 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -208,7 +264,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.47
 		}
 	}
 	#重臣会議
@@ -220,7 +277,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_5 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -228,7 +287,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.48
 		}
 	}
 	#政党の切り崩し
@@ -240,7 +300,9 @@ focus_tree = {
 		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Power_Struggle_6 }
-		available = {}
+		available = {
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -248,7 +310,8 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 30
+			country_event = TR_japan.49
 		}
 	}
 	#貴公子
@@ -270,7 +333,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+
 		}
 	}
 	#日本改造
@@ -387,7 +450,7 @@ focus_tree = {
 	#惑星輝く
 	focus = {
 		id = JAP_Toseiha_focus_1
-		icon = GFX_goal_
+		icon = GFX_focus_POL_complete_april_constitution
 		x = 9
 		y = 5
 		cost = 5
@@ -404,13 +467,47 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = authoritarian_democrat 
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat 
+				elections_allowed = yes
+			}
+			hidden_effect = {	
+				add_ideas = JAP_Ugaki_Kazushige
+				add_ideas = JAP_Yuuki_Toyotaro
+				add_ideas = JAP_Togo_Shigenori
+				add_ideas = JAP_Kido_Koichi
+				add_ideas = JAP_Ugaki_Kazushige_cos
+				add_ideas = JAP_Nagata_Tetsuzan_coa
+				add_ideas = JAP_Hideki_Tojo_cair
+				kill_ideology_leader = paternal_autocrat
+				kill_ideology_leader = authoritarian_democrat 
+				create_country_leader = {
+					name = "宇垣一成"
+					desc = "POLITICS_UGAKI_DESC"
+					picture = "gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
+					expire = "1965.1.1"
+					ideology = paternal_autocrat_subtype
+					traits = { }
+				}
+				create_country_leader = {
+					name = "宇垣一成"
+					desc = "POLITICS_UGAKI_DESC"
+					picture = "gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
+					expire = "1965.1.1"
+					ideology = authoritarian_democrat_subtype
+					traits = { }
+				}
+				}
 		}
 	}
 	#クーデター
 	focus = {
 		id = JAP_Toseiha_focus_2
-		icon = GFX_goal_
+		icon = GFX_focus_generic_japanese_imperial_glory
 		x = 9
 		y = 6
 		cost = 6
@@ -425,13 +522,22 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = -0.1
+			add_ideas = militaly_dictatorship
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
 		}
 	}
 	#政党解散命令
 	focus = {
 		id = JAP_Toseiha_focus_3
-		icon = GFX_goal_
+		icon = GFX_goal_generic_political_pressure
 		x = 9
 		y = 7
 		cost = 6
@@ -446,13 +552,19 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = -0.2
+			set_popularities = {
+				paternal_autocrat = 60
+				national_populist= 20
+				market_liberal= 10
+				social_conservative= 10
+			}
 		}
 	}
 	#高度国防国家
 	focus = {
 		id = JAP_Toseiha_focus_4
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_toseiha
 		x = 9
 		y = 8
 		cost = 6
@@ -467,13 +579,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			remove_ideas = JAP_ugaki_gunshuku
+			add_ideas = JAP_MILITARISM_TR
 		}
 	}
 	#国防の本義と其の強化の提唱
 	focus = {
 		id = JAP_Toseiha_focus_5
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_officer
 		x = 9
 		y = 9
 		cost = 6
@@ -488,13 +601,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_MILITARISM_TR
+				add_idea = JAP_MILITARISM_TR2
+			}
 		}
 	}
 	#憲兵隊の強化
 	focus = {
 		id = JAP_Toseiha_focus_6
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_toseiha
 		x = 7
 		y = 10
 		cost = 6
@@ -509,13 +625,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Hideki_Tojo_int
+			add_ideas = JAP_KENPEITAI
 		}
 	}
 	#皇道派を叩き斬れ
 	focus = {
 		id = JAP_Toseiha_focus_7
-		icon = GFX_goal_
+		icon = GFX_goal_generic_political_purge
 		x = 7
 		y = 11
 		cost = 6
@@ -530,13 +647,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.2
+			}
+			set_country_flag = JAP_Ugaki_Nagata
 		}
 	}
 	#自由主義者を黙らせる
 	focus = {
 		id = JAP_Toseiha_focus_8
-		icon = GFX_goal_
+		icon = GFX_goal_generic_police_state
 		x = 7
 		y = 12
 		cost = 6
@@ -551,13 +673,21 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.1
+			}
 		}
 	}
 	#経済統制の開始
 	focus = {
 		id = JAP_Toseiha_focus_9
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_industry
 		x = 9
 		y = 10
 		cost = 6
@@ -572,13 +702,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_ikeda_sumihisa
+			add_ideas = JAP_KEIKAKUKEIZAI
 		}
 	}
 	#企業の強制統合
 	focus = {
 		id = JAP_Toseiha_focus_10
-		icon = GFX_goal_
+		icon = GFX_focus_jap_zaibatsu
 		x = 9
 		y = 11
 		cost = 6
@@ -593,19 +724,31 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_1
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_2
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_3
+			}
 		}
 	}
 	#経済の復活
 	focus = {
 		id = JAP_Toseiha_focus_11
-		icon = GFX_goal_
+		icon = GFX_focus_generic_industry_3
 		x = 9
 		y = 12
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Toseiha_focus_10 }
 		available = {
+			has_idea = JAP_black_thursday_KISHI2
 	    }
 		ai_will_do = {
 			factor = 100
@@ -614,13 +757,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 50
+			remove_ideas = JAP_black_thursday_KISHI2
 		}
 	}
 	#戦争プロパガンダ
 	focus = {
 		id = JAP_Toseiha_focus_12
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_japanese_propaganda
 		x = 11
 		y = 10
 		cost = 6
@@ -635,13 +779,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Propaganda
 		}
 	}
 	#白人の脅威を煽る
 	focus = {
 		id = JAP_Toseiha_focus_13
-		icon = GFX_goal_
+		icon = GFX_goal_USA_Terror
 		x = 11
 		y = 11
 		cost = 6
@@ -656,13 +800,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_Propaganda
+				add_idea = JAP_Propaganda1
+			}
 		}
 	}
 	#反戦世論を封殺
 	focus = {
 		id = JAP_Toseiha_focus_14
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_kohoda
 		x = 11
 		y = 12
 		cost = 6
@@ -677,13 +824,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_Propaganda1
+				add_idea = JAP_Propaganda2
+			}
 		}
 	}
 	#総力戦体制の完成
 	focus = {
 		id = JAP_Toseiha_focus_15
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_imperialism
 		x = 9
 		y = 13
 		cost = 6
@@ -700,7 +850,10 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			remove_ideas = JAP_Shading_sun
+			add_ideas = JAP_soryokusen
+			set_country_flag = JAP_End_Reform
+			add_research_slot = 1
 		}
 	}
 	########################
@@ -725,13 +878,19 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = -0.1
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.1
+			}
+			set_country_flag = JAP_End_Power_Struggle
+			set_country_flag = JAP_Ugaki_reserve
 		}
 	}
 	#昭和維新
 	focus = {
 		id = JAP_Kakushin_focus_2
-		icon = GFX_goal_
+		icon = GFX_focus_jap_showa_restoration
 		x = 0
 		y = 5
 		cost = 5
@@ -747,7 +906,19 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = militaly_dictatorship
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
 		}
 	}
 	########################
@@ -756,7 +927,7 @@ focus_tree = {
 	#維新革命
 	focus = {
 		id = JAP_Revolution_focus_1
-		icon = GFX_goal_
+		icon = GFX_goal_JP_sun
 		x = 3
 		y = 6
 		cost = 5
@@ -772,13 +943,28 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+			hidden_effect = {	
+				add_ideas = JAP_Kita_Ikki
+				add_ideas = JAP_Okawa_Shumei
+				add_ideas = JAP_Akamatsu_Katsumaro
+				add_ideas = JAP_Aso_Hisashi
+				add_ideas = JAP_Yamashita_Tomoyuki
+				add_ideas = JAP_Obata_Toshiro
+				}
 		}
 	}
 	#戒厳は続く
 	focus = {
 		id = JAP_Revolution_focus_2
-		icon = GFX_goal_
+		icon = GFX_focus_generic_military_dictatorship
 		x = 3
 		y = 7
 		cost = 6
@@ -793,13 +979,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
 		}
 	}
 	#人権の保障
 	focus = {
 		id = JAP_Revolution_focus_3
-		icon = GFX_goal_
+		icon = GFX_goal_workers_rights
 		x = 1
 		y = 8
 		cost = 6
@@ -814,13 +1004,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
 		}
 	}
 	#天皇顧問院
 	focus = {
 		id = JAP_Revolution_focus_4
-		icon = GFX_goal_
+		icon = GFX_focus_generic_monarchy_2
 		x = 3
 		y = 8
 		cost = 6
@@ -835,13 +1029,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Emperor_Komonin
 		}
 	}
 	#華族制の廃止
 	focus = {
 		id = JAP_Revolution_focus_5
-		icon = GFX_goal_
+		icon = GFX_focus_generic_support_the_left_right
 		x = 5
 		y = 8
 		cost = 6
@@ -856,13 +1050,21 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_stability = -0.1
+			add_timed_idea = {
+				idea = JAP_Kazokunoteiko
+				days = 365
+			}    
 		}
 	}
 	#新大日本帝国憲法
 	focus = {
 		id = JAP_Revolution_focus_6
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_democracy
 		x = 3
 		y = 9
 		cost = 6
@@ -879,13 +1081,21 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = totalist_dictatorship
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_Emperor_Komonin
+				add_idea = JAP_New_Constitution
+			}
 		}
 	}
 	#私有財産の制限
 	focus = {
 		id = JAP_Revolution_focus_7
-		icon = GFX_goal_
+		icon = GFX_goal_generic_soviet_construction
 		x = 1
 		y = 10
 		cost = 6
@@ -900,13 +1110,43 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Kita_Economy1
+			807 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			808 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			810 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			812 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			815 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 	#混合経済
 	focus = {
 		id = JAP_Revolution_focus_8
-		icon = GFX_goal_
+		icon = GFX_focus_SOV_organize_wreckers
 		x = 1
 		y = 11
 		cost = 6
@@ -921,19 +1161,36 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Nishida_Mitsugi
+			swap_ideas = {
+				remove_idea = JAP_Kita_Economy1
+				add_idea = JAP_Kita_Economy2
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_1
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_2
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_3
+			}
 		}
 	}
 	#経済の復活
 	focus = {
 		id = JAP_Revolution_focus_9
-		icon = GFX_goal_
+		icon = GFX_focus_generic_industry_3
 		x = 1
 		y = 12
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1 
 		prerequisite = { focus = JAP_Revolution_focus_8 }
 		available = {
+			has_idea = JAP_black_thursday_KISHI2
 	    }
 		ai_will_do = {
 			factor = 100
@@ -942,13 +1199,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 50
+			remove_ideas = JAP_black_thursday_KISHI2	
 		}
 	}
 	#諸民族の平等
 	focus = {
 		id = JAP_Revolution_focus_10
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_toua
 		x = 3
 		y = 10
 		cost = 6
@@ -963,13 +1221,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_New_Constitution
+				add_idea = JAP_New_Constitution1
+			}
 		}
 	}
 	#エスペラント
 	focus = {
 		id = JAP_Revolution_focus_11
-		icon = GFX_goal_
+		icon = GFX_focus_TUR_the_sun_language_theory
 		x = 3
 		y = 11
 		cost = 6
@@ -984,13 +1245,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Esperanto
 		}
 	}
 	#世界"平和"に向けて
 	focus = {
 		id = JAP_Revolution_focus_12
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_co_prosperity_sphere
 		x = 3
 		y = 12
 		cost = 6
@@ -1005,13 +1266,15 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_War_is_Peace
+			remove_ideas = JAP_ugaki_gunshuku
+			add_ideas = JAP_MILITARISM_TR
 		}
 	}
 	#労働省の創設
 	focus = {
 		id = JAP_Revolution_focus_13
-		icon = GFX_goal_
+		icon = GFX_focus_por_workers_of_iberia
 		x = 5
 		y = 10
 		cost = 6
@@ -1026,13 +1289,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Equality_Problem
 		}
 	}
 	#特権階級の解体
 	focus = {
 		id = JAP_Revolution_focus_14
-		icon = GFX_goal_
+		icon = GFX_goal_continuous_suppression
 		x = 5
 		y = 11
 		cost = 6
@@ -1047,13 +1310,20 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_Equality_Problem
+				add_idea = JAP_Equality_Problem1
+			}
 		}
 	}
 	#教育の機会均等
 	focus = {
 		id = JAP_Revolution_focus_15
-		icon = GFX_goal_
+		icon = GFX_focus_research2
 		x = 5
 		y = 12
 		cost = 6
@@ -1068,13 +1338,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_Equality_Problem1
+				add_idea = JAP_Equality_Problem2
+			}
 		}
 	}
 	#国民の天皇
 	focus = {
 		id = JAP_Revolution_focus_16
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_imperialism
 		x = 3
 		y = 13
 		cost = 6
@@ -1091,7 +1364,10 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			remove_ideas = JAP_Shading_sun
+			add_ideas = JAP_Emperor_for_People
+			set_country_flag = JAP_End_Reform
+			add_research_slot = 1
 		}
 	}
 	########################
@@ -1100,7 +1376,7 @@ focus_tree = {
 	#非常重大な時局
 	focus = {
 		id = JAP_Kodoha_focus_1
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_kohoda
 		x = -3
 		y = 6
 		cost = 5
@@ -1116,7 +1392,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.2
+			}
+			hidden_effect = {	
+				add_ideas = JAP_Araki_Sadao
+				add_ideas = JAP_Shiratori_Toshio
+				add_ideas = JAP_Shoda_Kazue
+				add_ideas = JAP_Masaki_Jinsaburo
+				add_ideas = JAP_Araki_Sadao_cos
+				add_ideas = JAP_Masaki_Jinsaburo_coa
+				}
 		}
 	}
 	#従わぬなら挿げ替えよ
@@ -1125,7 +1412,7 @@ focus_tree = {
 		icon = GFX_goal_
 		x = -4
 		y = 7
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1 
 		mutually_exclusive = { focus = JAP_Kodoha_focus_4 } 
 		prerequisite = { focus = JAP_Kodoha_focus_1 }
@@ -1138,18 +1425,30 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
-		}
+			add_stability = -0.2
+			remove_ideas = JAP_hirohito_hs
+			add_ideas = JAP_yasuhito
+			effect_tooltip = { retire_country_leader = yes }
+			hidden_effect = { kill_ideology_leader = national_populist }
+			create_country_leader = {
+				name = "雍仁"
+				desc = "POLITICS_TITIBU_DESC"
+				picture = "gfx/leaders/JAP/Portrait_Japan_titibu.tga"
+				expire = "1965.1.1"
+				ideology = national_populist_subtype
+				traits = {  }			
+		    }
+	    }
 	}
 	#国体明徴声明
 	focus = {
 		id = JAP_Kodoha_focus_3
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_instructors
 		x = -4
 		y = 8
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1 
-		prerequisite = { focus = JAP_Kodoha_focus_2 }
+		prerequisite = { focus = JAP_Kodoha_focus_2 focus = JAP_Kodoha_focus_4 }
 		available = {
 	    }
 		ai_will_do = {
@@ -1159,7 +1458,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_KOKUTAIMEITYOU
 		}
 	}
 	#荒木に大命降下
@@ -1168,7 +1467,7 @@ focus_tree = {
 		icon = GFX_goal_
 		x = -2
 		y = 7
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1 
 		mutually_exclusive = { focus = JAP_Kodoha_focus_2 } 
 		prerequisite = { focus = JAP_Kodoha_focus_1 }
@@ -1181,18 +1480,22 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
 		}
 	}
 	#国体の本義
 	focus = {
 		id = JAP_Kodoha_focus_5
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_officer
 		x = -2
 		y = 8
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1 
-		prerequisite = { focus = JAP_Kodoha_focus_4 }
+		prerequisite = { focus = JAP_Kodoha_focus_2 focus = JAP_Kodoha_focus_4 }
 		available = {
 	    }
 		ai_will_do = {
@@ -1202,13 +1505,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
 		}
 	}
 	#天皇親政
 	focus = {
 		id = JAP_Kodoha_focus_6
-		icon = GFX_goal_
+		icon = GFX_focus_rom_royal_dictatorship
 		x = -3
 		y = 9
 		cost = 6
@@ -1224,13 +1531,19 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_ideas = JAP_SHINSEI
+			add_ideas = Absolute_monarchy
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
 		}
 	}
 	#財閥を解体
 	focus = {
 		id = JAP_Kodoha_focus_7
-		icon = GFX_goal_
+		icon = GFX_focus_jap_zaibatsu
 		x = -5
 		y = 10
 		cost = 6
@@ -1245,13 +1558,44 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= -100
+			807 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			808 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			810 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			812 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			815 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+				
 		}
 	}
 	#国家改造計画
 	focus = {
 		id = JAP_Kodoha_focus_8
-		icon = GFX_goal_
+		icon = GFX_goal_Japanese_Glory
 		x = -5
 		y = 11
 		cost = 6
@@ -1266,19 +1610,32 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_KAIZOUKEIKAKU		
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_1
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_2
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_3
+			}
 		}
 	}
 	#経済の復活
 	focus = {
 		id = JAP_Kodoha_focus_9
-		icon = GFX_goal_
+		icon = GFX_focus_generic_industry_3
 		x = -5
 		y = 12
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1 
 		prerequisite = { focus = JAP_Kodoha_focus_8 }
 		available = {
+			has_idea = JAP_black_thursday_KISHI2
 	    }
 		ai_will_do = {
 			factor = 100
@@ -1287,13 +1644,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 50
+			remove_ideas = JAP_black_thursday_KISHI2		
 		}
 	}
 	#奸臣を討て
 	focus = {
 		id = JAP_Kodoha_focus_10
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_Kodoha
 		x = -3
 		y = 10
 		cost = 6
@@ -1308,13 +1666,26 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_manpower = -100000
+			add_stability = -0.1
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
 		}
 	}
 	#粛軍の開始
 	focus = {
 		id = JAP_Kodoha_focus_11
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_Kodoha
 		x = -3
 		y = 11
 		cost = 6
@@ -1329,13 +1700,21 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_manpower = -200000
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
 		}
 	}
 	#民のかまど
 	focus = {
 		id = JAP_Kodoha_focus_12
-		icon = GFX_goal_
+		icon = GFX_focus_jap_showa_restoration
 		x = -3
 		y = 12
 		cost = 6
@@ -1350,13 +1729,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.2
+			add_ideas = JAP_Taminokamado
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
 		}
 	}
 	#皇国精神の称揚
 	focus = {
 		id = JAP_Kodoha_focus_13
-		icon = GFX_goal_
+		icon = GFX_focus_jap_spiritual_mobilization
 		x = -1
 		y = 10
 		cost = 6
@@ -1371,13 +1755,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_war_support = 0.1
+			remove_ideas = JAP_ugaki_gunshuku
+			add_ideas = JAP_MILITARISM_TR
+			add_ideas = no_max_workhours
+			add_ideas = no_safety_regulations
 		}
 	}
 	#竹槍三百万本論
 	focus = {
 		id = JAP_Kodoha_focus_14
-		icon = GFX_goal_
+		icon = GFX_focus_generic_japanese_imperial_glory
 		x = -1
 		y = 11
 		cost = 6
@@ -1392,13 +1780,15 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_ideas = JAP_KOUKOKUSEISIN
+			add_manpower = 100000
 		}
 	}
 	#慢性非常時
 	focus = {
 		id = JAP_Kodoha_focus_15
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_officer
 		x = -1
 		y = 12
 		cost = 6
@@ -1413,13 +1803,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Manseihijozi
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
 		}
 	}
 	#全ては大御心のままに
 	focus = {
 		id = JAP_Kodoha_focus_16
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_imperialism
 		x = -3
 		y = 13
 		cost = 6
@@ -1436,7 +1830,10 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			remove_ideas = JAP_Shading_sun
+		    add_ideas = JAP_Omikokoro	
+			set_country_flag = JAP_End_Reform
+			add_research_slot = 1
 		}
 	}
 	########################
@@ -1445,7 +1842,7 @@ focus_tree = {
 	#新体制運動
 	focus = {
 		id = JAP_Shintaisei_focus_1
-		icon = GFX_goal_
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		x = -9
 		y = 5
 		cost = 5
@@ -1461,13 +1858,41 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = national_populist
+				long_name = JAP_TAISEI_long
+				name = JAP_TAISEI_a
+			}
+			hidden_effect = {	
+				add_ideas = JAP_Konoe_Fumimaro
+				add_ideas = JAP_Matsuoka_Yousuke
+				add_ideas = JAP_Kaya_Okinori
+				add_ideas = JAP_Kawarada_Kakichi
+				add_ideas = JAP_Terauchi_Hisaichi
+				kill_ideology_leader = national_populist
+				create_country_leader = {
+					name = "近衞文麿"
+					desc = "POLITICS_KONOE_DESC"
+					picture = "gfx/leaders/JAP/Portrait_Japan_konoe.tga"
+					expire = "1965.1.1"
+					ideology = national_populist_subtype
+					traits = { }
+				}
+				}
 		}
 	}
 	#一国一党へ向けて
 	focus = {
 		id = JAP_Shintaisei_focus_2
-		icon = GFX_goal_
+		icon = GFX_goal_National_corporate
 		x = -9
 		y = 6
 		cost = 5
@@ -1482,13 +1907,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_To_One_country_one_party
 		}
 	}
-	#東亜共同体論
+	#東亜協同体論
 	focus = {
 		id = JAP_Shintaisei_focus_3
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_co_prosperity_sphere
 		x = -10
 		y = 7
 		cost = 6
@@ -1503,16 +1928,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_East_Asia_Cooperative
 		}
 	}
 	#二大政党の自滅
 	focus = {
 		id = JAP_Shintaisei_focus_4
-		icon = GFX_goal_
+		icon = GFX_focus_generic_strike_at_democracy2
 		x = -8
 		y = 7
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Shintaisei_focus_2 }
 		available = {
@@ -1524,16 +1949,23 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.1
+			}
 		}
 	}
 	#首相のラジオ演説
 	focus = {
 		id = JAP_Shintaisei_focus_5
-		icon = GFX_goal_
+		icon = GFX_goal_generic_radio_equipment
 		x = -10
 		y = 8
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Shintaisei_focus_3 }
 		available = {
@@ -1545,16 +1977,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_stability = 0.1
 		}
 	}
 	#町田と鳩山を妨害
 	focus = {
 		id = JAP_Shintaisei_focus_6
-		icon = GFX_goal_
+		icon = GFX_focus_generic_strike_at_democracy3
 		x = -8
 		y = 8
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Shintaisei_focus_4 }
 		available = {
@@ -1566,16 +1998,24 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= -50
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.1
+			}
 		}
 	}
 	#翼賛政治体制協議会
 	focus = {
 		id = JAP_Shintaisei_focus_7
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_Kakushinha
 		x = -9
 		y = 9
-		cost = 6
+		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Shintaisei_focus_5 }
 		prerequisite = { focus = JAP_Shintaisei_focus_6 }
@@ -1588,13 +2028,17 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = totalist_dictatorship
+			set_popularities = {
+				national_populist= 100
+			}
+			remove_ideas = JAP_To_One_country_one_party
 		}
 	}
 	#精神動員
 	focus = {
 		id = JAP_Shintaisei_focus_8
-		icon = GFX_goal_
+		icon = GFX_focus_jap_spiritual_mobilization
 		x = -11
 		y = 10
 		cost = 6
@@ -1609,13 +2053,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_ideas = JAP_SEISHINDOIN
+			remove_ideas = JAP_ugaki_gunshuku
+			add_ideas = JAP_MILITARISM_TR
 		}
 	}
 	#滅私奉公
 	focus = {
 		id = JAP_Shintaisei_focus_9
-		icon = GFX_goal_
+		icon = GFX_goal_generic_forceful_treaty
 		x = -11
 		y = 11
 		cost = 6
@@ -1630,13 +2077,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = no_max_workhours
+			add_ideas = JAP_Messhi_Houko
 		}
 	}
 	#特高の強化
 	focus = {
 		id = JAP_Shintaisei_focus_10
-		icon = GFX_goal_
+		icon = GFX_focus_chi_army_reform
 		x = -11
 		y = 12
 		cost = 6
@@ -1651,13 +2099,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_SHP_idea
 		}
 	}
 	#労働組合の解散
 	focus = {
 		id = JAP_Shintaisei_focus_11
-		icon = GFX_goal_
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		x = -9
 		y = 10
 		cost = 6
@@ -1672,13 +2120,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_SANGYOUHOKKOKAI
 		}
 	}
 	#重要産業の統制
 	focus = {
 		id = JAP_Shintaisei_focus_12
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_industry
 		x = -9
 		y = 11
 		cost = 6
@@ -1694,13 +2142,183 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes	
+						NOT = {
+							owner = {
+								any_owned_state = {
+									industrial_complex < 1
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes	
+						NOT = {
+							owner = {
+								any_owned_state = {
+									industrial_complex < 1
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes	
+						NOT = {
+							owner = {
+								any_owned_state = {
+									industrial_complex < 1
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes	
+						NOT = {
+							owner = {
+								any_owned_state = {
+									industrial_complex < 1
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes	
+						NOT = {
+							owner = {
+								any_owned_state = {
+									industrial_complex < 1
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
 		}
 	}
 	#財閥の弱体化
 	focus = {
 		id = JAP_Shintaisei_focus_13
-		icon = GFX_goal_
+		icon = GFX_focus_jap_zaibatsu
 		x = -9
 		y = 12
 		cost = 6
@@ -1715,13 +2333,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= -100
 		}
 	}
 	#経済新体制
 	focus = {
 		id = JAP_Shintaisei_focus_14
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_yen
 		x = -7
 		y = 10
 		cost = 6
@@ -1736,13 +2354,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_keizai_shintaisei
 		}
 	}
-	#四ヵ年計画
+	#五ヵ年計画
 	focus = {
 		id = JAP_Shintaisei_focus_15
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_industry
 		x = -7
 		y = 11
 		cost = 6
@@ -1758,19 +2376,36 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = MAN_Kishi_Nobusuke
+			add_timed_idea = {
+				idea = JAP_Five_Year_Plan
+				days = 1825
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_1
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_2
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_3
+			}
 		}
 	}
 	#経済の復活
 	focus = {
 		id = JAP_Shintaisei_focus_16
-		icon = GFX_goal_
+		icon = GFX_focus_generic_industry_3
 		x = -7
 		y = 12
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_Shintaisei_focus_15 }
 		available = {
+			has_idea = JAP_black_thursday_KISHI2
 	    }
 		ai_will_do = {
 			factor = 100
@@ -1779,13 +2414,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_political_power= 50
+			remove_ideas = JAP_black_thursday_KISHI2
 		}
 	}
 	#摂家の護国卿
 	focus = {
 		id = JAP_Shintaisei_focus_17
-		icon = GFX_goal_
+		icon = GFX_goal_japanese_imperialism
 		x = -9
 		y = 13
 		cost = 6
@@ -1802,7 +2438,11 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_country_leader_trait = dictator
+			remove_ideas = JAP_Shading_sun
+			add_ideas = JAP_SAISENTAN
+			set_country_flag = JAP_End_Reform
+			add_research_slot = 1
 		}
 	}
 	########################
@@ -1811,15 +2451,16 @@ focus_tree = {
 	#亜細亜新秩序を目指して
 	focus = {
 		id = JAP_MIL_Diplomacy_1
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_toua
 		x = -9
 		y = 14
 		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			has_country_flag = JAP_End_Reform
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 60
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1831,7 +2472,7 @@ focus_tree = {
 	#汪兆銘への支持を継続
 	focus = {
 		id = JAP_MIL_Diplomacy_2
-		icon = GFX_goal_
+		icon = GFX_goal_china_deal
 		x = -11
 		y = 15
 		cost = 5
@@ -1850,10 +2491,10 @@ focus_tree = {
 			
 		}
 	}
-	#中国の完全制服を
+	#中国の完全征服
 	focus = {
 		id = JAP_MIL_Diplomacy_3
-		icon = GFX_goal_
+		icon = GFX_goal_A_New_China
 		x = -7
 		y = 15
 		cost = 5
@@ -1875,7 +2516,7 @@ focus_tree = {
 	#東南アジアへの圧力
 	focus = {
 		id = JAP_MIL_Diplomacy_4
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_target_indochina
 		x = -9
 		y = 16
 		cost = 5
@@ -1896,7 +2537,7 @@ focus_tree = {
 	#インドへの圧力
 	focus = {
 		id = JAP_MIL_Diplomacy_5
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_target_india
 		x = -9
 		y = 17
 		cost = 5
@@ -1917,7 +2558,7 @@ focus_tree = {
 	#ペルシアの油田
 	focus = {
 		id = JAP_MIL_Diplomacy_6
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_invasion_of_persia
 		x = -9
 		y = 18
 		cost = 5
@@ -1959,7 +2600,7 @@ focus_tree = {
 	#中央アジア
 	focus = {
 		id = JAP_MIL_Diplomacy_8
-		icon = GFX_goal_
+		icon = GFX_goal_Unite_Arabia
 		x = -8
 		y = 19
 		cost = 5
@@ -1980,7 +2621,7 @@ focus_tree = {
 	#ウラルを窺え
 	focus = {
 		id = JAP_MIL_Diplomacy_9
-		icon = GFX_goal_
+		icon = GFX_goal_take_russia
 		x = -9
 		y = 20
 		cost = 5
@@ -2002,12 +2643,14 @@ focus_tree = {
 	#朝鮮問題
 	focus = {
 		id = JAP_MIL_Korea_focus_1
-		icon = GFX_goal_
+		icon = GFX_goal_korean_independence
 		x = -5
 		y = 15
-		cost = 5
+		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			has_country_flag = JAP_Korean_Autonomy
+			has_country_flag = JAP_End_Power_Struggle
 	    }
 		ai_will_do = {
 			factor = 100
@@ -2016,20 +2659,24 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			country_event = TR_japan.50
 		}
 	}
-	#反抗
+	#反乱を砕け
 	focus = {
 		id = JAP_MIL_Korea_focus_2
-		icon = GFX_goal_
+		icon = GFX_goal_korean_occupation
 		x = -5
 		y = 16
-		cost = 5
+		cost = 1
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_MIL_Korea_focus_1 }
 		available = {
+			country_exists = KOR
 	    }
+		bypass = {
+			has_war_with = KOR
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -2037,19 +2684,23 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			declare_war_on = {
+				target = KOR
+				type = annex_everything
+			}
 		}
 	}
 	#皇民化を終わらせろ
 	focus = {
 		id = JAP_MIL_Korea_focus_3
-		icon = GFX_goal_
+		icon = GFX_goal_Korea_Colony
 		x = -5
 		y = 17
 		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		prerequisite = { focus = JAP_MIL_Korea_focus_2 }
 		available = {
+			NOT = { country_exists = KOR }
 	    }
 		ai_will_do = {
 			factor = 100
@@ -2058,21 +2709,25 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = JAP_Korean_focus_1_text
+			remove_ideas = JAP_Korean_Question
+			add_stability = -0.1	
+			country_event = TR_japan.16
 		}
 	}
 	#米国の台頭に備える
 	focus = {
 		id = JAP_MIL_USA_focus_1
-		icon = GFX_goal_
+		icon = GFX_goal_USA_it_cant_happen_here
 		x = -3
 		y = 15
 		cost = 6
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			has_country_flag = JAP_End_Power_Struggle
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 30
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2084,7 +2739,7 @@ focus_tree = {
 	#カリフォルニアに要塞を
 	focus = {
 		id = JAP_MIL_USA_focus_2
-		icon = GFX_goal_
+		icon = GFX_goal_generic_fortify_city
 		x = -3
 		y = 16
 		cost = 6
@@ -2093,7 +2748,7 @@ focus_tree = {
 		available = {
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 30
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2105,7 +2760,7 @@ focus_tree = {
 	#パナマの防衛強化
 	focus = {
 		id = JAP_MIL_USA_focus_3
-		icon = GFX_goal_
+		icon = GFX_focus_generic_coastal_fort
 		x = -3
 		y = 17
 		cost = 6
@@ -2114,7 +2769,7 @@ focus_tree = {
 		available = {
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 30
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2126,7 +2781,7 @@ focus_tree = {
 	#人種差別撤廃運動への支援
 	focus = {
 		id = JAP_MIL_USA_focus_4
-		icon = GFX_goal_
+		icon = GFX_goal_total_liberation
 		x = -3
 		y = 18
 		cost = 6
@@ -2135,7 +2790,7 @@ focus_tree = {
 		available = {
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 30
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2147,7 +2802,7 @@ focus_tree = {
 	#先制攻撃
 	focus = {
 		id = JAP_MIL_USA_focus_5
-		icon = GFX_goal_
+		icon = GFX_focus_spa_the_war_of_vengeance
 		x = -3
 		y = 19
 		cost = 6
@@ -2156,7 +2811,7 @@ focus_tree = {
 		available = {
 	    }
 		ai_will_do = {
-			factor = 100
+			factor = 30
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -2168,7 +2823,7 @@ focus_tree = {
 	#占領政策の検討
 	focus = {
 		id = JAP_MIL_USA_focus_6
-		icon = GFX_goal_
+		icon = GFX_goal_forced_mil
 		x = -3
 		y = 20
 		cost = 6
@@ -2192,12 +2847,14 @@ focus_tree = {
 	#戦時経済
 	focus = {
 		id = JAP_MIL_Economy_1
-		icon = GFX_goal_
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
 		x = 1
 		y = 14
 		cost = 5
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			has_war_with = USA
+			has_country_flag = JAP_End_Power_Struggle
 	    }
 		ai_will_do = {
 			factor = 100
@@ -2206,13 +2863,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = war_economy
 		}
 	}
-	#戦時経済
+	#国家総動員法
 	focus = {
 		id = JAP_MIL_Economy_2
-		icon = GFX_goal_
+		icon = GFX_focus_SOV_mobilization_plan
 		x = 1
 		y = 15
 		cost = 5
@@ -2227,13 +2884,14 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = tot_economic_mobilisation
+			add_ideas = extensive_conscription
 		}
 	}
 	#ぜいたくは敵だ！
 	focus = {
 		id = JAP_MIL_Economy_3
-		icon = GFX_goal_
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = -1
 		y = 16
 		cost = 5
@@ -2248,13 +2906,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Kakakutosei1
 		}
 	}
 	#価格統制令
 	focus = {
 		id = JAP_MIL_Economy_4
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_yen
 		x = -1
 		y = 17
 		cost = 5
@@ -2270,13 +2928,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_Kakakutosei1
+				add_idea = JAP_Kakakutosei2
+			}
 		}
 	}
 	#企画院の発足
 	focus = {
 		id = JAP_MIL_Economy_5
-		icon = GFX_goal_
+		icon = GFX_focus_SOV_merge_plants
 		x = 1
 		y = 16
 		cost = 5
@@ -2291,13 +2952,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Kikakuin
 		}
 	}
 	#徴兵拡大
 	focus = {
 		id = JAP_MIL_Economy_6
-		icon = GFX_goal_
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		x = 1
 		y = 17
 		cost = 5
@@ -2314,13 +2975,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_Mobilization
 		}
 	}
 	#電力の統制
 	focus = {
 		id = JAP_MIL_Economy_7
-		icon = GFX_goal_
+		icon = GFX_focus_generic_aluminum
 		x = 3
 		y = 16
 		cost = 5
@@ -2335,13 +2996,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_ideas = JAP_electric_power
 		}
 	}
 	#物資を軍需産業へ回せ
 	focus = {
 		id = JAP_MIL_Economy_8
-		icon = GFX_goal_
+		icon = GFX_goal_JAP_tank
 		x = 3
 		y = 17
 		cost = 5
@@ -2357,13 +3018,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_electric_power
+				add_idea = JAP_electric_power1
+			}
 		}
 	}
 	#二号研究
 	focus = {
 		id = JAP_MIL_Economy_9
-		icon = GFX_goal_
+		icon = GFX_goal_generic_secret_weapon
 		x = 5
 		y = 16
 		cost = 5
@@ -2378,13 +3042,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	#計画の拡大
 	focus = {
 		id = JAP_MIL_Economy_10
-		icon = GFX_goal_
+		icon = GFX_goal_generic_secret_weapon
 		x = 5
 		y = 17
 		cost = 5
@@ -2399,13 +3068,18 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	#敗色濃厚
 	focus = {
 		id = JAP_MIL_Economy_11
-		icon = GFX_goal_
+		icon = GFX_focus_CZE_german_puppet
 		x = 1
 		y = 18
 		cost = 5
@@ -2414,6 +3088,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_MIL_Economy_8 }
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			surrender_progress > 0.2
 	    }
 		ai_will_do = {
 			factor = 100
@@ -2428,7 +3103,7 @@ focus_tree = {
 	#神風
 	focus = {
 		id = JAP_MIL_Economy_12
-		icon = GFX_goal_
+		icon = GFX_focus_SOV_women_in_aviation
 		x = -1
 		y = 19
 		cost = 5
@@ -2443,13 +3118,24 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			if = { 
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				custom_effect_tooltip = cost_reduced_last_stand 
+			}
 		}
 	}
 	#赤紙
 	focus = {
 		id = JAP_MIL_Economy_13
-		icon = GFX_goal_
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 1
 		y = 19
 		cost = 5
@@ -2464,13 +3150,16 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = JAP_Mobilization
+				add_idea = JAP_Mobilization1
+			}
 		}
 	}
 	#起死回生
 	focus = {
 		id = JAP_MIL_Economy_14
-		icon = GFX_goal_
+		icon = GFX_goal_generic_secret_weapon
 		x = 3
 		y = 19
 		cost = 5
@@ -2478,6 +3167,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_MIL_Economy_11 }
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			is_researching_technology = nuclear_reactor
 	    }
 		ai_will_do = {
 			factor = 100
@@ -2486,13 +3176,72 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = nuclear_reactor
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = nuclear_reactor
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = nuclear_reactor
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = nuclear_reactor
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	#本土決戦に備えよ
 	focus = {
 		id = JAP_MIL_Economy_15
-		icon = GFX_goal_
+		icon = GFX_focus_generic_japanese_imperial_glory
 		x = 1
 		y = 20
 		cost = 5
@@ -2501,6 +3250,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_MIL_Economy_14 }
 		relative_position_id = JAP_Power_Struggle_1
 		available = {
+			
 	    }
 		ai_will_do = {
 			factor = 100

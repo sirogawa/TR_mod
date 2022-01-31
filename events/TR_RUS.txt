@@ -322,7 +322,7 @@ country_event = {
                 222 = {
 					add_core_of = RUS
 				}
-		RUS = {
+		RUS = { inherit_technology = SOV
 			transfer_state = 195
 			transfer_state = 208
                         transfer_state = 263
@@ -353,6 +353,14 @@ country_event = {
                         transfer_state = 11
                         transfer_state = 784
                         transfer_state = 96
+                        transfer_state = 878
+			transfer_state = 879
+                        transfer_state = 880
+                        transfer_state = 884
+                        transfer_state = 885
+                        transfer_state = 881
+                        transfer_state = 883
+                        transfer_state = 882                      
                       }
                  KAZ = {
 			transfer_state = 587
@@ -802,6 +810,12 @@ country_event = {
                 572 = {
 					add_core_of = SIB
 				}
+		892 = {
+					add_core_of = SIB
+				}
+                894 = {
+					add_core_of = SIB
+				}
                 
                 RUS = { add_to_faction = SIB }
                 declare_war_on = {
@@ -902,6 +916,12 @@ country_event = {
                 572 = {
 					add_core_of = SIB
 				}
+		892 = {
+					add_core_of = SIB
+				}
+                894 = {
+					add_core_of = SIB
+				}
                 division_template = {
 				name = "Siberia Infantry"
 				division_names_group = SOV_GAR_01
@@ -991,6 +1011,8 @@ country_event = {
                         transfer_state = 580
                         transfer_state = 653
                         transfer_state = 572
+                        transfer_state = 892
+                        transfer_state = 894
                       }
                 
 	}

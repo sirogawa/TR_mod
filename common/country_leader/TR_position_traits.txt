@@ -7,6 +7,13 @@ leader_traits = {
         Minister_of_Foreign_Affairs = {}
         Minister_of_Economy = {}
         Minister_of_Interior = {}
+#軍部
+
+	chief_of_staff = {}
+	chief_of_army = {}
+	chief_of_navy = {}
+	chief_of_air_force = {}
+
 #イデオロギー
 	totalist = {}
 	radical_socialist = {}

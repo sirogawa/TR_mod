@@ -52,7 +52,7 @@
 	}
         focus = {
 		id = JAP_blockeconomy
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_goal_JAP_yen
 		prerequisite = {
 			
                         focus = JAP_KYOKOHENOTAISAKU
@@ -103,7 +103,7 @@
 	}
         focus = {
 		id = JAP_TAKAHASHI
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_JAP_industry
             prerequisite = {
 			    focus = JAP_blockeconomy
 		    }
@@ -140,7 +140,7 @@
 	}
         focus = {
 		id = JAP_TAKAHASHI1
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_TAKAHASHI
@@ -169,7 +169,7 @@
 	}
         focus = {
 		id = JAP_TAKAHASHI2
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_TAKAHASHI1
@@ -198,7 +198,7 @@
 	}
         focus = {
 		id = JAP_INOUE
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_JAP_industry
         prerequisite = {
             focus = JAP_blockeconomy
 		}       
@@ -235,7 +235,7 @@
        
         focus = {
 		id = JAP_INOUE1
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_INOUE
@@ -264,7 +264,7 @@
 	}
          focus = {
 		id = JAP_INOUE2
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_INOUE1
@@ -293,7 +293,7 @@
 	}
         focus = {
 		id = JAP_KAYA
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_JAP_industry
         prerequisite = {
             focus = JAP_blockeconomy
 		}
@@ -329,7 +329,7 @@
             }
         focus = {
 		id = JAP_KAYA1
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_KAYA
@@ -362,7 +362,7 @@
 	}
     focus = {
 		id = JAP_KAYA2
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_FNG_japan_money
                 prerequisite = {
 			
                         focus = JAP_KAYA1
@@ -431,8 +431,8 @@
 	########################
     focus = {
 		id =JAP_SHUGIIN
-		icon = GFX_goal_support_democracy
-                prerequisite = {
+		icon = GFX_goal_JP_1936
+        prerequisite = {
 			 
 		}
                 available = {
@@ -459,7 +459,7 @@
     #東洋革新党の勝利
     focus = {
 	    id =JAP_KAKUSHINTO_WIN
-	    icon = GFX_focus_usa_focus_on_asia
+	    icon = GFX_goal_ideology_social_liberal
         prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -486,7 +486,7 @@
 	#大陸への投資
 	focus = {
 		id =JAP_KAKUSHINTO1
-		icon = GFX_focus_usa_focus_on_asia
+		icon = GFX_goal_china_deal
         prerequisite = {
 			focus = JAP_KAKUSHINTO_WIN
 		}
@@ -531,7 +531,7 @@
 	#選挙粛正運動
 	focus = {
 		id =JAP_KAKUSHINTO2
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_elections
         prerequisite = {
 			focus = JAP_KAKUSHINTO1
 		}
@@ -566,7 +566,7 @@
 	#知事公選制
 	focus = {
 		id =JAP_KAKUSHINTO3
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_reform_electoral_law
         prerequisite = {
 			focus = JAP_KAKUSHINTO2
 		}
@@ -594,7 +594,7 @@
 	#独立運動家との会談
 	focus = {
 		id =JAP_KAKUSHINTO4
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_indochina_revolution
         prerequisite = {
 			focus = JAP_KAKUSHINTO3
 		}
@@ -618,7 +618,7 @@
 	#アジアの夜明け
 	focus = {
 		id = JAP_tOZMBWqw
-		icon = GFX_focus_usa_focus_on_asia
+		icon = GFX_goal_JAP_co_prosperity_sphere
 		x = 9
 		y = 6
 		cost = 10
@@ -665,7 +665,7 @@
 	#日はまた昇る
 	focus = {
 		id = JAP_WOFBuHbq
-		icon = GFX_focus_jap_showa_restoration
+		icon = GFX_goal_JP_sun
 		x = 11
 		y = 7
 		cost = 20
@@ -718,7 +718,7 @@
 	#植民地政策の転換
 	focus = {
 		id = JAP_Minseito4
-		icon = GFX_focus_research2
+		icon = GFX_goal_colonial_unity
 		x = 11
 		y = 5
         available = {
@@ -740,7 +740,7 @@
 	#議会の擁護者
 	focus = {
 		id = JAP_XSGzyqvB
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_japanese_democracy
 		x = 11
 		y = 6
 		cost = 10
@@ -760,7 +760,7 @@
 	#社会大衆党の勝利
 	focus = {
 	    id =JAP_TAISHUTO_WIN
-	    icon = GFX_focus_prc_agrarian_socialism
+	    icon = GFX_goal_ideology_social_democrat
         prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -788,7 +788,7 @@
 	#協同組合法
 	focus = {
 		id = JAP_nwrPBdjE
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_goal_Free_Trade_Unions
 		x = 7
 		y = 2
         available = {
@@ -813,7 +813,7 @@
 	#教育改革
 	focus = {
 		id = JAP_IypmrVhM
-		icon = GFX_focus_research2
+		icon = GFX_goal_education_spending
 		x = 7
 		y = 3
 		cost = 10
@@ -832,7 +832,7 @@
 	#無産統一戦線
 	focus = {
 		id = JAP_ReDzwurS
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_list_left
 		x = 7
 		y = 4
         available = {
@@ -865,7 +865,7 @@
 	#インドを訪れる
 	focus = {
 		id = JAP_FzHbvhst
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_RAJ_dominion_of_india
 		x = 7
 		y = 5
 		cost = 10
@@ -885,7 +885,7 @@
 	#日本型社会主義
 	focus = {
 		id = JAP_cejxWJlk
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_socialist_infrastructure
 		x = 7
 		y = 6
 		cost = 10
@@ -906,7 +906,7 @@
 	#立憲民政党の勝利
     focus = {
 	    id =JAP_MINSEITO_WIN
-	    icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+	    icon = GFX_goal_ideology_market_liberal
         prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -960,7 +960,7 @@
 	#行政改革
 	focus = {
 		id = JAP_UHmdcxaz
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_government_centralised_icon
 		x = 11
 		y = 3
 		cost = 10  
@@ -977,7 +977,7 @@
 	#立憲政友会の勝利
 	focus = {
 		id =JAP_SEIYUKAI_WIN
-		icon = GFX_goal_generic_defence
+		icon = GFX_goal_ideology_social_conservative
                 prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -1011,7 +1011,7 @@
 	#財閥との提携強化
 	focus = {
 		id = JAP_iPurUSHL
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_goal_JAP_zaibatsu_contracts
 		x = 15
 		y = 2
 		cost = 10
@@ -1133,7 +1133,7 @@
 	#在郷軍人会の支援
 	focus = {
 		id = JAP_cDrYUnKC
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_goal_japanese_officer
 		x = 15
 		y = 4
 		cost = 10
@@ -1151,7 +1151,7 @@
 	#東洋のセシル・ローズ
 	focus = {
 		id = JAP_seiyukai4
-		icon = GFX_focus_generic_combined_arms
+		icon = GFX_goal_colonialist_crusade2
 		x = 15
 		y = 5
 		cost = 10
@@ -1192,7 +1192,7 @@
 	#朝鮮問題
 	focus = {
 		id = JAP_Korean_focus
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_goal_korean_independence
 		x = 19
 		y = 3
         available = {
@@ -1216,7 +1216,7 @@
 	#同化！
 	focus = {
 		id = JAP_Korean_focus_1
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_goal_Korea_Colony
 		x = 21
 		y = 4
         available = {
@@ -1242,7 +1242,7 @@
 	#連邦！
 	focus = {
 		id = JAP_Korean_focus_2
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_goal_align_japan
 		x = 19
 		y = 4
         available = {
@@ -1270,7 +1270,7 @@
 	#完全自治！
 	focus = {
 		id = JAP_Korean_focus_3
-		icon = GFX_focus_jap_cast_the_die
+		icon = GFX_goal_japanese_investment
 		x = 17
 		y = 4
         available = {
@@ -1295,7 +1295,7 @@
 	########################
 	focus = {
 		id =JAP_KAKUMEI_NF
-		icon = GFX_goal_tfv_burn_the_royal_portraits
+		icon = GFX_goal_RUS_spirit_of_revolution
                 prerequisite = {
 			
 		}
@@ -1322,7 +1322,7 @@
 	}
     focus = {
 		id =JAP_KAKUMEI_SUC
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_goal_minor_labour_regulations
         prerequisite = {
 			focus = JAP_KAKUMEI_NF
 		}
@@ -1349,7 +1349,7 @@
 	    }
         focus = {
 		id =JAP_KAIGEN_NF
-		icon = GFX_focus_jap_manchurian_project
+		icon = GFX_goal_japanese_instructors
                 prerequisite = {
 			focus = JAP_KAKUMEI_NF
 		}
@@ -1376,7 +1376,7 @@
 	}
         focus = {
 		id =JAP_KAIGEN_TEPPAI_NF
-		icon = GFX_focus_jap_pacific_guardian
+		icon = GFX_goal_japanese_democracy
         prerequisite = {
 			focus = JAP_KAIGEN_NF
 			focus = JAP_KAKUMEI_SUC
@@ -1407,7 +1407,7 @@
 	}
     focus = {
 		id =JAP_KAIGEN_KEIZOKU_NF
-		icon = GFX_focus_generic_japanese_imperial_glory
+		icon = GFX_goal_JAP_kohoda
                 prerequisite = {
 			focus = JAP_KAIGEN_NF
 		}
@@ -1452,6 +1452,10 @@
 		}
 		hidden_effect = {			
 			load_focus_tree = japan_focus_02
+			add_ideas = JAP_Ugaki_Kazushige
+			add_ideas = JAP_Yuuki_Toyotaro
+			add_ideas = JAP_Togo_Shigenori
+			add_ideas = JAP_Kido_Koichi
         country_event = {
 			    id = TR_news.4
 			    days = 5
@@ -1467,7 +1471,7 @@
 	#1940年衆議院議員総選挙
 	focus = {
 		id = JAP_SHUGIIN_1940
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_JP_1940
         available = {
             always = no
             }
@@ -1493,7 +1497,7 @@
 	#国民勤労者の党
 	focus = {
 		id = JAP_Taishuto_focus_1
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_ideology_social_democrat
         available = {
             has_government = social_democrat
             }
@@ -1514,7 +1518,11 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}	
 		}
        
 	}
@@ -1536,7 +1544,15 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_popularity = {
+				ideology = totalist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.1
+			}
 		}
        
 	}
@@ -1558,7 +1574,15 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = Gnosticism
+				popularity = -0.1
+			}
 		}
        
 	}
@@ -1579,7 +1603,7 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_ideas = JAP_democratic_socialism
 		}
        
 	}
@@ -1687,7 +1711,7 @@
 	#興亜の大義
 	focus = {
 		id = JAP_Kakushinto_focus_1
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_ideology_social_liberal
         available = {
             has_government = social_liberal
             }
@@ -1708,7 +1732,11 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}	
 		}
        
 	}
@@ -1730,7 +1758,16 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = -50
+			add_stability = 0.1
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.02
+			}			
 		}
 	}
 	#民力休養
@@ -1751,7 +1788,7 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_ideas = JAP_Minryoku_Kyuyo
 		}
 	}
 	#革新政党として
@@ -1775,7 +1812,7 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_ideas = JAP_Kakushin_Seito
 		}
 	}
 	#真の共栄圏
@@ -1883,7 +1920,7 @@
 	#ノントウ、再び
 	focus = {
 		id = JAP_Minseito_focus_1
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_ideology_market_liberal
         available = {
             has_government = market_liberal
             }
@@ -1904,7 +1941,11 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.1
+			}			
 		}
        
 	}
@@ -2086,7 +2127,7 @@
 	#鳩山=三木体制
 	focus = {
 		id = JAP_Dairenritu_focus_1
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_japanese_investment
         available = {
             has_government = authoritarian_democrat
             }
@@ -2107,7 +2148,7 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = 100		
 		}
        
 	}
@@ -2180,7 +2221,7 @@
 	#フィクサーの降臨
 	focus = {
 		id = JAP_Seiyukai_focus_1
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_ideology_social_conservative
         available = {
             has_government = social_conservative
             }
@@ -2201,7 +2242,11 @@
 		cost = 5
 		cancelable = no
 		completion_reward = {
-			
+			add_political_power = 100
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.1
+			}			
 		}  
 	}
 	#経済連盟会との協力
@@ -2282,7 +2327,7 @@
 			focus = JAP_Dairenritu_focus_4
 		}
 		mutually_exclusive = {
-			focus = JAP_Seiyukai_focus_5
+			focus = JAP_Minseito_focus_5
 	    } 
 		ai_will_do = {
 			factor = 5
@@ -2707,7 +2752,7 @@
 		#農業の機械化
 		focus = {
 			id = JAP_NdZGmARP
-			icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+			icon = GFX_goal_generic_production2
 			x = 24
 			y = 16
 			cost = 6
@@ -3316,9 +3361,9 @@
 			factor = 3
 		}
 	completion_reward = {
-			add_tech_bonus = {
+		    add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 0.5
+				cost_reduction = 0.25
 				uses = 4
 				category = land_doctrine
 			}
@@ -3391,7 +3436,7 @@
 		icon = GFX_goal_generic_small_arms
 		x = -12
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_10 }
 		available = {
@@ -3402,7 +3447,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 3
+			category = infantry_weapons
+		}
 		}
 	}
 	#野砲の開発
@@ -3447,7 +3496,8 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_political_power = -100
+		army_experience = 100
 		}
 	}
 	#本土の要塞化
@@ -3467,7 +3517,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+          add_ideas = JAP_Yashima_fortress_Plan
 		}
 	}
 	#本土用装備
@@ -3487,7 +3537,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_ideas = JAP_Urban_warfare
 		}
 	}
 	#機械化歩兵
@@ -3507,7 +3557,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+        add_ideas = JAP_Mechanized_infantry
 		}
 	}
 	#機動火砲
@@ -3548,7 +3598,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = cat_light_armor
+		}
 		}
 	}
 	#列車砲の強化
@@ -3557,7 +3611,7 @@
 		icon = GFX_goal_generic_small_arms
 		x = -12
 		y = 9
-		cost = 5
+		cost = 2
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_24 }
 		available = {
@@ -3568,7 +3622,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = train_tech
+		}
 		}
 	}
 	#作戦の強化
@@ -3588,7 +3646,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		army_experience = 50
 		}
 	}
 	#戦車の強化
@@ -3608,7 +3666,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = armor
+		}
 		}
 	}
 	#大陸用戦車
@@ -3628,7 +3690,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = cat_medium_armor
+		}
 		}
 	}
 	#新型戦車の開発
@@ -3650,7 +3716,12 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		army_experience = 100
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = armor
+		}
 		}
 	}
 	#沿岸の要塞化
@@ -3670,7 +3741,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_ideas = JAP_Coastal_fortress_Plan
 		}
 	}
 	#沿岸用装備
@@ -3690,7 +3761,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+             add_ideas = JAP_Marines_Buff
 		}
 	}
 	#沿岸用戦車
@@ -3711,7 +3782,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.4
+			uses = 1
+			category = tp_tech
+		}
 		}
 	}
 	#沿岸要塞の強化
@@ -3731,7 +3806,10 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		swap_ideas = {
+			remove_idea = JAP_Coastal_fortress_Plan
+			add_idea = JAP_Coastal_fortress_Plan2
+		}
 		}
 	}
 	#小火器の開発
@@ -3751,7 +3829,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 1
+			category = infantry_weapons
+		}
 		}
 	}
 	#小火器の強化
@@ -3771,7 +3853,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+            add_ideas = JAP_Infantry_Equipment_Buff
 		}
 	}
 	#士官の強化
@@ -3840,7 +3922,7 @@
 		icon = GFX_goal_generic_small_arms
 		x = -12
 		y = 5
-		cost = 4
+		cost = 2
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_12 }
 		available = {
@@ -3851,7 +3933,11 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_tech_bonus = {
+			bonus = 0.2
+			uses = 1
+			category = infantry_weapons
+		}
 		}
 	}
 	#技術本部の設置
@@ -3914,7 +4000,182 @@
 			factor = 1
 		}
 	completion_reward = {
+		add_political_power = -200
+		808 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1182
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1182
+						instant_build = yes
+					}
 
+			}
+		}			
+		807 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7072
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 7072
+						instant_build = yes
+					}
+
+			}
+		}	
+		809 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9998
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9998
+						instant_build = yes
+					}
+
+			}
+		}	
+		812 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12031
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12031
+						instant_build = yes
+					}
+
+			}
+		}
+		813 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11960
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 11960
+						instant_build = yes
+					}
+
+			}
+		}
+		815 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1025
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1025
+						instant_build = yes
+					}
+			}
+		}
+		529 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1092
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1092
+						instant_build = yes
+					}
+			}
+		}
+		822 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10125
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 10125
+						instant_build = yes
+					}
+			}
+		}
+		823 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 7169
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 7169
+						instant_build = yes
+					}
+			}
+		}
+		825 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 10444
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 10444
+						instant_build = yes
+					}
+			}
+		}
 		}
 	}
 	#港湾の要塞化
@@ -3933,7 +4194,185 @@
 			factor = 1
 		}
 	completion_reward = {
+		add_political_power = -200
+		815 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9950
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9950
+						instant_build = yes
+					}
 
+			}
+		}	
+		529 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1092
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1092
+						instant_build = yes
+					}
+			}
+		}		
+		533 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9859
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9859
+						instant_build = yes
+					}
+			}
+		}	
+		809 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9998
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9998
+						instant_build = yes
+					}
+
+			}
+		}
+		531 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1136
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1136
+						instant_build = yes
+					}
+
+			}
+		}
+		524 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12068
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12068
+						instant_build = yes
+					}
+
+			}
+		}
+		745 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 1150
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 1150
+						instant_build = yes
+					}
+
+			}
+		}
+		638 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12140
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12140
+						instant_build = yes
+					}
+
+			}
+		}
+		523 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 4329
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 4329
+						instant_build = yes
+					}
+
+			}
+		}
+		336 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 12299
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 12299
+						instant_build = yes
+					}
+
+			}
+		}
 		}
 	}
 	#要衝の要塞化
@@ -4683,14 +5122,14 @@
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_1 }
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			
             }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 3
 		}
 	completion_reward = {
-
+            add_ideas = JAP_Gunshukukouka
 		}
 	}
 	#標準商船の設計
@@ -5073,7 +5512,7 @@
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Navy_focus_9 }
 		mutually_exclusive = { focus = JAP_Navy_focus_20 }
-		mutually_exclusive = { focus = JAP_Navy_focus_22 }
+		mutually_exclusive = { focus = JAP_Navy_focus_21 }
 		available = {
             }
 		available_if_capitulated = yes
@@ -5092,9 +5531,7 @@
 		y = 5
 		cost = 3
 		relative_position_id = JAP_Army_focus_1
-		prerequisite = { focus = JAP_Navy_focus_20 }
-		prerequisite = { focus = JAP_Navy_focus_21 }
-		prerequisite = { focus = JAP_Navy_focus_22 }
+		prerequisite = { focus = JAP_Navy_focus_20 focus = JAP_Navy_focus_21 focus = JAP_Navy_focus_22 }
 		available = {
             }
 		available_if_capitulated = yes
@@ -5486,7 +5923,9 @@
 			factor = 3
 		}
 	completion_reward = {
-
+		add_political_power = 300
+		add_command_power = 100
+        add_ideas = JAP_Triservice_Cooperation
 		}
 	}
 	#大本営の強化
@@ -5506,7 +5945,7 @@
 			factor = 3
 		}
 	completion_reward = {
-
+        add_ideas = JAP_Daihonei_idea
 		}
 	}
 	#大本営の移設
@@ -5526,7 +5965,159 @@
 			factor = 3
 		}
 	completion_reward = {
+		808 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}			
+		807 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}	
+		809 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
 
+			}
+		}	
+		812 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+
+			}
+		}
+		813 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+
+			}
+		}
+		815 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
+		529 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
+		822 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
+		823 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
+		825 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = radar_station 
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 8
+					instant_build = yes
+				}
+			}
+		}
 		}
 	}
 	#情報機関の人員整理

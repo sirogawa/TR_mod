@@ -32,6 +32,7 @@ provinces={
 			9950 5
                         
 		}
+                victory_points = { 7110 1 }
 
 	}
 	buildings_max_level_factor=1.000

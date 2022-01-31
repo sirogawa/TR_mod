@@ -5,17 +5,6 @@
 
 		### Starting ###
 
-               FRA_JEAN_III = {
-                        allowed = {
-				always = no
-			}
-			
-			picture = FRA_king_jean
-			removal_cost = -1
-			modifier = {
-                              stability_factor = 0.05
-			}
-		}
                 FRA_DADAISM = {
 			allowed = {
 				always = no
@@ -318,6 +307,445 @@
 			}
 		}
 }
+    #minister
+    Head_of_State = {	
+		FRA_Maurice_Gamelin = {
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_Maurice_Gamelin
+		    removal_cost = -1
+	        traits = { 
+			Head_of_State
+            social_democrat
+	        TR_benevolent_gentleman
+			}
+		}   
+		FRA_Charles_de_Gaulle= {
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_Charles_de_Gaulle
+		    removal_cost = -1
+	        traits = { 
+			Head_of_State
+            social_conservative
+	        TR_autocratic_charmer
+			}
+		}  
+		FRA_Philippe_Petain = {
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_Philippe_Petain
+		    removal_cost = -1
+	        traits = { 
+			Head_of_State
+            authoritarian_democrat
+	        TR_resigned_generalissimo
+			}
+		}
+        FRA_JEAN_III = {
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_Jean_Orleans
+		    removal_cost = -1
+	        traits = { 
+				Head_of_State
+                paternal_autocrat
+				TR_benevolent_gentleman
+			}
+		}
+        FRA_marcel_deat_HS = {
+            name = FRA_marcel_deat
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_marcel_deat
+		    removal_cost = -1
+	        traits = { 
+			Head_of_State
+            national_populist
+	        TR_powerhungry_demagogue
+			}
+		}
+
+		}
+        Government_leaders = {	
+                FRA_maurras = {
+			
+			picture = FRA_maurras
+			
+			allowed = {
+				original_tag = FRA
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_Popular_Politician
+			}
+		}
+        FRA_Jacques_Doriot = {
+			
+			picture = FRA_Jacques_Doriot
+			
+			allowed = {
+				original_tag = FRA
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_flamboyant_tough_guy
+			}
+		}
+                FRA_marcel_deat = {		
+			picture = FRA_marcel_deat
+			
+			allowed = {
+				original_tag = FRA
+                                  }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_ambitious_union_boss
+			}
+		}
+		FRA_francois_de_larocque = {
+			picture = FRA_francois_de_larocque
+			
+			allowed = {
+				original_tag = FRA
+                }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_flamboyant_tough_guy
+			}
+		}
+               
+               }
+    Minister_of_Foreign_Affairs = { 
+		FRA_Pierre_Laval = {
+			picture = FRA_Pierre_Laval
+			
+			allowed = {
+				original_tag = FRA
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_apologetic_clerk
+			}
+		}
+		FRA_Maurice_Pujo = {
+			picture = FRA_Maurice_Pujo
+			
+			allowed = {
+				original_tag = FRA
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_biased_intellectual
+			}
+		}
+
+		}
+    Minister_of_Economy = {	
+		FRA_Marius_Berliet = {
+            picture = FRA_Marius_Berliet
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+	
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_steel_magnate
+			}
+		}
+        FRA_marcel_deat_Eco = {
+            name = FRA_marcel_deat
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_marcel_deat
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				national_populist
+				TR_planned_economy_proponent
+			}
+		}
+		FRA_jean_mermoz_Eco = {
+            name = FRA_jean_mermoz
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_jean_mermoz
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				national_populist
+				TR_construction_magnate
+			}
+		}
+    }
+    Minister_of_Interior = {	
+		FRA_Rene_Bousquet = {
+			picture = FRA_Rene_Bousquet
+			
+			allowed = {
+				original_tag = FRA
+                }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+				TR_efficient_sociopath
+			}
+		}
+        FRA_Jacques_Doriot_Int = {
+			name = FRA_Jacques_Doriot
+			picture = FRA_Jacques_Doriot
+			
+			allowed = {
+				original_tag = FRA
+                }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+				TR_prince_of_terror
+			}
+		}
+		FRA_francois_de_larocque_Int = {
+			name = FRA_francois_de_larocque
+			picture = FRA_francois_de_larocque
+			
+			allowed = {
+				original_tag = FRA
+                }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+				TR_prince_of_terror
+			}
+		}
+
+    }
+	chief_of_staff = { 
+		FRA_Maurice_Gamelin_cos = {
+			name = FRA_Maurice_Gamelin
+			picture = FRA_Maurice_Gamelin
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		FRA_Philippe_Petain_cos = {
+			name = FRA_Philippe_Petain
+			picture = FRA_Philippe_Petain
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		FRA_Paul_Legentilhomme = {
+			picture = FRA_Paul_Legentilhomme
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		FRA_Maxime_Weygand = {
+			picture = FRA_Maxime_Weygand
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+	}
+	chief_of_army = { 
+		FRA_Maurice_Gamelin_coa = {
+			name = FRA_Maurice_Gamelin
+			picture = FRA_Maurice_Gamelin
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+		FRA_Charles_de_Gaulle_coa = {
+			name = FRA_Charles_de_Gaulle
+			picture = FRA_Charles_de_Gaulle
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		FRA_Philippe_Leclerc = {
+			picture = FRA_Philippe_Leclerc
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+			}
+		}
+		FRA_Lattre_de_Tassigny = {
+			picture = FRA_Lattre_de_Tassigny
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+		FRA_Charles_Huntziger = {
+			picture = FRA_Charles_Huntziger
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		FRA_francois_de_larocque_carm = {
+			name = FRA_francois_de_larocque
+			picture = FRA_francois_de_larocque
+			cancel_if_invalid = yes	
+			allowed = {
+				original_tag = FRA
+                }  
+			traits = { 
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+	chief_of_navy = { 
+		FRA_Francois_Darlan = {
+			picture = FRA_Francois_Darlan
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+			}
+		}
+	}
+	chief_of_air_force = { 
+		FRA_jean_mermoz = {
+			picture = FRA_jean_mermoz
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = FRA
+                        }
+			traits = { 
+				chief_of_air_force
+				cair_air_superiority_doctrine
+			}
+		}
+	}
 	tank_manufacturer = {
 
 		designer = yes
@@ -767,4 +1195,5 @@
 			traits = { nuclear_scientist }
 		}
 	}	
+
 }

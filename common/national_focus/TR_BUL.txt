@@ -435,6 +435,7 @@ focus_tree = {
 			factor = 50
 		}
 	completion_reward = {
+                       add_ideas = BUL_BorisIII_HS2
                        add_stability = 0.3
                        add_war_support = 1.0
 				

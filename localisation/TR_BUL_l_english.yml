@@ -128,6 +128,13 @@ BUL_BANZOKU:0 "蛮族経済"
 BUL_METAL_HORSE:0 "鋼鉄の馬"
 BUL_KHANATE_IDEA:0 "大ハーンの野望"
 BUL_Neutral_IDEA:0 "バルカンのスイス"
+#閣僚
+BUL_BorisIII_HS:0 "ボリス3世"
+BUL_BorisIII_HS2:0 "ボリス3世"
+BUL_Filov:0 "ボグダン・フィロフ"
+BUL_Kyoseivanov:0 "ゲオルギ・キョセイヴァノフ"
+BUL_Dobri_Bozhilov:0 "ドブリ・ボジロフ"
+BUL_Nikola_Nedev:0 "ニコラ・ネデフ"
 ###特性
 BUL_Tsar:0 "ブルガリア皇帝"
 BUL_Khan:0 "ブルガールの大ハーン"	

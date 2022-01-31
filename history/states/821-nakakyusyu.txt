@@ -12,9 +12,9 @@ provinces={
 	}
 	history={
                 victory_points = {
-			4027 3
-                        
+			4027 1   
 		}
+                victory_points = { 11925 3 }
 		owner = JAP
 		add_core_of = JAP
 		buildings = {

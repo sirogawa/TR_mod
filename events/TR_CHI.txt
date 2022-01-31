@@ -16,19 +16,20 @@ country_event = {
 		name = TR_China.1.a
                 set_country_flag = CHI_ChiangAnsatu
                 effect_tooltip = { retire_country_leader = yes }
+                remove_ideas = CHI_Chiang_Kaishek
 		hidden_effect = { kill_ideology_leader = national_populist }
                 hidden_effect = { kill_ideology_leader = paternal_autocrat }
 		create_country_leader = {
 			name = "国民政府委員会"
 			desc = ""
-			picture = "Portrai_china_kokuminseifu.tga"
+			picture = "gfx/leaders/CHI/Portrai_china_kokuminseifu.tga"
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
 		}
                 create_country_leader = {
 			name = "国民政府委員会"
 			desc = ""
-			picture = "Portrai_china_kokuminseifu.tga"
+			picture = "gfx/leaders/CHI/Portrai_china_kokuminseifu.tga"
 			expire = "1965.1.1"
 			ideology = paternal_autocrat_subtype
 		}

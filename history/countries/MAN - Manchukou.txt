@@ -29,7 +29,11 @@ add_ideas = {
         Colonical_system
         Tiyoda_Kensho
         JAP_colony
-        MAN_Kishi_Nobusuke
+        MAN_Masahiko_Amakasu#甘粕正彦
+        MAN_Furumi_Tadayuki#古海忠之
+        MAN_Matsuoka_Yousuke#松岡洋右
+        MAN_Kishi_Nobusuke#岸信介
+        MAN_Hideki_Tojo_int#東條英機
 }
 set_convoys = 5
 JAP = { 
@@ -58,6 +62,16 @@ set_popularities = {
 	national_populist = 5
 }
 
+create_country_leader = {
+	name = "愛新覚羅溥儀"
+	
+	picture = "gfx/leaders/MAN/Portrait_Qing_PuYi.tga"
+	expire = "1960.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		
+	}
+}
 create_country_leader = {
 	name = "甘粕正彦"
 	

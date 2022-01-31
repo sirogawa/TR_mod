@@ -140,6 +140,12 @@ add_ideas = {
             GER_WAR_HORROR
             GER_REVOLUTION_ARMY
             GER_Paramilitary
+            GER_rosa_luxemburg
+            GER_Karl_Liebknecht
+            GER_ernst_thalmann
+            GER_Paul_Levi
+            GER_Ernst_Junger_int
+            GER_Lev_Trotsky_cos
 }
 
 
@@ -172,7 +178,7 @@ create_country_leader = {
 	picture = "gfx/leaders/GER/Portriat_GER_Roza_Luksemburg.tga"
 	expire = "1965.1.1"
 	ideology = radical_socialist_subtype
-	traits = { Luksemburg_traits }
+	traits = {  }
 }
 
 create_country_leader = {
@@ -181,7 +187,7 @@ create_country_leader = {
 	picture = "gfx/leaders/GER/Portrait_GER_strasser.tga"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
-	traits = { dictator }
+	traits = {  }
 }
 
 create_country_leader = {
@@ -195,21 +201,22 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "オットー・ヴェルス"
+	name = "アルトゥール・クリスピン"
 	desc = "POLITICS_OTTO_WELS_DESC"
-	picture = "gfx/leaders/GER/Portrait_GER_Otto_Wels.tga"
+	picture = "gfx/leaders/GER/"
 	expire = "1964.1.16"
 	ideology = social_democrat_subtype
 	traits = {
 
 	}
 }
+
 create_country_leader = {
-	name = "パウル・フォン・レットウ＝フォルベック"
-	desc = ""
-	picture = "gfx/leaders/GER/Portrait_GER_Lettow_Vorbeck.tga"
+	name = "オットー・ヴェルス"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "gfx/leaders/GER/Portrait_GER_Otto_Wels.tga"
 	expire = "1964.1.16"
-	ideology = market_liberal_subtype
+	ideology = social_liberal_subtype
 	traits = {
 
 	}
@@ -219,7 +226,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_GER_Reinhold_Maier.tga"
 	expire = "1964.1.16"
-	ideology = social_liberal_subtype
+	ideology = market_liberal_subtype
 	traits = {
 
 	}

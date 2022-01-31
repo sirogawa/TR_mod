@@ -18,9 +18,8 @@ state={
 
 			}
 
-		victory_points = { 4188 5
-
-		}
+		victory_points = { 4188 5 }
+                victory_points = { 1097 3 }
 }
 
 	local_supplies=0.0 

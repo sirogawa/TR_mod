@@ -4,3 +4,45 @@ JAP_Imperialisation_policy = {
 		original_tag = JAP
 	}
 }
+JAP_Power_Struggle_Policy = {
+	priority = 10
+	icon = power_struggle
+	picture = GFX_decision_cat_picture_chi_political_support
+	scripted_gui = jap_internal_factions_decision_ui
+
+	visible = {
+		has_completed_focus = JAP_Power_Struggle_1
+                NOT = { has_country_flag = JAP_End_Power_Struggle }
+	}
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_Five_Year_Plan_Policy = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_National_Reform_Plan_Policy = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+}
+JAP_Japan_Reform_Plan_Policy = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+} 
+JAP_fully_armed_state_Policy = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+} 

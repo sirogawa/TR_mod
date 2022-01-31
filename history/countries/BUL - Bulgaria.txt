@@ -12,6 +12,11 @@ add_ideas = {
         low_pensions
 	limited_conscription
 	partial_economic_mobilisation
+        BUL_BorisIII_HS
+        BUL_Filov
+        BUL_Kyoseivanov
+        BUL_Dobri_Bozhilov
+        BUL_Nikola_Nedev
 }
 	add_timed_idea = {
 		idea = BUL_Independent
@@ -158,7 +163,7 @@ set_politics = {
 		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
 		expire = "1965.1.1"
 		ideology = paternal_autocrat_subtype
-		traits = { BUL_Tsar
+		traits = {
 			
 		}
 	}
@@ -168,7 +173,7 @@ set_politics = {
 		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
 		expire = "1965.1.1"
 		ideology = authoritarian_democrat_subtype
-		traits = { BUL_Tsar
+		traits = { 
 			
 		}
 	}
@@ -178,7 +183,7 @@ set_politics = {
 		picture = "gfx/leaders/BUL/portrait_BUL_Boris1.tga"
 		expire = "1965.1.1"
 		ideology = national_populist_subtype
-		traits = { BUL_Khan
+		traits = { 
 			
 		}
 	}
@@ -188,7 +193,7 @@ set_politics = {
 		picture = "gfx/leaders/BUL/portrait_BUL_Boris1.tga"
 		expire = "1965.1.1"
 		ideology = Gnosticism_subtype
-		traits = { BUL_Khan
+		traits = { 
 			
 		}
 	}
@@ -198,7 +203,7 @@ set_politics = {
 		picture = "gfx/leaders/BUL/portrait_BUL_Boris2.tga"
 		expire = "1965.1.1"
 		ideology = social_conservative_subtype
-		traits = { BUL_Tsar
+		traits = { 
 			
 		}
 	}

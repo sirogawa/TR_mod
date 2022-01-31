@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
         continuous_focus_position = { x = 2500 y = 1300 }
-        #Focus for アンシャン・レジームへの回帰 - focus ID randomly generated due to title being in non-latin characters
+        #アンシャン・レジームへの回帰
 	focus = {
 		id = FRA_RnEFWZCl
 		icon = GFX_focus_focus_fra_orleans_restoration
@@ -31,7 +31,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 反動こそが真の進歩だ - focus ID randomly generated due to title being in non-latin characters
+	#反動こそが真の進歩だ
 	focus = {
 		id = FRA_eSwcCOin
 		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
@@ -54,7 +54,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 政党制を否定 - focus ID randomly generated due to title being in non-latin characters
+	#政党制を否定
 	focus = {
 		id = FRA_NcgCBQpE
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -76,7 +76,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for キリスト殺しを追放せよ - focus ID randomly generated due to title being in non-latin characters
+	#キリスト殺しを追放せよ
 	focus = {
 		id = FRA_IXaJVpPO
 		icon = GFX_goal_generic_secret_weapon
@@ -94,7 +94,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 貴族制は民主主義に勝る - focus ID randomly generated due to title being in non-latin characters
+	#貴族制は民主主義に勝る
 	focus = {
 		id = FRA_shDepZiY
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -111,7 +111,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for フランス王国国家評議会の設立 - focus ID randomly generated due to title being in non-latin characters
+	#フランス王国国家評議会の設立
 	focus = {
 		id = FRA_kxVJFmEo
 		icon = GFX_focus_fra_le_deluge
@@ -132,7 +132,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ネオソシアリズム - focus ID randomly generated due to title being in non-latin characters
+	#ネオソシアリズム
 	focus = {
 		id = FRA_zvmqJUKR
 		icon = GFX_goal_support_fourth_int
@@ -150,11 +150,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-                cancelable = yes
-                completion_reward = {
-                set_cosmetic_tag = FRA_RNP
+        cancelable = yes
+        completion_reward = {
+        set_cosmetic_tag = FRA_RNP
 		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
+		hidden_effect = { 
+			kill_ideology_leader = national_populist 
+		    add_ideas = FRA_marcel_deat
+		}
 		create_country_leader = {
 			name = "マルセル・デア"
 			desc = "POLITICS_MARSEL_DESC"
@@ -162,11 +165,11 @@ focus_tree = {
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = national_populist
 			popularity = 0.2
 		}
-                set_party_name = {
+        set_party_name = {
 			ideology = national_populist
 			long_name = FRA_MARSEL_long
 			name = FRA_MARSEL_a
@@ -174,7 +177,7 @@ focus_tree = {
 	 }
 	}
 
-	#Focus for 新秩序運動 - focus ID randomly generated due to title being in non-latin characters
+	#新秩序運動
 	focus = {
 		id = FRA_XDjefzyK
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
@@ -192,11 +195,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-	        cancelable = yes
-                completion_reward = {
-                set_cosmetic_tag = FRA_PPF
+	    cancelable = yes
+        completion_reward = {
+        set_cosmetic_tag = FRA_PPF
 		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
+		hidden_effect = { 
+			kill_ideology_leader = national_populist 
+			add_ideas = FRA_Jacques_Doriot
+			add_ideas = FRA_Pierre_Laval 
+			add_ideas = FRA_Marius_Berliet
+			add_ideas = FRA_Rene_Bousquet
+		}
 		create_country_leader = {
 			name = "ジャック・ドリオ"
 			desc = "POLITICS_DORIOT_DESC"
@@ -204,11 +213,11 @@ focus_tree = {
 			expire = "1965.1.1"
 			ideology = national_populist_subtype
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = national_populist
 			popularity = 0.2
 		}
-                set_party_name = {
+        set_party_name = {
 			ideology = national_populist
 			long_name = FRA_DORIOT_long
 			name = FRA_DORIOT_a
@@ -216,7 +225,7 @@ focus_tree = {
 	 }
 	}
 
-	#Focus for フランス統合主義 - focus ID randomly generated due to title being in non-latin characters
+	#フランス統合主義
 	focus = {
 		id = FRA_xVUZhueA
 		icon = GFX_focus_fra_french_union
@@ -234,17 +243,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-	        cancelable = yes
-                completion_reward = {
-                set_cosmetic_tag = FRA_KING
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.2
-		}
+	    cancelable = yes
+        completion_reward = {
+            set_cosmetic_tag = FRA_KING
+            add_popularity = {
+		    	ideology = national_populist
+		    	popularity = 0.2
+		    }
+			hidden_effect = { 
+				add_ideas = FRA_maurras
+				add_ideas = FRA_Maurice_Pujo
+				add_ideas = FRA_jean_mermoz_Eco
+				add_ideas = FRA_francois_de_larocque_Int
+			}
 	 }
 	}
 
-	#Focus for 経済対策委員会の設立 - focus ID randomly generated due to title being in non-latin characters
+	#経済対策委員会の設立
 	focus = {
 		id = FRA_YyvsGfXr
 		icon = GFX_focus_generic_self_management
@@ -262,7 +277,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for オートルートの建設 - focus ID randomly generated due to title being in non-latin characters
+	#オートルートの建設
 	focus = {
 		id = FRA_mFAJWXZQ
 		icon = GFX_goal_continuous_non_factory_construct
@@ -328,7 +343,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 国民車構想 - focus ID randomly generated due to title being in non-latin characters
+	#国民車構想
 	focus = {
 		id = FRA_fVbxJLOj
 		icon = GFX_goal_generic_army_motorized
@@ -345,7 +360,7 @@ focus_tree = {
           }
 	}
 
-	#Focus for 加速的な工業化 - focus ID randomly generated due to title being in non-latin characters
+	#加速的な工業化
 	focus = {
 		id = FRA_gFXKkuHa
 		icon = GFX_goal_generic_construct_mil_factory
@@ -616,8 +631,9 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-                        add_stability = -0.1	
-                        remove_ideas = FRA_JEAN_III
+            add_stability = -0.1	
+            remove_ideas = FRA_JEAN_III
+			add_ideas = FRA_marcel_deat_HS
                       
 		}
 	}

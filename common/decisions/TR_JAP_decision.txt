@@ -17,7 +17,7 @@ JAP_Imperialisation_policy = {
 			}
 		}
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.02
                         political_power_cost = 0.1
 		}
 		cost = 25
@@ -53,8 +53,8 @@ JAP_Imperialisation_policy = {
 			}
 		}
 		modifier = {
-			consumer_goods_factor = 0.05
-                        political_power_cost = 0.25
+			consumer_goods_factor = 0.02
+                        political_power_cost = 0.1
 		}
 		cost = 50
 		days_remove = 730
@@ -70,6 +70,1475 @@ JAP_Imperialisation_policy = {
 		}
 		remove_effect = {
 			add_state_core = FROM
+		}
+
+	}
+}
+
+
+JAP_Power_Struggle_Policy = {
+	JAP_Jyushin_Kousaku  = { #重臣へ工作を行い、宇垣支持を増やす
+	    priority = 50
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_5
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+			JAP_Jyushin_medium_support_increase_effect = yes
+                        JAP_Kenkyukai_low_influence_decrease_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_Toseiha_Kaiju  = { #永田との会談
+	    priority = 48
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_4
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+			JAP_Toseiha_medium_support_increase_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_Toseiha_Disappoint  = { #皇道派将校を採用する
+	    priority = 46
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_4
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+			JAP_Toseiha_medium_support_decrease_effect = yes
+                        JAP_Kodoha_medium_influence_increase_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_Party_Kaiju  = { #政党幹部との会談
+	    priority = 44
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_6
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+			JAP_Party_medium_support_increase_effect = yes
+                        JAP_NSP_low_influence_increase_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_Kazoku_Kaiju  = { #貴族院に訴える
+	    priority = 42
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_2
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+			JAP_Party_low_support_increase_effect = yes
+                        JAP_Kenkyukai_low_influence_increase_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_NSP_Kaiju  = { #国家主義者との会談
+	    priority = 40
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_3
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+                        JAP_NSP_medium_influence_increase_effect = yes
+                        JAP_Kenkyukai_low_influence_increase_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_Syukusei_Jinji  = { #皇道派への粛清人事
+	    priority = 38
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_4
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+                        JAP_Toseiha_low_support_increase_effect = yes
+                        JAP_Kodoha_medium_influence_decrease_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_NSP_Break  = { #国家社会党を非難
+	    priority = 36
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = JAP
+        }
+		available = {
+			NOT = { has_country_flag = JAP_internal_affairs_ongoing_flag }
+			has_completed_focus = JAP_Power_Struggle_3
+		}
+		visible = {
+			has_country_flag = JAP_factions_unlocked_flag
+			NOT = { has_country_flag = JAP_End_Power_Struggle }
+		}
+
+		days_remove = 7
+
+		days_re_enable = 14
+		cost = 25
+		complete_effect = {
+			set_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -1.0
+
+		}
+		remove_effect = {
+                        JAP_Party_low_support_increase_effect = yes
+                        JAP_NSP_medium_influence_decrease_effect = yes
+                        clr_country_flag = JAP_internal_affairs_ongoing_flag
+		}
+
+	}
+	JAP_AI_quickly_decision = {
+		icon = eng_ally_imperialist_coup
+		activation = {
+			original_tag = JAP
+			has_country_flag = JAP_factions_unlocked_flag
+			JAP = { is_ai = yes }
+			}
+		visible = {  
+			has_country_flag = JAP_factions_unlocked_flag
+		    JAP = { is_ai = yes }
+		}
+		available = { 
+            has_country_flag = JAP_End_Power_Struggle
+		}
+
+		days_mission_timeout = 100
+		is_good = no
+		fire_only_once = yes
+
+
+
+		timeout_effect = {
+			JAP = { country_event = TR_japan.33 }
+		}
+	}
+}
+
+
+JAP_Five_Year_Plan_Policy = {
+
+	JAP_Five_Year_Plan_decision_1 = {
+		icon = eng_trade_unions_demand
+                allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday
+                        add_idea = JAP_black_thursday_KISHI
+                        }
+		}
+
+	}
+	JAP_Five_Year_Plan_decision_2 = {
+		icon = eng_trade_unions_demand
+                allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday_KISHI
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday_KISHI
+                        add_idea = JAP_black_thursday_KISHI1
+                        }
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 0
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 1
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 1
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+		}
+
+	}
+	JAP_Five_Year_Plan_decision_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday_KISHI1
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			add_ideas = JAP_Autarkie
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_4
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_5
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Five_Year_Plan_decision_6
+			}
+			swap_ideas = {
+                                remove_idea = JAP_black_thursday_KISHI1
+                                add_idea = JAP_black_thursday_KISHI2
+                        }
+		}
+
+	}
+	JAP_Five_Year_Plan_decision_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 100
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_ideas = JAP_Kinyutosei
+		}
+
+	}
+	JAP_Five_Year_Plan_decision_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 200
+		days_remove = 365
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			remove_ideas = JAP_food_import
+			add_ideas = JAP_agricultural
+			add_ideas = JAP_agriculture_1
+		}
+
+	}
+	JAP_Five_Year_Plan_decision_6 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+				consumer_goods_factor = 0.05
+		}
+		cost = 500
+		days_remove = 1800
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			add_ideas = JAP_Danganressya_Plan
+		}
+		
+		remove_effect = {
+			remove_ideas = JAP_Danganressya_Plan
+			remove_ideas = JAP_Toshikamitu
+		}
+
+	}
+}
+
+JAP_National_Reform_Plan_Policy = {
+
+	JAP_National_Reform_Plan_decision_1 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday
+                        add_idea = JAP_black_thursday_KISHI
+                        }
+		}
+
+	}
+	JAP_National_Reform_Plan_decision_2 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday_KISHI
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = JAP_black_thursday_KISHI
+				add_idea = JAP_black_thursday_KISHI1
+                        }
+			533 = {
+				add_extra_state_shared_building_slots = 2
+				add_manpower = 10000
+			}
+			823 = {
+				add_extra_state_shared_building_slots = 2
+				add_manpower = 10000
+			}
+			824 = {
+				add_extra_state_shared_building_slots = 2
+				add_manpower = 10000
+			}
+		}
+
+	}
+	JAP_National_Reform_Plan_decision_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday_KISHI1
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			add_ideas = JAP_mefo_bills_1
+			swap_ideas = {
+				remove_idea = JAP_black_thursday_KISHI1
+				add_idea = JAP_black_thursday_KISHI2
+                        }
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_4
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_5
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_National_Reform_Plan_decision_6
+			}
+		}
+
+	}
+	JAP_National_Reform_Plan_decision_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 100
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_ideas = JAP_Kinyutosei
+		}
+
+	}
+	JAP_National_Reform_Plan_decision_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 200
+		days_remove = 365
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			remove_ideas = JAP_food_import
+			add_ideas = JAP_agricultural
+			add_ideas = JAP_agriculture_1
+		}
+
+	}
+	JAP_National_Reform_Plan_decision_6 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+				consumer_goods_factor = 0.05
+		}
+		cost = 500
+		days_remove = 1800
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			add_ideas = JAP_Danganressya_Plan
+		}
+		
+		remove_effect = {
+			remove_ideas = JAP_Danganressya_Plan
+			remove_ideas = JAP_Toshikamitu
+		}
+	}
+}
+
+JAP_Japan_Reform_Plan_Policy = {
+
+	JAP_Japan_Reform_Plan_decision_1 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = -0.005
+		}
+		cost = 0
+		days_remove = 140
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -500
+			add_stability = -0.1
+		}
+		remove_effect = {
+			add_ideas = JAP_agricultural_2
+			add_ideas = JAP_agriculture_3
+			remove_ideas = JAP_food_import
+			remove_ideas = JAP_Toshikamitu
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday
+                        add_idea = JAP_black_thursday_KISHI
+                        }
+		}
+
+	}
+	JAP_Japan_Reform_Plan_decision_2 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday_KISHI
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = -0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+		remove_effect = {
+			add_ideas = JAP_Kinyutosei
+			swap_ideas = {
+				remove_idea = JAP_black_thursday_KISHI
+				add_idea = JAP_black_thursday_KISHI1
+                        } 
+		}
+
+	}
+	JAP_Japan_Reform_Plan_decision_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            has_idea = JAP_black_thursday_KISHI1
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+            stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			add_ideas = JAP_autogestion
+			swap_ideas = {
+				remove_idea = JAP_black_thursday_KISHI1
+				add_idea = JAP_black_thursday_KISHI2
+                        }
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_4
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_5
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_Japan_Reform_Plan_decision_6
+			}
+		}
+
+	}
+	JAP_Japan_Reform_Plan_decision_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 100
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_ideas = JAP_High_welfare
+		}
+
+	}
+	JAP_Japan_Reform_Plan_decision_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 200
+		days_remove = 365
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	JAP_Japan_Reform_Plan_decision_6 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+				consumer_goods_factor = 0.05
+		}
+		cost = 500
+		days_remove = 1800
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			add_ideas = JAP_Danganressya_Plan
+		}
+		
+		remove_effect = {
+			remove_ideas = JAP_Danganressya_Plan
+			remove_ideas = JAP_Toshikamitu
+		}
+	}
+}
+JAP_fully_armed_state_Policy = {
+	
+	JAP_fully_armed_state_decision_1 = {
+		icon = eng_trade_unions_demand
+                allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday
+                        add_idea = JAP_black_thursday_KISHI
+                        }
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 0
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 1
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = infrastructure
+													size > 1
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+		}
+
+	}
+	JAP_fully_armed_state_decision_2 = {
+		icon = eng_trade_unions_demand
+                allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday_KISHI
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			swap_ideas = {
+                        remove_idea = JAP_black_thursday_KISHI
+                        add_idea = JAP_black_thursday_KISHI1
+                        }
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+						random_owned_controlled_state = {
+							limit = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								OR = {
+									is_in_home_area = yes
+									NOT = {
+										owner = {
+											any_owned_state = {
+												free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+												is_in_home_area = yes
+											}
+										}
+									}
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+
+		}
+
+	}
+	JAP_fully_armed_state_decision_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        has_idea = JAP_black_thursday_KISHI1
+		}
+		visible = {
+		}
+		modifier = {
+                       political_power_factor = -0.2
+                       stability_weekly = 0.005
+		}
+		cost = 0
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			add_political_power = -50
+		}
+		remove_effect = {
+			add_ideas = JAP_Autarkie
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_4
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_5
+			}
+			activate_targeted_decision = {
+				target = JAP
+				decision = JAP_fully_armed_state_decision_6
+			}
+			swap_ideas = {
+                                remove_idea = JAP_black_thursday_KISHI1
+                                add_idea = JAP_black_thursday_KISHI2
+                        }
+		}
+
+	}
+	JAP_fully_armed_state_decision_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 100
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			add_ideas = JAP_Kinyutosei
+		}
+
+	}
+	JAP_fully_armed_state_decision_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+		}
+		cost = 200
+		days_remove = 365
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+		}
+		remove_effect = {
+			remove_ideas = JAP_food_import
+			add_ideas = JAP_agricultural
+			add_ideas = JAP_agriculture_1
+		}
+
+	}
+	JAP_fully_armed_state_decision_6 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+                        
+		}
+		visible = {
+		}
+		modifier = {
+                political_power_factor = -0.2
+				consumer_goods_factor = 0.05
+		}
+		cost = 500
+		days_remove = 1800
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+
+		complete_effect = {
+			add_ideas = JAP_Danganressya_Plan
+		}
+		
+		remove_effect = {
+			remove_ideas = JAP_Danganressya_Plan
+			remove_ideas = JAP_Toshikamitu
 		}
 
 	}

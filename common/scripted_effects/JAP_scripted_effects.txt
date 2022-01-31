@@ -1,0 +1,376 @@
+#派閥システム
+JAP_set_buz_faction_values = {
+	set_country_flag = JAP_factions_unlocked_flag
+	set_variable = { JAP_Kenkyukai_influence = 25 }
+	set_variable = { JAP_Kodoha_influence = 60 }
+	set_variable = { JAP_NSP_influence = 30 }
+	set_variable = { JAP_Party_support = 40 }
+	set_variable = { JAP_Toseiha_support = 50 }
+	set_variable = { JAP_Jyushin_support = 35 }
+	set_variable = { JAP_faction_low_increase = 5 }
+	set_variable = { JAP_faction_medium_increase = 10 }
+	set_variable = { JAP_faction_high_increase = 15 }
+	set_variable = { JAP_faction_low_decrease = -5 }
+	set_variable = { JAP_faction_medium_decrease = -10 }
+	set_variable = { JAP_faction_high_decrease = -15 }
+}
+JAP_Kenkyukai_low_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_low_influence_increase_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kenkyukai_medium_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_medium_influence_increase_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kenkyukai_high_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_high_influence_increase_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kenkyukai_low_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_low_influence_decrease_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kenkyukai_medium_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_medium_influence_decrease_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kenkyukai_high_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kenkyukai_tt
+	custom_effect_tooltip = JAP_high_influence_decrease_tt
+	add_to_variable = { JAP_Kenkyukai_influence = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_Kenkyukai_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_low_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_low_influence_increase_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_medium_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_medium_influence_increase_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_high_influence_increase_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_high_influence_increase_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_low_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_low_influence_decrease_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_medium_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_medium_influence_decrease_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Kodoha_high_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_Kodoha_tt
+	custom_effect_tooltip = JAP_high_influence_decrease_tt
+	add_to_variable = { JAP_Kodoha_influence = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_Kodoha_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_low_influence_increase_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_low_influence_increase_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_medium_influence_increase_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_medium_influence_increase_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_high_influence_increase_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_high_influence_increase_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_low_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_low_influence_decrease_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_medium_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_medium_influence_decrease_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_NSP_high_influence_decrease_effect = {
+	custom_effect_tooltip = JAP_NSP_tt
+	custom_effect_tooltip = JAP_high_influence_decrease_tt
+	add_to_variable = { JAP_NSP_influence = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_NSP_influence
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_low_support_increase_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_low_support_increase_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_medium_support_increase_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_medium_support_increase_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_high_support_increase_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_high_support_increase_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_low_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_low_support_decrease_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_medium_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_medium_support_decrease_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Party_high_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Party_tt
+	custom_effect_tooltip = JAP_high_support_decrease_tt
+	add_to_variable = { JAP_Party_support = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_Party_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_low_support_increase_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_low_support_increase_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_medium_support_increase_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_medium_support_increase_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_high_support_increase_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_high_support_increase_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_low_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_low_support_decrease_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_medium_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_medium_support_decrease_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Toseiha_high_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Toseiha_tt
+	custom_effect_tooltip = JAP_high_support_decrease_tt
+	add_to_variable = { JAP_Toseiha_support = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_Toseiha_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_low_support_increase_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_low_support_increase_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_medium_support_increase_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_medium_support_increase_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_high_support_increase_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_high_support_increase_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_high_increase }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_low_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_low_support_decrease_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_medium_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_medium_support_decrease_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}
+JAP_Jyushin_high_support_decrease_effect = {
+	custom_effect_tooltip = JAP_Jyushin_tt
+	custom_effect_tooltip = JAP_high_support_decrease_tt
+	add_to_variable = { JAP_Jyushin_support = JAP_faction_high_decrease }
+	clamp_variable = {
+		var = JAP_Jyushin_support
+		min = 0
+		max = 100
+	}
+}

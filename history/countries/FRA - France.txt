@@ -139,9 +139,16 @@ add_ideas = {
             low_pensions
             good_health_care
             FRA_JEAN_III
+            FRA_maurras
+            FRA_Maurice_Pujo
+            FRA_marcel_deat_Eco
+            FRA_Jacques_Doriot_Int 
+            FRA_Maxime_Weygand
+            FRA_francois_de_larocque_carm
+            FRA_Francois_Darlan
+            FRA_jean_mermoz
             FRA_revenge
             FRA_black_thursday
-            
 }
 
 

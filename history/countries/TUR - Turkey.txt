@@ -38,6 +38,7 @@ add_ideas = {
         TUR_Bagdadrailway
         TUR_depression
         TUR_Jubyounin
+        TUR_AbdulmecidII
 }
 set_technology = {
 	infantry_weapons = 1

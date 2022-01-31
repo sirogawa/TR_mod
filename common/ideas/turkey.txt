@@ -2,22 +2,6 @@
  ideas = {
        
      country = {
-                TUR_AbdulmecidII = {
-			picture = TUR_Abdulmecid_Ottoman
-			allowed = {
-				original_tag = TUR
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                              stability_factor = 0.05
-			}
-			
-
-		}
-		
-
                  TUR_Bagdadrailway = {
 			allowed = {
 				always = no
@@ -530,6 +514,26 @@
                                 army_defence_factor = 0.1
 			}
 		}
+		}
+    #minister
+    Head_of_State = {	
+                
+                TUR_AbdulmecidII = {
+			picture = TUR_Abdulmecid_Ottoman
+			allowed = {
+				original_tag = TUR
+			}
+			available = {
+				always = no
+		    }
 
-}
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                                paternal_autocrat
+				TR_autocratic_charmer
+			}
+		}
+    }
 }

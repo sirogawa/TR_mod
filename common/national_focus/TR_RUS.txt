@@ -11,7 +11,7 @@ focus_tree = {
 	#軍事革命委員会
 	focus = {
 		id = RUS_junshigemingweiyuanhui
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_the_supreme_soviet
 		x = 11
 		y = 0
 		cost = 2
@@ -26,7 +26,7 @@ focus_tree = {
 	#戦時共産主義
 	focus = {
 		id = RUS_zhanshigongchanzhuyi
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_organize_wreckers
 		x = 9
 		y = 1
 		cost = 5
@@ -42,7 +42,7 @@ focus_tree = {
 	#亡命者の帰国
 	focus = {
 		id = RUS_wangmingzhenoguiguo
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_womens_fascist_movement
 		x = 11
 		y = 1
 		cost = 5
@@ -63,7 +63,7 @@ focus_tree = {
 	#反革命の取締り
 	focus = {
 		id = RUS_fangemingnoqudiri
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_SOV_military_purge
 		x = 13
 		y = 1
 		cost = 5
@@ -95,7 +95,7 @@ focus_tree = {
 	#労農赤軍
 	focus = {
 		id = RUS_laonongchijun
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 5
 		y = 3
 		cost = 5
@@ -115,7 +115,7 @@ focus_tree = {
 	#ドイツに支援を要請
 	focus = {
 		id = RUS_doitunizhiyuanwoyaoqing
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_support_spanish_poum
 		x = 1
 		y = 3
 		cost = 5
@@ -131,7 +131,7 @@ focus_tree = {
 	#新経済政策
 	focus = {
 		id = RUS_xinjingjizhengce
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_generic_soviet_construction
 		x = 17
 		y = 3
 		cost = 10
@@ -155,7 +155,7 @@ focus_tree = {
 	#トゥハチェフスキーの主導
 	focus = {
 		id = RUS_touhatiehusukinozhudao
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_approach_tukahchevsky
 		x = 4
 		y = 4
 		cost = 10
@@ -195,7 +195,7 @@ focus_tree = {
 	#一国社会主義
 	focus = {
 		id = RUS_yiguoshehuizhuyi
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_socialism_in_one_country
 		x = 0
 		y = 5
 		cost = 10		
@@ -220,7 +220,7 @@ focus_tree = {
 	#スヴェチンの主導
 	focus = {
 		id = RUS_suvuetinnozhudao
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_SOV_organization_centralization_discipline
 		x = 6
 		y = 4
 		cost = 10
@@ -240,7 +240,7 @@ focus_tree = {
 	#外交政策
 	focus = {
 		id = RUS_waijiaozhengce
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		x = 1
 		y = 4
 		cost = 10
@@ -261,7 +261,7 @@ focus_tree = {
 	#党大会
 	focus = {
 		id = RUS_dangdahui
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 11
 		y = 3
 		cost = 8
@@ -317,8 +317,8 @@ focus_tree = {
 		prerequisite = { focus = RUS_gangtienovuositi  }
 	
 	completion_reward = {
-		add_ideas = RUS_Kyouiku
-		add_ideas = RUS_Eiseikanri
+		add_ideas = acceptable_health_care
+		add_ideas = low_school_system
 	}
  }
 
@@ -349,7 +349,7 @@ focus_tree = {
 	#大粛清
 	focus = {
 		id = RUS_gangtienovuositi_3
-		icon = GFX_focus_fra_loyalty_stalin
+		icon = GFX_focus_SOV_the_last_purge
 		x = 12
 		y = 7
 		cost = 10
@@ -377,7 +377,7 @@ focus_tree = {
 	#スターリン憲法
 	focus = {
 		id = RUS_gangtienovuositi_4
-		icon = GFX_focus_fra_loyalty_stalin
+		icon = GFX_focus_SOV_father_of_nations
 		x = 12
 		y = 8
 		cost = 10
@@ -397,7 +397,7 @@ focus_tree = {
 	#赤いツァーリ
 	focus = {
 		id = RUS_gangtienovuositi_5
-		icon = GFX_focus_fra_loyalty_stalin
+		icon = GFX_focus_SOV_stalins_cult_of_personality
 		x = 12
 		y = 9
 		cost = 10
@@ -566,7 +566,7 @@ focus_tree = {
 	#農民の友
 	focus = {
 		id = RUS_nongminnoyou
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_SOV_bukharinists
 		x = 10
 		y = 4
 		cost = 2
@@ -691,7 +691,7 @@ focus_tree = {
 	#レーニンに忠実に
 	focus = {
 		id = RUS_reninnohoujizhe
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_zinovyevists
 		x = 8
 		y = 4
 		cost = 2
@@ -834,7 +834,7 @@ focus_tree = {
 	#五ヵ年計画
 	focus = {
 		id = RUS_wukanianjihua
-		icon = GFX_RUS_wukanianjihua-424
+		icon = GFX_focus_SOV_merge_plants
 		x = 18
 		y = 5
 		cost = 10
@@ -851,14 +851,14 @@ focus_tree = {
 	completion_reward = {
 		swap_ideas = {
 			remove_idea = RUS_NEW_ECONOMIC_POLICY
-			add_idea = RUS_Five_Years_Plan
+			add_idea = RUS_Five_Years_Plan	
 		}
 		}
 	}
 	#ネップの維持
 	focus = {
 		id = RUS_netupunoweichi
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 16
 		y = 5
 		cost = 10
@@ -883,7 +883,7 @@ focus_tree = {
 	#農業集団化の強行
 	focus = {
 		id = RUS_nongyejituanhuanoqiangxing
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_SOV_the_road_of_life
 		x = 18
 		y = 6
 		cost = 10
@@ -901,7 +901,7 @@ focus_tree = {
 	#全てを重工業へ回せ
 	focus = {
 		id = RUS_quantewochonggongyehehuise
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		x = 18
 		y = 7
 		cost = 10
@@ -933,6 +933,9 @@ focus_tree = {
 				add_idea = RUS_Five_Years_Plan_3
 			}
 			}
+			add_ideas = no_minimum_wage
+			add_ideas = no_max_workhours
+			add_ideas = no_safety_regulations
 		}
 	#ソビエト科学
 	focus = {
@@ -953,7 +956,7 @@ focus_tree = {
 	#漸進的社会化
 	focus = {
 		id = RUS_jianjindeshehuihua
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_breadbasket_of_the_union
 		x = 16
 		y = 6
 		cost = 10
@@ -1010,7 +1013,7 @@ focus_tree = {
 	#第三インターナショナルへの加盟
 	focus = {
 		id = RUS_disanintanasiyonaruhenojiameng
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		x = 2
 		y = 6
 		cost = 10
@@ -1035,7 +1038,7 @@ focus_tree = {
 	#第四インターナショナルの創設
 	focus = {
 		id = RUS_disiintanasiyonarunochuangshe
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_the_comecon
 		x = 0
 		y = 6
 		cost = 10
@@ -1056,7 +1059,7 @@ focus_tree = {
 	#"中央アジアを征服"
 	focus = {
 		id = RUS_Diplomacy_Focus1
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_SOV_bukharan_republic
 		x = 1
 		y = 7
 		cost = 10

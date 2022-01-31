@@ -54,7 +54,13 @@ add_ideas = {
 	CHI_fuannteinakokka
         CHI_Shading_sun
         partial_economic_mobilisation
-	CHI_soong_mei_ling
+	CHI_Lin_Sen
+        CHI_Chiang_Kaishek
+        CHI_Chang_Chun
+        CHI_Chen_Kuofu_MoE
+        CHI_Dai_Li_MoI
+        CHI_He_Yingqin_coa
+        CHI_Sung_Meiling_cair
 }
 
 

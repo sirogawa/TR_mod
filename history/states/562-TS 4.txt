@@ -1,7 +1,7 @@
 
 state={
 	id=562
-	name="STATE_562" # Okhotsk
+	name="TR_STATE_562" # Okhotsk
 	manpower = 126961
 	state_category = wasteland
 
@@ -9,6 +9,10 @@ state={
 		owner = JAP
 		buildings = {
 			infrastructure = 1
+			12683 = {
+				naval_base = 1
+
+			}
 		}
 		add_core_of = JAP
 	}

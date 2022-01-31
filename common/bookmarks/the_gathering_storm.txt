@@ -11,8 +11,8 @@ bookmarks = {
 			history = "TR_JAP_GATHERING_STORM_DESC"
 			ideology = market_liberal
 			ideas = {
-				JAP_hirohito
-				JAP_asian_leader
+				JAP_Shading_sun
+				JAP_colony_deficit
 				JAP_black_thursday
 			}	
 			focuses = {

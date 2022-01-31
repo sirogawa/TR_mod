@@ -63,23 +63,379 @@ ideas = {
 			}
 		}
       }
-        #Advisor
-        political_advisor = {
-              DDR_Reinhard_Heydrich = {
-			
-			picture = DDR_Reinhard_Heydrich
-			
+	Head_of_State = {
+		DDR_Wilhelm_II = {
+			picture = DDR_Wilhelm_II
 			allowed = {
 				original_tag = DDR
-                                  }
-                        available = {
-                              has_completed_focus = DDR_Civil_war_6
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				paternal_autocrat
+                TR_stern_imperialist
+			}
+		}
+		DDR_Wilhelm_III = {
+			picture = DDR_Wilhelm_III
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				paternal_autocrat
+                TR_popular_figurehead
+			}
+		}
+    }
+	Government_leaders = {
+		DDR_Otto_von_Bismarck = {
+			picture = DDR_Otto_von_Bismarck
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+                TR_silent_workhorse
+			}
+		}
+		DDR_Alfred_Hugenberg = {
+			picture = DDR_Alfred_Hugenberg
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+                TR_corporate_suit
+			}
+		}
+		DDR_Franz_von_Papen = {
+			picture = DDR_Franz_von_Papen
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+                TR_political_protege
+			}
+		}
+		DDR_Kurt_von_Schleicher = {
+			picture = DDR_Kurt_von_Schleicher
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+                TR_flamboyant_tough_guy
+			}
+		}
+		DDR_Erich_Ludendorff = {
+			picture = DDR_Erich_Ludendorff
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				Gnosticism
+                TR_resigned_generalissimo
+			}
+		}
+    }
+	Minister_of_Foreign_Affairs = {
+
+		DDR_Konstantin_von_Neurath = {
+			picture = DDR_Konstantin_von_Neurath
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+                TR_great_compromiser
+			}
+		}
+        DDR_Ribbentrop = {
+
+			picture = DDR_Ribbentrop
+			allowed = {
+				original_tag = DDR
+			}
+	                available = {
+                               always = no
 			}
 			
-			traits = { Founder_of_intelligence }
-			ai_will_do = {
-				factor = 5
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+                TR_biased_intellectual
 			}
-		  }
-        }
+		}
+    }
+	Minister_of_Economy = {
+		DDR_Hjalmar_Schacht = {
+			picture = DDR_Hjalmar_Schacht
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+                TR_bank_president
+			}
+		}
+		DDR_Wilhelm_Groener_MoE = {
+			name = DDR_Wilhelm_Groener
+			picture = DDR_Wilhelm_Groener
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+                authoritarian_democrat
+                TR_railway_magnate
+			}
+		}
+		DDR_Alfred_Hugenberg_MoE = {
+			name = DDR_Alfred_Hugenberg
+			picture = DDR_Alfred_Hugenberg
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				paternal_autocrat
+                TR_steel_magnate
+			}
+		}
+    }
+	Minister_of_Interior = {
+		DDR_Wilhelm_Groener_MoI = {
+			name = DDR_Wilhelm_Groener
+			picture = DDR_Wilhelm_Groener
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+                authoritarian_democrat
+                TR_compassionate_gentleman
+			}
+		}
+		DDR_Alfred_Hugenberg_MoI = {
+			name = DDR_Alfred_Hugenberg
+			picture = DDR_Alfred_Hugenberg
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+                TR_media_magnate
+			}
+		}
+		DDR_Otto_Meissner = {
+			picture = DDR_Otto_Meissner
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+                TR_back_stabber
+			}
+		}
+
+		DDR_Reinhard_Heydrich = {
+			picture = DDR_Reinhard_Heydrich
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+                TR_secret_police_chief
+			}
+		}
+    }
+	chief_of_staff = {
+		DDR_Wilhelm_Groener_cos = {
+			name = DDR_Wilhelm_Groener
+			picture = DDR_Wilhelm_Groener
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_staff
+                cos_school_of_defence
+			}
+		}
+		DDR_Werner_von_Blomberg = {
+			picture = DDR_Werner_von_Blomberg
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_staff
+                cos_school_of_psychology
+			}
+		}
+		DDR_von_Hammerstein_Equord = {
+			picture = DDR_von_Hammerstein_Equord
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_staff
+                cos_school_of_mass_combat
+			}
+		}
+		DDR_Erich_von_Manstein = {
+			picture = DDR_Erich_von_Manstein
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_staff
+                cos_school_of_manoeuvre
+			}
+		}
+		DDR_Heinz_Guderian = {
+			picture = DDR_Heinz_Guderian
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_staff
+                cos_school_of_manoeuvre
+			}
+		}
+    }
+	chief_of_army = {
+		DDR_Werner_von_Fritsch = {
+			picture = DDR_Werner_von_Fritsch
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_army
+                carm_doctrine_of_autonomy
+			}
+		}
+		DDR_Walther_von_Brauchitsch = {
+			picture = DDR_Walther_von_Brauchitsch
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_army
+                carm_armoured_spearhead_doctrine
+			}
+		}
+		DDR_Kurt_von_Schleicher_coa = {
+			name = DDR_Kurt_von_Schleicher
+			picture = DDR_Kurt_von_Schleicher
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_army
+                carm_guns_and_butter_doctrine
+			}
+		}
+		DDR_Fedor_von_Bock = {
+			picture = DDR_Kurt_von_Schleicher
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_army
+                carm_decisive_battle_doctrine
+			}
+		}
+		DDR_Erwin_von_Witzleben_coa = {
+			name = DDR_Erwin_von_Witzleben
+			picture = DDR_Erwin_von_Witzleben
+			allowed = {
+				original_tag = DDR
+			}
+			cancel_if_invalid = yes	
+			traits = { 
+				chief_of_army
+                carm_static_defence_doctrine
+			}
+		}
+    }
 }

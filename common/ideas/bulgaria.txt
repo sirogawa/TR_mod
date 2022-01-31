@@ -577,7 +577,122 @@
 			}
 		}
 	}
+        #minister
+        Head_of_State = {	
+                BUL_BorisIII_HS = {
+			
+			picture = BUL_BorisIII_minister
+			
+			allowed = {
+				original_tag = BUL
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				paternal_autocrat
+				BUL_Tsar
+			}
+		}
+                BUL_BorisIII_HS2 = {
+			
+			picture = BUL_BorisIII_minister
+			
+			allowed = {
+				original_tag = BUL
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				national_populist
+				BUL_Khan
+			}
+		}
+               
+               }
+        Government_leaders = {	
+                BUL_Filov = {
+			
+			picture = BUL_Filov
+			
+			allowed = {
+				original_tag = BUL
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+                                paternal_autocrat
+				TR_political_protege
+			}
+		}
+               
+               }
+    Minister_of_Foreign_Affairs = { 
+		BUL_Kyoseivanov = {
+			picture = BUL_Kyoseivanov
+			
+			allowed = {
+				original_tag = BUL
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				paternal_autocrat
+				TR_biased_intellectual
+			}
+		}
+		}
+        Minister_of_Economy = {	
+                BUL_Dobri_Bozhilov = {
+			
+			picture = BUL_Dobri_Bozhilov
+			
+			allowed = {
+				original_tag = BUL
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				paternal_autocrat
+				TR_bank_president
+			}
+		}
+               
+               }
+        Minister_of_Interior = {	
+		BUL_Nikola_Nedev = {
 
+			picture = BUL_Nikola_Nedev
+			
+			allowed = {
+				original_tag = BUL
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				TR_silent_lawyer
+			}
+		}
+               
+               }
 
 ########  ########  ######  ####  ######   ##    ## ######## ########   ######  
 ##     ## ##       ##    ##  ##  ##    ##  ###   ## ##       ##     ## ##    ## 

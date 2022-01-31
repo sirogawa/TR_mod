@@ -37,7 +37,6 @@ KOR_INF_01 =
 
 	for_countries = { KOR }
 
-	can_use = {	Not = { has_government = communism } }
 
 	division_types = { "infantry" }
 
@@ -113,7 +112,6 @@ KOR_INF_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = communism }
 
 	division_types = { "infantry" }
 

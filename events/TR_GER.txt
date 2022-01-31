@@ -377,8 +377,7 @@ country_event = {
 		name = TR_germany.4.a
 		ai_chance = { factor = 0 }
 		add_ideas = anarchism_society
-		inherit_technology = HAN
-		HAN = {
+		HAN = { inherit_technology = GER
 			add_state_core = 59
 			add_state_core = 57
 			add_state_core = 56
@@ -397,8 +396,7 @@ country_event = {
 		name = TR_germany.4.b
 		ai_chance = { factor = 100 }
 		add_ideas = anarchism_society
-		inherit_technology = HAN
-		HAN = {
+		HAN = { inherit_technology = GER
 			add_state_core = 59
 			add_state_core = 57
 			add_state_core = 56
@@ -429,16 +427,14 @@ country_event = {
 	
 	option = {
 		name = TR_germany.5.a
-		inherit_technology = WGR
-		inherit_technology = BAD
-		WGR = {
+		WGR = { inherit_technology = GER
 			set_cosmetic_tag = WGR_FRA
 			transfer_state = 42
             transfer_state = 51
 			add_state_core = 51
 			add_state_core = 42
         }
-		BAD = {
+		BAD = { inherit_technology = GER
 			add_state_core = 876
 			transfer_state = 876
         }
@@ -499,15 +495,14 @@ country_event = {
 	option = {
 		name = TR_germany.7.a
 		ai_chance = { factor = 0 }
-		inherit_technology = MEK
-		inherit_technology = KIE
-		MEK = {
+		MEK = { inherit_technology = GER
 			change_tag_from = GER
 			add_state_core = 61
 			transfer_state = 61
 			change_tag_from = GER
         }
 		KIE = {
+                        inherit_technology = GER
 			add_state_core = 58
 			transfer_state = 58
 			add_state_core = 850
@@ -520,13 +515,11 @@ country_event = {
 	option = {
 		name = TR_germany.7.b
 		ai_chance = { factor = 100 }
-		inherit_technology = MEK
-		inherit_technology = KIE
-		MEK = {
+		MEK = { inherit_technology = GER
 			add_state_core = 61
 			transfer_state = 61
         }
-		KIE = {
+		KIE = { inherit_technology = GER
 			add_state_core = 58
 			transfer_state = 58
 			add_state_core = 850
@@ -555,10 +548,7 @@ country_event = {
 	option = {
 		name = TR_germany.8.a
 		ai_chance = { factor = 50 }
-		inherit_technology = BAY
-		inherit_technology = WUR
-		inherit_technology = HES
-		BAY = {
+		BAY = { inherit_technology = GER
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
@@ -566,7 +556,7 @@ country_event = {
 			add_state_core = 54
 			change_tag_from = GER
         }
-		WUR = {			
+		WUR = {	inherit_technology = GER		
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
@@ -574,7 +564,7 @@ country_event = {
 			add_state_core = 52
             add_state_core = 53
 		}
-		HES = {
+		HES = { inherit_technology = GER
 			add_state_core = 55
 			transfer_state = 55
 			add_state_core = 60
@@ -586,17 +576,14 @@ country_event = {
 	option = {
 		name = TR_germany.8.b
 		ai_chance = { factor = 30 }
-		inherit_technology = BAY
-		inherit_technology = WUR
-		inherit_technology = HES
-		BAY = {
+		BAY = { inherit_technology = GER
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
 			transfer_state = 52
 			add_state_core = 54
         }
-		WUR = {			
+		WUR = {	inherit_technology = GER		
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
@@ -604,7 +591,7 @@ country_event = {
 			add_state_core= 52
             add_state_core = 53
 		}
-		HES = {
+		HES = { inherit_technology = GER
 			add_state_core = 55
 			transfer_state = 55
 			add_state_core = 60
@@ -618,10 +605,9 @@ country_event = {
 	option = {
 		name = TR_germany.8.c
 		ai_chance = { factor = 20 }
-		inherit_technology = BAY
-		inherit_technology = WUR
-		inherit_technology = HES
+
 		BAY = {
+		inherit_technology = GER
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
@@ -629,7 +615,8 @@ country_event = {
 			add_state_core = 54
 			change_tag_from = GER
         }
-		WUR = {			
+		WUR = {		
+                         inherit_technology = GER	
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
@@ -639,7 +626,7 @@ country_event = {
 			change_tag_from = GER
 		}
 		HES = {
-
+                        inherit_technology = GER
 			transfer_state = 55
 			add_state_core = 60
 			transfer_state = 60

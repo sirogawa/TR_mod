@@ -1,0 +1,259 @@
+spriteTypes = {
+
+
+#####日本#####
+
+
+	SpriteType = {	
+		name = "GFX_goal_FNG_japan_money"
+		texturefile = "gfx/interface/goals/JAP/FNG_japan_money.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_align_japan"
+		texturefile = "gfx/interface/goals/JAP/goal_align_japan.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_industry"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_industry.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_kohoda"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_kohoda.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_toua"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_toua.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_yen"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_yen.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japan_helmet"
+		texturefile = "gfx/interface/goals/JAP/goal_japan_helmet.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japanese_democracy"
+		texturefile = "gfx/interface/goals/JAP/goal_japanese_democracy.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japanese_investment"
+		texturefile = "gfx/interface/goals/JAP/goal_japanese_investment.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japanese_instructors"
+		texturefile = "gfx/interface/goals/JAP/goal_japanese_instructors.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japanese_officer"
+		texturefile = "gfx/interface/goals/JAP/goal_japanese_officer.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JP"
+		texturefile = "gfx/interface/goals/JAP/goal_JP.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JP_1936"
+		texturefile = "gfx/interface/goals/JAP/goal_JP_1936.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JP_1940"
+		texturefile = "gfx/interface/goals/JAP/goal_JP_1940.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JP_sun"
+		texturefile = "gfx/interface/goals/JAP/goal_JP_sun.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_toseiha"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_toseiha.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_flag_japan"
+		texturefile = "gfx/interface/goals/JAP/goal_flag_japan.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Kodoha"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_Kodoha.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_tank"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_tank.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_Japanese_Glory"
+		texturefile = "gfx/interface/goals/JAP/goal_Japanese_Glory.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_japanese_imperialism"
+		texturefile = "gfx/interface/goals/JAP/goal_japanese_imperialism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_japanese_propaganda"
+		texturefile = "gfx/interface/goals/JAP/goal_Japanese_Glory.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_co_prosperity_sphere"
+		texturefile = "gfx/interface/goals/JAP/JAP_co_prosperity_sphere.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Kakushinha"
+		texturefile = "gfx/interface/goals/JAP/goal_JAP_Kakushinha.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_Korea_Colony"
+		texturefile = "gfx/interface/goals/JAP/Korea_Colony.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_korean_independence"
+		texturefile = "gfx/interface/goals/JAP/goal_korean_independence.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_korean_occupation"
+		texturefile = "gfx/interface/goals/JAP/goal_korean_occupation.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_zaibatsu_contracts"
+		texturefile = "gfx/interface/goals/JAP/JAP_zaibatsu_contracts.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_target_indonesia"
+		texturefile = "gfx/interface/goals/JAP/JAP_target_indonesia.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_target_indochina"
+		texturefile = "gfx/interface/goals/JAP/JAP_target_indochina.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_target_india"
+		texturefile = "gfx/interface/goals/JAP/JAP_target_india.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_invasion_of_persia"
+		texturefile = "gfx/interface/goals/JAP/JAP_invasion_of_persia.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_USA_it_cant_happen_here"
+		texturefile = "gfx/interface/goals/usa/USA_it_cant_happen_here.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_USA_Terror"
+		texturefile = "gfx/interface/goals/usa/goal_USA_Terror.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_Free_Trade_Unions"
+		texturefile = "gfx/interface/goals/Free_Trade_Unions.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_workers_rights"
+		texturefile = "gfx/interface/goals/goal_workers_rights.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_radio_equipment"
+		texturefile = "gfx/interface/goals/generic_radio_equipment.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_National_corporate"
+		texturefile = "gfx/interface/goals/National_corporate.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_police_state"
+		texturefile = "gfx/interface/goals/generic_police_state.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_political_purge"
+		texturefile = "gfx/interface/goals/generic_political_purge.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_total_liberation"
+		texturefile = "gfx/interface/goals/total_liberation.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_colonial_unity"
+		texturefile = "gfx/interface/goals/colonial_unity.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_elections"
+		texturefile = "gfx/interface/goals/generic_elections.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_government_centralised_icon"
+		texturefile = "gfx/interface/goals/government_centralised_icon.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_ideology_social_conservative"
+		texturefile = "gfx/interface/goals/ideology_social_conservative.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_ideology_market_liberal"
+		texturefile = "gfx/interface/goals/ideology_market_liberal.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_ideology_social_liberal"
+		texturefile = "gfx/interface/goals/ideology_social_liberal.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_ideology_social_democrat"
+		texturefile = "gfx/interface/goals/ideology_social_democrat.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_colonialist_crusade2"
+		texturefile = "gfx/interface/goals/colonialist_crusade2.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_colonialist_crusade2"
+		texturefile = "gfx/interface/goals/colonialist_crusade2.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_list_left"
+		texturefile = "gfx/interface/goals/list_left.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RAJ_dominion_of_india"
+		texturefile = "gfx/interface/goals/RAJ_dominion_of_india.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_education_spending"
+		texturefile = "gfx/interface/goals/education_spending.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_socialist_infrastructure"
+		texturefile = "gfx/interface/goals/socialist_infrastructure.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_china_deal"
+		texturefile = "gfx/interface/goals/china_deal.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_A_New_China"
+		texturefile = "gfx/interface/goals/A_New_China.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_reform_electoral_law"
+		texturefile = "gfx/interface/goals/reform_electoral_law.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_indochina_revolution"
+		texturefile = "gfx/interface/goals/indochina_revolution.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_minor_labour_regulations"
+		texturefile = "gfx/interface/goals/minor_labour_regulations.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_forced_mil"
+		texturefile = "gfx/interface/goals/forced_mil.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_spirit_of_revolution"
+		texturefile = "gfx/interface/goals/RUS_spirit_of_revolution.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_take_russia"
+		texturefile = "gfx/interface/goals/take_russia.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_Unite_Arabia"
+		texturefile = "gfx/interface/goals/Unite_Arabia.png"
+	}
+}

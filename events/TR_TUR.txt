@@ -148,7 +148,7 @@ country_event = {
                 create_country_leader = {
 	                name = "トルコ大国民議会"
 	                desc = ""
-	                picture = "Portrait_Turkey_TBMM.tga"
+	                picture = "gfx/leaders/TUR/Portrait_Turkey_TBMM.tga"
 	                expire = "1965.1.1"
 	                ideology = paternal_autocrat_subtype
                 }

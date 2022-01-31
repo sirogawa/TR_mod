@@ -1,7 +1,7 @@
 
 state={
 	id=637
-	name="STATE_637"
+	name="TR_STATE_637"
 
 	history={
 		owner = JAP
@@ -9,6 +9,10 @@ state={
 			infrastructure = 1
 			12207 = {
 				naval_base = 1
+
+			}
+			4728 = {
+				naval_base = 2
 
 			}
 

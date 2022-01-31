@@ -75,7 +75,13 @@ focus_tree = {
 			ideology = totalist
 			popularity = 0.2
 		}
-                hidden_effect = { country_event = {
+                hidden_effect = { 
+					add_ideas = GER_Otto_Strasser
+					add_ideas = GER_Gregor_Strasser
+					add_ideas = GER_joseph_goebbels_FA
+					add_ideas = GER_Speer
+					add_ideas = GER_Rohm
+					country_event = {
 					id = TR_news.35
 					days = 1
                                      }
@@ -112,13 +118,19 @@ focus_tree = {
 			picture = "gfx/leaders/GER/Portrait_GER_Eugen.tga"
 			expire = "1965.1.1"
 			ideology = radical_socialist_subtype
-                        traits = { Levine_traits }
+                        traits = {  }
 		}
                 add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.2
 		}
-                hidden_effect = { country_event = {
+                hidden_effect = { 
+					add_ideas = GER_Eugen_Levine
+					add_ideas = GER_Ruth_Fischer
+                                        add_ideas = GER_Anton_Ackermann
+					add_ideas = GER_Ernst_Meyer
+                                        add_ideas = GER_Julius_Leber
+					country_event = {
 					id = TR_news.33
 					days = 1
                                      }
@@ -155,13 +167,19 @@ focus_tree = {
 			picture = "gfx/leaders/GER/Portrait_GER_trotsky.tga"
 			expire = "1965.1.1"
                         ideology = radical_socialist_subtype
-                        traits = { Trotsky_traits }
+                        traits = { }
 		}
                 add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.2
 		}
-                hidden_effect = { country_event = {
+                hidden_effect = { 
+					add_ideas = GER_Lev_Trotsky
+					add_ideas = GER_Wilhelm_Pieck
+					add_ideas = GER_ernst_thalmann
+                                        add_ideas = GER_Walter_Ulbricht
+                                        add_ideas = GER_Ludwig_Renn
+					country_event = {
 					id = TR_news.34
 					days = 1
                                      }

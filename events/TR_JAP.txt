@@ -386,7 +386,7 @@ country_event = {
 	option = {
 		name = TR_japan.7.a
                 ai_chance = {
-			base = 80
+			base = 75
 		}
                  set_country_flag = JAP_KAIGEN_TEPPAI
                  remove_ideas = JAP_KAIGENREI
@@ -418,7 +418,7 @@ country_event = {
         option = {
 		name = TR_japan.7.b
                 ai_chance = {
-			base = 20
+			base = 25
 		}
                set_country_flag = JAP_KAIGEN_KEIZOKU
                 
@@ -794,7 +794,7 @@ country_event = {#国家主義者が朝鮮自治を非難
 	option = { 
 		name = TR_japan.21.a
 		add_political_power = -50
-		stability_factor = -0.05
+		add_stability = -0.05
 		add_popularity = {
 			ideology = totalist
 			popularity = 0.01
@@ -825,7 +825,7 @@ country_event = {#釜山会議-自治政府
 			base = 95
 		}
 		add_political_power = -10
-		stability_factor = -0.01
+		add_stability = -0.01
         country_event = {
 			id = TR_japan.23
 			days = 2	
@@ -862,7 +862,7 @@ country_event = {#釜山会議-議会制度
 			base = 95
 		}
 		add_political_power = -10
-		stability_factor = -0.01
+		add_stability = -0.01
         country_event = {
 			id = TR_japan.24
 			days = 2	
@@ -899,7 +899,7 @@ country_event = {#釜山会議-憲法
 			base = 95
 		}
 		add_political_power = -10
-		stability_factor = -0.01
+		add_stability = -0.01
                 country_event = {
 			id = TR_japan.25
 			days = 2	
@@ -937,7 +937,7 @@ country_event = {#釜山会議-連邦制度
 			base = 95
 		}
 		add_political_power = -10
-		stability_factor = -0.01
+		add_stability = -0.01
         country_event = {
 			id = TR_japan.26
 			days = 2	
@@ -972,7 +972,7 @@ country_event = {#釜山会議-合意
 	option = { 
 		name = TR_japan.26.a
 		add_political_power = 50
-		stability_factor = 0.015
+		add_stability = 0.015
 		hidden_effect = {
 			country_event = {
 				id = TR_japan.28
@@ -1002,7 +1002,7 @@ country_event = {#釜山会議-決裂
 	option = { 
 		name = TR_japan.27.a
 		add_political_power = -50
-		stability_factor = -0.1
+		add_stability = -0.1
 		525 = { 
 			add_state_modifier = {
 				modifier = {
@@ -1088,7 +1088,7 @@ country_event = {#京城での戴冠式
 	option = { 
 		name = TR_japan.29.a
 		add_political_power = 25
-		stability_factor = 0.05
+		add_stability = 0.05
 		set_cosmetic_tag = JAP_KOR_UNION
 		add_state_core = 525
 		add_state_core = 527
@@ -1422,7 +1422,7 @@ country_event = {
         set_country_flag = JAP_Dairenritsu_1940
         hidden_effect = {
 			add_ideas = JAP_Hatoyama_Ichiro
-			add_ideas = JAP_Togo_Shigenori
+			add_ideas = JAP_Yoshida_Shigeru
 			add_ideas = JAP_Kono_Ichiro
 			add_ideas = JAP_Miki_Bukichi
 			kill_ideology_leader = social_conservative
@@ -1454,4 +1454,687 @@ country_event = {
 			}
 		}
 	}
+}
+#AI専用イベント
+country_event = {
+	id = TR_japan.33
+	title = TR_japan.33.t
+	desc = TR_japan.33.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#宇垣が組閣する
+		name = TR_japan.33.a
+		ai_chance = {
+			base = 34
+		}
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_16
+		complete_national_focus = JAP_Power_Struggle_17
+		complete_national_focus = JAP_Power_Struggle_18
+	}
+	option = {#
+	    name = TR_japan.33.b
+	    ai_chance = {
+		    base = 33
+	    }
+		complete_national_focus = JAP_Power_Struggle_15
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+		add_stability = -0.1
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_14
+		remove_unit_leader = 2606
+		hidden_effect = { kill_ideology_leader = paternal_autocrat }
+		create_country_leader = {
+			name = "東條英機"
+			desc = "POLITICS_TOJO_DESC"
+			picture = "gfx/leaders/JAP/Portrait_JAP_tojo.tga"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+		}
+    }
+	option = {#
+	    name = TR_japan.33.c
+	    ai_chance = {
+		    base = 33
+	    }
+		complete_national_focus = JAP_Power_Struggle_15
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_13
+    }
+}
+#政争の開始
+country_event = {
+	id = TR_japan.34
+	title = TR_japan.34.t
+	desc = TR_japan.34.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#
+		name = TR_japan.34.a
+		JAP_set_buz_faction_values = yes 
+	}
+}
+
+#永田が宇垣を見限る
+country_event = {
+	id = TR_japan.35
+	title = TR_japan.35.t
+	desc = TR_japan.35.d
+	picture = GFX_report_event_election_vote
+        fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_country_flag = JAP_factions_unlocked_flag
+		NOT = { has_completed_focus = JAP_Power_Struggle_16 }
+        check_variable = {
+            JAP_Toseiha_support < 25
+            }	
+	}
+       
+	
+	option = {#
+		name = TR_japan.35.a
+		complete_national_focus = JAP_Power_Struggle_15
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+	}
+}
+
+#近衞が支持を集める
+country_event = {
+	id = TR_japan.36
+	title = TR_japan.36.t
+	desc = TR_japan.36.d
+	picture = GFX_report_event_election_vote
+        fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_country_flag = JAP_factions_unlocked_flag
+        has_completed_focus = JAP_Power_Struggle_15
+		NOT = { has_completed_focus = JAP_Power_Struggle_14 }
+		check_variable = {
+			var = JAP_Kenkyukai_influence
+			value = 80
+			compare = greater_than_or_equals
+		}
+		check_variable = {
+			var = JAP_Kodoha_influence
+			value = 80
+			compare = less_than
+		}
+		check_variable = {
+			var = JAP_NSP_influence
+			value = 80
+			compare = less_than
+		}
+	}
+       
+	
+	option = {#
+		name = TR_japan.36.a
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_13
+	}
+}
+#相沢事件
+country_event = {
+	id = TR_japan.37
+	title = TR_japan.37.t
+	desc = TR_japan.37.d
+	picture = GFX_report_event_election_vote
+        fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_country_flag = JAP_factions_unlocked_flag
+        has_completed_focus = JAP_Power_Struggle_15
+		NOT = { has_completed_focus = JAP_Power_Struggle_13 }
+			check_variable = {
+				var = JAP_Kenkyukai_influence
+				value = 80
+				compare = less_than
+			}
+			check_variable = {
+				var = JAP_Kodoha_influence
+				value = 80
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = JAP_NSP_influence
+				value = 80
+				compare = greater_than_or_equals
+			}
+	}
+       
+	option = {
+		name = TR_japan.37.a
+		add_stability = -0.1
+                set_country_flag = JAP_Aizawa_Incident
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_14
+		remove_unit_leader = 2606
+		hidden_effect = { kill_ideology_leader = paternal_autocrat }
+		create_country_leader = {
+			name = "東條英機"
+			desc = "POLITICS_TOJO_DESC"
+			picture = "gfx/leaders/JAP/Portrait_JAP_tojo.tga"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+		}
+	}
+}
+#宇垣が組閣する
+country_event = {
+	id = TR_japan.38
+	title = TR_japan.38.t
+	desc = TR_japan.38.d
+	picture = GFX_report_event_election_vote
+        fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_country_flag = JAP_factions_unlocked_flag
+		NOT = { has_completed_focus = JAP_Power_Struggle_15 }
+		check_variable = {
+			var = JAP_Toseiha_support
+			value = 80
+			compare = greater_than_or_equals
+		}
+		check_variable = {
+			var = JAP_Jyushin_support
+			value = 80
+			compare = greater_than_or_equals
+		}
+		check_variable = {
+			var = JAP_Party_support
+			value = 80
+			compare = greater_than_or_equals
+		}
+		check_variable = {
+			var = JAP_Kenkyukai_influence
+			value = 80
+			compare = less_than
+		}
+		check_variable = {
+			var = JAP_Kodoha_influence
+			value = 80
+			compare = less_than
+		}
+		check_variable = {
+			var = JAP_NSP_influence
+			value = 80
+			compare = less_than
+		}
+	}
+       
+	
+	option = {#
+		name = TR_japan.38.a
+		set_country_flag = JAP_End_Power_Struggle
+		complete_national_focus = JAP_Power_Struggle_16
+		complete_national_focus = JAP_Power_Struggle_17
+		complete_national_focus = JAP_Power_Struggle_18
+	}
+}
+#虎狩りの殿様
+country_event = {
+	id = TR_japan.39
+    title = TR_japan.39.t
+	desc = TR_japan.39.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {#侯爵は宇垣を支持した
+	    name = TR_japan.39.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_medium_support_increase_effect = yes
+		JAP_Kenkyukai_low_influence_decrease_effect = yes
+		JAP_NSP_medium_influence_decrease_effect = yes
+    }	
+	option = {#侯爵の不信は拭えないようだ
+		name = TR_japan.39.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_low_support_decrease_effect = yes
+		JAP_Kenkyukai_medium_influence_increase_effect = yes
+		JAP_NSP_high_influence_increase_effect = yes
+	}
+}
+#国家社会党の台頭
+country_event = {
+	id = TR_japan.40
+	title = TR_japan.40.t
+	desc = TR_japan.40.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#永田の言葉を聞き入れる
+	    name = TR_japan.40.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_increase_effect = yes
+		JAP_NSP_medium_influence_decrease_effect = yes
+		JAP_Kodoha_low_influence_decrease_effect = yes
+    }	
+	option = {#清水(行之助)を通じて彼らと接触する
+		name = TR_japan.40.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_decrease_effect = yes
+		JAP_NSP_medium_influence_increase_effect = yes
+		JAP_Kodoha_low_influence_increase_effect = yes		
+	}
+}
+#陸軍内部の対立
+country_event = {
+	id = TR_japan.41
+	title = TR_japan.41.t
+	desc = TR_japan.41.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#規律を乱す者の存在は許せない
+		name = TR_japan.41.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_increase_effect = yes
+		JAP_Kodoha_medium_influence_decrease_effect = yes	
+		JAP_Kenkyukai_low_influence_decrease_effect = yes	
+	}
+	option = {#青年将校らの不満を和らげる必要がある
+	    name = TR_japan.41.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_decrease_effect = yes
+		JAP_Kodoha_medium_influence_increase_effect = yes	
+		JAP_Kenkyukai_low_influence_increase_effect = yes
+    }
+}
+#昭和研究会
+country_event = {
+	id = TR_japan.42
+	title = TR_japan.42.t
+	desc = TR_japan.42.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#そんな組織と連絡を取る必要がどこにあるのかね？
+		name = TR_japan.42.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_NSP_medium_influence_decrease_effect = yes	
+		JAP_Kenkyukai_medium_influence_decrease_effect = yes	
+	}
+	option = {#鈴木を送り込んでみよう
+	    name = TR_japan.42.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_NSP_medium_influence_increase_effect = yes	
+		JAP_Kenkyukai_high_influence_increase_effect = yes
+    }
+}
+#重臣会議
+country_event = {
+	id = TR_japan.43
+	title = TR_japan.43.t
+	desc = TR_japan.43.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#木戸に働きかけよう
+		name = TR_japan.43.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_high_support_increase_effect = yes
+	}
+	option = {#彼は信用できない
+	    name = TR_japan.43.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_high_support_decrease_effect = yes
+		JAP_Kenkyukai_medium_influence_increase_effect = yes
+    }
+}
+#政党
+country_event = {
+	id = TR_japan.44
+	title = TR_japan.44.t
+	desc = TR_japan.44.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#永井と久原を味方に付けよう
+		name = TR_japan.44.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Party_high_support_increase_effect = yes
+	}
+	option = {#政党など最早形だけの存在だ
+	    name = TR_japan.44.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Party_high_support_decrease_effect = yes
+		JAP_Kenkyukai_low_influence_increase_effect = yes
+		JAP_NSP_low_influence_increase_effect = yes
+    }
+}
+#皇道派への対処
+country_event = {
+	id = TR_japan.45
+	title = TR_japan.45.t
+	desc = TR_japan.45.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#真崎を更迭する
+	    name = TR_japan.45.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_increase_effect = yes
+		JAP_Kodoha_medium_influence_increase_effect = yes	
+    }	
+	option = {#いや、彼は必要だ
+		name = TR_japan.45.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_decrease_effect = yes
+		JAP_Kodoha_medium_influence_decrease_effect = yes	
+	}
+}
+#桜会の立場
+country_event = {
+	id = TR_japan.46
+	title = TR_japan.46.t
+	desc = TR_japan.46.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#橋本は宇垣を支持した
+	    name = TR_japan.46.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_increase_effect = yes
+		JAP_NSP_low_influence_decrease_effect = yes
+		JAP_Kodoha_low_influence_decrease_effect = yes
+		JAP_Kenkyukai_low_influence_decrease_effect = yes
+    }	
+	option = {#橋本は近衞を支持した
+		name = TR_japan.46.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_decrease_effect = yes
+		JAP_Kenkyukai_medium_influence_increase_effect = yes
+		JAP_NSP_low_influence_increase_effect = yes
+		JAP_Kodoha_low_influence_increase_effect = yes		
+	}
+}
+#陸軍内部の論争
+country_event = {
+	id = TR_japan.47
+	title = TR_japan.47.t
+	desc = TR_japan.47.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#永田を支持する
+	    name = TR_japan.47.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_increase_effect = yes
+		JAP_Kodoha_medium_influence_decrease_effect = yes	
+    }	
+	option = {#小畑を支持する
+		name = TR_japan.47.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Toseiha_medium_support_decrease_effect = yes
+		JAP_Kodoha_medium_influence_increase_effect = yes			
+	}
+}
+#重臣会議が始まる
+country_event = {
+	id = TR_japan.48
+	title = TR_japan.48.t
+	desc = TR_japan.48.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#宇垣支持が多そうだ
+	    name = TR_japan.48.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_medium_support_increase_effect = yes
+		JAP_Kenkyukai_medium_influence_decrease_effect = yes	
+    }	
+	option = {#近衞支持が多そうだ
+		name = TR_japan.48.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Jyushin_medium_support_decrease_effect = yes
+		JAP_Kenkyukai_medium_influence_increase_effect = yes		
+	}
+}
+#政友会の混乱
+country_event = {
+	id = TR_japan.49
+	title = TR_japan.49.t
+	desc = TR_japan.49.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#久原が総裁に選出された
+	    name = TR_japan.49.a
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Party_medium_support_increase_effect = yes
+		JAP_NSP_low_influence_increase_effect = yes	
+		JAP_Kodoha_low_influence_increase_effect = yes	
+    }	
+	option = {#中島が総裁に選出された
+		name = TR_japan.49.b
+	    ai_chance = {
+		    base = 50
+	    }		
+		JAP_Party_medium_support_decrease_effect = yes		
+		JAP_Kenkyukai_medium_influence_increase_effect = yes
+	}
+}
+#反乱！
+country_event = {
+	id = TR_japan.50
+	title = TR_japan.50.t
+	desc = TR_japan.50.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#畜生！
+	    name = TR_japan.50.a	
+		ai_chance = {
+		    base = 50
+	    }
+        if = {
+		limit = {
+            owns_state = 830
+            owns_state = 831
+            }
+			
+	    KOR = {
+            transfer_state = 831
+            transfer_state = 830
+            add_popularity = {
+		    ideology = totalist
+		    popularity = 0.3
+		}
+            set_politics = {
+		    ruling_party = totalist
+		    elections_allowed = no
+		}
+		country_event = TR_japan.51
+        }
+        }
+		add_state_claim = 830
+		add_state_claim = 831
+    }	
+	option = {#朝鮮民族の独立のために！
+	name = TR_japan.50.b
+	ai_chance = {
+		base = 50
+	}
+	if = {
+	limit = {
+		owns_state = 830
+		owns_state = 831
+		}
+	KOR = {
+		transfer_state = 831
+		transfer_state = 830
+		add_popularity = {
+		ideology = totalist
+		popularity = 0.3
+	}
+		set_politics = {
+		ruling_party = totalist
+		elections_allowed = no
+		change_tag_from = JAP
+	}
+	country_event = TR_japan.51
+	}
+	}
+	add_state_claim = 830
+	add_state_claim = 831
+}
+
+}
+#朝鮮独立戦争
+country_event = {
+	id = TR_japan.51
+	title = TR_japan.51.t
+	desc = TR_japan.51.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	option = {#勝利をつかめ！
+	    name = TR_japan.51.a	
+		add_ideas = KOR_Anti_Japanese_War
+		add_ideas = KOR_WAR_COMMUNISM
+		add_ideas = KOR_guerrilla
+		division_template = {
+			name = "Northeast Anti-Japanese United Army"
+			division_names_group = KOR_INF_02
+		regiments = {
+			infantry = { x = 0 y = 0 }	
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+		}
+        }
+		division_template = {
+			name = "Cheollima Army"
+			division_names_group = KOR_CAV_01
+
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+		}
+        }
+		random_owned_controlled_state = {
+			prioritize = { 831 }
+			create_unit = {
+				division = "division_template = \"Northeast Anti-Japanese United Army\" start_experience_factor = 0.1"
+				owner = KOR
+				count = 10
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 830 }
+			create_unit = {
+				division = "division_template = \"Northeast Anti-Japanese United Army\" start_experience_factor = 0.1"
+				owner = KOR
+				count = 10
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 831 }
+			create_unit = {
+				division = "division_template = \"Cheollima Army\" start_experience_factor = 0.1"
+				owner = KOR
+				count = 5
+			}
+		}
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+    }	
+
 }

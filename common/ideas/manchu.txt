@@ -117,19 +117,103 @@
 			}
 		}
 }
-        political_advisor = {	
-                MAN_Kishi_Nobusuke = {
+        #minister
+        Head_of_State = {	
+                MAN_Masahiko_Amakasu = {
 			
-			picture = GFX_idea_MAN_Kishi_Nobusuke
+			picture = MAN_Masahiko_Amakasu
 			
 			allowed = {
 				original_tag = MAN
-                                  }
+                                  }  
                         available = {
-                               
+                               always = no
 			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				paternal_autocrat
+				TR_Local_tyrant2
+			}
+		}
+               
+               }
+        Government_leaders = {	
+                MAN_Furumi_Tadayuki = {
 			
-			traits = { TR_planned_economy_proponent }
+			picture = MAN_Furumi_Tadayuki
+			
+			allowed = {
+				original_tag = MAN
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+				TR_smiling_oilman
+			}
+		}
+               
+               }
+    Minister_of_Foreign_Affairs = { 
+		MAN_Matsuoka_Yousuke = {
+			name = JAP_Matsuoka_Yousuke
+			picture = JAP_Matsuoka_Yousuke
+			
+			allowed = {
+				original_tag = MAN
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_iron_fisted_brute
+			}
+		}
+		}
+        Minister_of_Economy = {	
+                MAN_Kishi_Nobusuke = {
+			
+			picture = MAN_Kishi_Nobusuke
+			
+			allowed = {
+				original_tag = MAN
+                                  }  
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				national_populist
+				TR_planned_economy_proponent
+			}
+		}
+               
+               }
+        Minister_of_Interior = {	
+		MAN_Hideki_Tojo_int = {
+			name = JAP_Hideki_Tojo_int
+			picture = JAP_Hideki_Tojo
+			
+			allowed = {
+				original_tag = MAN
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				JAP_Tojo_traits
+			}
 		}
                
                }

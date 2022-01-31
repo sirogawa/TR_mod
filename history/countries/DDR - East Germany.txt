@@ -12,6 +12,13 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
         DDR_Prussianarmy
+        DDR_Wilhelm_II
+        DDR_Franz_von_Papen
+        DDR_Konstantin_von_Neurath
+        DDR_Alfred_Hugenberg_MoE
+        DDR_Otto_Meissner
+        DDR_Wilhelm_Groener_cos
+        DDR_Werner_von_Fritsch
 }
 
 # Starting tech

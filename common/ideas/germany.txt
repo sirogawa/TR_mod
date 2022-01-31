@@ -527,114 +527,23 @@
 			}
            }
            }
-political_advisor = {
-		
+#minister
+Head_of_State = {
+		GER_Otto_Strasser = {
 
-		GER_Ernst_Meyer = {
-
-			picture = GER_Ernst_Meyer
+			picture = GER_Otto_Strasser
 			allowed = {
 				original_tag = GER
 			}
 			
-			available = {
-				has_government = radical_socialist
+                        available = {
+                               always = no
 			}
-			
-			traits = { TR_planned_economy_proponent }
-
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		GER_Ruth_Fischer = {
-
-			picture = GER_Ruth_Fischer
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_government = radical_socialist
-			}
-			
-			traits = { social_revolutionary }
-
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		GER_Wilhelm_Pieck = {
-
-			picture = GER_Wilhelm_Pieck
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_government = radical_socialist
-			}
-			
-			traits = { TR_silent_workhorse }
-
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		GER_Wilhelm_reich = {
-
-			picture = GER_Wilhelm_reich
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_government = radical_socialist
-			}
-			
-			traits = { TR_Orgone }
-
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		ernst_thalmann = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_government = radical_socialist
-			}
-			
-			traits = { Labor_activist }
-
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		GER_julius_leber = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			available = {
-				has_government = radical_socialist
-			}
-			
-			traits = { connected_citizen }
-
-			ai_will_do = {
-				factor = 1
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				totalist
+				TR_powerhungry_demagogue
 			}
 		}
 		GER_Ernst_Junger = {
@@ -644,17 +553,123 @@ political_advisor = {
 				original_tag = GER
 			}
 			
-			available = {
-					has_government = syndicalist
+                        available = {
+                               always = no
 			}
-			
-			traits = { Ernst_Junger_traits }
-
-			
-			ai_will_do = {
-				factor = 2
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				syndicalist
+				Ernst_Junger_traits
 			}
 		}
+		GER_Lev_Trotsky = {
+
+			picture = GER_Lev_Trotsky
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				radical_socialist
+				Trotsky_traits
+			}
+		}
+		GER_Wilhelm_Pieck_HS = {
+                        name = GER_Wilhelm_Pieck
+			picture = GER_Wilhelm_Pieck
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_insignificant_layman
+			}
+		}
+		GER_Eugen_Levine = {
+
+			picture = GER_Eugen_Levine
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				radical_socialist
+				Levine_traits
+			}
+		}
+		GER_rosa_luxemburg = {
+
+			picture = GER_rosa_luxemburg
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				radical_socialist
+				Luksemburg_traits
+			}
+		}
+
+		
+	}
+        Government_leaders = {	
+ 		GER_Gregor_Strasser = {
+
+			picture = GER_Gregor_Strasser
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				totalist
+				TR_silent_workhorse
+			}
+		}
+            GER_Joseph_Goebbels = {
+			
+			picture = GER_Joseph_Goebbels
+			
+			allowed = {
+				original_tag = GER
+                                  }
+			available = {
+				always = no
+		                  }
+			removal_cost = -1
+			traits = { 
+                        Government_leaders
+                        totalist
+                        AUS_Hitler_traits 
+                        }
+		  }
+                
 		GER_Ernst_von_Salomon = {
 
 			picture = GER_Ernst_von_Salomon
@@ -662,15 +677,172 @@ political_advisor = {
 				original_tag = GER
 			}
 			
-			available = {
-					has_government = syndicalist
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				syndicalist
+				Ernst_von_Salomon_traits
+			}
+		}
+		GER_Karl_Liebknecht = {
+
+			picture = GER_Karl_Liebknecht
+			allowed = {
+				original_tag = GER
 			}
 			
-			traits = { Ernst_von_Salomon_traits }
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_naive_optimist
+			}
+		}
+		GER_Ruth_Fischer = {
 
+			picture = GER_Ruth_Fischer
+			allowed = {
+				original_tag = GER
+			}
 			
-			ai_will_do = {
-				factor = 2
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_ambitious_union_boss
+			}
+		}	
+		GER_Wilhelm_Pieck = {
+
+			picture = GER_Wilhelm_Pieck
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_political_protege
+			}
+		}   
+		GER_Walter_Ulbricht_GL = {
+                        name = GER_Walter_Ulbricht
+			picture = GER_Walter_Ulbricht
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_political_protege
+			}
+		}  
+               }
+    Minister_of_Foreign_Affairs = { 
+		GER_joseph_goebbels_FA = {
+
+			name = GER_Joseph_Goebbels
+                        picture = GER_Joseph_Goebbels
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				always = no
+			}
+			
+                        removal_cost = -1
+			
+			traits = { 
+				Minister_of_Foreign_Affairs
+				totalist
+                TR_ideological_crusader
+			}
+		}
+
+		GER_ernst_thalmann = {
+
+			picture = GER_Thalman
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				radical_socialist
+                TR_iron_fisted_brute
+			}
+		}
+		GER_Anton_Ackermann = {
+
+			picture = GER_Anton_Ackermann
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				radical_socialist
+                TR_the_cloak_n_dagger_schemer
+			}
+		}
+		}
+    Minister_of_Economy = {	
+		GER_todt = {
+
+			picture = GER_todt
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				totalist
+                                TR_resource_industrialist
+			}
+		}
+		GER_Speer = {
+
+			picture = GER_Speer
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				totalist
+                                TR_administrative_genius
 			}
 		}
 		GER_Ernst_Niekisch = {
@@ -681,34 +853,87 @@ political_advisor = {
 			}
 			
 			available = {
-					has_government = syndicalist
+				always = no
 			}
-			
-			traits = { Labor_activist }
-
-			
-			ai_will_do = {
-				factor = 1
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				syndicalist
+                                TR_planned_economy_proponent
 			}
 		}
-		GER_Gregor_Strasser = {
+		GER_Walter_Ulbricht = {
 
-			picture = GER_Gregor_Strasser
+			picture = GER_Walter_Ulbricht
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				radical_socialist
+                                TR_planned_economy_proponent
+			}
+		}
+		GER_Wilhelm_reich = {
+
+			picture = GER_Wilhelm_reich
+			allowed = {
+				original_tag = GER
+			}
+			
+                        available = {
+                               always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				radical_socialist
+                                TR_Orgone
+			}
+		}
+		GER_Ernst_Meyer = {
+
+			picture = GER_Ernst_Meyer
 			allowed = {
 				original_tag = GER
 			}
 			
 			available = {
-					has_government = totalist
+				always = no
 			}
 			
-			traits = { TR_silent_workhorse }
-
-			
-			ai_will_do = {
-				factor = 2
+                        removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				radical_socialist
+                                TR_planned_economy_proponent
 			}
 		}
+		GER_Paul_Levi = {
+
+			picture = GER_Paul_Levi
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				always = no
+			}
+			
+                        removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				radical_socialist
+                                TR_reformer
+			}
+		}	
+               }
+    Minister_of_Interior = {
 		GER_Rohm = {
 
 			picture = GER_Rohm
@@ -717,14 +942,16 @@ political_advisor = {
 			}
 			
 			available = {
-					has_government = totalist
+				always = no
 			}
 			
-			traits = { GER_Rohm_traits }
+                        removal_cost = -1
 
 			
-			ai_will_do = {
-				factor = 2
+			traits = { 
+				Minister_of_Interior
+				totalist
+                                GER_Rohm_traits
 			}
 		}
 		GER_Edmund_Heines = {
@@ -735,14 +962,15 @@ political_advisor = {
 			}
 			
 			available = {
-					has_government = totalist
+				always = no
 			}
 			
-			traits = { TR_prince_of_terror }
-
+                        removal_cost = -1
 			
-			ai_will_do = {
-				factor = 1
+			traits = { 
+				Minister_of_Interior
+				totalist
+                                TR_prince_of_terror
 			}
 		}
 		GER_Roland_Freisler = {
@@ -753,90 +981,173 @@ political_advisor = {
 			}
 			
 			available = {
-					has_government = totalist
+				always = no
 			}
 			
-			traits = { sharp_tongued_lawyer }
-
+                        removal_cost = -1
 			
-			ai_will_do = {
-				factor = 1
+			traits = { 
+				Minister_of_Interior
+				totalist
+                                TR_silent_lawyer
 			}
 		}
-		todt = {
+		GER_joseph_goebbels_int = {
 
-			
+			name = GER_Joseph_Goebbels
+                        picture = GER_Joseph_Goebbels
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_government = totalist
+				always = no
 			}
 			
-			traits = { fortification_engineer }
-
-			ai_will_do = {
-				factor = 0.5
+                        removal_cost = -1
+			
+			traits = { 
+				Minister_of_Interior
+				totalist
+                                TR_efficient_sociopath
 			}
 		}
-		
-		speer = {
+		GER_Ernst_Junger_int = { 
 
-			
+			name = GER_Ernst_Junger
+                        picture = GER_Ernst_Junger
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_government = totalist
+				always = no
 			}
 			
-			traits = { TR_planned_economy_proponent }
+                        removal_cost = -1
+			
+			traits = { 
+				Minister_of_Interior
+				syndicalist
+                                TR_man_of_the_people
+			}
 		}
+        GER_Ludwig_Renn = { 
 
-		
-		
-
-	
-			
-
-		joseph_goebbels = {
-
-			
+            picture = GER_Ludwig_Renn
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_government = totalist
+				always = no
 			}
 			
-			traits = { propaganda_expert }
-
-
+                        removal_cost = -1
 			
-			ai_will_do = {
-				factor = 3
+			traits = { 
+				Minister_of_Interior
+				radical_socialist
+                                TR_crime_fighter
 			}
 		}
-		
-		
-		
-		joachim_von_ribbentrop = {
+        GER_Erich_Mielke = { 
 
-			
+                        picture = GER_Erich_Mielke
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_government = totalist
+				always = no
 			}
 			
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
+                        removal_cost = -1
+			
+			traits = { 
+				Minister_of_Interior
+				radical_socialist
+                TR_secret_police_chief
 			}
 		}
-		
+        GER_Julius_Leber = { 
+
+                        picture = GER_Julius_Leber
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				always = no
+			}
+			
+                        removal_cost = -1
+			
+			traits = { 
+				Minister_of_Interior
+				radical_socialist
+                TR_compassionate_gentleman
+			}
+		}
+    }
+	chief_of_staff = { 
+		GER_Lev_Trotsky_cos = {
+			name = GER_Lev_Trotsky
+			picture = GER_Lev_Trotsky
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = GER
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		GER_Ernst_Junger_cos = {
+			name = GER_Ernst_Junger
+			picture = GER_Ernst_Junger
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = GER
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		GER_Ludwig_Renn_cos = {
+			name = GER_Ludwig_Renn
+			picture = GER_Ludwig_Renn
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = GER
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+	}
+	chief_of_army = { 
+		GER_Ernst_Junger_coa = {
+			name = GER_Ernst_Junger
+			picture = GER_Ernst_Junger
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = GER
+                        }
+			traits = { 
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		GER_Ludwig_Renn_coa = {
+			name = GER_Ludwig_Renn
+			picture = GER_Ludwig_Renn
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = GER
+                        }
+			traits = { 
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
 	}
 
 	# TECHNOLOGY
@@ -1167,102 +1478,5 @@ political_advisor = {
 			traits = { motorized_equipment_manufacturer }
 		}
 	}
-	
-	theorist = {
-		von_braun = {
-			ledger = air
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-			
-			traits = { rocket_scientist }
-		}
-		
-		heisenberg = {
-			ledger = army
-
-			
-			allowed = {
-				original_tag = GER
-			}
-		
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		
-		
-		
-		
-		walther_wever = {
-			ledger = air
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		ernst_udet = {
-			ledger = air
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { dive_bomber }
-		}
-		
-		alfred_saalwachter = {
-			ledger = navy
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_trade_interdiction = 0.20
-			}
-			
-			traits = { submarine_specialist }
-		}
-		
-		otto_ciliax = {
-			ledger = navy
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
-	}	
 		
 }

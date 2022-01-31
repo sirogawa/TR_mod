@@ -352,238 +352,446 @@
 			}
 		}
 }
-political_advisor = {
-		CHI_soong_mei_ling = {
-
-			picture = GFX_idea_chi_soong_mei_ling
-			
-			available = {
-				not = {
-                                        has_government = totalist
-                                        has_government = syndicalist
-                                        has_government = radical_socialist
-                                     }
-			}
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { TR_first_lady }
-		}
-
-		CHI_chiang_ching_kuo = {
-
-			picture = chi_chiang_ching_kuo
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { TR_silent_workhorse }
-		}
-
-		CHI_h_h_kung = {
-
-			picture = chi_h_h_kung
-				
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		CHI_chen_yi = {
-
-			picture = chi_chen_yi
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		CHI_t_v_soong = {
-
-			picture = GFX_idea_chi_t_v_soong
-
-			available = {
-				
-			}
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { financial_expert }
-		}
-	}	
-	army_chief = {
+Head_of_State = { 
+	CHI_Chiang_Chingkuo = {
+		picture = CHI_Chiang_Chingkuo
 		
-		#Nationalist
-
-		CHI_he_yingqin = {
-			
-			picture = generic_army_asia_1
-
-			allowed = {
-				original_tag = CHI
-			}
-						
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Head_of_State
+			authoritarian_democrat
+			TR_die_hard_reformer
 		}
 	}
-	air_chief = {
+	CHI_Dai_Li_HS = {
+		name = CHI_Dai_Li
+		picture = CHI_Dai_Li
 		
-		#Nationalist
-
-		CHI_zhou_zhirou = {
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-
-			
-			traits = { air_chief_old_guard }
-			
-			ai_will_do = {
-				factor = 0.5
-			}
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Head_of_State
+			paternal_autocrat
+			TR_Local_tyrant2
 		}
 	}
-	navy_chief = {
+	CHI_Lin_Sen = {
+		picture = CHI_Lin_Sen
 		
-
-	}
-	
-
-
-	theorist = {
-		CHI_bo_yibo = { 
-			ledger = army
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-			
-			traits = { military_theorist }
+		allowed = {
+			original_tag = CHI
 		}
-		
-		CHI_fang_zeyi = { 
-			ledger = air
-
-			picture = generic_air_asia_2
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
+		available = {
+			always = no
 		}
-
-		CHI_huang_shen = {
-			ledger = navy
-
-			picture = generic_navy_asia_2
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
-
-	}
-
-
-	high_command = {
-
-		CHI_gao_zhihang = {
-			ledger = air
-
-			picture = CHI_gao_zihang
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { air_air_superiority_3 }
-			
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
-		
-		CHI_xiao_yisu = {
-			ledger = army
-
-			picture = generic_army_asia_2
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 2
-			}
-		}
-
-		CHI_chen_cheng = {
-			ledger = army
-
-			picture = generic_army_asia_3
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { army_regrouping_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		CHI_yu_hanmou = {
-			ledger = army
-
-			picture = generic_army_asia_1
-			
-			allowed = {
-				original_tag = CHI
-			}
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1.5
-			}
+		removal_cost = -1
+		traits = { 
+			Head_of_State
+			national_populist
+			TR_popular_figurehead
 		}
 	}
+	CHI_Sung_Meiling = {
+		picture = CHI_Sung_Meiling
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Head_of_State
+			national_populist
+			TR_popular_figurehead
+		}
+	}
+}
+Government_leaders = { 
+	CHI_Chen_Cheng = {
+		picture = CHI_Chen_Cheng
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Government_leaders
+			authoritarian_democrat
+			TR_political_protege
+		}
+	}
+	CHI_Dai_Li = {
+		picture = CHI_Dai_Li
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Government_leaders
+			paternal_autocrat
+			TR_old_general
+		}
+	}
+	CHI_Chen_Kuofu = {
+		picture = CHI_Chen_Kuofu
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Government_leaders
+			national_populist
+			TR_corporate_suit
+		}
+	}
+	CHI_Chiang_Kaishek = {
+		picture = CHI_Chiang_Kaishek
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Government_leaders
+			national_populist
+			TR_flamboyant_tough_guy
+		}
+	}
+}
+Minister_of_Foreign_Affairs = { 
+	CHI_Chang_Chun = {
+		picture = CHI_Chang_Chun
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Foreign_Affairs
+			authoritarian_democrat
+			TR_great_compromiser
+		}
+	}
+	CHI_Lin_Sen_FA = {
+		name = CHI_Lin_Sen
+		picture = CHI_Lin_Sen
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Foreign_Affairs
+			paternal_autocrat
+			TR_biased_intellectual
+		}
+	}
+
+	CHI_Sung_Tzuwen_FA = {
+		name = CHI_Sung_Tzuwen
+		picture = CHI_Sung_Tzuwen
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Foreign_Affairs
+			national_populist
+			TR_the_cloak_n_dagger_schemer
+		}
+	}
+}
+Minister_of_Economy = { 
+	CHI_Kung_Hsinghsi_Moe = {
+		name = CHI_Kung_Hsinghsi
+		picture = CHI_Kung_Hsinghsi
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			authoritarian_democrat
+			TR_bank_president
+		}
+	}
+	CHI_Chen_Cheng_Moe = {
+		name = CHI_Chen_Cheng
+		picture = CHI_Chen_Cheng
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			authoritarian_democrat
+			TR_construction_magnate
+		}
+	}
+	CHI_He_Yingqin_MoE = {
+		name = CHI_He_Yingqin
+		picture = CHI_He_Yingqin
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			paternal_autocrat
+			TR_resource_industrialist
+		}
+	}
+	CHI_Chen_Kuofu_MoE = {
+		name = CHI_Chen_Kuofu
+		picture = CHI_Chen_Kuofu
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			national_populist
+			TR_laissez_faire_capitalist
+		}
+	}
+	CHI_Sung_Tzuwen_MoE = {
+		name = CHI_Sung_Tzuwen
+		picture = CHI_Sung_Tzuwen
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			national_populist
+			TR_laissez_faire_capitalist
+		}
+	}
+	CHI_Wu_Zhongxin_MoE = {
+		name = CHI_Wu_Zhongxin
+		picture = CHI_Wu_Zhongxin
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Economy
+			national_populist
+			TR_mixed_economy
+		}
+	}
+}
+Minister_of_Interior = { 
+	CHI_Chiang_Chingkuo_MoI = {
+		name = CHI_Chiang_Chingkuo
+		picture = CHI_Chiang_Chingkuo
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Interior
+			authoritarian_democrat
+			TR_man_of_the_people
+		}
+	}
+	CHI_Dai_Li_MoI = {
+		name = CHI_Dai_Li
+		picture = CHI_Dai_Li
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Interior
+			paternal_autocrat
+			TR_secret_police_chief
+		}
+	}
+	CHI_Chen_Lifu = {
+		picture = CHI_Chen_Lifu
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Interior
+			national_populist
+			TR_efficient_sociopath
+		}
+	}
+	CHI_Wu_Zhongxin = {
+		picture = CHI_Wu_Zhongxin
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Minister_of_Interior
+			national_populist
+			TR_compassionate_gentleman
+		}
+	}
+}
+chief_of_staff = { 
+	CHI_He_Yingqin_cos = {
+		name = CHI_He_Yingqin
+		picture = CHI_He_Yingqin
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_staff
+			cos_school_of_mass_combat
+		}
+	}
+	CHI_Dai_Li_cos = {
+		name = CHI_Dai_Li
+		picture = CHI_Dai_Li
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_staff
+			cos_school_of_commando_operations
+		}
+	}
+}
+chief_of_army = { 
+	CHI_He_Yingqin_coa = {
+		name = CHI_He_Yingqin
+		picture = CHI_He_Yingqin
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_army
+			carm_elastic_defence_doctrine
+		}
+	}
+	CHI_Chen_Cheng_coa = {
+		name = CHI_Chen_Cheng
+		picture = CHI_Chen_Cheng
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_army
+			carm_guns_and_butter_doctrine
+		}
+	}
+}
+chief_of_navy = { 
+	CHI_Chen_Shaokuan = {
+		picture = CHI_Chen_Shaokuan
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_navy
+			cnav_indirect_approach_doctrine
+		}
+	}
+}
+chief_of_air_force = { 
+	CHI_Sung_Meiling_cair = {
+		name = CHI_Sung_Meiling
+		picture = CHI_Sung_Meiling
+		cancel_if_invalid = yes			
+		allowed = {
+			original_tag = CHI
+					}
+		traits = { 
+			chief_of_air_force
+			cair_air_superiority_doctrine
+		}
+	}
+}
+
+
+
 
 	industrial_concern = {
 
