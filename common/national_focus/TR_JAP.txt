@@ -1452,10 +1452,10 @@
 		}
 		hidden_effect = {			
 			load_focus_tree = japan_focus_02
-			add_ideas = JAP_Ugaki_Kazushige
-			add_ideas = JAP_Yuuki_Toyotaro
-			add_ideas = JAP_Togo_Shigenori
-			add_ideas = JAP_Kido_Koichi
+			add_ideas = generic_Government_leaders_Vacancy
+			add_ideas = generic_Foreign_Affairs_Vacancy
+			add_ideas = generic_Economy_Vacancy
+			add_ideas = generic_Interior_Vacancy
         country_event = {
 			    id = TR_news.4
 			    days = 5

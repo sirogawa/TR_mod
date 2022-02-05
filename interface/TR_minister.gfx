@@ -1,6 +1,10 @@
 spriteTypes = {
 
-
+        #空席
+	SpriteType = {	
+		name = "GFX_idea_Minister_Vacancy"
+		texturefile = "gfx/interface/ideas/minister/Vacancy.png"
+	}
 #####日本#####
         #国家元首
 	SpriteType = {	
