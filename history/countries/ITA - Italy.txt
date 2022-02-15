@@ -16,11 +16,8 @@ add_ideas = {
         ITA_MAFIA_CORRUPT
         ITA_Squadrismo
         ITA_weak_Socialism
+        ITA_depression
 }
-add_timed_idea = {
-		idea = ITA_depression
-		days = 730
-                 }  
 
 
 # Starting tech

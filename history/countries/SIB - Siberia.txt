@@ -100,3 +100,4 @@ create_country_leader = {
 		
 	}
 }
+recruit_character = JAP_iwane_matsui

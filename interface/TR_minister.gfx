@@ -459,7 +459,14 @@ spriteTypes = {
 		name = "GFX_idea_FRA_Rene_Bousquet"
 		texturefile = "gfx/interface/ideas/minister/FRA/idea_FRA_Rene_Bousquet.png"
 	}
-
+      SpriteType = {	
+		name = "GFX_idea_FRA_Maurice_Blanchot"
+		texturefile = "gfx/interface/ideas/minister/FRA/idea_FRA_Maurice_Blanchot.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_FRA_La_Rochelle"
+		texturefile = "gfx/interface/ideas/minister/FRA/idea_FRA_La_Rochelle.png"
+	}
     #軍部
       SpriteType = {	
 		name = "GFX_idea_FRA_Philippe_Petain"

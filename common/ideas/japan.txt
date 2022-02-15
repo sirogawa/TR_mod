@@ -350,6 +350,20 @@ ideas = {
                                 production_speed_industrial_complex_factor = -0.05
 			}
 		}
+                JAP_Comprehensive_Development_Plan = {
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+                                political_power_cost = 0.2
+                                production_speed_buildings_factor = 0.2
+			}
+		}
 
                 JAP_KENPEITAI = {
 			allowed = {
@@ -411,7 +425,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				production_factory_max_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.2
+				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.35
 				consumer_goods_factor = 0.4
 				min_export = -0.4
@@ -427,7 +441,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.10
-				production_factory_efficiency_gain_factor = -0.10
+				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.15
 				consumer_goods_factor = 0.3
 				min_export = -0.15
@@ -443,7 +457,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.07
-				production_factory_efficiency_gain_factor = -0.07
+				production_speed_buildings_factor = -0.07
 				industrial_capacity_factory = -0.10
 				consumer_goods_factor = 0.20
 				min_export = -0.10
@@ -459,7 +473,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				production_factory_max_efficiency_factor = -0.04
-				production_factory_efficiency_gain_factor = -0.04
+				production_speed_buildings_factor = -0.04
 				industrial_capacity_factory = -0.05
 				consumer_goods_factor = 0.10
 				min_export = -0.05
@@ -499,7 +513,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.25
 				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
 				consumer_goods_factor = 0.15
 				min_export = -0.1
@@ -515,7 +529,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.25
 				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.15
+				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
                                 consumer_goods_factor = 0.05
 			}
@@ -530,7 +544,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.2
 			}
 		}
@@ -907,6 +921,72 @@ ideas = {
                                 research_speed_factor = 0.05
 			}
 		}
+                JAP_LDP_Hegemony = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_democratic_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.05
+                                political_power_gain = 0.3
+			}
+		}
+                JAP_Autonomy_increase = {
+			allowed = {
+				always = no
+			}
+                        picture = air_support_focus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                            resistance_growth = -0.3
+			    subjects_autonomy_gain = 0.5
+                            non_core_manpower = 0.03
+			}
+		}
+                JAP_Colony_Autonomy = {
+			allowed = {
+				always = no
+			}
+                        picture = air_support_focus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                            political_power_factor = 0.03
+			    subjects_autonomy_gain = 0.3
+                            non_core_manpower = 0.01
+			}
+		}
+                JAP_NOT_END_Imperialism = {
+			allowed = {
+				always = no
+			}
+                        picture = air_support_focus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                            improve_relations_maintain_cost_factor = -0.1
+                            opinion_gain_monthly_factor = -0.1
+                            opinion_gain_monthly_same_ideology_factor = 0.1
+                            justify_war_goal_time = -0.1
+			    subjects_autonomy_gain = -0.3
+                            non_core_manpower = -0.01
+			}
+		}
                 JAP_SOCIALISM = {
 			allowed = {
 				always = no
@@ -937,11 +1017,11 @@ ideas = {
 	
 
 			modifier = {
-				 consumer_goods_factor = 0.1
-                                 production_speed_buildings_factor = 0.4
+				consumer_goods_factor = 0.1
+                production_speed_buildings_factor = 0.4
 			}
 		}
-            JAP_ASIANMORNING = {
+        JAP_ASIANMORNING = {
 			allowed = {
 				always = no
 			}
@@ -961,7 +1041,7 @@ ideas = {
                                  min_export = 0.1
 			}
 		}
-           JAP_Parliament = {
+        JAP_Parliament = {
 			allowed = {
 				always = no
 			}
@@ -981,7 +1061,7 @@ ideas = {
                                 min_export = 0.1
 			}
 		}
-           JAP_KOKKAKOTO = {
+        JAP_KOKKAKOTO = {
 			allowed = {
 				always = no
 			}
@@ -992,18 +1072,135 @@ ideas = {
 	
 
 			modifier = {
-                              consumer_goods_factor = 0.05
-			      stability_factor = 0.1  	
-                              research_speed_factor = 0.05
-                              production_speed_dockyard_factor = 0.1
-                              production_speed_arms_factory_factor = 0.1
-                              production_speed_infrastructure_factor = 0.1
-                              production_speed_rail_way_factor = 0.1
-                              production_factory_max_efficiency_factor = 0.1
-                              production_factory_efficiency_gain_factor = 0.1
+                consumer_goods_factor = 0.05
+			    stability_factor = 0.1  	
+                research_speed_factor = 0.05
+                production_speed_dockyard_factor = 0.1
+                production_speed_arms_factory_factor = 0.1
+                production_speed_infrastructure_factor = 0.1
+                production_speed_rail_way_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-               JAP_To_One_country_one_party = {
+		JAP_democratic_socialism = {
+			allowed = {
+				always = no
+			}
+                        picture = jap_the_unthinkable_option
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_gain = 0.2
+				conscription_factor = 0.02
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		JAP_Minryoku_Kyuyo = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_local_self_management
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		JAP_Kakushin_Seito = {
+			allowed = {
+				always = no
+			}
+                        picture = jap_supremacy_of_technology
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_gain = 0.2
+				production_speed_buildings_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				industry_repair_factor = 0.25
+			}
+		}
+		JAP_liberalism_Economy = {
+			allowed = {
+				always = no
+			}
+            picture = generic_democratic_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		JAP_liberalism_Social = {
+			allowed = {
+				always = no
+			}
+            picture = generic_democratic_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_gain = 0.2
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+			}
+		}
+		JAP_Economic_Federation = {
+			allowed = {
+				always = no
+			}
+            picture = generic_foreign_capital
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		JAP_Conservative = {
+			allowed = {
+				always = no
+			}
+            picture = jap_supremacy_of_technology
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_gain = 0.2
+				industry_air_damage_factor = -0.1
+				global_building_slots_factor = 0.05
+				mobilization_speed = 0.1
+			}
+		}
+        JAP_To_One_country_one_party = {
 			allowed = {
 				always = no
 			}
@@ -1019,7 +1216,7 @@ ideas = {
                               national_populist_drift = 0.1    
 			}
 		}
-               JAP_East_Asia_Cooperative = {
+        JAP_East_Asia_Cooperative = {
 			allowed = {
 				always = no
 			}
@@ -1037,7 +1234,7 @@ ideas = {
                               guarantee_cost = -0.5
 			}
 		}
-                JAP_Kinyutosei = {
+        JAP_Kinyutosei = {
 			allowed = {
 				always = no
 			}
@@ -1053,7 +1250,7 @@ ideas = {
 
 			}
 		}  
-                JAP_keizai_shintaisei = {
+        JAP_keizai_shintaisei = {
 			allowed = {
 				always = no
 			}
@@ -1069,7 +1266,7 @@ ideas = {
                                 conversion_cost_civ_to_mil_factor = -0.5
 			}
 		}
-               JAP_Messhi_Houko = {
+        JAP_Messhi_Houko = {
 			allowed = {
 				always = no
 			}
@@ -1087,7 +1284,7 @@ ideas = {
                               production_factory_efficiency_gain_factor = -0.1
 			}
 		}
-                JAP_SHP_idea = {
+        JAP_SHP_idea = {
 			allowed = {
 				always = no
 			}
@@ -1100,7 +1297,7 @@ ideas = {
                                 enemy_operative_capture_chance_factor = 0.2
 			}
 		}
-               JAP_SANGYOUHOKKOKAI = {
+        JAP_SANGYOUHOKKOKAI = {
 			allowed = {
 				always = no
 			}
@@ -1116,7 +1313,7 @@ ideas = {
 				 production_factory_efficiency_gain_factor = 0.15
 			}
 		}
-                JAP_black_thursday_KISHI = {
+        JAP_black_thursday_KISHI = {
 			allowed = {
 				always = no
 			}
@@ -1130,7 +1327,7 @@ ideas = {
 				min_export = -0.5
 			}
 		}
-                JAP_black_thursday_KISHI1 = {
+        JAP_black_thursday_KISHI1 = {
 			allowed = {
 				always = no
 			}
@@ -1144,7 +1341,7 @@ ideas = {
 				min_export = -0.4
 			}
 		}
-                JAP_black_thursday_KISHI2 = {
+        JAP_black_thursday_KISHI2 = {
 			allowed = {
 				always = no
 			}
@@ -1158,7 +1355,7 @@ ideas = {
 				min_export = -0.3
 			}
 		}
-                JAP_KOKUTAIMEITYOU = {
+        JAP_KOKUTAIMEITYOU = {
 			allowed = {
 				always = no
 			}
@@ -1175,7 +1372,7 @@ ideas = {
 			       
 			}
 		}
-                JAP_KOUKOKUSEISIN = {
+        JAP_KOUKOKUSEISIN = {
 			allowed = {
 				always = no
 			}
@@ -1193,7 +1390,7 @@ ideas = {
 			       
 			}
 		}
-                JAP_Manseihijozi= {
+        JAP_Manseihijozi= {
 			allowed = {
 				always = no
 			}
@@ -1235,7 +1432,7 @@ ideas = {
 				political_power_cost = 0.25
 			}
 		}
-                JAP_Taminokamado= {
+        JAP_Taminokamado= {
 			allowed = {
 				always = no
 			}
@@ -1252,7 +1449,8 @@ ideas = {
                         MONTHLY_POPULATION = 0.25
 			}
 		}
-                JAP_Emperor_Komonin = {
+                
+		JAP_Emperor_Komonin = {
 			allowed = {
 				always = no
 			}
@@ -1267,7 +1465,7 @@ ideas = {
                         stability_factor = 0.1
 			}
 		}
-                JAP_New_Constitution = {
+        JAP_New_Constitution = {
 			allowed = {
 				always = no
 			}
@@ -1809,7 +2007,7 @@ ideas = {
 			modifier = {
                                 stability_factor = 0.05
                                 war_support_factor = 0.10
-                                political_power_factor = -0.05
+                                political_power_factor = -0.02
 			}
 		}
                 JAP_CIRO2 = {
@@ -1824,7 +2022,7 @@ ideas = {
 			modifier = {
                                 stability_factor = 0.1
                                 war_support_factor = 0.15
-                                political_power_factor = -0.075
+                                political_power_factor = -0.04
 			}
 		}
                 JAP_army_technology = {
@@ -1878,7 +2076,7 @@ ideas = {
 			
 			modifier = {
                                 political_power_factor = -0.01
-                                production_speed_coastal_bunker_factor = 0.2
+                                production_speed_coastal_bunker_factor = 0.1
                                 production_speed_anti_air_building_factor = 0.1
                                 production_speed_radar_station_factor = 0.1
 			}
@@ -1894,7 +2092,7 @@ ideas = {
 			
 			modifier = {
                                 political_power_factor = -0.02
-                                production_speed_coastal_bunker_factor = 0.4
+                                production_speed_coastal_bunker_factor = 0.2
                                 production_speed_anti_air_building_factor = 0.2
                                 production_speed_radar_station_factor = 0.2
 			}
@@ -2465,7 +2663,7 @@ naval_manufacturer = {
 			traits = { 
 				Government_leaders
 				social_democrat
-				TR_ambitious_union_boss:
+				TR_ambitious_union_boss
 			}
 		}
 		JAP_Takeru_inukai = {

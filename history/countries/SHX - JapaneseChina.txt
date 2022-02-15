@@ -119,87 +119,12 @@ set_popularities = {
 	national_populist = 13
         Gnosticism = 0
 }
-create_country_leader = {
-	name = "蓑田胸喜"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_minoda_Muneki.tga"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "溥儀"
-	desc = "POLITICS_PUYI_DESC"
-	picture = "Portrait_Qing_PuYi.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "土肥原賢二"
-	desc = "POLITICS_DOIHARA_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "土肥原賢二"
-	desc = "POLITICS_DOIHARA_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "土肥原賢二"
-	desc = "POLITICS_DOIHARA_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "土肥原賢二"
-	desc = "POLITICS_DOIHARA_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "土肥原賢二"
-	desc = "POLITICS_DOIHARA_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_corps_commander = {
-	name = "土肥原賢二"
-	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
-	traits = { politically_connected }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = SHX_Minoda_Muneki
+recruit_character = SHX_Pu_Yi
+recruit_character = SHX_Doihara_Kenji
+recruit_character = JAP_Doihara_Kenji
+recruit_character = JAP_Nemoto_Hiroshi
+recruit_character = JAP_Sugiyama_Hajime
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

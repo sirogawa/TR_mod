@@ -14,7 +14,7 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.3
+				stability_factor = -0.2
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.35
@@ -28,7 +28,7 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.1
 				production_speed_buildings_factor = -0.35
 				industrial_capacity_factory = -0.12
 				consumer_goods_factor = 0.25
@@ -42,7 +42,7 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.05
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.07
 				consumer_goods_factor = 0.15
@@ -60,7 +60,7 @@
 			picture = generic_communism_drift_bonus
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.5
+				stability_factor = -0.4
                                 resistance_damage_to_garrison = 0.5
                                 drift_defence_factor = -0.5
 			}

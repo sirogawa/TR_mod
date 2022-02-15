@@ -202,9 +202,9 @@ focus_tree = {
 		hidden_effect = { 
 			kill_ideology_leader = national_populist 
 			add_ideas = FRA_Jacques_Doriot
-			add_ideas = FRA_Pierre_Laval 
+			add_ideas = FRA_La_Rochelle
 			add_ideas = FRA_Marius_Berliet
-			add_ideas = FRA_Rene_Bousquet
+			add_ideas = FRA_francois_de_larocque_Int
 		}
 		create_country_leader = {
 			name = "ジャック・ドリオ"
@@ -254,7 +254,7 @@ focus_tree = {
 				add_ideas = FRA_maurras
 				add_ideas = FRA_Maurice_Pujo
 				add_ideas = FRA_jean_mermoz_Eco
-				add_ideas = FRA_francois_de_larocque_Int
+				add_ideas = FRA_Maurice_Blanchot
 			}
 	 }
 	}

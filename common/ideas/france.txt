@@ -427,7 +427,7 @@
 				TR_flamboyant_tough_guy
 			}
 		}
-                FRA_marcel_deat = {		
+        FRA_marcel_deat = {		
 			picture = FRA_marcel_deat
 			
 			allowed = {
@@ -476,6 +476,22 @@
 				Minister_of_Foreign_Affairs
 				authoritarian_democrat
 				TR_apologetic_clerk
+			}
+		}
+		FRA_La_Rochelle = {
+			picture = FRA_La_Rochelle
+			
+			allowed = {
+				original_tag = FRA
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_ideological_crusader
 			}
 		}
 		FRA_Maurice_Pujo = {
@@ -580,6 +596,23 @@
 				Minister_of_Interior
 				national_populist
 				TR_prince_of_terror
+			}
+		}
+		FRA_Maurice_Blanchot = {
+            name = FRA_Maurice_Blanchot
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				always = no
+		    }
+			
+		    picture = FRA_jean_mermoz
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
+				TR_compassionate_gentleman
 			}
 		}
 		FRA_francois_de_larocque_Int = {

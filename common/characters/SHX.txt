@@ -1,0 +1,45 @@
+characters={
+	
+	SHX_Doihara_Kenji={
+		name=JAP_Doihara_Kenji
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+			}
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+	}
+	SHX_Pu_Yi={
+		name=SHX_Pu_Yi
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Qing_PuYi.tga"
+			}
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+	}
+	SHX_Minoda_Muneki={
+		name=SHX_Minoda_Muneki
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_minoda_Muneki.tga"
+			}
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+}

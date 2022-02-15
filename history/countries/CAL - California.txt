@@ -6,14 +6,15 @@ set_major = yes
 set_research_slots = 3
 TEX = { give_military_access = CAL }
 add_ideas = {
+        Tiyoda_Kensho
         Constitutional_monarchy
-        good_minimum_wage 
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
+        low_minimum_wage
+        trinket_max_workhours
+        trinket_safety_regulations
+        trinket_Unemployment_subsidies
+        trinket_school_system
+        trinket_pensions
+        low_health_care
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -73,6 +74,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 	}
+        set_naval_oob = "CAL_1936_naval"
 
 }
 if = {
@@ -92,12 +94,9 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-
 }
 
-add_ideas = {
-        Tiyoda_Kensho
-}
+
 
 set_convoys = 250
 
@@ -112,45 +111,29 @@ JAP = {
       }
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1935.8.7"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	social_democrat = 5
-	social_liberal = 20
+	social_democrat = 15
+	social_liberal = 10
 	market_liberal = 15
-	social_conservative = 50
-	authoritarian_democrat = 5
+	social_conservative = 20
+	authoritarian_democrat = 35
 	paternal_autocrat = 2
 	national_populist = 3
 }
 
 
-create_country_leader = {
-	name = "徳川家達"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_japan_tokugawa.tga"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "将軍 徳川家達"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_japan_tokugawa.tga"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-
-
+recruit_character = CAL_Tokugawa_Iesato
+recruit_character = CAL_Yamamoto_Eisuke
+recruit_character = JAP_Kuribayashi_Tadamichi
+recruit_character = JAP_shizuichi_tanaka
+recruit_character = JAP_Yamamoto_Eisuke
+recruit_character = JAP_kiyoshi_hasegawa
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

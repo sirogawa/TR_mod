@@ -1,0 +1,28 @@
+characters={
+	
+	CAL_Tokugawa_Iesato={
+		name=CAL_Tokugawa_Iesato
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_japan_tokugawa.tga"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+	CAL_Yamamoto_Eisuke={
+		name=CAL_Yamamoto_Eisuke
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Yamamoto_Eisuke.png"
+			}
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+	}
+}

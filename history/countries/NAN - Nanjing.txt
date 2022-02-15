@@ -97,7 +97,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "石原莞爾"
-	portrait_path = "gfx/leaders/JAP/Portrait_Japan_Kanji_Ishiwara.dds"
+	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Ishiwara_Kanji.png"
 	traits = { JAP_samurai_lineage }
 	skill = 2
 	attack_skill = 1

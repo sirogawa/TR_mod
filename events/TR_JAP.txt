@@ -432,7 +432,7 @@ country_event = {
 	id = TR_japan.8
 	title = TR_japan.8.t
 	desc = TR_japan.8.d
-	picture = GFX_report_event_japanese_transport_soldiers
+	picture = GFX_report_event_japanese_soldiers_01
         fire_only_once = yes
 	trigger = {
 		tag = JAP
@@ -463,7 +463,7 @@ country_event = {
 	id = TR_japan.9
 	title = TR_japan.9.t
 	desc = TR_japan.9.d
-	picture = GFX_report_event_japanese_transport_soldiers
+	picture = GFX_report_event_japanese_soldiers_02
         is_triggered_only = yes
         fire_only_once = yes
 
@@ -506,7 +506,7 @@ country_event = {#オスマンが同盟を提案
 	id = TR_japan.11
 	title = TR_japan.11.t
 	desc = TR_japan.11.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_gre_allied_diplomacy
 
 
         fire_only_once = yes
@@ -542,7 +542,7 @@ country_event = {#安部首相のインド訪問
 	id = TR_japan.12
 	title = TR_japan.12.t
 	desc = TR_japan.12.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -554,17 +554,30 @@ country_event = {#安部首相のインド訪問
                 ai_chance = {
 			base = 50
 		}
-                
-
+        add_political_power = 25    
+		reverse_add_opinion_modifier = {
+			target = BAN
+			modifier = small_increase
+		}
+		reverse_add_opinion_modifier = {
+			target = RAJ
+			modifier = small_decrease
+		}
 	}
         option = { 
 		name = TR_japan.12.b
                 ai_chance = {
 			base = 50
 		}
-
-
-
+        add_political_power = 25
+		reverse_add_opinion_modifier = {
+			target = RAJ
+			modifier = small_increase
+		}
+		reverse_add_opinion_modifier = {
+			target = BAN
+			modifier = small_decrease
+		}
 	}
 }
 
@@ -572,7 +585,7 @@ country_event = {#犬養毅=ファン・ボイ・チャウ会談
 	id = TR_japan.13
 	title = TR_japan.13.t
 	desc = TR_japan.13.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -581,7 +594,8 @@ country_event = {#犬養毅=ファン・ボイ・チャウ会談
 	
 	option = { 
 		name = TR_japan.13.a
-
+		add_political_power = 25
+        add_ideas = JAP_Autonomy_increase
 	}
 }
 
@@ -590,7 +604,7 @@ country_event = {#斉藤隆夫の「拓務政策転換演説」
 	id = TR_japan.14
 	title = TR_japan.14.t
 	desc = TR_japan.14.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -599,7 +613,8 @@ country_event = {#斉藤隆夫の「拓務政策転換演説」
 	
 	option = { 
 		name = TR_japan.14.a
-
+		add_political_power = 25
+        add_ideas = JAP_Colony_Autonomy
 	}
 }
 
@@ -607,7 +622,7 @@ country_event = {#東方会議(森恪)
 	id = TR_japan.15
 	title = TR_japan.15.t
 	desc = TR_japan.15.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -616,7 +631,8 @@ country_event = {#東方会議(森恪)
 	
 	option = { 
 		name = TR_japan.15.a
-
+		add_political_power = 25
+        add_ideas = JAP_NOT_END_Imperialism
 	}
 }
 
@@ -624,7 +640,7 @@ country_event = {#朝鮮の皇民化を続行
 	id = TR_japan.16
 	title = TR_japan.16.t
 	desc = TR_japan.16.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_korean_war_march
 
 
         fire_only_once = yes
@@ -648,7 +664,7 @@ country_event = {#釜山会議
 	id = TR_japan.17
 	title = TR_japan.17.t
 	desc = TR_japan.17.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -668,7 +684,7 @@ country_event = {#京城合意
 	id = TR_japan.18
 	title = TR_japan.18.t
 	desc = TR_japan.18.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -718,7 +734,7 @@ country_event = {#朝鮮の自治を巡る議論
 	id = TR_japan.19
 	title = TR_japan.19.t
 	desc = TR_japan.19.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -735,7 +751,7 @@ country_event = {#朝鮮自治問題
 	id = TR_japan.20
 	title = TR_japan.20.t
 	desc = TR_japan.20.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
 
         fire_only_once = yes
@@ -784,7 +800,7 @@ country_event = {#国家主義者が朝鮮自治を非難
 	id = TR_japan.21
 	title = TR_japan.21.t
 	desc = TR_japan.21.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_gathering_protest
 
 
         fire_only_once = yes
@@ -814,7 +830,7 @@ country_event = {#釜山会議-自治政府
 	id = TR_japan.22
 	title = TR_japan.22.t
 	desc = TR_japan.22.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -851,7 +867,7 @@ country_event = {#釜山会議-議会制度
 	id = TR_japan.23
 	title = TR_japan.23.t
 	desc = TR_japan.23.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -888,7 +904,7 @@ country_event = {#釜山会議-憲法
 	id = TR_japan.24
 	title = TR_japan.24.t
 	desc = TR_japan.24.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -926,7 +942,7 @@ country_event = {#釜山会議-連邦制度
 	id = TR_japan.25
 	title = TR_japan.25.t
 	desc = TR_japan.25.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -964,7 +980,7 @@ country_event = {#釜山会議-合意
 	id = TR_japan.26
 	title = TR_japan.26.t
 	desc = TR_japan.26.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -994,7 +1010,7 @@ country_event = {#釜山会議-決裂
 	id = TR_japan.27
 	title = TR_japan.27.t
 	desc = TR_japan.27.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_conference
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1065,7 +1081,7 @@ country_event = {#朝鮮憲法の制定
 	id = TR_japan.28
 	title = TR_japan.28.t
 	desc = TR_japan.28.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_generic_sign_treaty2
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1080,7 +1096,7 @@ country_event = {#京城での戴冠式
 	id = TR_japan.29
 	title = TR_japan.29.t
 	desc = TR_japan.29.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_asian_politicians
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -1103,7 +1119,7 @@ country_event = {#衆議院の解散
 	id = TR_japan.30
 	title = TR_japan.30.t
 	desc = TR_japan.30.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_generic_parliament
 
 
     fire_only_once = yes
@@ -1518,7 +1534,7 @@ country_event = {
 	id = TR_japan.34
 	title = TR_japan.34.t
 	desc = TR_japan.34.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_generic_parliament
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1535,7 +1551,7 @@ country_event = {
 	id = TR_japan.35
 	title = TR_japan.35.t
 	desc = TR_japan.35.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_spr_franco_generals
         fire_only_once = yes
 	trigger = {
 		tag = JAP
@@ -1562,7 +1578,7 @@ country_event = {
 	id = TR_japan.36
 	title = TR_japan.36.t
 	desc = TR_japan.36.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
         fire_only_once = yes
 	trigger = {
 		tag = JAP
@@ -1598,7 +1614,7 @@ country_event = {
 	id = TR_japan.37
 	title = TR_japan.37.t
 	desc = TR_japan.37.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_japan_europe_pact
         fire_only_once = yes
 	trigger = {
 		tag = JAP
@@ -1625,10 +1641,11 @@ country_event = {
 	option = {
 		name = TR_japan.37.a
 		add_stability = -0.1
-                set_country_flag = JAP_Aizawa_Incident
+        set_country_flag = JAP_Aizawa_Incident
 		set_country_flag = JAP_End_Power_Struggle
 		complete_national_focus = JAP_Power_Struggle_14
-		remove_unit_leader = 2606
+		JAP_Nagata_Tetsuzan_corp = { set_character_flag = JAP_Purge_commander }
+		JAP_Hideki_Tojo = { set_character_flag = JAP_Purge_commander }
 		hidden_effect = { kill_ideology_leader = paternal_autocrat }
 		create_country_leader = {
 			name = "東條英機"
@@ -1753,7 +1770,7 @@ country_event = {
 	id = TR_japan.41
 	title = TR_japan.41.t
 	desc = TR_japan.41.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_japanese_parade
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1866,7 +1883,7 @@ country_event = {
 	id = TR_japan.45
 	title = TR_japan.45.t
 	desc = TR_japan.45.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_japanese_parade
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1893,7 +1910,7 @@ country_event = {
 	id = TR_japan.46
 	title = TR_japan.46.t
 	desc = TR_japan.46.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_japanese_parade
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1924,7 +1941,7 @@ country_event = {
 	id = TR_japan.47
 	title = TR_japan.47.t
 	desc = TR_japan.47.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_japanese_parade
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1951,7 +1968,7 @@ country_event = {
 	id = TR_japan.48
 	title = TR_japan.48.t
 	desc = TR_japan.48.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_hungary_parliament
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -1978,7 +1995,7 @@ country_event = {
 	id = TR_japan.49
 	title = TR_japan.49.t
 	desc = TR_japan.49.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_tur_opposition_party
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -2006,7 +2023,7 @@ country_event = {
 	id = TR_japan.50
 	title = TR_japan.50.t
 	desc = TR_japan.50.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_korean_war_march
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -2074,7 +2091,7 @@ country_event = {
 	id = TR_japan.51
 	title = TR_japan.51.t
 	desc = TR_japan.51.d
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_korean_war_march
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -2137,4 +2154,111 @@ country_event = {
 		}
     }	
 
+}
+
+#昭和維新
+country_event = {
+	id = TR_japan.52
+	title = TR_japan.52.t
+	desc = TR_japan.52.d
+	picture = GFX_report_event_saf_coup
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#西園寺と重臣は北一輝を推薦した
+	    name = TR_japan.52.a
+	    ai_chance = {
+		    base = 50
+	    }		
+            
+	    set_country_flag = JAP_Prime_Minister_Kita
+	}
+	option = {#皇道派は直接行動に出た
+	    name = TR_japan.52.b
+	    ai_chance = {
+		    base = 50
+	    }		
+            add_manpower = -100
+            add_stability = -0.1
+	    set_country_flag = JAP_Kodoha_Coup
+    }
+}
+#天皇の苦悩
+country_event = {
+	id = TR_japan.53
+	title = TR_japan.53.t
+	desc = TR_japan.53.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#最後まで抵抗する
+	    name = TR_japan.53.a
+	    ai_chance = {
+		    base = 80
+	    }		
+	    set_country_flag = JAP_Hirohito_decline
+	}
+	option = {#荒木への大命降下を受け入れる
+	    name = TR_japan.53.b
+	    ai_chance = {
+		    base = 20
+	    }		
+	    set_country_flag = JAP_Hirohito_accept
+    }
+}
+#二大政党の合同交渉
+country_event = {
+	id = TR_japan.54
+	title = TR_japan.54.t
+	desc = TR_japan.54.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#良い案だ
+	    name = TR_japan.54.a
+	    ai_chance = {
+		    base = 90
+	    }		
+		add_manpower = -100
+        add_stability = -0.05
+		set_country_flag = JAP_LDP_Establish
+	    add_ideas = JAP_LDP_Hegemony
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.5
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.35
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+        set_party_name = {
+			ideology = social_conservative
+			long_name = JAP_LDP_long
+			name = JAP_LDP_a
+		}
+		set_party_name = {
+			ideology = market_liberal
+			long_name = JAP_LDP_long
+			name = JAP_LDP_a
+		}
+	}
+	option = {#このような大政党の誕生は民主主義を損なう
+	    name = TR_japan.53.b
+	    ai_chance = {
+		    base = 10
+	    }		
+	    
+    }
 }
