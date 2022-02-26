@@ -127,9 +127,13 @@ set_popularities = {
 	national_populist = 3
 }
 
-
+recruit_character = CAL_Gondo_Seikyo
+recruit_character = CAL_Yoneda_Gozo
+recruit_character = CAL_Joseph_Kurihara
 recruit_character = CAL_Tokugawa_Iesato
 recruit_character = CAL_Yamamoto_Eisuke
+
+recruit_character = CAL_kiyoshi_hasegawa
 recruit_character = JAP_Kuribayashi_Tadamichi
 recruit_character = JAP_shizuichi_tanaka
 recruit_character = JAP_Yamamoto_Eisuke

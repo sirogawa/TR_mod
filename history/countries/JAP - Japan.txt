@@ -214,49 +214,40 @@ add_to_faction = INS
 
 
 
-### Heads of State ###
+### country_leader ###
 recruit_character = JAP_Kita_Ikki
+recruit_character = JAP_oosugi_sakae
+recruit_character = JAP_Tokuda_Kyuichi
 recruit_character = JAP_Abe_Iso
 recruit_character = JAP_Inukai_Tsuyoshi
 recruit_character = JAP_machida_chuji
 recruit_character = JAP_Suzuki_Kisaburo
+recruit_character = JAP_Tokonami_Takejiro
 recruit_character = JAP_Nagata_Tetsuzan
 recruit_character = JAP_Araki_Sadao
-create_country_leader = {
-	name = "大杉栄"
-	desc = "POLITICS_OSUGI_DESC"
-	picture = "gfx/leaders/JAP/Portrait_JAP_osugi.tga"
-	expire = "1981.3.6"
-	ideology = syndicalist_subtype
-}
-create_country_leader = {
-	name = "田中清玄"
-	desc = "POLITICS_SEIGEN_DESC"
-	picture = "gfx/leaders/JAP/Portrait_JAP_tanakaseigen.tga"
-	expire = "1981.3.6"
-	ideology = radical_socialist_subtype
-}
-create_country_leader = {
-	name = "床次竹二郎"
-	desc = "POLITICS_TOKONAMI_DESC"
-	picture = "gfx/leaders/JAP/portrait_JAP_tokonami.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-}
-create_country_leader = {
-	name = "酒井勝軍"
-	desc = "POLITICS_KONOE_DESC"
-	picture = "gfx/leaders/JAP/Portrait_JAP_sakaikatutoki.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-}
+recruit_character = JAP_Takeuchi_Kiyomaro
 
+recruit_character = JAP_Katayama_Tetsu
+recruit_character = JAP_Nakano_Seigo
+recruit_character = JAP_Kuhara_Fusanosuke
+recruit_character = JAP_Hatoyama_Ichiro
+recruit_character = JAP_Suzuki_Kisaburo_2
+recruit_character = JAP_machida_chuji_2
+recruit_character = JAP_Hatoyama_Ichiro_2
+recruit_character = JAP_Hideki_Tojo_2
+recruit_character = JAP_Ugaki_Kazushige
+recruit_character = JAP_Konoe_Fumimaro
+recruit_character = JAP_Daihonei
+recruit_character = JAP_Ugaki_Kazushige_2
+recruit_character = JAP_yasuhito
+recruit_character = JAP_hirohito_1
+
+### corps_commander ###
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_shunroku_hata
 recruit_character = JAP_akira_muto
 recruit_character = JAP_Shimomura_Sadamu
-recruit_character = JAP_Obata_Hideyoshi
 recruit_character = JAP_Cho_Isamu
 recruit_character = JAP_Kanin_Kotohito
 recruit_character = JAP_Nomura_Naokuni
@@ -284,6 +275,17 @@ recruit_character = JAP_Anami_Korechika
 recruit_character = JAP_Tuji_Masanobu
 recruit_character = JAP_hitoshi_imamura
 recruit_character = JAP_masatane_kanda
+recruit_character = JAP_Shirakawa_Yoshinori
+recruit_character = JAP_Muto_Nobuyoshi
+recruit_character = JAP_Nagata_Tetsuzan_corp
+recruit_character = JAP_Hideki_Tojo
+recruit_character = JAP_Obata_Toshiro
+recruit_character = JAP_Iwanaka_Yoshiharu
+recruit_character = JAP_Ikeda_Sueo
+recruit_character = JAP_Yamaji_Hideo
+recruit_character = JAP_Ushiroku_Jun
+
+### admiral ###
 recruit_character = JAP_isoroku_yamamoto
 recruit_character = JAP_mineichi_koga
 recruit_character = JAP_Yamaguchi_Tamon
@@ -301,11 +303,8 @@ recruit_character = JAP_Yonai_mitsumasa_leader
 recruit_character = JAP_Suetugu_nobumasa
 recruit_character = JAP_Nagano_Osami_leader
 recruit_character = JAP_Terazima_Ken
-recruit_character = JAP_Shirakawa_Yoshinori
-recruit_character = JAP_Muto_Nobuyoshi
-recruit_character = JAP_Nagata_Tetsuzan_corp
-recruit_character = JAP_Hideki_Tojo
-recruit_character = JAP_Obata_Toshiro
+recruit_character = JAP_Tanaka_Raizo
+
 
 
 

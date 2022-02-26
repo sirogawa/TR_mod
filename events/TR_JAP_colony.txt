@@ -510,8 +510,7 @@ country_event = {#1936年帝国会議-終了
 	
 	option = {
 		name = TR_japfed.16.a
-
-		
+		set_global_flag = Empire_Conference_End
 	}
 }
 

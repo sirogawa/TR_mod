@@ -1432,15 +1432,7 @@
 		hidden_effect = {
 		load_focus_tree = japan_focus_02
 		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
-		create_country_leader = {
-			name = "大本営"
-			desc = ""
-			picture = "gfx/leaders/JAP/Portrait_JAP_Daihonei.tga"
-			expire = "1965.1.1"
-			ideology = authoritarian_democrat_subtype
-			traits = { Power_struggle }
-		}
+		promote_character = JAP_Daihonei
 		set_party_name = {
 			ideology = authoritarian_democrat
 			long_name = JAP_Kaigensireibu_long

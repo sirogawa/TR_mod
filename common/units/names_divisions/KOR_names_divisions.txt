@@ -262,8 +262,6 @@ KOR_MOT_01 =
 
 	for_countries = { KOR }
 
-	can_use = { not = { has_government = communism } }
-
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
@@ -312,8 +310,6 @@ KOR_MOT_02 =
 	name = "Motorised Divisions"
 
 	for_countries = { KOR }
-
-	can_use = {	has_government = communism }
 
 	division_types = { "motorized" }
 
@@ -490,8 +486,6 @@ KOR_MEC_02 =
 
 	for_countries = { KOR }
 
-	can_use = {	has_government = communism }
-
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
@@ -644,8 +638,6 @@ KOR_MAR_01 =
 
 	for_countries = { KOR }
 
-	can_use = { not = { has_government = communism } }
-
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
@@ -676,8 +668,6 @@ KOR_MAR_02 =
 	name = "Marine Divisions"
 
 	for_countries = { KOR }
-
-	can_use = { has_government = communism }
 
 	division_types = { "marine" }
 
@@ -743,8 +733,6 @@ KOR_PAR_01 =
 
 	for_countries = { KOR }
 
-	can_use = { not = { has_government = communism} }
-
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
@@ -775,8 +763,6 @@ KOR_PAR_02 =
 	name = "Paratrooper Divisions"
 
 	for_countries = { KOR }
-
-	can_use = { has_government = communism }
 
 	division_types = { "paratrooper" }
 

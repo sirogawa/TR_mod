@@ -10,13 +10,44 @@ characters={
 			ideology=totalist_subtype
 		}
 	}
-
+	JAP_oosugi_sakae={
+		name=JAP_oosugi_sakae
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_osugi.tga"
+			}
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+	}
+	JAP_Tokuda_Kyuichi={
+		name=JAP_Tokuda_Kyuichi
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Tokuda_Kyuichi.png"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
 	JAP_Abe_Iso={
 		name=JAP_Abe_Iso
 		portraits={
 		    civilian={
 			        large="gfx/leaders/JAP/Portrait_JAP_Abeiso.tga"
-                    small="GFX_idea_JAP_Abe_Iso"
+		    }
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+	}
+	JAP_Katayama_Tetsu={
+		name=JAP_Katayama_Tetsu
+		portraits={
+		    civilian={
+		        large="gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
 		    }
 		}
 		country_leader={
@@ -28,6 +59,17 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Portrait_JAP_inukai.tga"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+		}
+	}
+	JAP_Nakano_Seigo={
+		name=JAP_Nakano_Seigo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
 			}
 		}
 		country_leader={
@@ -56,11 +98,122 @@ characters={
 			ideology=social_conservative_subtype
 		}
 	}
+	JAP_Kuhara_Fusanosuke={
+		name=JAP_Kuhara_Fusanosuke
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+	JAP_Hatoyama_Ichiro={
+		name=JAP_Hatoyama_Ichiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+	JAP_Tokonami_Takejiro={
+		name=JAP_Tokonami_Takejiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/portrait_JAP_tokonami.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
+	JAP_Suzuki_Kisaburo_2={
+		name=JAP_Suzuki_Kisaburo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
+	JAP_machida_chuji_2={
+		name=JAP_machida_chuji
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_machida.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
+	JAP_Daihonei={
+		name=JAP_Daihonei
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Daihonei.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+                        traits={ Power_struggle }
+		}
+	}
+	JAP_Hatoyama_Ichiro_2={
+		name=JAP_Hatoyama_Ichiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
+	JAP_Ugaki_Kazushige_2={
+		name=JAP_Ugaki_Kazushige
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
 	JAP_Nagata_Tetsuzan={
 		name=JAP_Nagata_Tetsuzan
 		portraits={
 			civilian={
 				large="gfx/leaders/JAP/Portrait_JAP_nagata.tga"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+	}
+	JAP_Hideki_Tojo_2 ={
+		name=JAP_Hideki_Tojo_int
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_tojo.tga"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+	}
+	JAP_Ugaki_Kazushige={
+		name=JAP_Ugaki_Kazushige
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
 			}
 		}
 		country_leader={
@@ -76,6 +229,50 @@ characters={
 		}
 		country_leader={
 			ideology=national_populist_subtype
+		}
+	}
+	JAP_Konoe_Fumimaro={
+		name=JAP_Konoe_Fumimaro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_konoe.png"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	JAP_yasuhito={
+		name=JAP_yasuhito
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_titibu.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	JAP_hirohito_1={
+		name=JAP_hirohito_hs
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	JAP_Takeuchi_Kiyomaro={
+		name=JAP_Takeuchi_Kiyomaro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Takeuchi_Kiyomaro.png"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
 		}
 	}
 	JAP_Shirakawa_Yoshinori={
@@ -236,10 +433,10 @@ characters={
 		corps_commander = {
 			traits = { career_officer politically_connected }
 			skill = 2
-			attack_skill = 2
-		    defense_skill = 2
-		    planning_skill = 3
-		    logistics_skill = 3
+			attack_skill = 1
+		        defense_skill = 1
+		        planning_skill = 2
+		        logistics_skill = 2
 		}
 		visible = {
 			NOT = { has_character_flag = JAP_Purge_commander }
@@ -272,7 +469,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { JAP_samurai_lineage brilliant_strategist armor_officer }
+			traits = { JAP_samurai_lineage brilliant_strategist armor_officer panzer_leader }
 			skill = 4
 			attack_skill = 5
 			defense_skill = 2
@@ -292,7 +489,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ old_guard JAP_samurai_lineage }
+			traits={ old_guard JAP_samurai_lineage politically_connected }
 			skill=1
 			attack_skill=1
 			defense_skill=2
@@ -396,7 +593,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer trickster }
+			traits={ career_officer infantry_officer trickster infantry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -416,7 +613,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trickster career_officer infantry_officer }
+			traits={ trickster career_officer infantry_officer infantry_leader }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -435,7 +632,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist infantry_officer }
+			traits={ brilliant_strategist infantry_officer infantry_leader }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -531,7 +728,7 @@ characters={
 
 		
 		corps_commander={
-			traits={ infantry_officer  }
+			traits={ infantry_officer infantry_leader }
 			skill=2
 			attack_skill=2
 			defense_skill=3
@@ -611,6 +808,97 @@ characters={
 			skill=3
 			attack_skill=3
 			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+
+	JAP_Ikeda_Sueo={
+		name=JAP_Ikeda_Sueo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Ikeda_Sueo.png"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader trait_reckless }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	JAP_Iwanaka_Yoshiharu={
+		name=JAP_Iwanaka_Yoshiharu
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Iwanaka_Yoshiharu.png"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	JAP_Yamaji_Hideo={
+		name=JAP_Yamaji_Hideo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Yamaji_Hideo.png"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	JAP_Ushiroku_Jun ={
+		name=JAP_Ushiroku_Jun
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Ushiroku_Jun.png"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	JAP_Miyazaki_Shigesaburo ={
+		name=JAP_Miyazaki_Shigesaburo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Miyazaki_Shigesaburo.png"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist infantry_officer infantry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=0
@@ -784,9 +1072,9 @@ characters={
 		}
 		corps_commander={
 			traits={ brilliant_strategist trait_reckless }
-			skill=2
+			skill=1
 			attack_skill=2
-			defense_skill=2
+			defense_skill=1
 			planning_skill=4
 			logistics_skill=2
 			legacy_id=0
@@ -844,6 +1132,24 @@ characters={
 			defense_skill=5
 			planning_skill=3
 			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	JAP_Mutaguchi_Renya={
+		name=JAP_Mutaguchi_Renya
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
+			}
+		}
+		corps_commander={
+			traits={ JAP_samurai_lineage harsh_leader trait_reckless politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -948,7 +1254,7 @@ characters={
 		name=JAP_Ugaki_Matome
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Kurita_Takeo.png"
+				large="gfx/leaders/JAP/Portrait_JAP_Ugaki_Matome.png"
 			}
 		}
 		navy_leader={
@@ -1251,6 +1557,24 @@ characters={
 			defense_skill=2
 			maneuvering_skill=2
 			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	JAP_Tanaka_Raizo={
+		name=JAP_Tanaka_Raizo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Tanaka_Raizo.png"
+			}
+		}
+		navy_leader={
+			traits={ craven fleet_protector destroyer_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
 			legacy_id=0
 		}
 	}

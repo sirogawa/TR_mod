@@ -83,7 +83,7 @@ set_popularities = {	syndicalist = 100
 create_country_leader = {
 	name = "ネストル・マフノ"
 	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_UKR_Nestor_Makhno.tga"
+	picture = "gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
 	expire = "1963.3.1"
 	ideology = syndicalist_subtype
 	traits = {
@@ -92,9 +92,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nikita Sergeyevich Khrushchev"
+	name = "ニキータ・フルシチョフ"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/UKR/Portrait_UKR_Khrushchev.png"
 	expire = "1953.3.1"
 	ideology = totalist_subtype
 	traits = {

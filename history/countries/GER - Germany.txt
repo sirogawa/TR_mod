@@ -202,7 +202,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "アルトゥール・クリスピン"
-	desc = "POLITICS_OTTO_WELS_DESC"
+	desc = ""
 	picture = "gfx/leaders/GER/"
 	expire = "1964.1.16"
 	ideology = social_democrat_subtype

@@ -1,7 +1,7 @@
 
 state={
 	id=400
-	name="STATE_400"
+	name="TR_STATE_400"
 	manpower = 2115475
 	resources={
 		aluminium=14 # was: 20
@@ -11,6 +11,9 @@ state={
 
 	history={
 		owner = SOV
+		victory_points = {
+			6124 3
+		}
 		buildings = {
 			infrastructure = 2
 		}

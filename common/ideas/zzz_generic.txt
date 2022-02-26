@@ -157,7 +157,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { tank_manufacturer }
+			traits = { medium_tank_producer_offense_1 }
 		}
 	}
 	
@@ -181,7 +181,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { naval_manufacturer }
+			traits = { convoy_producer_1 }
 		}
 	}
 
@@ -205,7 +205,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { fighter_producer_offense_1 }
 		}
 		
 		generic_medium_aircraft_manufacturer = {
@@ -224,7 +224,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { bomber_producer_mass_1 }
 		}
 		
 		generic_heavy_aircraft_manufacturer = {
@@ -243,7 +243,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { bomber_producer_defense_0 }
 		}
 		
 		generic_naval_aircraft_manufacturer = {
@@ -262,7 +262,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { nav_cas_producer_offense_0 }
 		}
 	}
 
@@ -288,7 +288,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_manufacturer }
 		}
 
 		generic_electronics_concern = {
@@ -309,7 +309,7 @@ ideas = {
 				electronics = 0.1
 			}
 			
-			traits = { electronics_concern }
+			traits = { electronics_manufacturer }
 		}
 	}
 
@@ -333,7 +333,7 @@ ideas = {
 				motorized_equipment = 0.15
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			traits = { motorised_equipment_producer_offense_0 }
 		}
 		
 		generic_infantry_equipment_manufacturer = {
@@ -352,7 +352,7 @@ ideas = {
 				infantry_weapons = 0.15
 			}
 			
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_producer_allround_0 }
 		}
 		
 		generic_artillery_manufacturer = {
@@ -368,10 +368,10 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				artillery = 0.15
+				artillery = 0.10
 			}
 			
-			traits = { artillery_manufacturer }
+			traits = { artillery_producer_offense_0 }
 		}
 	}
 

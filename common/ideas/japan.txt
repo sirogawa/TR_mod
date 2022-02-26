@@ -983,7 +983,7 @@ ideas = {
                             opinion_gain_monthly_factor = -0.1
                             opinion_gain_monthly_same_ideology_factor = 0.1
                             justify_war_goal_time = -0.1
-			    subjects_autonomy_gain = -0.3
+			    send_volunteers_tension = -0.20
                             non_core_manpower = -0.01
 			}
 		}
@@ -1708,7 +1708,7 @@ ideas = {
 			       	stability_factor = 0.10
                                 conscription_factor = 0.05
                                 non_core_manpower = 0.02
-                                compliance_growth_on_our_occupied_states = 0.25
+                                compliance_growth = 0.2
 			}
 		}
                 JAP_Toshikamitu = {
@@ -2228,13 +2228,13 @@ naval_manufacturer = {
 
 
 
-			cost = 75
+			cost = 150
 						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { battlefleet_designer } # built Yamato
+			traits = { capital_ship_producer_mass_2 } # built Yamato
 
 		}
 		
@@ -2248,7 +2248,7 @@ naval_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { pacific_fleet_naval_manufacturer } #built best CVs
+			traits = { capital_ship_producer_defense_2 } #built best CVs
 
 			equipment_bonus = {
 				# 
@@ -2265,7 +2265,7 @@ naval_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { convoy_escort_naval_manufacturer } #destroyer R&D
+			traits = { small_ship_producer_offense_2 } #destroyer R&D
 
 			equipment_bonus = {
 				# 
@@ -2282,7 +2282,7 @@ naval_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { coastal_defence_naval_manufacturer } #used for many repairs and conversions
+			traits = { convoy_producer_2 } #used for many repairs and conversions
 			
 			equipment_bonus = {
 				
@@ -2306,7 +2306,7 @@ naval_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer_2 }
+			traits = { fighter_producer_mass_2 }
 
 			modifier = {
 
@@ -2324,7 +2324,7 @@ naval_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { fuel_efficient_aircraft_manufacturer }
+			traits = { bomber_producer_mass_2 }
 		}
 		
 		nakajima = {
@@ -2337,7 +2337,7 @@ naval_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { bomber_producer_offense_1 }
 
 		}
 		
@@ -2351,7 +2351,7 @@ naval_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { nav_cas_producer_offense_2 }
 		}
 	}
 	
@@ -2372,7 +2372,7 @@ naval_manufacturer = {
 				industry = 0.1
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_manufacturer }
 		}
 		
 		
@@ -2389,7 +2389,7 @@ naval_manufacturer = {
 				electronics = 0.1
 			}
 			
-			traits = { electronics_concern }
+			traits = { electronics_manufacturer }
 		}
 
 		JAP_idemitsu_kosan = {
@@ -2408,7 +2408,7 @@ naval_manufacturer = {
 				synth_resources = 0.1
 			}
 			
-			traits = { refinery_concern }
+			traits = { oil_concern }
 		}
 	}
 	
@@ -2423,10 +2423,10 @@ naval_manufacturer = {
 			}
 			
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = 0.15
 			}
 			
-			traits = { infantry_equipment_manufacturer_2 }
+			traits = { army_equipment_producer_1 }
 		}
 		
 		nissan = {
@@ -2436,10 +2436,23 @@ naval_manufacturer = {
 			}
 						
 			research_bonus = {
-				motorized_equipment = 0.1
+				motorized_equipment = 0.15
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			traits = { motorised_equipment_producer_offense_2 }
+		}
+
+		JAP_toyota = {
+			picture = JAP_toyota			
+			allowed = {
+				original_tag = JAP
+			}
+						
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorised_equipment_producer_mass_2 }
 		}
 	}
 	
@@ -2458,8 +2471,26 @@ naval_manufacturer = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { medium_tank_producer_offense_2 }
 		}	
+		mitsubishi_tank = {
+			picture = mitsubishi		
+			allowed = {
+				original_tag = JAP		
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_producer_mass_2 }
+
+			modifier = {
+
+			}
+		}
 	}
 	
 	

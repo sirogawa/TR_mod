@@ -41,15 +41,6 @@ autonomy_state = {
 		has_dlc = "Waking the Tiger"
 
 		original_tag = MAN
-		OR = {
-			has_country_flag = MAN_assertiveness
-		}
-			
-		
-		OR = {
-			has_government = fascism
-			has_government = paternal_autocrat
-		}
 		OVERLORD = { original_tag = JAP }
 	}
 	

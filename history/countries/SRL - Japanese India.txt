@@ -46,36 +46,11 @@ set_politics = {
 set_popularities = {
 	authoritarian_democrat = 100
 }
+###country_leader###
+recruit_character = SRL_Mutaguchi_Renya
+recruit_character = SRL_Indian_Emperor_Mutaguchi_Renya
 
-create_country_leader = {
-	name = "牟田口廉也"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "牟田口廉也"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_IndianEmperor_Mutaguchi.tga"
-	expire = "1960.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		
-	}
-}
-
-create_corps_commander = {
-	name = "牟田口廉也"
-		portrait_path = "gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
-	traits = { JAP_samurai_lineage }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
+###corps_commander###
+recruit_character = JAP_Mutaguchi_Renya
+recruit_character = JAP_Obata_Hideyoshi
+recruit_character = JAP_Miyazaki_Shigesaburo

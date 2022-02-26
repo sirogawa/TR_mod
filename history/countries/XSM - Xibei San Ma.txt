@@ -26,7 +26,7 @@ set_popularities = {
 create_country_leader = {
 	name = "馬歩芳"
 	desc = ""
-	picture = "Portrait_Ma_Bufang.tga"
+	picture = "gfx/leaders/XSM/Portrait_Ma_Bufang.png"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -34,9 +34,9 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "馬歩芳"
-	portrait_path = "Portrait_Ma_Bufang.tga"
+	portrait_path = "gfx/leaders/XSM/Portrait_Ma_Bufang.png"
 	traits = { }
 	skill = 2
 	attack_skill = 2

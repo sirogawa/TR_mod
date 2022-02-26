@@ -1,6 +1,11 @@
 ﻿l_english:
 ###idea###
 Fetus_dream:0 "胎児の夢"
+###人名###
+NAN_Kohinata_Hakuro:0 "小日向白朗"
+NAN_Ishiwara_Kanji:0 "石原莞爾"
+NAN_Honjo_Shigeru:0 "本庄繁"
+NAN_Qsaku:0 "夢野久作"
 ###event###
 TR_China.6.t:0 "南京事変"
 TR_China.6.d:0 ""

@@ -197,39 +197,32 @@ country_event = {
 
 	option = {
 		name = TR_japan.4.a
-                ai_chance = {
-			base = 25
+		ai_chance = {
+		    base = 50
+			modifier = {
+				factor = 50
+				has_government = social_conservative
+			}
 		}
-                effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
-		create_country_leader = {
-			name = "鈴木喜三郎"
-			desc = "POLITICS_SUZUKIKISA_DESC"
-			picture = "gfx/leaders/JAP/portrait_JAP_suzukikisa.tga"
-			expire = "1965.1.1"
-			ideology = authoritarian_democrat_subtype
-		}
-                hidden_effect = {
+        effect_tooltip = { retire_country_leader = yes }
+		promote_character = JAP_Suzuki_Kisaburo_2
+        hidden_effect = {
 			add_ideas = JAP_Suzuki_Kisaburo
 		}
 	}
         option = {
 		name = TR_japan.4.b
-                ai_chance = {
-			base = 75
+		ai_chance = {
+		    base = 50
+			modifier = {
+				factor = 50
+				has_government = market_liberal
+			}
 		}
-                effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = authoritarian_democrat }
-		create_country_leader = {
-			name = "町田忠治"
-			desc = "POLITICS_MACHIDA_DESC"
-			picture = "gfx/leaders/JAP/Portrait_Japan_machida.tga"
-			expire = "1965.1.1"
-			ideology = authoritarian_democrat_subtype
-                        traits = { }
-		}
-                hidden_effect = {
-                        add_ideas = JAP_machida_chuji
+        effect_tooltip = { retire_country_leader = yes }
+		promote_character = JAP_machida_chuji_2
+        hidden_effect = {
+            add_ideas = JAP_machida_chuji
 		}
 	}
                 
@@ -1209,33 +1202,9 @@ country_event = {
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Katsu_Masanori
 			add_ideas = JAP_Oasa_Tadao
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = social_democrat
-			create_country_leader = {
-				name = "久原房之助"
-				desc = "POLITICS_KUHARA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "中野正剛"
-				desc = "POLITICS_NAKANO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "片山哲"
-				desc = "POLITICS_KATAYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = { }
-			}
+			promote_character = JAP_Kuhara_Fusanosuke
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Katayama_Tetsu
 		}
 	}
 
@@ -1263,33 +1232,9 @@ country_event = {
 			add_ideas = JAP_Mori_Kaku
 			add_ideas = JAP_Ikeda_Shigeaki
 			add_ideas = JAP_Mitsuchi_Chuzo
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = social_democrat
-			create_country_leader = {
-				name = "久原房之助"
-				desc = "POLITICS_KUHARA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "中野正剛"
-				desc = "POLITICS_NAKANO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "片山哲"
-				desc = "POLITICS_KATAYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = { }
-			}
+			promote_character = JAP_Kuhara_Fusanosuke
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Katayama_Tetsu
 		}
 	}
 
@@ -1317,33 +1262,9 @@ country_event = {
 			add_ideas = JAP_Yoshizawa_Kenkichi
 			add_ideas = JAP_Kiyose_Ichiro
 			add_ideas = JAP_Ogata_Taketora
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = social_democrat
-			create_country_leader = {
-				name = "久原房之助"
-				desc = "POLITICS_KUHARA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "中野正剛"
-				desc = "POLITICS_NAKANO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "片山哲"
-				desc = "POLITICS_KATAYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = { }
-			}
+			promote_character = JAP_Kuhara_Fusanosuke
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Katayama_Tetsu
 		}
 	}
 
@@ -1371,33 +1292,9 @@ country_event = {
 			add_ideas = JAP_Suzuki_Bunji
 			add_ideas = JAP_Katou_Kanzyu
 			add_ideas = JAP_Nishio_Suehiro
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = social_democrat
-			create_country_leader = {
-				name = "久原房之助"
-				desc = "POLITICS_KUHARA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "中野正剛"
-				desc = "POLITICS_NAKANO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "片山哲"
-				desc = "POLITICS_KATAYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = { }
-			}
+			promote_character = JAP_Kuhara_Fusanosuke
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Katayama_Tetsu
 		}
 
 	}
@@ -1416,15 +1313,8 @@ country_event = {
 	
 	option = {#大連立
 		name = TR_japan.32.a
-		hidden_effect = { kill_ideology_leader = authoritarian_democrat 
-		create_country_leader = {
-			name = "鳩山一郎"
-			desc = "POLITICS_HATOYAMA_DESC"
-			picture = "gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
-			expire = "1965.1.1"
-			ideology = authoritarian_democrat_subtype
-            traits = { }
-		}
+		hidden_effect = { 
+		    promote_character = JAP_Hatoyama_Ichiro_2
 	    }
         add_popularity = {
 			ideology =authoritarian_democrat
@@ -1441,33 +1331,9 @@ country_event = {
 			add_ideas = JAP_Yoshida_Shigeru
 			add_ideas = JAP_Kono_Ichiro
 			add_ideas = JAP_Miki_Bukichi
-			kill_ideology_leader = social_conservative
-			kill_ideology_leader = social_liberal
-			kill_ideology_leader = social_democrat
-			create_country_leader = {
-			        name = "鳩山一郎"
-				desc = "POLITICS_HATOYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
-				expire = "1965.1.1"
-				ideology = social_conservative_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "中野正剛"
-				desc = "POLITICS_NAKANO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = { }
-			}
-			create_country_leader = {
-				name = "片山哲"
-				desc = "POLITICS_KATAYAMA_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = { }
-			}
+			promote_character = JAP_Hatoyama_Ichiro
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Katayama_Tetsu
 		}
 	}
 }
@@ -1505,15 +1371,9 @@ country_event = {
 		add_stability = -0.1
 		set_country_flag = JAP_End_Power_Struggle
 		complete_national_focus = JAP_Power_Struggle_14
-		remove_unit_leader = 2606
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-		create_country_leader = {
-			name = "東條英機"
-			desc = "POLITICS_TOJO_DESC"
-			picture = "gfx/leaders/JAP/Portrait_JAP_tojo.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
+		promote_character = JAP_Hideki_Tojo_2
+                retire_character = JAP_Nagata_Tetsuzan_corp
+		retire_character = JAP_Hideki_Tojo
     }
 	option = {#
 	    name = TR_japan.33.c
@@ -1644,16 +1504,11 @@ country_event = {
         set_country_flag = JAP_Aizawa_Incident
 		set_country_flag = JAP_End_Power_Struggle
 		complete_national_focus = JAP_Power_Struggle_14
-		JAP_Nagata_Tetsuzan_corp = { set_character_flag = JAP_Purge_commander }
-		JAP_Hideki_Tojo = { set_character_flag = JAP_Purge_commander }
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-		create_country_leader = {
-			name = "東條英機"
-			desc = "POLITICS_TOJO_DESC"
-			picture = "gfx/leaders/JAP/Portrait_JAP_tojo.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
+        hidden_effect = {
+		retire_character = JAP_Nagata_Tetsuzan_corp
+		retire_character = JAP_Hideki_Tojo
+		promote_character = JAP_Hideki_Tojo_2
+                }
 	}
 }
 #宇垣が組閣する
@@ -2172,8 +2027,10 @@ country_event = {
 	    ai_chance = {
 		    base = 50
 	    }		
-            
-	    set_country_flag = JAP_Prime_Minister_Kita
+            country_event = {
+		id = TR_japan.55
+		days = 1
+		}
 	}
 	option = {#皇道派は直接行動に出た
 	    name = TR_japan.52.b
@@ -2259,6 +2116,24 @@ country_event = {
 	    ai_chance = {
 		    base = 10
 	    }		
+	    
+    }
+}
+#魔王
+country_event = {
+	id = TR_japan.55
+	title = TR_japan.55.t
+	desc = TR_japan.55.d
+	picture = GFX_report_event_japanese_soldiers_02
+	is_triggered_only = yes
+        fire_only_once = yes
+
+       
+	
+	option = {#よろしい、君を首相として奏薦しよう
+	    name = TR_japan.55.a	
+	    set_country_flag = JAP_Prime_Minister_Kita
+	}		
 	    
     }
 }

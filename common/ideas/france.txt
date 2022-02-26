@@ -797,7 +797,7 @@
 			}
 			
 
-			traits = { heavy_tank_manufacturer }
+			traits = { heavy_tank_producer_offense_2 }
 		}
 	
 		FRA_AMX = {
@@ -814,7 +814,7 @@
 			}
 			
 
-			traits = { fast_tank_manufacturer }
+			traits = { small_tank_producer_defense_2 }
 		}
 		FRA_hotchkiss = {
 		
@@ -830,7 +830,7 @@
 			}
 			
 
-			traits = { infantry_tank_manufacturer }
+			traits = { small_tank_producer_offense_1 }
 		}
 
 		FRA_APX = {
@@ -850,7 +850,7 @@
 			}
 			
 
-			traits = { medium_tank_manufacturer }
+			traits = { medium_tank_producer_mass_2 }
 		}
 		FRA_panhard = {
 			
@@ -862,7 +862,6 @@
 						
 			allowed = {
 				original_tag = FRA
-				has_dlc = "La Resistance"
 			}
 						
 			research_bonus = {
@@ -870,7 +869,7 @@
 			}
 			
 
-			traits = { armored_car_manufacturer }
+			traits = { small_tank_producer_defense_2 }
 		}
 	}
 	
@@ -888,7 +887,7 @@
 				motorized_equipment = 0.15
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			traits = { motorised_equipment_producer_defense_2 }
 
 		}
 		
@@ -902,7 +901,7 @@
 				infantry_weapons = 0.15
 			}
 			
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_producer_mass_2 }
 		}
 	
 		schneider = {
@@ -915,7 +914,7 @@
 				artillery = 0.15
 			}
 			
-			traits = { artillery_manufacturer }
+			traits = { artillery_producer_offense_2 }
 		}
 	}
 	
@@ -933,7 +932,7 @@
 				air_equipment = 0.1
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { fighter_producer_mass_0 }
 		}
 		
 		bloch = {
@@ -946,7 +945,7 @@
 				air_equipment = 0.1
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { fighter_producer_defense_1 }
 		}
 		
 		amiot = {
@@ -959,7 +958,7 @@
 				air_equipment = 0.1
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { bomber_producer_offense_0 }
 		}
 		
 		levasseur = {
@@ -972,7 +971,7 @@
 				air_equipment = 0.1
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { nav_cas_producer_offense_2 }
 		}
 		SNCAN = {
 			picture = FRA_sncan		
@@ -981,10 +980,10 @@
 			}
 
 			research_bonus = {
-				air_equipment = 0.2
+				air_equipment = 0.15
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { bomber_producer_defense_2 }
 		}
 		SNCAO = {
 			picture = FRA_sncao			
@@ -993,10 +992,10 @@
 			}
 
 			research_bonus = {
-				air_equipment = 0.2
+				air_equipment = 0.15
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { bomber_producer_offense_2 }
 		}
 		SNCASE = {
 			picture = FRA_sncase		
@@ -1005,10 +1004,10 @@
 			}
 
 			research_bonus = {
-				air_equipment = 0.2
+				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { fighter_producer_offense_2 }
 		}
 		SNCASO = {
 			picture = FRA_sncaso		
@@ -1017,10 +1016,10 @@
 			}
 	
 			research_bonus = {
-				air_equipment = 0.2
+				air_equipment = 0.15
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { nav_cas_producer_offense_2 }
 		}
 		SNCAC = {
 			picture = FRA_sncac			
@@ -1028,10 +1027,10 @@
 				original_tag = FRA
 			}
 			research_bonus = {
-				air_equipment = 0.3
+				air_equipment = 0.15
 			}
 			
-			traits = { aircraft_manufacturer }
+			traits = { fighter_producer_mass_1 }
 		}
 		
 	}
@@ -1049,7 +1048,7 @@
 				naval_equipment = 0.15
 			}
 			
-			traits = { mediterranean_naval_manufacturer }
+			traits = { capital_ship_producer_mass_1 }
 		}
 		aeb = {
 			picture = FRA_aeb		
@@ -1061,7 +1060,7 @@
 				naval_equipment = 0.15
 			}
 			
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { small_ship_producer_defense_1 }
 		}
 		acl = {
 			picture = FRA_acl	
@@ -1073,7 +1072,7 @@
 				naval_equipment = 0.15
 			}
 			
-			traits = { atlantic_fleet_naval_manufacturer }
+			traits = { cruiser_producer_mass_2 }
 		}
 		acf = {
 			picture = FRA_acf			
@@ -1085,7 +1084,7 @@
 				naval_equipment = 0.15
 			}
 			
-			traits = { raiding_fleet_naval_manufacturer }
+			traits = { small_ship_producer_offense_2 }
 		}
 	}
 	
@@ -1106,127 +1105,9 @@
 				industry = 0.1
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_manufacturer }
 		}
 	}
-	
-	
-	theorist = {
-		charles_de_gaulle = {
-			ledger = army
-						
-			allowed = {
-				original_tag = FRA
-			}
-
-			
-			cost =150
-						
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-			
-			traits = { blitzkrieg_theorist }
-
-
-
-		}
 		
-		henri_giraud = {
-			ledger = army
-						
-			allowed = {
-				original_tag = FRA
-			}
-						
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-
-
-			
-			traits = { military_theorist }
-		}
-		
-		louis_kahn = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			cost = 250
-						
-			research_bonus = {
-				cat_fleet_in_being = 0.15
-			}
-			
-			traits = { grand_fleet_proponent }
-		}
-		
-		jean_decoux = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
-		
-		victor_denain = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			cost = 250 
-			
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
-			
-			traits = { assault_avaition }
-		}
-		
-		jean_marie_bergeret = {
-			ledger = air
-						
-			allowed = {
-				original_tag = FRA
-			}
-						
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		frederic_irene_joliot_curie = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = FRA
-			}
-			
-			
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-		}
-	}	
 
 }

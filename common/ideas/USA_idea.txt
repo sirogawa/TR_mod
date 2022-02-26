@@ -465,250 +465,6 @@
 		} 
 }
 
-	political_advisor = {
-		harry_white = {
-			
-			picture = USA_harry_white
-			allowed = {
-				original_tag = "USA"
-			}
-
-			available = {
-                                OR = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { financial_expert }
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		victor_perlo = {
-			
-			picture = generic_political_advisor_europe_1
-			allowed = {
-				original_tag = "USA"
-			}
-
-			available = {
-                                OR = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { economist }
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		whittaker_chambers = {
-			
-			picture = USA_whittaker_chambers
-			allowed = {
-				original_tag = "USA"
-			}
-
-			available = {
-                                OR = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { editor }
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		USA_joseph_patterson = {
-			
-			picture = generic_political_advisor_europe_1
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-
-			
-			traits = { editor }
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		USA_william_regnery = {
-			
-			picture = generic_political_advisor_europe_2
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-
-			}
-
-			visible = { has_dlc = "Man the Guns" }
-			traits = { captain_of_industry }
-
-			do_effect = {
-		
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		
-
-
-		USA_robert_taft = {
-			
-			picture = generic_political_advisor_europe_1
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = social_democrat
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { TR_silent_workhorse }
-		}
-
-		USA_john_winant = {
-			
-			picture = generic_political_advisor_europe_5
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = social_democrat
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { compassionate_gentleman }
-		}
-
-		USA_cordell_hull = {
-			
-			picture = generic_political_advisor_europe_6
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                      has_government = paternal_autocrat
-                                     }
-			}
-			
-			traits = { smooth_talking_charmer }
-		}
-
-		USA_henry_morgenthau = {
-			picture = generic_political_advisor_europe_6
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                      has_government = Gnosticism
-                                      has_government = national_populist
-                                      has_government = paternal_autocrat
-                                     }
-			}
-			
-			traits = { financial_expert }
-		}
-
-		USA_henry_stimson = {
-			
-			picture = generic_political_advisor_europe_2
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-			
-			traits = { war_industrialist }
-		}
-
-		USA_donald_nelson = {
-			
-			picture = generic_political_advisor_europe_3
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = { armaments_organizer }
-		}
-		
-		usa_william_donovan = {
-		
-			available = {
-			}
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			traits = { Founder_of_intelligence }
-
-		}
-	}
-
 tank_manufacturer = { 
 	
 		designer = yes
@@ -725,7 +481,7 @@ tank_manufacturer = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			traits = { small_tank_producer_mass_2 }
 			
 			modifier = {
 			}
@@ -744,7 +500,7 @@ tank_manufacturer = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { medium_tank_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -827,7 +583,7 @@ tank_manufacturer = {
 				armor = 0.15
 			}
 			
-			traits = { heavy_tank_manufacturer }
+			traits = { heavy_tank_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -851,7 +607,7 @@ tank_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { coastal_defence_naval_manufacturer }
+			traits = { convoy_producer_2 }
 			
 			modifier = {
 			}
@@ -870,7 +626,7 @@ tank_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { raiding_fleet_naval_manufacturer }
+			traits = { small_ship_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -889,7 +645,7 @@ tank_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { atlantic_fleet_naval_manufacturer }
+			traits = { cruiser_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -908,7 +664,7 @@ tank_manufacturer = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { pacific_fleet_naval_manufacturer }
+			traits = { capital_ship_producer_mass_2 }
 			
 			modifier = {
 			}
@@ -932,7 +688,7 @@ tank_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { fighter_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -953,7 +709,7 @@ tank_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { bomber_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -972,7 +728,7 @@ tank_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { CAS_manufacturer }
+			traits = { nav_cas_producer_mass_2 }
 			
 			modifier = {
 			}
@@ -992,7 +748,7 @@ tank_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { heavy_aircraft_manufacturer }
+			traits = { bomber_producer_mass_1 }
 			
 			modifier = {
 			}
@@ -1012,7 +768,7 @@ tank_manufacturer = {
 				air_equipment = 0.15
 			}
 			
-			traits = { naval_aircraft_manufacturer }
+			traits = { nav_cas_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -1037,7 +793,7 @@ tank_manufacturer = {
 				infantry_weapons = 0.15
 			}
 			
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_producer_allround_1 }
 			
 			modifier = {
 			}
@@ -1056,7 +812,7 @@ tank_manufacturer = {
 				motorized_equipment = 0.15
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			traits = { motorised_equipment_producer_mass_2 }
 			
 			modifier = {
 			}
@@ -1077,7 +833,7 @@ tank_manufacturer = {
 				artillery = 0.15
 			}
 			
-			traits = { artillery_manufacturer }
+			traits = { artillery_producer_offense_2 }
 			
 			modifier = {
 			}
@@ -1105,7 +861,7 @@ tank_manufacturer = {
 				synth_resources = 0.1
 			}
 			
-			traits = { refinery_concern }
+			traits = { oil_concern }
 			
 			modifier = {
 			}
@@ -1128,7 +884,7 @@ tank_manufacturer = {
 				electronics = 0.1
 			}
 			
-			traits = { electronics_concern }
+			traits = { electronics_manufacturer }
 			
 			modifier = {
 			}
@@ -1146,529 +902,13 @@ tank_manufacturer = {
 				industry = 0.1
 			}
 			
-			traits = { industrial_concern }
+			traits = { industrial_manufacturer }
 			
                         modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
-	}
-	
-	
-	theorist = {
-		omar_bradley = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_superior_firepower = 0.15
-			}
-			
-			traits = { superior_firepower_expert }
-		}
-		
-		george_patton = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_mobile_warfare = 0.15
-			}
-			
-			traits = { mobile_warfare_expert }
-		}
-		
-		dewitt_clinton_ramsey = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
-		
-		marc_mitscher = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_base_strike = 0.15
-			}
-			
-			traits = { naval_aviation_pioneer }
-		}
-		
-		curtis_lemay = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			cost = 250
-			
-			research_bonus = {
-				cat_strategic_destruction = 0.15
-			}
-			
-			traits = { victory_through_airpower }
-		}
-		
-		harold_mcclelland = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-		
-		robert_oppenheimer = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-		}
-		
-		robert_goddard = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-			
-			traits = { rocket_scientist }
-		}
-	}
-army_chief = {
-		
-	
-		douglas_macarthur = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				not = {
-					has_country_leader = { ruling_only = yes name = "ダグラス・マッカーサー" }
-                                        has_government = totalist
-                                        has_government = syndicalist
-                                        has_government = radical_socialist
-                                     }
-			}
-
-			
-			traits = { army_chief_morale_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		george_marshall = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		dwight_eisenhower = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-                                owns_state = 375
-                                NOT = {
-                                      has_government = totalist
-                                      has_government = syndicalist
-                                      has_government = radical_socialist
-                                     }
-			}
-
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		walter_krueger = {
-			
-			picture = USA_walter_krueger
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				
-			}
-			
-
-			
-			traits = { army_chief_planning_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	air_chief = {
-		
-		
-		henry_arnold = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_chief_reform_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		carl_spaatz = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_chief_night_operations_2 }
-			# TODO Strategic bombing secondary trait?
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		george_kenney = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_chief_safety_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		USA_charles_lindbergh = {
-			
-			picture = generic_air_europe_3
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				
-			}
-
-
-
-
-			equipment_bonus = {
-				fighter_equipment = {
-					instant = yes
-					fuel_consumption = -0.1
-				}
-				heavy_fighter_equipment = {
-					instant = yes
-					fuel_consumption = -0.1
-				}
-			}
-
-			traits = { air_pilot_training_3 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	navy_chief = {
-	
-		ernest_king = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		chester_nimitz = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		william_halsey = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_chief_naval_aviation_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	
-	
-	high_command = {
-		courtney_hodges = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		joseph_stilwell = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
-			}
-
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		mark_clark = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-		
-		jimmy_doolittle = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_strategic_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		john_cannon = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		claire_lee_chennault = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_tactical_bombing_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		raymond_spruance = {
-			ledger = navy
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		frank_jack_fletcher = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_carrier_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		thomas_kinkaid = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_amphibious_assault_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
+	}	
 }
 

@@ -1,0 +1,35 @@
+characters={
+	GER_Otto_Strasser={
+		name=GER_Otto_Strasser
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_strasser.tga"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+	}
+	GER_Ernst_Junger={
+		name=GER_Ernst_Junger
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portrait_GER_Ernst_Junger.tga"
+			}
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+	}
+	GER_rosa_luxemburg={
+		name=GER_rosa_luxemburg
+		portraits={
+			civilian={
+				large="gfx/leaders/GER/Portriat_GER_Roza_Luksemburg.tga"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
+}

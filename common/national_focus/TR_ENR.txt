@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
         continuous_focus_position = { x = 2500 y = 1300 }
-	#Focus for 英国国民革命 - focus ID randomly generated due to title being in non-latin characters
+	#英国国民革命
 	focus = {
 		id = ENR_ipdmJEqo
 		icon = GFX_goal_tfv_burn_the_royal_portraits
@@ -29,7 +29,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for イングランド社会主義 - focus ID randomly generated due to title being in non-latin characters
+	#イングランド社会主義
 	focus = {
 		id = ENR_vNHJmZRb
 		icon = GFX_focus_eng_organise_the_blackshirts
@@ -59,7 +59,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 階級闘争 - focus ID randomly generated due to title being in non-latin characters
+	#階級闘争
 	focus = {
 		id = ENR_jxJcdGfP
 		icon = GFX_focus_spr_unify_the_london_bureau

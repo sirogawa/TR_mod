@@ -52,7 +52,7 @@ set_popularities = {
 create_country_leader = {
 	name = "ニコライ・ユデーニチ"
 	desc = ""
-	picture = "Portrait_Yudenich.tga"
+	picture = "gfx/leaders/BAL/Portrait_Yudenich.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -62,7 +62,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "ニコライ・ユデーニチ"
-	picture = "Portrait_Yudenich.tga"
+	picture = "gfx/leaders/BAL/Portrait_Yudenich.tga"
 	traits = { defensive_doctrine career_officer  }
 	skill = 4
 

@@ -153,7 +153,7 @@ country_event = {
 		create_country_leader = {
 			name = "グリゴリー・ジノヴィエフ"
 			desc = ""
-			picture = "Portrait_Soviet_Zinoviev.tga"
+			picture = "gfx/leaders/SOV/Portrait_Soviet_Zinoviev.tga"
 			expire = "1965.1.1"
 			ideology = radical_socialist_subtype
 		}

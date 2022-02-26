@@ -1,0 +1,30 @@
+characters={
+	SRL_Mutaguchi_Renya={
+		name=JAP_Mutaguchi_Renya
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+	SRL_Indian_Emperor_Mutaguchi_Renya={
+		name=JAP_Mutaguchi_Renya
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_IndianEmperor_Mutaguchi.tga"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+}

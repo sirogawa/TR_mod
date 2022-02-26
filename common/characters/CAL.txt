@@ -1,5 +1,37 @@
 characters={
-	
+ 	CAL_Gondo_Seikyo={
+		name=CAL_Gondo_Seikyo
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_Gondo_Seikyo.png"
+			}
+		}
+		country_leader={
+			ideology= syndicalist_subtype
+		}
+	}
+ 	CAL_Yoneda_Gozo={
+		name=CAL_Yoneda_Gozo
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_Yoneda_Gozo.png"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+	}
+	CAL_Joseph_Kurihara={
+		name=CAL_Joseph_Kurihara
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_Joseph_Kurihara.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+	}	
 	CAL_Tokugawa_Iesato={
 		name=CAL_Tokugawa_Iesato
 		portraits={
@@ -14,6 +46,17 @@ characters={
 			ideology= national_populist_subtype
 		}
 	}
+	CAL_kiyoshi_hasegawa={
+		name=JAP_kiyoshi_hasegawa
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Hasegawa_Kiyoshi.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+	}
 	CAL_Yamamoto_Eisuke={
 		name=CAL_Yamamoto_Eisuke
 		portraits={
@@ -25,4 +68,5 @@ characters={
 			ideology= paternal_autocrat_subtype
 		}
 	}
+
 }

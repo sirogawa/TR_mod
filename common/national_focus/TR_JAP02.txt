@@ -483,24 +483,8 @@ focus_tree = {
 				add_ideas = JAP_Ugaki_Kazushige_cos
 				add_ideas = JAP_Nagata_Tetsuzan_coa
 				add_ideas = JAP_Hideki_Tojo_cair
-				kill_ideology_leader = paternal_autocrat
-				kill_ideology_leader = authoritarian_democrat 
-				create_country_leader = {
-					name = "宇垣一成"
-					desc = "POLITICS_UGAKI_DESC"
-					picture = "gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
-					expire = "1965.1.1"
-					ideology = paternal_autocrat_subtype
-					traits = { }
-				}
-				create_country_leader = {
-					name = "宇垣一成"
-					desc = "POLITICS_UGAKI_DESC"
-					picture = "gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
-					expire = "1965.1.1"
-					ideology = authoritarian_democrat_subtype
-					traits = { }
-				}
+				promote_character = JAP_Ugaki_Kazushige
+				promote_character = JAP_Ugaki_Kazushige_2
 				}
 		}
 	}
@@ -656,9 +640,9 @@ focus_tree = {
 				ideology = national_populist
 				popularity = -0.2
 			}
-			JAP_Obata_Toshiro = { set_character_flag = JAP_Purge_commander }
-			JAP_sadao_araki = { set_character_flag = JAP_Purge_commander }
-			JAP_tomoyuki_yamashita = { set_character_flag = JAP_Purge_commander }
+			retire_character = JAP_Obata_Toshiro
+			retire_character = JAP_sadao_araki
+			retire_character = JAP_tomoyuki_yamashita
 			set_country_flag = JAP_Ugaki_Nagata
 		}
 	}
@@ -1441,15 +1425,7 @@ focus_tree = {
 			remove_ideas = JAP_hirohito_hs
 			add_ideas = JAP_yasuhito
 			effect_tooltip = { retire_country_leader = yes }
-			hidden_effect = { kill_ideology_leader = national_populist }
-			create_country_leader = {
-				name = "雍仁"
-				desc = "POLITICS_TITIBU_DESC"
-				picture = "gfx/leaders/JAP/Portrait_Japan_titibu.tga"
-				expire = "1965.1.1"
-				ideology = national_populist_subtype
-				traits = {  }			
-		    }
+			promote_character = JAP_yasuhito
 	    }
 	}
 	#国体明徴声明
@@ -1493,14 +1469,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			create_country_leader = {
-				name = "裕仁"
-				desc = "POLITICS_HIROHITO_DESC"
-				picture = "gfx/leaders/JAP/Portrait_JAP_Hirohito.png"
-				expire = "1965.1.1"
-				ideology = national_populist_subtype
-				traits = {  }			
-		        }
+			promote_character = JAP_hirohito_1
 			add_popularity = {
 				ideology = national_populist
 				popularity = 0.1
@@ -1897,15 +1866,7 @@ focus_tree = {
 				add_ideas = JAP_Kaya_Okinori
 				add_ideas = JAP_Kawarada_Kakichi
 				add_ideas = JAP_Terauchi_Hisaichi
-				kill_ideology_leader = national_populist
-				create_country_leader = {
-					name = "近衞文麿"
-					desc = "POLITICS_KONOE_DESC"
-					picture = "gfx/leaders/JAP/Portrait_Japan_konoe.tga"
-					expire = "1965.1.1"
-					ideology = national_populist_subtype
-					traits = { }
-				}
+				promote_character = JAP_Konoe_Fumimaro
 				}
 		}
 	}

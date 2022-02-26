@@ -1,7 +1,7 @@
 
 state = {
 	id = 899
-	name = "STATE_899" #Volga Germany
+	name = "TR_STATE_899" #Volga Germany
 	manpower = 618530
 	
 	state_category = rural
