@@ -1,5 +1,28 @@
 ﻿l_english: 
 ### Ideas ###
+#キャラクター
+SOV_nikorai2:0 "ニコライ2世"
+SOV_wrangel:0 "ピョートル・ヴラーンゲリ"
+SOV_Nestor_Makhno:0 "ネストル・マフノ"
+SOV_stalin:0 "ヨシフ・ジュガシヴィリ"
+SOV_bukharin:0 "ニコライ・ブハーリン"
+SOV_savinkov:0 "ボリス・サヴィンコフ"
+SOV_milyukov:0 "パーヴェル・ミリュコーフ"
+SOV_Dmitri:0 "ドミトリー・パヴロヴィチ"
+SOV_martov:0 "ユーリー・マルトフ"
+SOV_denikin:0 "アントン・デニーキン"
+SOV_kappel:0 "ウラジミール・カッペル"
+SOV_Markov:0 "セルゲイ・マルコフ"
+SOV_Dragomirov:0 "アブラム・ドラゴミロフ"
+SOV_Drozdovskiy:0 "ミハイル・ドロズドフスキー"
+SOV_Krasnov:0 "ピョートル・クラスノフ"
+SOV_Romanovsky:0 "イヴァン・ロマノフスキー"
+SOV_shatilov:0 "パーヴェル・シャチーロフ"
+SOV_Mahrov:0 "ピョートル・マクロフ"
+SOV_Kolchak:0 "アレクサンドル・コルチャーク"
+
+#NF
+
 RUS_red_army:0 "赤衛軍"
 RUS_red_army_1:0 "労働者・農民赤軍"
 RUS_red_army_T:0 "労働者・農民赤軍"

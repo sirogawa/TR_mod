@@ -1,0 +1,338 @@
+characters={
+
+    #ニコライ2世
+    SOV_nikorai2 = {
+        name=SOV_nikorai2
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_nikolai_ii.tga"
+			}
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+    }
+
+    #ピョートル・ヴラーンゲリ
+    SOV_wrangel = {
+        name=SOV_wrangel
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_wrangel2.tga"
+			}
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+		field_marshal={
+			traits={ defensive_doctrine career_officer war_hero }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+
+    }
+
+    #ネストル・マフノ
+    SOV_Nestor_Makhno = {
+        name=SOV_Nestor_Makhno
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_UKR_Nestor_Makhno.tga"
+			}
+		}
+		country_leader={
+			ideology= syndicalist_subtype
+		}
+    }
+
+    #ヨシフ・ジュガシヴィリ
+    SOV_stalin = {
+        name=SOV_stalin
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_SOV_stalin.tga"
+			}
+		}
+		country_leader={
+			ideology= totalist_subtype
+            traits = { Stalin_trait }
+		}
+    }
+
+    #ニコライ・ブハーリン
+    SOV_bukharin = {
+        name=SOV_bukharin
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_SOV_bukharin.tga"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+    }
+
+    #ボリス・サヴィンコフ
+    SOV_savinkov = {
+        name=SOV_savinkov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_savinkov.tga"
+			}
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+    }
+
+    #パーヴェル・ミリュコーフ
+    SOV_milyukov = {
+        name=SOV_milyukov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_milyukov.tga"
+			}
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+    }
+
+    #ドミトリー・パヴロヴィチ
+    SOV_Dmitri = {
+        name=SOV_Dmitri
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_Dmitri.tga"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+    }
+    
+    #ユーリー・マルトフ
+    SOV_martov = {
+        name=SOV_martov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/RUS_martov.tga"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+    }
+    
+    #元帥
+    
+    #アントン・デニーキン
+    SOV_denikin = {
+        name=SOV_denikin
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_SOV_denikin.tga"
+			}
+		}
+		field_marshal={
+			traits={ career_officer war_hero infantry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+    }
+
+    #将軍
+
+    #ウラジミール・カッペル
+    SOV_kappel = {
+        name=SOV_kappel
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_SOV_kappel.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer career_officer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=0
+		}
+    }
+
+    #セルゲイ・マルコフ
+    SOV_Markov = {
+        name=SOV_Markov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Markov.tga"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer career_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+
+    #アブラム・ドラゴミロフ
+    SOV_Dragomirov = {
+        name=SOV_Dragomirov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Dragomirov.tga"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+    }
+
+    #ミハイル・ドロズドフスキー
+    SOV_Drozdovskiy = {
+        name=SOV_Drozdovskiy
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Drozdovskiy.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+
+    #ピョートル・クラスノフ
+    SOV_Krasnov = {
+        name=SOV_Krasnov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Krasnov.tga"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer career_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+
+    #イヴァン・ロマノフスキー
+    SOV_Romanovsky = {
+        name=SOV_Romanovsky
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Romanovsky.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+
+    #パーヴェル・シャチーロフ
+    SOV_shatilov = {
+        name=SOV_shatilov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_shatilov.tga"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+    }
+
+    #ピョートル・マクロフ
+    SOV_Mahrov = {
+        name=SOV_Mahrov
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Mahrov.tga"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer career_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+    }
+
+    #アレクサンドル・コルチャーク
+    SOV_Kolchak = {
+        name=SOV_Kolchak
+		portraits={
+			civilian={
+				large= "gfx/leaders/SOV/Portrait_Russia_Kolchak.tga"
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+    }
+
+
+}
+
+#totalist_subtype 全体主義
+#syndicalist_subtype 組合主義/無政府主義
+#radical_socialist_subtype 急進的社会主義
+#social_democrat_subtype 社会民主主義
+#social_liberal_subtype 社会自由主義
+#market_liberal_subtype 自由市場主義
+#social_conservative_subtype 社会保守主義
+#authoritarian_democrat_subtype 権威的民主主義
+#paternal_autocrat_subtype 専制主義
+#national_populist_subtype 超国家主義
+#Gnosticism_subtype グノーシス主義
