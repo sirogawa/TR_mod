@@ -31,8 +31,6 @@ focus_tree = {
 
 	}
 
-
-
 	focus = {  
 		id = newfocus_24 #軍の大改革
 		icon = GFX_goal_unknown
